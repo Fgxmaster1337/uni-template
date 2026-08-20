@@ -6,7 +6,7 @@ allowed-tools: Read, Grep, Glob, Write
 
 ## Leitprinzip
 
-{{FORMAT}}-Klausur — {{DAUER}}, {{PUNKTE}} Punkte. {{AUFGABENFORMAT}}. Jede Antwort muss die Frage praezise beantworten und dann aufhoeren. Kein Einleitungssatz, keine Zusammenfassung, keine Wiederholung in anderen Worten.
+Online-Klausur (Moodle) — 120 Minuten, TBD Punkte. Einsendeaufgaben (4 Einheiten). Jede Antwort muss die Frage praezise beantworten und dann aufhoeren. Kein Einleitungssatz, keine Zusammenfassung, keine Wiederholung in anderen Worten.
 
 **ANTWORTSPRACHE: DEUTSCH.** Fachbegriffe bleiben in der Originalsprache des Skripts.
 

@@ -65,10 +65,10 @@ Ausfuehrlich, paedagogisch, Intuition vor Formalismus, Rueckfragen stellen.
 
 | # | PDF | Status | Wissensdatei | Thema |
 |---|-----|--------|-------------|-------|
-| 1 | 32711-01-S#1-S002664941.pdf | OFFEN | wissen/01_grundlagen_bi.md | Grundlagen der Business Intelligence |
-| 2 | 32711-02-S#1-S002664968.pdf | OFFEN | wissen/02_methoden_instrumente.md | Methoden und Instrumente der BI |
-| 3 | 32711-03-S#1-2001332.pdf | OFFEN | wissen/03_datenhaltung_bereitstellung.md | Intelligente Datenhaltung und -bereitstellung |
-| 4 | 32711-04-S#1-S002664984.pdf | OFFEN | wissen/04_neuere_entwicklungen.md | Neuere Entwicklungen und Anwendungsbeispiele |
+| 1 | 32711-01-S#1-S002664941.pdf | FERTIG | wissen/01_grundlagen_bi.md | Grundlagen der Business Intelligence |
+| 2 | 32711-02-S#1-S002664968.pdf | FERTIG | wissen/02_methoden_instrumente.md | Methoden und Instrumente der BI |
+| 3 | 32711-03-S#1-2001332.pdf | FERTIG | wissen/03_datenhaltung_bereitstellung.md | Intelligente Datenhaltung und -bereitstellung |
+| 4 | 32711-04-S#1-S002664984.pdf | FERTIG | wissen/04_neuere_entwicklungen.md | Neuere Entwicklungen und Anwendungsbeispiele |
 
 ---
 
