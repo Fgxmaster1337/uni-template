@@ -1,0 +1,2167 @@
+
+=== SEITE 1 ===
+Fakultät für 
+Wirtschafts­
+wissenschaft
+Univ.-Prof. Dr. Ulrike Baumöl
+32711
+Business Intelligence
+Einheit 1
+Grundlagen der Business Intelligence
+NT2BWSo+dStPcsbFFmUIAXb7njHsqvP/DaaF55mPK6I2wRmaTdke01b/pJsXu8U/
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 2 ===
+Übersicht zum Modul 32711
+Business Intelligence
+Einheit 1:	 Grundlagen der Business Intelligence
+Einheit 2:	
+Methoden und Instrumente der Business Intelligence
+Einheit 3:	
+Intelligente Datenhaltung und -bereitstellung
+Einheit 4:	
+Neue Entwicklungen und Anwendungsbeispiele der Business Intelligence
+Das Werk ist urheberrechtlich geschützt. Die dadurch begründeten Rechte, insbesondere das Recht der Ver-
+vielfältigung und Verbreitung sowie der Übersetzung und des Nachdrucks, verbleiben bei der FernUniversität. 
+Das Werk darf gemäß § 53 UrhG im privaten Rahmen zum Beispiel durch Kopien oder digitale Speicherung 
+vervielfältigt werden.
+Hinweis:
+Der Lehrbrief in der vorliegenden Form wurde von Univ.-Prof. Dr. Stefan Smolnik, Dr. Katharina Ebner und 
+Christian Anschütz in Teilen überarbeitet.
+MSka80EABQCOHNdVjLFkwEkdhvIdhfHeZoOLC5XlC8SBTfltwPv3tHnkvkJR9uiL
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 3 ===
+ 
+Inhaltsverzeichnis 
+III 
+Inhaltsverzeichnis 
+Inhaltsverzeichnis .................................................................................................................... III 
+Abbildungsverzeichnis ............................................................................................................ IV 
+Tabellenverzeichnis .................................................................................................................. V 
+Abkürzungsverzeichnis ........................................................................................................... VI 
+1 
+Einführung ...................................................................................................................... 1 
+1.1 
+Business Intelligence als Grundlage unternehmerischer Entscheidungen ..................... 3 
+1.2 
+Vor- und Nachteile für Unternehmen ........................................................................ 4 
+1.3 
+Aufbau des Lehrbriefs „Business Intelligence“ und Lernziele der ersten Einheit .......... 5 
+2 
+Konzeptionelle Grundlagen.............................................................................................. 8 
+2.1 
+Entwicklung des Konzepts „Business Intelligence“ .................................................... 8 
+2.2 
+Business Intelligence als Entscheidungsunterstützung .............................................. 15 
+2.2.1 
+Formale Modellierung von Entscheidungsprozessen ........................................ 15 
+2.2.2 
+Handlungsorientierte Modellierung von Entscheidungsprozessen ..................... 17 
+3 
+Business-Intelligence-Architektur .................................................................................... 23 
+4 
+Einordnung in das betriebliche Informationsmanagement ............................................... 27 
+4.1 
+Daten, Informationen und Wissen im Kontext der Business Intelligence ................... 28 
+4.2 
+Analyserahmen für den Einsatz von Business Intelligence ......................................... 31 
+5 
+Zusammenfassung und Ausblick .................................................................................... 33 
+6 
+Literaturverzeichnis ........................................................................................................ 34 
+7 
+Lösungen zu den Übungsaufgaben ................................................................................ 38 
+Kapitel 1 ........................................................................................................................... 38 
+Kapitel 2 ........................................................................................................................... 39 
+Kapitel 3 ........................................................................................................................... 40 
+Kapitel 4 ........................................................................................................................... 42 
+h02uVmu5C9SG3V/X8NGnYp/FK7PSPCal0q8dRa7e6X511/hilww/e6IPa9gnmX41
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 4 ===
+ 
+Abbildungsverzeichnis 
+IV 
+Abbildungsverzeichnis 
+Abbildung 1: Anzahl der monatlich aktiven Facebook-Nutzer weltweit ..................................... 3 
+Abbildung 2: Bonusprogramm Monitor 2019 ........................................................................... 4 
+Abbildung 3: Inhaltliche Aufteilung des Lehrbriefs „Business Intelligence“ ................................ 6 
+Abbildung 4: Vom Informationsbedarf zum Informationsstand ............................................... 13 
+Abbildung 5: PDCA-Kreislauf ................................................................................................. 18 
+Abbildung 6: Typische Applikationsarchitektur von der Datensammlung bis zur Auswertung, Hub-
+and-Spoke-Architecture ......................................................................................................... 24 
+Abbildung 7: Einordnung der BI in das Betriebliche Informationsmanagement ........................ 27 
+Abbildung 8: Daten – Information – Wissen ........................................................................... 30 
+Abbildung 9: Das Comprehensive Decision Model (CDM) ....................................................... 31 
+ 
+ 
++WYj1aEGn5sWrT3dZmJy5PgX16mNp5ajva2GaCBMfgid/qXvH93rtqtMGObxRtUK
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 5 ===
+ 
+Tabellenverzeichnis 
+ 
+V 
+Tabellenverzeichnis 
+Tabelle 1: Entwicklung des Data Mining ................................................................................. 11 
+Tabelle 2: „Intelligence“ für den Entscheidungsprozess: Beispiele für Informationen in den 
+verschiedenen Phasen ........................................................................................................... 21 
+Tabelle 3: Gegenüberstellung der Charakteristika von operativen und dispositiven Daten ........ 28 
+ 
+ 
+a6UnyL9JnGvZQJ8nWD6ONfK5buzCf78dbQG/9D8eOTy9xHSzjF9QY/163cxV2ZM3
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 6 ===
+ 
+Abkürzungsverzeichnis 
+VI 
+Abkürzungsverzeichnis 
+argmax   
+argumentum maximi 
+BI 
+Business Intelligence 
+BIM 
+Betriebliches Informationsmanagementsystem 
+CDM 
+Comprehensive Decision Model 
+CRM 
+Customer-Relationship-Management 
+DM 
+Data Mining 
+DWH 
+Data Warehouse 
+EIS 
+Executive Information System 
+ERP 
+Enterprise Resource Planning 
+IS 
+NRW 
+Informationssystem 
+Nordrhein-Westfalen 
+MDP 
+Markov Decision Process 
+MIS 
+ODBC 
+Management Information Systems 
+Open Database Connectivity 
+OLAP 
+Online Analytical Processing 
+PDCA 
+Plan-Do-Check-Act 
+SCM 
+SQL 
+Supply-Chain-Management 
+Structured Query Language 
+dk/Q0SPJcjEZw+023F4lFP/eIn4/VxHRty2hngJBr5MPf55NslsUsOAMsMnzXT9/
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 7 ===
+ 
+Einführung 
+1
+1 
+Einführung 
+Das Treffen von Entscheidungen und das Lösen von Problemen ist keine neue 
+Herausforderung für Unternehmen. Mit der Entwicklung immer besserer Mög-
+lichkeiten, Daten zu speichern, zu analysieren und schließlich bereitzustellen, ist 
+der Prozess der Entscheidungsunterstützung auch immer komplexer geworden. 
+Die zentralen Fragen sind, welche Informationen überhaupt für eine Entscheidung erforderlich 
+sind, wie sie möglichst wirtschaftlich gewonnen und aufbereitet werden können sowie letztend-
+lich, welche technische Unterstützung die richtige ist. Nachfolgend seien zur Verdeutlichung mög-
+licher Entscheidungssituationen zwei Beispiele gegeben, die unterschiedliche Anwendungsberei-
+che von Business Intelligence illustrieren. Mit Hilfe der Sentimentanalyse1 sollen z.B. im Rahmen 
+des Text Mining2 Stimmungen in den Äußerungen von Nutzern ermittelt und nutzbar gemacht 
+werden. 
+Sentimentanalyse im Bereich der Servicehotline3 
+Es wird schlecht über die Servicehotline eines Unternehmens gesprochen. Zunächst muss die 
+Ursache hierfür ermittelt werden. Liegt es an der fehlenden Freundlichkeit oder Kompetenz der 
+Servicemitarbeiter? Sind die Wartezeiten zu lang? Werden nur unzureichende Hilfsmöglichkei-
+ten angeboten? Die Sentimentanalyse zeigt, dass die Wartezeiten zu lang sind. Um dem abzu-
+helfen, lassen sich mehr Servicemitarbeiter abstellen. Auch können andere Wege zur schnellen 
+Kontaktaufnahme wie bspw. Kontaktformulare oder Chats angeboten bzw. prominenter be-
+worben werden. Danach gibt eine weitere Sentimentanalyse Aufschluss darüber, ob die Maß-
+nahmen gewirkt haben. Ist das der Fall, sollte die Zufriedenheit mit der Hotline zunehmen. 
+Planung zukünftiger Vertriebswege4                                                               
+                                  
+Recreational Equipment Inc. (REI) ist ein amerikanisches Einzelhandels- und Outdoor-/Freizeit-
+unternehmen. Es ist als Verbrauchergenossenschaft organisiert. REI verkauft Sportartikel, Cam-
+pingausrüstung, Reiseausrüstung und Kleidung und bietet auch Dienstleistungen wie Outdoor-
+Urlaub und passende Kurse an. 
+In der Verbrauchergenossenschaft REI lassen sich Kennzahlen für Mitglieder aufgrund von 90 
+Terabyte Daten nur schwer analysieren und die Planung zukünftiger Vertriebswege ist nur sehr 
+grob möglich. Nach der Einführung einer Business-Intelligence-Plattform zur Analyse der Daten 
+seiner Genossenschaftsmitglieder hat sich die Situation zur präzisen Planung der Strategie und 
+_________________________________________________ 
+1 Eine Sentimentanalyse ist ein Untergebiet des Text Mining und bezeichnet die automatische Auswertung von Texten 
+mit dem Ziel, eine geäußerte Haltung als positiv oder negativ zu erkennen. 
+2 Text Mining ist ein Bündel von Algorithmus-basierten Analyseverfahren zur Entdeckung von Bedeutungsstrukturen 
+aus un- oder schwachstrukturierten Textdaten. 
+3 https://www.clickworker.de/2017/03/14/sentiment-analyse-was-ist-das/ 
+4 https://www.tableau.com/de-de/learn/articles/business-intelligence-examples 
+Business Intelli-gence 
+dient als 
+Entscheidungs-
+unterstützung 
+4U7q4mo74kkXixmJuirxd52uC+583PBuX/9KNX06wvrQCsdvifY5LfjCiVYvURxb
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 8 ===
+ 
+Einführung 
+ 
+2 
+der operativen Vertriebsprozesse deutlich verbessert. Angesichts dessen, dass Mitglieder für 
+über 90 Prozent des Umsatzes von REI aufkommen, sind Kennzahlen zur Kundenakquise, Kun-
+denbindung und Kundenreaktivierung von höchster Bedeutung. Erst durch die Fähigkeit, diese 
+gewaltige Datenmenge zu verarbeiten und zu analysieren, kann die für das operative Geschäft 
+zuständige Abteilung entscheiden, ob sich eher Investitionen ins Filialgeschäft oder ins digitale 
+Geschäft lohnen. Dies führt schließlich zu einer höheren Kundenzufriedenheit und verbessert 
+das Ansehen der Marke: 
+„2017 können wir durch Gewinnung neuer Mitglieder eine vollständige Trendwende einlei-
+ten“, fasst Clinton Fowler, Director of Customer and Advanced Analytics bei REI, den Erfolg 
+zusammen. Das Team nutzt seine Business-Intelligence-Plattform auch, um Kundensegmente 
+zu analysieren. Die Erkenntnisse fließen in Entscheidungen hinsichtlich strategischer und ope-
+rativer Prozesse wie z.B. Versand oder Produktkategorisierung ein. 
+Diese Beispiele zeigen auf, welche Relevanz zielgerichtete Analysen des unternehmerischen Da-
+tenbestands haben. In diesem Zusammenhang reflektiert Begriff der informationsorientierten Un-
+ternehmensführung die Erkenntnis, dass ohne die richtigen Informationen zur richtigen Zeit zu 
+angemessenen Kosten keine Wertschöpfung stattfinden kann. Das betrifft sowohl die tägliche 
+operative Arbeit als auch die strategische Entwicklung eines Unternehmens. Zudem ist es wichtig, 
+über Informationen zu verfügen, welche die Konkurrenz (noch) nicht hat. Mit diesen zentralen 
+Anliegen befasst sich die Business Intelligence: 
+Business Intelligence ist die an einem Entscheidungsproblem orientierte Analyse und adressa-
+tengerechte, technikgestützte Bereitstellung von wettbewerbsrelevanten Informationen mit 
+dem Ziel, den Entscheidungsprozess zu unterstützen. Business Intelligence umfasst die zur Ent-
+scheidungsunterstützung eingesetzten Konzepte, Methoden und Informationssysteme. 
+Business-Intelligence-Systeme sind nach Hummeltenberg (2019) informationsgetriebene Ent-
+scheidungsunterstützungssysteme zur Gewinnung und Verbreitung von Erkenntnissen für und 
+über betriebliche Abläufe. 
+In dieser Einheit werden die Grundlagen zu dem Konzept „Business Intelli-
+gence“ gelegt. Das Hauptziel ist es dabei, zu vermitteln, dass dieses Konzept 
+weit mehr ist, als nur ein Begriff für wettbewerbsrelevantes Wissen bzw. zuge-
+hörige Informationen, aber auch weit mehr als nur ein Stück hochentwickelte 
+Software. Es ist vielmehr ein ganzheitliches Konzept, das die fachlichen Grundlagen für die Erzeu-
+gung von wettbewerbsrelevantem Wissen umfasst, sowohl die Entscheidungsprozesse als auch 
+die organisatorischen Strukturen sowie die Entscheidungsträger berücksichtigt und nicht zuletzt 
+die technische Architektur einbezieht, die für die Speicherung, Analyse und Verteilung der Infor-
+mationen geeignet ist. 
+Deshalb wird in dem nachfolgenden Abschnitt kurz reflektiert, weshalb die informationsorien-
+tierte Unternehmensführung im Fokus steht und welche neueren Entwicklungen dazu beigetra-
+gen haben. Das zweite Kapitel führt in die konzeptionellen Grundlagen der Business Intelligence 
+ein. Kapitel drei zeigt die wesentlichen Bestandteile einer Business-Intelligence-Architektur, bevor 
+Die Einheit 1 
+systematisiert das 
+Konzept der Business 
+Intelli-gence 
+2Av1A0a1BVX6S0PRAVwEo4YaG7R8JvfAM8bI5ME7azFc8s5Dte4rpXf9Y3oF9bwU
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 9 ===
+ 
+Einführung 
+3
+im vierten Kapitel die Einordnung in ein übergreifendes Begriffskonzept stattfindet und ein Ana-
+lyserahmen für den Einsatz von BI vorgestellt wird. Kapitel fünf schließt diese Einheit mit einer 
+kurzen Zusammenfassung mit Ausblick auf die anderen Einheit ab. 
+1.1 Business Intelligence als Grundlage unternehmerischer Entscheidungen 
+Business Intelligence (BI) wird gerne als Basis für eine informationsorientierte 
+Unternehmensführung und in dem Zusammenhang auch als Schlüssel für Wett-
+bewerbsvorteile positioniert. Wie so oft, gehören hier Licht und Schatten un-
+mittelbar zusammen. Auf der Seite des „Lichts“ (aus Sicht der Unternehmen) gibt es eine ständig 
+steigende Anzahl privater Nutzer, die immer mehr persönliche Daten über ihre Kaufgewohnhei-
+ten, aber auch ihr grundsätzliches tägliches Verhalten preisgeben. Das Potenzial und die Bedeu-
+tung der Datengenerierung im privaten Bereich aus unternehmerischer Sicht zeigen die nachfol-
+genden Beispiele. 
+Social-Media-Platformen5 sind für Unternehmen eine ideale Möglichkeit, um 
+Produkte und Dienstleistungen zielgerichtet anbieten zu können. Die Anbieter 
+sammeln Nutzerdaten gebündelt zu allen denkbaren Lebens- und damit auch 
+Konsumbereichen und erstellen Persönlichkeitsprofile, die dann auf dem Werbemarkt angeboten 
+werden. Die Anwender können nach verschiedenen Kriterien analysiert werden, wie z.B. Ort und 
+Zeit des Zugriffs, Wohnort, Geschlecht, Familienstand, Beruf, Hobby, Haushaltgröße, Alter etc. 
+Abbildung 1 zeigt die Entwicklung der monatlich aktiven Facebook-Nutzer vom 1. Quartal 2012 
+bis zum 4. Quartal 2019 (in Millionen). Allein die immensen Zahlen der Benutzer lassen erahnen, 
+wie viele Daten hier generiert werden. Ohne zielgerichtete Analysen können die Potenziale dieser 
+Daten jedoch kaum genutzt werden. 
+ 
+Abbildung 1: Anzahl der monatlich aktiven Facebook-Nutzer weltweit (Statista, 2020) 
+Aber nicht nur durch die Nutzung von Social-Media-Plattformen werden Daten erzeugt, sondern 
+auch durch den Gebrauch von Kundenkarten, wie z.B. Karten des Payback-Bonusprogramms oder 
+_________________________________________________ 
+5 Unter Social-Media-Plattformen werden alle Medien verstanden, die ihre Nutzer über digitale Kanäle in 
+der gegenseitigen Kommunikation und im interaktiven Austausch von Informationen unterstützen. 
+Informationsorien-
+tierte Unter-
+nehmensführung 
+Verändertes 
+Nutzerverhalten 
+erzeugt eine Vielfalt 
+von Daten  
+0WcS1ujwni6KMacwr8K/7+avzbr61Qc5iql3+J4AqF+lRnfyM1qhgFGUnq7eZyoN
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 10 ===
+ 
+Einführung 
+ 
+4 
+der Vielfliegerprogramme. Mehr als jeder zweite Haushalt besitzt eine Payback-Karte. Verbreitet 
+sind neben Payback die Karten des Ikea Club (27 Prozent), von Tchibo (18 Prozent), die Deutsch-
+landCard (17 Prozent), die Douglas Card (16 Prozent), die Kundenkarte von Peek & Cloppenburg 
+(12 Prozent), die Shell-ClubSmart-Karte (10 Prozent), die bahn.bonus-Karte (9 Prozent) sowie die 
+Miles & More-Karte und der Online-Anbieter Groupon mit je 8 Prozent (Kantar, 2015). In der 
+folgenden Abbildung 2 sind einige Fakten zu Bonusprogrammen dargestellt. 
+ 
+ 
+Abbildung 2: Bonusprogramm Monitor 2019 (Splendid Research, 2019) 
+1.2 Vor- und Nachteile für Unternehmen 
+Durch derartige Bonusprogramme und Social-Media-Plattformen entstehen ins-
+gesamt also immer genauere und aktuellere Daten über bestehende, aber auch 
+potenzielle Kunden. Diese Daten besitzen für Unternehmen einen erheblichen Wert, da sie so 
+immer gezielter die relevanten Kundengruppen ansprechen können. Je individueller und konkreter 
+die Kommunikation gestaltet ist, desto wahrscheinlicher ist es, dass der Kundenkontakt hergestellt 
+wird und Kunden sich für die Produkte interessieren bzw. diese kaufen. Für die Kunden bestehen 
+die Vorteile in passenden Angeboten, die Zeit und Aufwand bei der Suche sparen. Ob das den 
+Nachteil des „gläsernen Kunden“ und der unerwünschten Profilbildung aufwiegt, bleibt der Ein-
+schätzung des Kunden überlassen. 
+Vorteile für die 
+Unternehmen 
+Nachteile für die 
+Unternehmen 
+XIykTgzQZrkDlLrpzHIryuy3Jh2Jn+o8lrE658gUTSgewrXNqzy3uR+KCdFI3VBx
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 11 ===
+ 
+Einführung 
+5
+Nachdem zuvor vor allem die aus Unternehmenssicht positiven Aspekte der steigenden Menge an 
+„passgenauen“ Daten erläutert wurde, muss nun konsequenterweise auch die Schattenseite be-
+leuchtet werden. Denn durch die Nutzerdaten, aber auch durch ein grundsätzlich steigendes Da-
+tenaufkommen entsteht „nur“ eine extrem große Menge an Daten, aber keine Informationen. 
+Ein hoher zeitlicher Entscheidungsdruck ist in den meisten Unternehmen heute zudem die Realität, 
+wenn es um Informationsversorgung und Entscheidungsvorbereitung geht. Dass die Verarbei-
+tungskapazität von Menschen dabei zwangsläufig an ihre Grenzen stößt, ist wenig überraschend. 
+Es stellt sich daher eine zentrale Frage: Mit welchen Konzepten, sowohl individueller, betriebswirt-
+schaftlicher als auch technischer Art, kann die Informationsverarbeitung auf die unternehmeri-
+schen Ziele fokussiert werden? 
+Um diese Frage beantworten zu können, ist es zunächst einmal sinnvoll, die unternehmerischen 
+Entscheidungsprozesse zu systematisieren und einen Analyserahmen für das Konzept der BI zu 
+definieren, der die relevanten Bausteine, aber auch deren Zusammenhänge aufzeigt. 
+1.3 Aufbau des Lehrbriefs „Business Intelligence“ und Lernziele der ersten Ein-
+heit 
+Der Lehrbrief für das Mastermodul „Business Intelligence“ verfolgt zwei Ziele: 
+Den Lesenden soll erstens vermittelt werden, dass nur ein ganzheitlicher, alle 
+oben bereits genannten Elemente integrierender Ansatz die BI im Unternehmen erfolgreich ein-
+setzbar macht. Zweitens sollen die dazu nutzbaren fachlichen, methodischen und technischen 
+Instrumente gezeigt und erläutert werden. So ist der Mehrwert dieses Lehrbriefs, nach der Lektüre 
+über ein anwendungsorientiertes, aber dennoch konzeptionell gut fundiertes Wissen zur BI zu 
+verfügen. Es geht darum, die Fähigkeit zu entwickeln, BI im Unternehmen erfolgreich einzusetzen 
+und zu wissen, welche fachlichen, methodischen und technischen Möglichkeiten dafür grundsätz-
+lich existieren. Für tiefergehende methodische, d. h. algorithmische, und technische Kenntnisse 
+sei auf andere Module der Wirtschaftsinformatik oder der Informatik verwiesen. In Abbildung 3 
+sind die Inhalte der vier Einheiten und ihre Zusammenhänge noch einmal aufgezeigt. 
+ 
+ 
+ 
+ 
+Ziele des Lehrbriefs  
+8lLeTqkmgcsfNg2ROT7mwZPTDRLm7ZQoFY15fHz/fm9+wQzc097OTIqtKR6PKVYm
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 12 ===
+ 
+Einführung 
+ 
+6 
+ 
+Abbildung 3: Inhaltliche Aufteilung des Lehrbriefs „Business Intelligence“ 
+Die Einheit 1 beschäftigt sich mit den begrifflichen und konzeptionellen Grundlagen der BI und 
+der individuellen sowie fachlichen Perspektive als Basis für die Entscheidungsunterstützung. Me-
+thodische Ansätze und Auswertungsinstrumente sind das Thema in Einheit 2, um darauf aufbau-
+end in Einheit 3 Konzepte für die Datenhaltung und -bereitstellung zu erklären. Die Einheit 4 
+widmet sich neueren Entwicklungen in der BI und zeigt einige Anwendungsbeispiele. 
+Die Einheit 1 des vorliegenden Mastermoduls dient dazu, zunächst be-
+griffliche und konzeptionelle Grundlagen für das Thema „BI“ zu legen. In 
+der Literatur gibt es eine Vielzahl von Begriffen und auch Konzepten und so ist es für das Ver-
+ständnis wichtig, eine gemeinsame „Sprache“ festzulegen. Während die gemeinsame Sprache 
+zunächst sicherstellt, dass die „richtigen Vokabeln“ genutzt werden, muss zudem das begriffliche 
+Konzept hinter jedem Terminus klar sein, weil ansonsten die dazugehörigen Inhalte, aber auch 
+Schlussfolgerungen nicht nachvollzogen werden können. Wie bereits gesagt, ist hier die zentrale 
+Botschaft, dass die BI nicht einfach ein technisches Konzept ist, sondern weitaus umfassender 
+interpretiert werden muss, indem die entscheidungspsychologischen, fachlichen, organisatori-
+schen und technischen Anforderungen integriert berücksichtig werden. Die Lernziele dieser Ein-
+heit lassen sich wie folgt zusammenfassen: 
+Kapitel 2: Konzeptionelle Grundlagen 
+• 
+Erläuterung der Entwicklung des Begriffs BI und Einordnung in die Literatur: Sie verstehen, 
+wie sich das Verständnis für BI entwickelt hat, und welche Ausprägungen es gibt. 
+• 
+Systematisierung von Entscheidungsprozessen: Sie verstehen, wie sich Entscheidungsprozesse 
+als Grundlage für die konkrete Umsetzung des Konzepts der BI beschreiben lassen. 
+Kapitel 3: Business-Intelligence-Architektur 
+• 
+Architektur: Sie verstehen den Zusammenhang und das Zusammenwirken der einzelnen 
+Komponenten innerhalb der Business-Intelligence-Architektur. 
+Inhalte und Lernziele 
+der Einheit 1  
+9T+nL85IUVQR+9s0rvmCQjM8vdztuJ0P1FJLvZKS9C5Mj4iHCCOHgMsg2ge7V/N4
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 13 ===
+ 
+Einführung 
+7
+Kapitel 4: Einordnung in das betriebliche Informationsmanagement 
+• 
+Begriffskonzept: Sie können die verschiedenen Begriffe innerhalb des betrieblichen Informa-
+tionsmanagements korrekt einordnen. 
+• 
+Definition des Analyserahmens: Sie kennen einen Analyserahmen, in den sich das integrierte 
+Konzept mit Entscheidungsträgern, organisatorischen Rahmenbedingungen und Anforde-
+rungen sowie der technischen Infrastruktur systematisch verorten lässt. 
+Kapitel 5: Zusammenfassung und Ausblick 
+• 
+Zusammenfassung der Inhalte und Ergebnisse der Einheit: Sie erhalten noch einmal einen 
+kurzen Überblick über die behandelten Themen und deren Zusammenhänge. 
+• 
+Übersicht über die Themengebiete der nachfolgenden Einheiten: Sie verstehen, wie die Ein-
+heiten inhaltlich zusammenhängen und gewinnen einen Überblick über die kommenden In-
+halte. 
+Zum Nachdenken und Diskutieren 
+1. Welche Rolle kann das Konzept der BI im Rahmen der Informationsverarbeitung spielen? 
+Welche Potenziale können genutzt werden, und wo sehen Sie Grenzen? 
+Übungsaufgaben 
+2. Welche Vorteile und Nachteile entstehen für Unternehmen durch die Verbreitung von so-
+zialen Netzwerken in Bezug auf die Entstehung von Informationen? 
+3. Welche Vorteile und Nachteile sehen Sie für die Kunden? 
+ 
+ 
++2YgOMI079KlNwgQw06W4oBG4UC0soKdigfqsQmX1l94QIQhMYtDlPBdrtgCbkFM
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 14 ===
+ 
+Konzeptionelle Grundlagen 
+ 
+8 
+2 
+Konzeptionelle Grundlagen 
+Der Begriff der BI wird auch heute noch nicht einheitlich verwendet. Damit die 
+vorgestellten Inhalte eingeordnet werden können, ist es wichtig, das Modell zu 
+verstehen, das den Überlegungen zugrunde gelegt wird, und so widmet sich dieses Kapitel der 
+Entwicklung einer konzeptionellen Grundlage. Dazu ist es interessant, die Entwicklung der BI kurz 
+aufzuzeigen, denn so wird auch klar, warum sich das Verständnis der BI zunächst auf eine primär 
+technische Basis stützt und erst später zunehmend die betriebswirtschaftlichen Fachkonzepte er-
+gänzt wurden.  
+2.1 Entwicklung des Konzepts „Business Intelligence“ 
+• Der erste heute dokumentierte Beitrag, der im Titel „Business Intelligence“ 
+trug, wurde von Luhn (1958) veröffentlicht. Er hat sich mit der selektiven Ver-
+breitung von Informationen beschäftigt und in diesem Kontext den Begriff geprägt: 
+• 
+Business: „Business is a collection of activities carried on for whatever purpose, be it in sci-
+ence, technology, commerce, industry, law, government, defense, et cetera.“ 
+• 
+Intelligence: „Intelligence is [...] the ability to apprehend interrelationships of presented facts 
+in such a way as to guide towards a desired goal.“ 
+• 
+Business-Intelligence-System: „An automatic system is being developed to disseminate infor-
+mation to the various sections of any industrial, scientific, or government organization. This 
+intelligence system will utilize data processing-machines for auto-abstracting and auto-en-
+coding of documents and for creating interest profiles for each of the ’action points’ in an 
+organization. Both incoming and internally generated documents are automatically ab-
+stracted, characterized by a word pattern, and sent automatically to appropriate action 
+points.“ 
+Luhn (1958) stellt also die wichtige Verbindung zwischen dem unternehmerischen Auftrag und 
+Ziel (Business) mit den dazugehörigen Informationen als Basis für die Entscheidungsprozesse (In-
+telligence) und der technischen Unterstützung (Business-Intelligence-System) konsequent her. Im 
+Laufe der Entwicklung der BI ist dieser Zusammenhang zunächst aber wieder in den Hintergrund 
+getreten. 
+Die steigende Menge an Daten, bessere Analysealgorithmen, aber vor allem die 
+Entwicklung immer besserer Prozessoren, die eine automatisierte Auswertung 
+der Daten erlaubten, haben dazu geführt, dass sich die Entwicklung der BI zunächst auf die tech-
+nischen Machbarkeiten konzentriert hat. Gleichzeitig hat sich geradezu ein Hype entwickelt, der 
+zu vollkommen überzogenen Ankündigungen, wie z.B. dem folgenden Zitat, geführt hat: 
+„It’s in there. The discovery, the fact, the one piece of the puz-
+zle, that will blow away competition, propel your company to 
+Entwicklung des 
+Begriffs der BI 
+Der Ursprung des BI-
+Begriffs 
+Technische Sicht auf 
+die BI 
+8pt4Qgu5v0d6zKz5FDxCxbreAbx2VxyhD3iuLXvd0+2GVRaeF+RKLsN7JdiykkBj
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 15 ===
+ 
+Konzeptionelle Grundlagen 
+9
+the top, and stick a ’VP’ [Anmerkung der Autorin: Vice President] 
+right after your name. It’s right there in your data-base. But you 
+can’t see it. Yet.“ (Hedberg, 1995). 
+Der Fokus lag dabei auf „getting data in and getting data out“ (Watson & Wixom, 2007). Damit 
+das (technische) Datenmanagement reibungslos funktioniert, muss vor allem die IT-Architektur 
+angemessen sein und folgende Fragen beantworten: 
+1. getting data in: 
+• 
+Welche Datenquellen müssen wie angeschlossen werden? 
+• 
+Wie soll das Data Warehouse als strukturierter Datenspeicher aufgebaut sein? 
+• 
+Wie müssen die Metadaten strukturiert sein? 
+Für den weiteren Verlauf des Lehrtextes wird ein Data Warehouse wie folgt definiert: 
+Ein Data Warehouse (DWH) ist eine unternehmensweite Datenbank, die als zentraler Speicher 
+eine einheitliche und konsistente Datenbasis zur Entscheidungsunterstützung aller Bereiche 
+und Ebenen im Unternehmen bietet und unabhängig von operativen Anwendungssystemen 
+betrieben wird. Im Data Warehouse werden alle für ein Unternehmen relevanten internen und 
+externen Daten zusammengeführt und für verschiedenartige Auswertungen und Analysen für 
+längere Zeiträume gespeichert (Hansen und Neumann 2019). 
+2. getting data out: 
+• 
+Wie kann der Datenzugriff möglichst nutzerfreundlich gestaltet werden? 
+• 
+Welche Zugriffskonzepte (z.B. Data Marts) machen den Zugriff schneller? 
+• 
+Wie sollen die aufbereiteten Daten zur Verfügung gestellt werden? 
+Für den weiteren Verlauf des Lehrtextes werden Data Marts wie folgt definiert: 
+Data Marts sind ein aggregierter Teilausschnitt des Data Warehouse, der die relevanten Daten 
+für einen bestimmten abgegrenzten Themen- und/oder Anwenderkreis enthält. Die Data Marts 
+beinhalten z.B. die Daten der einzelnen Geschäftsprozesse (Kemper et al. 2010, S. 24; Kimball 
+und Ross 2011, S. 10). 
+Der letzte oben genannte Punkt wird auch durch die Entwicklungsschritte des 
+Data Mining (DM) deutlich, das als eine der Analysegrundlagen unzertrennlich 
+zur BI gehört. Data Mining beschreibt den Einsatz verschiedener Verfahren zur systematischen 
+und häufig automatisierten Analyse von (großen) Datenbeständen zur Aufdeckung von verborge-
+nen, strukturellen Mustern und Beziehungen sowie zur Unterstützung von Prognosen. Im Gegen-
+satz zu Verfahren, bei denen in der Regel Antworten auf spezifische Fragen gesucht werden, ist 
+das Ziel von Data Mining die Identifikation von bisher unbekannten Zusammenhängen (Mertens 
+et al. 2012, S. 52). 
+Data Mining als Teil 
+der BI 
+MBwjER1aDAGhv/2oxWAw7lxJjaKPFxZaEjUDj109wIm5WCgQxTmLU2WlW5ZBd8nR
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 16 ===
+ 
+Konzeptionelle Grundlagen 
+ 
+10 
+Data Mining bezeichnet die softwaregestützte Ermittlung bisher unbekannter Zusammen-
+hänge, Muster, Regeln und Trends in umfangreichen Datenbeständen, die bei der Unterstüt-
+zung der Entscheidungsfindung und bei der Prognose von zukünftigen Ereignissen helfen kön-
+nen (Hansen und Neumann 2019). 
+Data Mining wird z.B. häufig eingesetzt, um Informationen über Kundenpräferenzen zur Unter-
+stützung eines zielgerichteten, personalisierten Marketings zu gewinnen. Dabei können nicht nur 
+abstrakte Muster oder Trends, sondern auch spezifische Informationen zu einzelnen Kunden er-
+mittelt werden. Das folgende Fallbeispiel veranschaulicht die Relevanz des Data Minings. 
+Data Mining bei der Adolf Würth GmbH & Co. KG6                                   
+ 
+Die Adolf Würth GmbH & Co. KG betreibt ein umfassendes, unternehmensweites Data-
+Warehouse-System. Der globale Handel mit Befestigungs- und Montagematerial bildet das 
+Kerngeschäft der Würth-Gruppe mit weltweit über drei Millionen Kunden. 
+Die Herausforderug bei der Adolf Würth GmbH & Co. KG bestand darin, dass in typischen 
+Berichtsanwendungen Messdaten nach Kennzahlen (z.B. Umsatzrendite) und Dimensionen 
+(z.B. Euro) strukturiert und entlang dieser Überlegungen verdichtet (z.B. Produktgruppen) 
+wurden. Dadurch wurden aber nicht nur die typischen Analysepfade vorweggenommen, 
+sondern durch die Verdichtung (vgl. Einheit 2) auch die erzielbaren Informationen (z.B. 
+Abweichungsberechnungen) 
+eingeschränkt. 
+Erkenntnisse, 
+die 
+sich 
+aus 
+komplexen 
+Wechselwirkungen ergeben hätten können, blieben verborgen, da die Einzeltransaktionen mit 
+ihren Zusammenhängen in den vorbereiteten Aggregationen untergingen. Das Aufspüren 
+dieser komplexen Wechselwirkungen in Datenräumen, die für das Berichtswesen aufbereitet 
+wurden, war damit praktisch unmöglich. Die Lösung hierfür bildeten Verfahren des Data 
+Mining.  
+Die Einsatzgebiete von Data Mining erstrecken sich im geschäftlichen Umfeld auf viele Bereiche 
+und Branchen. Data-Mining-Verfahren, die auch die Adolf Würth GmbH & Co. KG einsetzt, 
+sind unter anderem die Assoziationsanalyse, Clusteranalyse, lineare Regression und 
+Entscheidungsbäume.7 
+Eine der häufigsten Anwendungen findet Data Mining bei Cross-Selling-Aktivitäten. Mit 
+zunehmender Artikelbreite und Anzahl der Transaktionen eines Handelsunternehmens wird 
+die Bewertung von Assoziationen zwischen den Produkten immer schwerer. Mit Hilfe der 
+Assoziationsanalyse, einer typischen Data Mining Anwendung, werden Assoziationsregeln der 
+Form „Wenn Produkt A gekauft wird, dann wird auch Produkt B gekauft“ und/oder die 
+Reihenfolge, in der die Produkte gekauft werden, entdeckt. Die Assoziationsregeln spielen 
+dann auch bei der Adolf Würth GmbH & Co. KG eine entscheidende Rolle bei 
+Marketingstrategien wie z.B. Produktbündelung oder bei der Preisfindung. 
+In der nachfolgenden Tabelle 1 (Entwicklung des Data Mining) lässt sich die Entwicklung, aber 
+auch die Rolle der Technikunterstützung für immer aufwändigere Fragestellungen recht einfach 
+_________________________________________________ 
+6 https://www.information-works.de/referenzen/88-kunden/121-referenzstories.html 
+7 Die Data-Mining-Verfahren werden in der Einheit 2 des Lehrbriefs Business Intelligence näher erläutert. 
+cwA2cxZjGF1SISNt89ZJ++sWg+lcZkCEaAhzyw/aer4IUEZmQxYqUxCZhDUt/R9a
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 17 ===
+ 
+Konzeptionelle Grundlagen 
+11
+nachvollziehen. Während in den 1960er Jahren die Technik vor allem die Datensammlung und 
+einfache Abfragen auf dem Datenbestand unterstützt hat, konnten mit der Entwicklung von re-
+lationalen Datenbanken und entsprechenden Abfragesprachen schon mehr Dimensionen (in die-
+sem Beispiel: Produkte, Region, Zeit) einbezogen werden. Diese Entwicklung hat sich in den 
+1990er Jahren fortgesetzt und hat so zu immer genaueren Analysen des Datenbestandes geführt. 
+Doch waren die Ergebnisse immer noch retrospektiv, d.h. auf die Vergangenheit bezogen. 
+„Echte“ Entscheidungsunterstützung sollte aber auch in die (nähere) Zukunft schauen und hier 
+zuverlässige Prognosen erlauben. Dieser Anforderung wurde mit der Weiterentwicklung von leis-
+tungsfähigeren Algorithmen und Rechnerarchitekturen Rechnung getragen. Auf dieser Grundlage 
+erfolgt auch die aktuelle Entwicklung der BI im Kontext von „BI as a Service“, „Real-Time BI“ und 
+weiteren Konzepten, die in den späteren Einheiten erläutert, aber zum Verständnis nachfolgend 
+kurz eingeführt werden. 
+Bei BI as a Service wird der Betrieb des BI-Systems als Dienstleistung an einen Drittanbieter, z.B. 
+über einen Cloud-Service, ausgelagert. Bei Real-Time BI werden die Daten innerhalb des BI-
+Systems in Echtzeit aktualisiert. 
+Methodische und fachliche Grundlagen wurden dabei häufig in den Hinter-
+grund gestellt. In vielen Praxisanwendungen herrschte und herrscht auch heute 
+noch die Meinung, dass die richtige Software auf der richtigen Maschine alle 
+Entscheidungsprobleme lösen kann. Dieser Trend kommt Produktherstellern 
+entgegen und so wurde und wird er oftmals durch entsprechende Werbekonzepte noch verstärkt. 
+Tabelle 1: Entwicklung des Data Mining (angelehnt an Thearling 2012) 
+Entwicklungs-
+schritt 
+Exemplarische Fragestel-
+lung 
+Unterstützende Tech-
+nologien 
+Charakteristika 
+Datensammlung 
+(1960er) 
+„Wie haben sich meine 
+Gesamterträge in den 
+letzten 5 Jahren entwi-
+ckelt?“ 
+Computer, Magnet-
+bänder, Disketten 
+Retrospektiv; stati-
+sche Datenbereitstel-
+lung 
+Datenzugriff 
+(1980er) 
+„Welche Produkte wur-
+den in Nordrhein-Westfa-
+len (NRW) im letzten März 
+verkauft?“ 
+Relationale Datenbank 
+Management Systeme, 
+Structured Query Lan-
+guage (SQL)8, Open 
+Database Connectivity 
+(ODBC)9 
+Retrospektiv dynami-
+sche Datenbereitstel-
+lung auf Datensatze-
+bene 
+_________________________________________________ 
+8 SQL ist eine Datenbanksprache zur Definition von Datenstrukturen in relationalen Datenbanken. 
+9 ODBC ist eine standardisierte Datenbankschnittstelle, die SQL als Datenbanksprache verwendet. 
+Data Mining als Teil 
+der BI 
+Fachliche und 
+methodische Aspekte 
+RCTEHAyR2DwBhl1f5M80QKe39fHURlSpAFM+j8pKHZyLiAMFHc+qfT4Zsa2pjfQ0
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 18 ===
+ 
+Konzeptionelle Grundlagen 
+ 
+12 
+Data Warehou-
+sing und Ent-
+scheidungsun-
+terstützung 
+(1990er) 
+„Welche Produkte wur-
+den in NRW im letzten 
+März verkauft? Aufschlüs-
+selung für Hagen.“ 
+Online Analytical Pro-
+cessing (OLAP), multi-
+dimensionale Daten-
+banken, Data-
+Warehouse-Systeme 
+Retrospektiv dynami-
+sche Datenbereitstel-
+lung auf verschiede-
+nen Ebenen 
+Data Mining 
+(2000 bis 2010) 
+„Welche Produkte werden 
+sich in Hagen in den 
+nächsten Monaten ver-
+kaufen? Weshalb?“ 
+„advanced algo-
+rithms“, hoch-parallele 
+Datenverarbeitung 
+Prospektiv, proaktive 
+Daten- und Informa-
+tionsbereitstellung 
+Cloud-Compu-
+ting10 (ab 2010) 
+„Wie können wir kurzfris-
+tige Entscheidungen tref-
+fen?“ 
+Mobile BI-Lösungen 
+(z.B. mit Smartphone-
+Apps), Echtzeitverar-
+beitung (Real-Time BI) 
+Ortsunabhängige 
+und jederzeit verfüg-
+bare Daten und Aus-
+wertungen 
+ 
+Die im Kontext von Data Mining angewendeten Methoden beruhen auf statistischen Verfahren 
+sowie auf Verfahren des maschinellen Lernens. Mit Hilfe von Regressionsverfahren können bei-
+spielsweise Trend- und Zeitreihenanalysen durchgeführt sowie statistische Beziehungen oder Wir-
+kungszusammenhänge zwischen einzelnen Variablen (z.B. Kennzahlen) ermittelt werden. Damit 
+können auf Basis historischer Daten Prognosen für zukünftige Entwicklungen erstellt werden. 
+Clustering-Verfahren versuchen dagegen, bestimmte Merkmale in Datensätzen (z.B. im Kunden-
+stamm) zu ermitteln und darauf basierend einzelne Gruppen zu segmentieren. Des Weiteren kön-
+nen Verfahren des maschinellen Lernens wie z.B. Softwareagenten, die eigenständig Datenbe-
+stände analysieren, Unternehmen helfen, Erkenntnisse auch aus sehr großen Datenmengen zu 
+erzielen (vgl. Haag und Cummings 2010, S. 79; Hansen und Neumann 2019). 
+Dabei hat schon Ackoff (1967) die folgenden, auch heute noch häufig getroffenen, Annahmen 
+in Frage gestellt: 
+1. 
+„The critical deficiency under which most managers operate is the lack of relevant infor-
+mation. 
+ 
+2. 
+The manager needs the information he wants. 
+ 
+3. 
+If a manager has the information he needs his decision making will improve. 
+ 
+4. 
+Better communication between managers improves organizational performance. 
+ 
+_________________________________________________ 
+10 Cloud-Computing beschreibt den nach Bedarf, zeit- und ortsunabhängig sowie virtualisiert über das Internet bereit-
+gestellten, gemeinsam genutzten Vorrat konfigurierbarer IT-Ressourcen (z.B. Netzwerke, Server, Anwendungen). 
+ 
+pPFQsV+8g+QjIrR8sHRso7B1Iv+E4Qe/JqZh6Xmp5Cvt8XHi7qsdVBHBan+Zfhn9
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 19 ===
+ 
+Konzeptionelle Grundlagen 
+13
+5. 
+A manager does not have to understand how his information systems works, only how to 
+use it.“ 
+ 
+Während die erste Annahme in Teilen zutrifft, muss dennoch festgehalten wer-
+den, dass Manager neben einem Defizit relevanter Information vor allem ein 
+Überangebot irrelevanter Daten und Informationen erleiden (vgl. S. 5). Es ist für ein IT-System stets 
+leichter, immer größere Mengen an Daten für immer schnellere und komplexere Abfragemöglich-
+keiten bereitzuhalten, als eine Relevanzbewertung vorzunehmen. Das schon in Ack( 1967) avi-
+sierte Ziel einer automatisierten Textzusammenfassung ist heute trotz vieler Fortschritte immer 
+noch nicht als „industrial strength product“ verfügbar (vgl. Spärck-Jones, 1999, 2007).  
+Die zweite Annahme muss infrage gestellt werden, da sie nicht berücksichtigt, dass der subjektive 
+Informationsbedarf („wants“) vom objektiven Informationsbedarf („needs“) abweichen kann. 
+Ackoff (1967) weist in diesem Zusammenhang insbesondere darauf hin, dass die nachgefragte 
+Informationsmenge ohne ein Modell des zugrundeliegenden Entscheidungsprozesses in der Regel 
+viel zu groß ausfallen wird. 
+ 
+Abbildung 4: Vom Informationsbedarf zum Informationsstand (Picot et al., 2003, S. 82)  
+Die dritte Annahme ignoriert die Tatsache, dass es von der Information bis zur Entscheidung eben-
+falls noch ein weiter Weg sein kann. Auch hier kann, wie schon beim vorherigen Punkt, laut Ackoff 
+(1967) nur ein geeignetes Modell des Entscheidungsprozesses helfen, die Information auch richtig 
+zu verwerten. Bezüglich der vierten Annahme muss ins Kalkül gezogen werden, dass die Kommu-
+nikation an sich ebenfalls Aufwand verursacht. Bekanntermaßen wächst die Anzahl der Kommu-
+nikationspaare dabei überproportional. Während z.B. zwei Manager ein Kommunikationspaar bil-
+den, entstehen bei vier Managern dagegen schon sechs Kommunikationspaare (vgl. Balzert, 2008, 
+S. 66f.). Ackoff (1967) skizziert darüber hinaus einen Fall, in dem Manager unabhängig voneinan-
+der die Leistungskennzahlen optimieren, welche ihren jeweiligen Bereich betreffen. In dem Mo-
+ment, in dem ein Manager Zugriff auf die Leistungskennzahlen eines anderen Bereichs erhält, 
+kann dies zu unerwünschten Nebeneffekten führen, welche erneut zeigen, dass ein „Zuviel“ an 
+Information und Kommunikation ebenfalls schädlich sein kann. 
+Informationsbedarf 
+23g6gs9Je1cn3cgmJDT3/Mo+AOX2dqHp7RqEdqOJMOpM2DFn+nPbaVagp7i04lxN
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 20 ===
+ 
+Konzeptionelle Grundlagen 
+ 
+14 
+Die letzte Annahme betrifft schließlich weniger die Entscheidungsunterstützung durch ein IT-Sys-
+tem, sondern mehr die Entscheidung über IT-Systeme an sich. BI im heutigen Sinne ist ohne IT-
+Unterstützung nicht vorstellbar. Ackoff (1967) spricht sich diesbezüglich dafür aus, dass Manager 
+eine ausreichende Kompetenz bezüglich der inneren Abläufe von IT-Systemen zur Entscheidungs-
+unterstützung haben müssen, um diese zu evaluieren und die Plausibilität der Ergebnisse einschät-
+zen zu können. Auch dazu soll der vorliegende Kurs einen Beitrag leisten. 
+ 
+Diese Aussagen machen deutlich, dass die BI durch die Information und ihre 
+Nutzung bestimmt ist und wertvoll wird. Die technischen Konzepte jedoch sind 
+zweitrangig und müssen vor allem in ihrer Rolle als Produktivitäts- aber auch 
+Kostentreiber untersucht und verstanden werden. Die BI als Gesamtkonzept dient also der Ent-
+scheidungsunterstützung im Unternehmen. Mit dieser Feststellung ist der grundlegende Begriff 
+der „Intelligenz“ verbunden, für den deshalb im Folgenden eine Begriffsdefinition entwickelt wird. 
+ 
+Es gibt sehr viele Erklärungen und Definitionen für Intelligenz, je nachdem, aus welcher Perspek-
+tive der Begriff untersucht wird. Eine Analyse des Begriffs im Kontext unternehmerischer Entschei-
+dung muss zwischen dem Individuum und der Organisation unterscheiden (Hummeltenberg, 
+2008). Die Intelligenz von Individuen ist ein vieldiskutiertes und nicht abschließend erfasstes Phä-
+nomen (Wechsler, 1956). Einige in diesem Kontext passende Definitionen bietet die Enzyklopädie 
+Merriam-Webster11: 
+„The skilled use of reason.“ 
+„The ability to apply knowledge to manipulate one’s environment or to think abstractly as meas-
+ured by objective criteria (as tests).“ 
+„The act of understanding.“ 
+„Information concerning an enemy or possible enemy or an area.“ 
+Diese vier Punkte fassen den Begriff der Intelligenz, wie er für die BI in Bezug auf das Individuum 
+relevant ist, gut zusammen: 
+Individuelle Intelligenz zeigt den willentlichen und planmäßigen Einsatz der individuellen Fä-
+higkeit zur Nutzung von Informationen und das Vermögen, aus der Interpretation Schlussfol-
+gerungen zu ziehen.  
+Insbesondere der letzte Punkt ist zu beachten, denn er gibt eine der Bedeutungen von „Intelli-
+gence“ im englischen Sprachraum wieder12: Hier bezieht sich der Begriff auf die gezielte Samm-
+lung und Weiterleitung von relevanten Informationen. Die Informationen erhalten ihre Relevanz 
+_________________________________________________ 
+11 http://www.merriam-webster.com/dictionary/intelligence 
+12 Sehr prominent findet sich der Terminus in der Bezeichnung für einen der amerikanischen Auslandsgeheimdienste 
+„CIA“: Central Intelligence Agency. 
+Intelligenz als 
+Grundlage für die BI  
+qhntIRiTWwMWl5d9IlfHq1QM1aihF3ZDkwmQbUWDqBSL8rPi5vyUJR17kfkxRsmD
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 21 ===
+ 
+Konzeptionelle Grundlagen 
+15
+durch ihren vorbestimmten Zweck im Rahmen des Zielerreichungsprozesses und ihrer Auswertung 
+durch Individuen. 
+Eine gute Ergänzung im Rahmen der Begriffsfindung ist auch die informationstheoretisch orien-
+tierte Definition von Hofstätter (1971), der unter Intelligenz die „Fähigkeit zum Auffinden von 
+Ordnungen und Regelhaftigkeit im Zusammentreffen, Neben- und Nacheinander von Ereignissen“ 
+versteht. Mit dieser Auffassung schließt sich auch wieder der Kreis zu dem zuvor zitierten Begriffs-
+verständnis von Luhn (1958). 
+Organisatorische Intelligenz: Die Organisation wird häufig auch als soziotechnisches System 
+bezeichnet. Es wird konstituiert durch die Beziehungen zwischen Akteuren, der Organisation 
+und der technischen Infrastruktur. Somit liegt ein deutlicher Unterschied zum Individuum vor, 
+das ein – wenn auch wichtiger – Teil des soziotechnischen Systems ist. 
+Eine Organisation kann demnach als „intelligent“ bezeichnet werden, wenn 
+• 
+sie durch Informationsprozesse Anforderungen und geforderte Veränderungen erkennen, 
+analysieren und interpretieren kann, 
+• 
+sie durch entsprechende Feedbackmechanismen lernt, mit sich verändernden Umfeldbedin-
+gungen umzugehen und sich an sie anzupassen („lernende Organisation“), 
+• 
+sie durch die Informationsprozesse und Feedbackmechanismen ein geplantes Ziel verfolgen 
+und erreichen kann. 
+2.2 Business Intelligence als Entscheidungsunterstützung 
+Die Informationen, die durch individuelle und organisatorische Intelligenz 
+verarbeitet werden, dienen also, wie im vorherigen Abschnitt gezeigt, 
+der Unterstützung von Entscheidungsprozessen. In diesem Abschnitt soll 
+nun geklärt werden, wie sich Entscheidungsprozesse im Sinne der BI sys-
+tematisieren lassen. Dazu lassen sich zunächst zwei grundsätzliche Ansätze der Systematisierung 
+unterscheiden. Der erste Ansatz konzentriert sich auf die Formalisierung des Entscheidungspro-
+zesses unter Berücksichtigung des Zielsystems und der Nebenbedingungen. Der zweite Ansatz 
+systematisiert Entscheidungsprozesse auf Basis der Handlungsphasen des Entscheiders. 
+2.2.1 Formale Modellierung von Entscheidungsprozessen 
+Die Optimierung des Zielsystems unter gegebenen Nebenbedingungen ist das 
+Ziel bei der Lösung des gesamten, vorliegenden Entscheidungsproblems. Für 
+eine ausführliche Diskussion sei hier auf die gängigen Verfahren des Operations Research verwie-
+sen (z.B. Domschke & Drexl, 2007). Als ein für die BI nützliches Beispiel lassen sich aber Markov-
+Entscheidungsprozesse (engl. Markov Decision Process (MDP)) in ihrer einfachsten Form kurz er-
+klären (z.B. Howard, 1960, Domschke & Drexl, 2007). Dieses Lösungsverfahren ist dadurch ge-
+kennzeichnet, dass es mehrere, voneinander abhängige Entscheidungen unterstützt. Durch diese 
+Entscheidungspro-
+zesse sollen durch die 
+BI unterstützt werden 
+Ein Ansatzpunkt: 
+Formale Modellierung 
+4A6UhN+kAl7WVfsYlO1s1Tg2fF0bxCrcsOLH0JcNUiwFm2tEBWO6riKzmFHZc/MV
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 22 ===
+ 
+Konzeptionelle Grundlagen 
+ 
+16 
+Aufteilung wird der gesamte Entscheidungsprozess also stufenweise abarbeitbar gemacht. Bei 
+einem MDP wird davon ausgegangen, dass sich ein System in einem bestimmten Zustand 𝑧 ∈ 𝑍, 
+mit Z als Menge aller Zustände, befindet und durch die Aktion 𝑎 ∈ 𝐴, mit A als Menge aller mög-
+lichen Aktionen eines Entscheiders mit einer bestimmten Wahrscheinlichkeit 𝑃𝑎(𝑧, 𝑧′) in einen 
+neuen Zustand 𝑧′ übergeht. Das heißt, 𝑃𝑎(𝑧, 𝑧′) ist die Wahrscheinlichkeit, dass ein System, wel-
+ches zum aktuellen Zeitpunkt 𝑡 im Zustand 
+𝑧 ist, den neuen Zustand 𝑧′ im Zeitpunkt 𝑡 + 1 einnimmt, wenn die Aktion 𝑎 durchgeführt wird, 
+wobei der Entscheider eine Belohnung 𝑅𝑎(𝑧, 𝑧′) erhält. Der neue Zustand (𝑧′) ist dabei nur von 
+dem aktuellen Zustand (𝑧𝑡) und der aktuellen Aktion (𝑎𝑡) abhängig aber nicht von früheren Zu-
+ständen und Aktionen. Diese Abhängigkeit wird durch 𝑃 beschrieben. Diese Eigenschaft wird auch 
+„Markov-Eigenschaft“ genannt. Entscheidend für die Lösung des Problems ist nun, dass die Stra-
+tegie 𝜋, also die jeweilige Aktion im aktuellen Zustand (d. h. 𝑎𝑡 = 𝜋(𝑧𝑡)), so festgelegt wird, dass 
+die erwarteten Belohnungen maximiert werden. 
+Damit der Wert der zukünftigen Belohnungen im aktuellen Zustand ermittelt werden kann, muss 
+eine Gleichung definiert werden, die die Summe der zukünftigen Belohnungen bezogen auf den 
+heutigen Zeitpunkt, also unter Zuhilfenahme eines Diskontierungsfaktors 𝛾 mit 0 ≤𝛾 ≤ 1, er-
+rechnet. 
+∑
+𝛾𝑡𝑅𝑎𝑡
+∞
+𝑡=0
+(𝑧𝑡, 𝑧𝑡+ 1)                   (2.1) 
+Mit Hilfe der dynamischen Programmierung (Domschke & Drexl, 2007, S. 159–160) lässt sich nun 
+ein Vorgehen zur Lösung eines MDP berechnen. Im Folgenden wird angenommen, dass die Wahr-
+scheinlichkeits- oder auch Transitionsfunktion 𝑃 genauso wie die Funktion für die Belohnung 𝑅 
+bekannt sind. Jetzt soll diejenige Strategie 𝜋 ermittelt werden, welche die erwartete Belohnung 
+maximiert. Mit der nachfolgend aufgeführten Formel wird eine Strategie definiert, deren Aktionen 
+den Erwartungswert des Ertrags (diskontierte Belohnung) in jedem Zustand über alle Aktionen 𝑎 
+maximieren (argumentum maximi (argmax)). Die optimale Strategie 𝜋∗, die den erwarteten Ertrag 
+in jedem Zustand maximiert ist definiert als: 
+ 
+𝜋(𝑧) ≔𝑎𝑟𝑔max
+𝑎{∑𝑃𝑎(𝑧, 𝑧´)(𝑅𝑎(𝑧, 𝑧´) + 𝛾𝑉(𝑧´))
+𝑧´
+}            (2.2) 
+𝑉(𝑧′) bestimmt den Erwartungswert der Belohnung, wenn im Zustand 𝑧′ wieder die Strategie 
+𝜋 angewendet wird, d.h. die Aktion 𝜋(𝑧′) ausgeführt wird. Es ist im Zustand 𝑧′ nicht bekannt, 
+welches der nächste Zustand sein wird, sondern nur die entsprechenden Wahrscheinlichkeiten 
+𝑃𝜋(𝑧)(𝑧, 𝑧′), deswegen ist es nicht möglich die Belohnung direkt anzugeben und es muss auf den 
+Erwartungswert zurückgegriffen werden. 𝑉(𝑧) ist dabei rekursiv definiert: 
+𝑉(𝑧) ≔ ∑𝑃𝜋(𝑧)(𝑧, 𝑧´)(𝑅𝜋(𝑧)(𝑧, 𝑧´) + 𝛾𝑉(𝑧´))
+𝑧´
+           (2.3) 
+In der ursprünglichen Anwendung lösen MDP klassische Optimierungsprobleme in einem spezifi-
+schen Umfeld, wobei nicht in jedem Fall von der Erzeugung von BI im hier definierten Kontext 
+gesprochen werden kann. Sollen ein MDP für die BI eingesetzt werden, kann er in einer abgeän-
+derten bzw. erweiterten Form genutzt werden, um das organisationale Lernen zu unterstützen. 
+1VAh4ks2Y+aCyKTty/7T1T+YhfNZNr0U5zhtx7wp0oZVXROIiXVeGSiIuqukHVMq
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 23 ===
+ 
+Konzeptionelle Grundlagen 
+17
+Ein Entscheidungsproblem wird durch die gewählte Strategie und das zugrunde gelegte Werte-
+system so gelöst, dass es ein optimales Ergebnis aufweist, d. h., dass es keinen weiteren Zustand 
+für das System gibt, der besser ist als der Zustand in der vorhergehenden Iteration. Insbesondere 
+interessant ist das Lernen durch die gewährten Belohnungen, die einem Entscheider ein Feedback 
+darüber geben, ob die Aktion erfolgreich war13. 
+Das weltbekannte Spiel Pac-Man ist z.B. ein Markov-Entscheidungsprozess, da der neue Zustand 
+nach einer Aktion nur von dem aktuellen Zustand und der aktuellen Aktion abhängig ist, aber 
+nicht von früheren Zuständen und Aktionen. 
+2.2.2 Handlungsorientierte Modellierung von Entscheidungsprozessen 
+Der zweite Ansatz systematisiert den konkreten Entscheidungsprozess nach sei-
+nen Phasen und löst sich dabei zunächst von den Ansprüchen der expliziten 
+Formalisierung und Quantifizierung des Zielsystems und dessen Optimierung. 
+Einige Beispiele finden sich bei Hummeltenberg (2008, S. 4–7). Er hat vier typische Systematisie-
+rungen ausgewählt, die in der Literatur Verbreitung gefunden haben. Das Phasenmodell nach 
+Simon (1960/1977), das SECI-Modell nach Nonaka und Takeuchi (1995), der OODA-Loop nach 
+Boyd (1995) und der PDCA-Kreislauf nach Deming (1982). Aufgrund der besonderen Bedeutung 
+für die handlungsorientierte Modellierung wird in dieser Einheit nur der PDCA-Kreislauf näher 
+vorgestellt. 
+2.2.2.1 PDCA-Kreislauf nach Deming (1982)  
+Eines der bekanntesten Modelle für Entscheidungsprozesse wurde von Deming bzw. ursprünglich 
+von Shewhart vorgeschlagen (Gabor, 1990). Er hat es zwar im Kontext des Qualitätsmanage-
+ments, und hier vor allem der Prozessverbesserung entwickelt, es lässt sich aber auch auf andere 
+Entscheidungssituationen anwenden. Unter den vier Phasen plan – do – check – act (PDCA) fasst 
+Deming den gesamten Ablauf einer Entscheidungsfindung zusammen (vgl. auch Abb. 5). 
+_________________________________________________ 
+13 Grundlage der Überlegungen zu diesem Thema: „Reinforcement Learning“ (Sutton & Barto, 1998). 
+Zweiter Ansatz-punkt: 
+Handlungs-orientierte 
+Model-lierung 
+naAHEKbI+MiKNSbonWzYJoBaLB3ADBIEh2cJCznRiEwn2kWndH8ibLLnQOjjVDKN
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 24 ===
+ 
+Konzeptionelle Grundlagen 
+ 
+18 
+ 
+Abbildung 5: PDCA-Kreislauf (Deming, 1982). Dargestellt in Anlehnung an: Hummeltenberg (2008, S. 7). 
+1. 
+Plan: Die Entscheidungssituation muss erfasst und die Verbesserungsmöglichkeiten für die 
+betroffenen Prozesse müssen untersucht werden. Hierzu können z.B. auch prototypisch Ver-
+besserungen geplant und umgesetzt werden, um Auswirkungen zu untersuchen. 
+ 
+2. 
+Do: Die als erfolgversprechend eingeschätzten Alternativen aus der Planungsphase werden 
+hier umgesetzt. Gleichzeitig müssen die Ergebnisse der Veränderungen gemessen werden. 
+So ist es also wichtig, schon in der Planungsphase festzulegen, wie und mit welchen Kenn-
+zahlen die Messung stattfinden soll. Je nachdem, wie umfangreich die geplanten Verände-
+rungen sind, wie vorhersehbar die Konsequenzen sind und wie groß der Eingriff in das Ta-
+gesgeschäft ist, kann es sinnvoll sein, die Umsetzung zunächst in einem Pilotprojekt 
+vorzunehmen. 
+ 
+3. 
+Check: In dieser Phase werden die Messergebnisse überprüft und ausgewertet. Die Ergebnisse 
+und Schlussfolgerungen müssen im Entscheiderkreis diskutiert werden. 
+ 
+4. 
+Act: Diese Phase ist die Aktionsphase: Eine Entscheidung über die angestrebten Verbesserun-
+gen muss gefällt werden. Mit dieser Entscheidung wird die konkrete Veränderung und An-
+passung der Ablauforganisation entschieden. 
+Da auch dieses Modell einen Kreislauf abbildet, ist der Verbesserungsprozess nach der letzten 
+Phase nicht abgeschlossen, sondern geht mit der konkreten Umsetzung wieder in die Planungs-
+phase über, die überprüft, wie erfolgreich die Veränderungen sind. 
+Deming (1982) hat sich an den Anforderungen zur kontinuierlichen Verbesserung in einem Pro-
+duktionsumfeld orientiert. Damit hat er zunächst eine operative Perspektive verfolgt. Aber auch 
+die strategische Sicht kann durch den PDCA-Kreislauf abgebildet werden, indem in der Phase 
+„Do“ rekursiv ein weiterer PDCA-Kreislauf integriert wird. So wäre dann der „äußere“ Kreislauf 
+nHAponsMNx3XB0eGLbRUKB51/XWc/+VTKZEI31iZLcac6H5+AxhYapBvItvzajee
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 25 ===
+ 
+Konzeptionelle Grundlagen 
+19
+auf die strategische Entwicklung ausgerichtet und der „innere“ Kreislauf auf die operative Ver-
+besserung. Das Ziel mit der Anwendung des Kreislaufs ist die Verbesserung der Qualität im Zeit-
+ablauf und mit der strategischen Weiterentwicklung des äußeren Kreislaufs Innovationssprünge 
+zu ermöglichen. 
+Fiktives Fallbeispiel PDCA-Zyklus14 
+Der Vorstand eines Flaschenherstellers verabschiedet eine neue Strategie, um die Qualitätsfüh-
+rerschaft des Unternehmens bei der Flaschenproduktion auszubauen und die Kundenzufrieden-
+heit zu erhöhen. Dafür definiert das Managementteam folgende sogenannte Durchbruchziele: 
+- Die Produktionsverfahren müssen dem neusten Stand der Technik entsprechen. 
+- Die Arbeit muss sich am Null-Fehler-Prinzip orientieren. 
+- Das Streben nach kontinuierlicher Verbesserung soll bei den Mitarbeitern verankert werden. 
+Diese Ziele wurden auf alle Ebenen heruntergebrochen. Bei einem Meeting weist der Abteilungs-
+leiter die Gruppenleiterin darauf hin, dass die von ihr betreuten fünf Etikettierlinien weniger als 
+die angestrebten 25.000 Flaschen pro Tag produzieren. Die Folgen: Lieferengpässe und Unzu-
+friedenheit bei Kunden. Dieses Problem soll die Gruppenleiterin nun lösen. Gemäß dem PDCA-
+Zyklus kommt es zu dem folgenden Vorgehen. 
+1. Phase: Plan 
+Die Gruppenleiterin analysiert die Produktionszahlen der zurückliegenden Wochen. Dabei stellt 
+sie fest, dass eine Etikettierlinie nur 4.200 statt der gewünschten 5.000 Flaschen pro Tag ausge-
+liefert hat. Der zuständige Teamleiter vermutet einen hohen Ausschuss als Grund. Im Ausschuss-
+lager schauen sie sich die aussortierten Flaschen an. Bei fast allen Ausschussflaschen sind die 
+Etiketten faltig und schief angebracht. Die Gruppenleiterin fragt den Teamleiter nach möglichen 
+Problemursachen. Seine Vermutung: Die gelieferten Etiketten sind nicht in Ordnung. Ein Anruf 
+bei der Eingangsprüfung ergibt, dass die Lieferung einwandfrei war. Somit muss das Problem 
+beim Etikettieren selbst zu suchen sein. Der Teamleiter schaut sich dann die Ausschusszahlen in 
+den Schichtberichten an. Dabei zeigt sich: Über 80 Prozent der Ausschussflaschen werden in der 
+Nachtschicht produziert. Also beobachten die Gruppenleiterin und der Teamleiter in der folgen-
+den Nachtschicht den Etikettierprozess. Dabei stellten sie fest: Ab und an staut sich das Etiket-
+tierband in der Spenderstation, weshalb die Etiketten schief aufgebracht werden. Als Ursache 
+vermutet der Teamleiter, dass das Etikettierband beim Wechseln falsch eingefädelt wird. Immer 
+wenn das Problem auftritt, hat einer der beiden neuen Mitarbeiter das Band eingelegt. Die Ur-
+sache steht fest. 
+Die Gruppenleiterin bittet den Teamleiter daraufhin, ein Ziel für die Gegenmaßnahmen zu for-
+mulieren. Seine Antwort: Das Ziel sei doch klar, nämlich den Ausschuss zu reduzieren. Seine 
+Vorgesetzte erinnert ihn daran, dass Ziele „smart“, also auch messbar und terminiert sein sollten. 
+Daraufhin formuliert der Teamleiter das Ziel neu: Die Ausschussquote der Nachtschicht soll in 
+acht Wochen, am 31. März, 50 Prozent niedriger sein. Dieses Ziel will er durch eine Schulung 
+der neuen Mitarbeiter erreichen. Das sollte reichen. 
+_________________________________________________ 
+14 https://www.business-wissen.de/artikel/qualitaetsmanagement-der-pdca-zyklus-am-beispiel-erklaert/ 
+ix2WpnFD520nufSncO078B9t8VMd1h25S8WYK8NeNZJ2O7K9m/dyHrHPLai1UdsZ
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 26 ===
+ 
+Konzeptionelle Grundlagen 
+ 
+20 
+2. Phase: Do 
+Damit gibt sich die Gruppenleiterin aber nicht zufrieden. Sie fragt den Teamleiter, ob er genau 
+wisse, wie die Mitarbeiter beim Rollenwechsel vorgingen und ob es eine schriftliche Beschrei-
+bung für diesen Vorgang und zum Einarbeiten neuer Mitarbeiter gebe. Der Teamleiter verneint. 
+Danach beobachten beide in einer weiteren Nachtschicht den Rollenwechsel durch erfahrene 
+und unerfahrene Mitarbeiter. Sie stellen Unterschiede fest: Die erfahrenen achten darauf, dass 
+die Etiketten beim Wechsel den Boden nicht berühren. Bei den unerfahrenen hingegen schleiften 
+die Etiketten oft auf dem Boden. Dadurch gelangt Schmutz in den Etikettenspender, so dass sich 
+das Band von Zeit zu Zeit verhakt – und dies führt zu den Ausschussflaschen. 
+Die Gruppenleiterin bittet den Teamleiter, sich mit seinem Team mögliche Gegenmaßnahmen 
+zu überlegen, diese zu priorisieren und einen Aktionsplan zu erstellen. Die Gegenmaßnahmen 
+lauten unter anderem: 
+Der Boden wird alle zwei Stunden gereinigt. 
+Auf dem Boden vor dem Etikettenbandabwickler wird ein Gitterrost montiert, durch den 
+Schmutz fallen kann. 
+Der Teamleiter definiert schriftlich den idealen Prozessablauf beim Rollenwechsel und schult 
+diesbezüglich seine Mitarbeiter. 
+Aufgrund der Priorisierung erstellen die Teammitglieder einen Maßnahmenplan. Außerdem ver-
+einbaren sie: 
+Der aktuelle Status des Projekts wird bis Ende März an der Tafel der Etikettierlinie dokumentiert. 
+Über den Stand des Projekts wird regelmäßig in der täglichen Runde des Teams gesprochen. 
+3. Phase: Check 
+In den folgenden Wochen treffen sich die Gruppenleiterin und der Teamleiter wöchentlich, um 
+die Entwicklung der Ausschusszahlen zu studieren. Zudem definieren sie aufgrund der bisher 
+gesammelten Erfahrungen weitere Maßnahmen. Zum Beispiel wird die Maschine immer dann 
+gestoppt, wenn das Etikettenband den Boden berührt. Das führt dazu, dass der Ausschuss am 
+31. März um fast 70 Prozent sinkt. Das zunächst formulierte Ziel von 50 Prozent weniger Aus-
+schuss wurde somit übertroffen. 
+Die Gruppenleiterin gratuliert dem Teamleiter zu diesem Erfolg und bittet ihn um eine Einschät-
+zung hinsichtlich der Wirkung bei den Kunden, der Flaschenfabrik und seiner eigenen Person. 
+Außerdem soll er ihr die Gründe für den Erfolg nennen. Seine Antwort: Der Rollenwechsel sei 
+nun prozesssicher. Dies führe zu weniger Reklamationen, und die Flaschenfabrik spare wegen 
+des geringeren Ausschusses Geld. Zudem sei durch die Problemlösung sein Selbstvertrauen ge-
+stiegen, auch andere Probleme aktiv anzugehen – um den Ausschuss gemäß dem Null-Fehler-
+Prinzip noch weiter zu senken. 
+Als Gründe für den Erfolg nennt der Teamleiter: Durch das strukturierte Vorgehen sei nicht nur 
+die Kernursache des Problems ermittelt, sondern auch eine pragmatische und nachhaltige Lö-
+sung gefunden worden. Auch, weil alle Mitarbeiter ihre Erfahrungen in den Verbesserungspro-
+zess einbrachten. 
+4. Phase: Act 
+Nach dieser Einschätzung fragt die Gruppenleiterin den Teamleiter, was er hinsichtlich einer 
+Standardisierung tun wolle. Er werde zwei schriftliche Beschreibungen erstellen. Eine, die den 
+optimalen Prozesses „Wechsel der Etikettenrolle“ beschreibt. Eine zweite, die das Einarbeiten 
+neuer Mitarbeiter beschreibt. Außerdem werde er fortan täglich eine Prozesskontrolle durchfüh-
+ren, um Soll-Ist-Abweichungen früher zu erkennen. 
+nmVv1X+SL7CHYD9OtE/CYUh0H6fgV8vbINlasP3ofSRhbouUIyVP0TI+uiD83nj0
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 27 ===
+ 
+Konzeptionelle Grundlagen 
+21
+Die Gruppenleiterin lobt den Teamleiter und bittet ihn, im nächsten Teamleiter-Meeting die 
+Teamleiter der vier anderen Etikettierlinien über den neuen Standard und die Erkenntnisse im 
+PDCA-Problemlösungsprozess zu informieren, damit sie von den Erfahrungen lernen. Sie selbst 
+informiert den Abteilungsleiter für die Flaschenfertigung, dass das Problem der zu geringen Fla-
+schenproduktion gelöst sei. 
+2.2.2.2 Rolle der BI in handlungsorientierten Entscheidungsprozessen  
+Bemerkenswert ist, dass die verschiedenen Systematisierungen von Entscheidungsprozessen keine 
+erheblichen Unterschiede aufweisen. Sie umfassen immer eine Analysephase, in der das Entschei-
+dungsproblem untersucht und durchdrungen werden muss, eine Phase der Datensammlung und 
+Zusammenstellung, eine Phase der Analyse und Ermittlung von Alternativen sowie deren Konse-
+quenzen im Entscheidungsfall, eine Bewertung der Alternativen, die Auswahl der Alternativen mit 
+der höchsten Priorität sowie eine Reflektion der Entscheidung. Der Schritt zum „lernenden Unter-
+nehmen“, in der BI auch häufig als „feedback loop“ bezeichnet, ist nicht in allen Ansätzen ver-
+treten, würde aber unabdingbar dazu gehören, damit die Umsetzung der Entscheidung nachhaltig 
+ist. 
+Für die typischerweise vier verschiedenen Phasen der Entscheidungen ist ent-
+sprechend unterschiedliche „Business Intelligence“, hier gemeint in Form von 
+Informationen und nicht als ganzheitliches Konzept BI, erforderlich, die Tabelle 
+2 hilft, das für die Entscheidung erforderliche Wissen zu erzeugen. Sie lässt sich, 
+wie in der folgenden gezeigt, systematisieren (Hummeltenberg, 2008, S. 7). Diese verschiedenen 
+Ausprägungen von Entscheidungsprozessen sind die Basis für die fachlichen Fragestellungen, die 
+es in der jeweiligen Phase zu lösen gilt. 
+Tabelle 2: „Intelligence“ für den Entscheidungsprozess: Beispiele für Informationen in den verschiedenen 
+Phasen (Hummeltenberg, 2008) 
+Phase 
+Gefördertes Fachwissen 
+„Business Intelligence“ 
+I 
+Problemlösungswissen 
+z.B. Domäneninformation (z.B. über das Entschei-
+dungsumfeld (Geschäftsmodell, Markt)), Trendana-
+lysen, Systemanalyse und –design, Alternativen, Sze-
+narien 
+II 
+Transformationswissen 
+(z.B. 
+in Bezug auf das organisatori-
+sche Change-Management) 
+z.B. Informationen zu Systemverhalten, Kontextana-
+lysen, Stärken-, Schwächen-, Chancen-, Gefähr-
+dungs-Analysen 
+III 
+Methodenwissen (z.B. in Be-
+zug auf Leistungsmessungs-
+verfahren) 
+z.B. Informationen zu Messmethoden und deren Ein-
+satzgebieten, Ergebnisse von Leistungsmessungen, 
+Risikoanalysen, Qualitätsinformation 
+Informationen für die 
+verschiedenen Phasen 
+der Ent-
+scheidungsprozesse 
+AMmzfUOw/Zq2LNa2JibqnB50PzvJ8DetBY8Zfp2K4IxIGJ8zKpig3eI1nGF0yzRh
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 28 ===
+ 
+Konzeptionelle Grundlagen 
+ 
+22 
+IV 
+Steuerungswissen 
+z.B. Soll-Ist-Vergleiche, Planzahlen, Leistungskenn-
+zahlen, Abweichungsanalysen in qualitativen Berei-
+chen 
+Übungsaufgaben 
+1. Vollziehen Sie die Entwicklung des Begriffs „Business Intelligence“ und „Business Intelli-
+gence System“ nach. 
+2. Entwickeln Sie ein begriffliches Konzept für „Intelligenz“. 
+3. Nach welchen beiden grundlegenden Ansätzen lassen sich Entscheidungsprozesse model-
+lieren? 
+4. Nach welchen Prinzipien erfolgt eine formale Modellierung? Welche Aussagen lassen sich 
+machen, und welche Aussagen sind nicht möglich? 
+ 
+ 
+orNKVhL9TTDXI8AQh4lipeA9YrfDntMcnNEp8971LDvVSWnrdUgfpj3kG7ckChol
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 29 ===
+ 
+Business-Intelligence-Architektur 
+23
+3 Business-Intelligence-Architektur 
+Zu der grundlegenden Aufgabe von BI gehören die Datenspeicherung, die Herausfilterung von 
+bestimmten Ereignissen („Was ist passiert?“) und deren Ursachen („Warum ist etwas passiert?“) 
+aus großen Datenmengen sowie die Prognose von Geschäftsereignissen („Was wird passieren?“). 
+Darüber hinaus ermöglichen komplexere BI-Verfahren wie z.B. das Data Mining vorhersagende 
+Analysen („Was könnte geschehen?“) sowie einen darauf basierenden Vergleich von Handlungs-
+alternativen („Was soll geschehen?“) (Dorschel 2015, S. 56; Kemper et al. 2010, S. 4ff.). 
+Bevor in Einheit 2 zum Data Mining und in Einheit 3 zur intelligente Datenhaltung und Datenbe-
+reitstellung vertieft auf die Themen eingegangen wird, soll die Thematik aufgrund ihrer großen 
+Bedeutung für die Business Intelligence in Einheit 1 schon eigeführt werden. Folgende zu be-
+obachtende Trends sind für die Entwicklung von BI-Konzepten und BI-Systemen ausschlaggebend 
+(Alpar et al. 2014, S. 255; Gantz und Reinsel 2012, S. 5ff.): 
+• 
+Das Volumen der weltweit verfügbaren Daten ist in den vergangenen Jahrzehnten expo-
+nentiell gewachsen. Mittlerweile verdoppelt sich das globale Volumen digital verfügbarer 
+Daten ca. alle zwei Jahre. 
+• 
+Die Heterogenität der verfügbaren Daten hat deutlich zugenommen (strukturierte Daten, 
+Text, Grafik, Audio, Video, etc.) und damit auch die Komplexität der Datenanalysen. 
+• 
+Die zunehmende Globalisierung und Dynamisierung der Märkte erfordern Managemen-
+tentscheidungen in immer kürzeren Zeitspannen. 
+Vor diesem Hintergrund bieten BI-Konzepte und BI-Systeme folgende technische und ökonomi-
+sche Nutzenpotenziale (Alpar et al. 2014, S. 234): 
+• 
+Bereitstellung einer integrierten Datenbasis und damit Erhöhung der Qualität von Ma-
+nagemententscheidungen aufgrund einer besseren Informationsversorgung 
+• 
+Erschließung bislang nicht oder nur schwer zugänglicher Daten wie z.B. externer oder his-
+torischer Daten sowie Ermöglichung flexibler und insbesondere auch multidimensionaler 
+Datenanalysen 
+• 
+Verbesserung der Wettbewerbsfähigkeit aufgrund der Möglichkeit, unternehmensrele-
+vante Trends frühzeitig zu entdecken und ggf. erforderliche Maßnahmen umgehend ein-
+zuleiten 
+• 
+Wettbewerbsrelevante Erhöhung der Kundenzufriedenheit aufgrund verbesserter Kun-
+denanalysen, wie sie z.B. durch die Möglichkeit der Verknüpfung von Daten unterschied-
+licher Unternehmensbereiche ermöglicht werden 
+Den technischen Kern von BI-Systemen bilden Data-Warehouse-Systeme, die unternehmensweit 
+eine einheitliche, konsistente Datenbasis auf der Grundlage interner und exter-
+ner Datenquellen für die Managementunterstützung bereitstellen (Kemper et 
+al. 2010, S. 19). Im weiteren Sinne umfassen BI-Systeme auch Softwarekompo-
+nenten zur Extraktion, Bereinigung und Übernahme von Daten aus verschiedenen Datenquellen 
+sowie Werkzeuge zur Analyse, Aufbereitung und Präsentation von Daten. Abbildung 6 zeigt die 
+grundlegende Architektur von BI-Systemen (auch: Hub-and-Spoke-Architecture bzw. Speichen-
+Komponenten einer 
+Applikationsarchi-
+tektur für die BI 
+9AzQzu1TiwTuoWPGENcjfD0qhuaOymuQTZ9Bw9NwkC8RMn/Rx3cXQKJlVS2qLWHy
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 30 ===
+ 
+Business-Intelligence-Architektur 
+ 
+24 
+Naben-Architektur), die sich in vier Stufen gliedert (Kimball und Ross 2011, S. 7ff; Krcmar 2010, 
+S. 84). 
+ 
+Abbildung 6: Typische Applikationsarchitektur von der Datensammlung bis zur Auswertung, Hub-and-
+Spoke-Architecture15 
+Die erste Stufe umfasst interne und externe Datenquellen, zu denen u.a. operative Anwendungs-
+systeme zählen. Auf der zweiten Stufe, dem Staging, werden die internen und externen Daten 
+aus den ursprünglichen Datenquellen extrahiert, aufbereitet und für weiterführende Analysen in 
+ein Data Warehouse übernommen (Extraktion-Transformation-Laden-Prozess). Ein Data Wa-
+rehouse wird von einem Unternehmen nicht als fertiges Produkt erworben, sondern unterneh-
+mensspezifisch konzipiert und mit Hilfe geeigneter Werkzeuge implementiert, was u.U. mehrere 
+Jahre dauern kann. Durch ein Data Warehouse ergeben sich insbesondere folgende Vorteile (Lau-
+don et al. 2006): 
+• 
+Verbesserung der Datenqualität durch Standardisierung der Datenbasis und Bereitstellung 
+einer Metadatenbank  
+• 
+Schneller Zugriff auf alle für die Entscheidungsfindung relevanten Daten sowie deren effi-
+ziente Analyse aufgrund der umfassenden und einheitlichen Datenbasis  
+_________________________________________________ 
+15 Supply-Chain-Management-Systeme (SCM-Systeme) umfassen alle betrieblichen Informationssysteme, die den Da-
+ten- und Informationsaustausch zwischen einem Unternehmen sowie dessen Lieferanten und (End-)Kunden unterstüt-
+zen. Ein Enterprise-Resource-Planning-(ERP)-System unterstützt alle in einem Unternehmen auftretenden Geschäftspro-
+zesse. 
+Customer-Relationship-Management-Systeme 
+(CRM-System) 
+sind 
+beziehungsorientierte, 
+von 
+einem 
+Unternehmen hierarchisch gesteuerte Marketinganwendungssysteme. 
+bZNvzyp/+XlgxderA9MgFX4Ghai+4KhOYHQQ0Pn/0+ASzE7OCvlMO9y8W3fasePd
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 31 ===
+ 
+Business-Intelligence-Architektur 
+25
+• 
+Reduktion von Kosten durch verringerten Aufwand bei der Datensuche aufgrund einer 
+einheitlichen Datenbasis  
+• 
+Anwenderfreundliche Zugriffsmöglichkeiten durch eine integrierte Benutzeroberfläche 
+(Frontend) und die darin integrierten Analysewerkzeuge 
+In der dritten Stufe werden die aufbereiteten Daten sowohl in einem Langzeitspeicher (dem ei-
+gentlichen Data Warehouse) archiviert als auch zu einzelnen Themenbereichen (z.B. Marketing, 
+Personal) in Data Marts verdichtet abgelegt (Stufe 3). In der vierten Stufe werden die Auswer-
+tungs- und Präsentationswerkzeuge zur Entscheidungsunterstützung (engl. Decision Support) zu-
+sammengefasst. Neben Berichtsgeneratoren, wie sie z.B. in Berichts- und Kontrollsystemen einge-
+setzt werden, und Abfragesprachen gehören hierzu die Analysewerkzeuge OLAP und Data Mining 
+sowie Büroinformationssysteme (z.B. Microsoft Office) und browserbasierte Werkzeuge. 
+Online Analytical Processing (OLAP) ist ein Ansatz, um Daten eines Data Warehouse nach meh-
+reren Dimensionen zu analysieren. „Online“ steht dabei für eine Just-in-time-Bereitstellung der 
+Daten. Im Gegensatz zu den in Managementunterstützungsverfahren verwendeten Methoden 
+und Verfahren ist OLAP auf die Analyse sehr großer Datenvolumina ausgerichtet (Laudon et al. 
+2010). 
+Effizienzsteigerungen des Planungs- und Berichtswesens bei Melitta16        
+  
+Unternehmensprofil: 
+Die Melitta Unternehmensgruppe steht für die Herstellung und den Vertrieb verschiedener 
+Markenartikel in den Bereichen Kaffee, Aufbewahrung, Zubereitung von Lebensmitteln und 
+Sauberkeit im Haushalt. Die Hauptmärkte sind Europa, Nord- und Südamerika sowie Asien. Die 
+Unternehmensgruppe besteht aus der Melitta Zentralgesellschaft und zehn Unternehmensbe-
+reichen mit ca. 3700 Mitarbeitern und einem Umsatz von etwa 1,4 Milliarden Euro. 
+ 
+Ausgangslage: 
+Die einzelnen Unternehmensbereiche erstellten die Planungs-, Monats- und Quartalsberichte   
+für die Melitta Zentralgesellschaft überwiegend manuell in Excel-Dateien. Die weltweit agie-
+renden Unternehmensbereiche verfügten über eigenständige Strukturen, Prozesse und ver-
+schiedenste ERP-Systeme: Navision, SAP, Baan und weitere. Für die Zahlenbeschaffung, Erfas-
+sung in Excel und Validierung mussten hohe Gesamtaufwendungen erbracht werden. Die 
+Unternehmensbereiche waren nicht zentral vernetzt. Die Daten in Form von Excel-Tabellen 
+wurden über eine Dokumentenaustauschplattform der Zentrale zur Verfügung gestellt. Hier 
+erfolgte eine manuelle Eingabe der Daten. 
+ 
+Zielsetzung: 
+Um die Prozesse zur Berichtserstellung zu verkürzen, Fehlerquellen zu reduzieren und das Be-
+richtswesen zu optimieren, sollten: 
+_________________________________________________ 
+16 https://www.linkfish.eu/project/melitta/ 
+pMYePvUPM3p0rEpzo1lUw7p7nWzJEtKAj93DCcZzX0Svpq7wz0XvqY6tAEA+WfRa
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 32 ===
+ 
+Business-Intelligence-Architektur 
+ 
+26 
+- manuelle, zeitaufwendige Eingaben in der Zentralgesellschaft und den Unternehmensberei-
+chen abgebaut werden, 
+- Datenflüsse durch Systemintegration automatisiert werden, 
+- die Datenmeldungen ohne weiteren Mehraufwand abrufbar sein, - und der Berichtsumfang 
+insgesamt reduziert werden. 
+ 
+Lösung: 
+Auf der Grundlage einer Standortbestimmung und Analyse der Unternehmensbereiche wurde 
+ein Konzept zur Prozessoptimierung erstellt, das folgende Punkte umfasst: 
+- Aufbau einer gemeinsamen Datenplattform (Data Warehouse) für alle Unternehmensberei-
+che, die die heterogenen Systeme integriert; 
+- Einführung von automatisierten Schnittstellen für Datenimporte in bestehende Systeme 
+- Anbindung aller zehn Unternehmensbereiche an das neue Data Warehouse; 
+- Automatisierung der Datenladeprozesse 
+ 
+Das Unternehmen konnte somit durch die umfassende Einführung von Business Intelligence 
+die Bereitstellung und Verteilung von Daten optimieren. 
+Übungsaufgaben 
+1. Welche Komponenten umfasst die BI-Architektur und nach welchen Prinzipien ist eine BI-
+Architektur aufgebaut? 
+2. Was unterscheidet ein Data Warehouse von Data Marts? 
+ 
+ 
+UqiadrM12cUl7FVvQVYwlcdgKBmUtUkQvE2r0/SeZY0z8u1LD6b8psr0Wx9eDbbY
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 33 ===
+ 
+Einordnung in das betriebliche Informationsmanagement 
+27
+4 Einordnung in das betriebliche Informationsmanagement 
+Nach diesen Erläuterungen ist ein guter Ansatzpunkt gegeben, um BI in der 
+betrieblichen Informationsverarbeitung zu positionieren. In diesem Modul wird 
+der Begriff Betriebliches Informationsmanagement wie folgt definiert. 
+Unter dem Begriff Betriebliches Informationsmanagement (BIM) wird der gesamte informati-
+onsverarbeitende Teilbereich einer Organisation (oder deren Teilbereiche) verstanden. Das Be-
+triebliche Informationsmanagement besteht aus Menschen, der Aufbau- und Ablauforganisa-
+tion, der IT sowie allen Kommunikationsverbindungen. 
+Die BI verbindet, den vorhergehenden Ausführungen folgend, also die individuellen Entschei-
+dungsprozesse und daraus entstehende Informationsbedarfe mit den organisatorischen Struktu-
+ren und Bedarfen sowie der technischen Infrastruktur. So lassen sich die in Abschnitt 1.2 grob 
+dargestellten Zusammenhänge noch weiter verfeinern (vgl. Abbildung 7). Neben der BI und dem 
+DM als Schnittstelle zwischen betriebswirtschaftlichem und technischem Informationsmanage-
+ment berücksichtigt die Einordnung auf der technischen Ebene DWHs als Mittel der Datenhaltung 
+sowie Management Information Systems (MISs), Executive Information Systems (EISs) und Enter-
+prise-Resource-Planning (ERP)-Systeme als mögliche Applikationen. Wenn aus betriebswirtschaft-
+licher Sicht der Bedarf für spezielle Analysen entsteht, z.B. im Customer-Relationship-Manage-
+ment (CRM), werden diese i. d. R. ebenfalls auf technischer Ebene unterstützt. 
+ 
+Abbildung 7: Einordnung der BI in das Betriebliche Informationsmanagement 
+Im Rahmen der fachlichen, methodischen, aber auch der technischen BI ist die 
+Unterscheidung zwischen operativen und dispositiven Daten wichtig. Die BI ba-
+siert auf der Verarbeitung von operativen Daten und erzeugt dispositive Daten 
+zur Planung und Steuerung des Unternehmens, also zur Entscheidungsunterstützung. 
+Definition des 
+Begriffskonzepts BI 
+In der BI werden 
+dispositive Daten 
+verwendet 
+arfvib3FA44pw03hRj4M8Acm3J+cViThY2K24elbxeumw9C28B4W12z+ejcZRn4x
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 34 ===
+ 
+Einordnung in das betriebliche Informationsmanagement 
+ 
+28 
+Die nachfolgende Tabelle stellt die Charakteristika operativer und dispositiver Daten gegenüber. 
+Tabelle 3: Gegenüberstellung der Charakteristika von operativen und dispositiven Daten (vgl. Kemper et al., 
+2006, S. 14) 
+ 
+Operative Daten 
+Dispositive Daten 
+Ziel 
+Abwicklung 
+der 
+Geschäftspro-
+zesse 
+Entscheidungsorientiert; Informa-
+tionsbasis für die Managementun-
+terstützung 
+Ausrichtung 
+Detaillierte, granulare Geschäfts-
+vorfalldaten 
+Verdichtete, transformierte Daten; 
+umfassendes Metadatenangebot 
+Zeitbezug 
+Aktuell; zeitpunktbezogen; auf die 
+die Transaktion ausgerichtet ist 
+Unterschiedliche, aufgabenabhän-
+gige Aktualität; Historienbetrach-
+tung 
+Modellierung 
+Altbestände oft nicht modelliert 
+(funktionsorientiert) 
+Sachgebiets- oder themenbezo-
+gen, standardisiert und endnutzer-
+tauglich 
+Zustand 
+Häufig redundant; inkonsistent 
+Konsistent 
+modelliert; 
+kontrol-
+lierte Redundanz 
+Update 
+Laufend und konkurrierend 
+Ergänzend; Fortschreibung abge-
+leiteter, aggregierter Daten 
+Queries 
+Strukturiert; zumeist statisch im 
+Programmcode 
+Ad-hoc für komplexe, ständig 
+wechselnde Fragestellungen und 
+vorgefertigte Standardauswertun-
+gen 
+4.1 Daten, Informationen und Wissen im Kontext der Business Intelligence 
+Die vorhergehende Betrachtung in diesem Kapitel hat gezeigt, dass BI sich ih-
+rem Wesen nach auf Daten stützt, um Informationen bereitzustellen, die ihrer-
+seits den Entscheidungsprozess unterstützen. Darüber hinaus wird sich spätestens in Einheit 2 
+dieses Lehrbriefes schnell zeigen, dass letztendlich einen Schritt weitergedacht werden muss, d.h. 
+die Information auch in Wissen umgesetzt werden muss. Die Begriffe Daten, Information, Infor-
+mationsobjekt und Wissen sind daher kurz zu nennen und voneinander abzugrenzen. 
+Daten sind syntaktisch geordnete Wahrnehmungen über verschiedene Dinge 
+und Sachverhalte, die in gedruckter, gespeicherter, visueller, akustischer oder 
+sonstiger Form vorliegen (Smolnik 2006, S. 21, Güldenberg 1998, S. 155, Riempp 2004, S. 62). 
+Definition für Daten, 
+Information, Wissen 
+Daten 
+Information 
+zF53YDjktTz9JsPzz3L4CsMRkwIJNGBsnDvstm6h7V8M8RKFkmHRpwzAhd2EPPH+
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 35 ===
+ 
+Einordnung in das betriebliche Informationsmanagement 
+29
+Informationen sind Daten in einem bestimmten Bedeutungskontext. Anwendungs- und Informa-
+tionssysteme speichern Daten und bieten die Möglichkeit, diese Daten so in einen Kontext zu 
+stellen, dass Menschen sie leichter aufnehmen können (Riempp 2004, S. 62). 
+Für die Zeichenkette „Bank“ ist zunächst nicht offensichtlich, ob diese nach den Regeln 
+der deutschen oder der englischen Sprache interpretiert werden soll. Dies ist aber durchaus 
+wichtig, da das deutsche Wort eine Bedeutung hat, die das englische Wort nicht hat. Daten zeich-
+nen sich gemäß obiger Begriffsklärung dadurch aus, dass z.B. bekannt ist, um welche Sprache es 
+sich handelt. Daraus ergibt sich eine Interpretationsvorschrift, hier z.B. die deutsche Sprache, mit-
+tels derer eine Bedeutung für die Zeichenkette ermittelt werden kann. Dies an sich muss nicht 
+eindeutig sein, z.B. konkurrieren hier die Bedeutungen „Geldinstitut“ und „Sitzgelegenheit“. An-
+dererseits hat die andere Zeichenkette „Bench“ mit der anderen Interpretationsvorschrift „engli-
+sche Sprache“ potentiell den gleichen Informationsgehalt „Sitzgelegenheit“17. Zum Verstehen 
+der Information gehört es aber auch, aus dem Kontext zu entnehmen, welche der beiden Bedeu-
+tungen gemeint ist. 
+Informationsobjekte sind kontextuell aufbereitete Daten, d.h. physische oder 
+digitale Objekte (z.B. Dokumente, E-Mails, Webseiten). Erst durch den Pro-
+zess der Aufnahme entfaltet sich bei entsprechender Aufnahmefähigkeit beim Aufnehmenden 
+der Bedeutungsgehalt, d.h. Informationsobjekte werden zu verstandenen Informationen (Riempp 
+2004, S. 63). Es sei hier allerdings darauf hingewiesen, dass im praktischen Umgang beide Begriffe 
+– Information und Informationsobjekt – häufig synonym verwendet werden. 
+Wissen ist die Gesamtheit der Kenntnisse und Fähigkeiten, die Menschen zur Lösung von 
+Problemen einsetzen. Dies umfasst sowohl theoretische Erkenntnisse als auch praktische 
+Alltagsregeln und Handlungsanweisungen. Wissen stützt sich dabei auf Daten und Informationen, 
+ist im Gegensatz zu diesen jedoch immer an Menschen gebunden. Wissen entsteht als individuel-
+ler Prozess in einem spezifischen Kontext und manifestiert sich in Handlungen (Smolnik 2006, S. 
+21).  
+Es ist wichtig zu verstehen, dass eine Information kein Wissen darstellt, sondern dass erst durch 
+die mentale Verknüpfung verschiedener Daten und Informationen durch den Menschen Wissen 
+entstehen kann. Das bedeutet, dass aus Anwenderperspektive eine Information in einem Anwen-
+dungssystem abgelegt und verarbeitet werden kann, dass es sich aus Systemsicht jedoch lediglich 
+um eine Ansammlung von mit Kontext angereicherten Daten handelt (ein Informationsobjekt). 
+Damit ist Wissen immer personengebunden und muss, um einen Unternehmen auch unabhängig 
+von einer Person zur Verfügung zu stehen, auf geeignete Weise expliziert und in Form von Infor-
+mationsobjekten dokumentiert werden. 
+Der grundlegende Zusammenhang zwischen Daten, Information und Wissen wird in Abbildung 8 
+systematisiert. 
+_________________________________________________ 
+17 Beispiele in natürlicher Sprache sind nie vollkommen eindeutig und dienen hier nur der Illustration. 
+Beispiel 
+Informationsobjekte 
+Wissen  
+53cWERoheYTM48MSkpONhilBWNaCaAVuyXzAlO3F/tXblmIwrrrM9b6ehPOAX1tL
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 36 ===
+ 
+Einordnung in das betriebliche Informationsmanagement 
+ 
+30 
+ 
+Abbildung 8: Daten – Information – Wissen 
+Mit dieser Einordnung ist die Grundlage für die Einführung des Analyserahmens gelegt, was kon-
+sequenterweise im nächsten Abschnitt erfolgen wird. 
+ 
+ 
+cwLbEZ2+SDr4Hoaq9ssNbdQAeyfjcQ7qpLTjZjNI3fulVF3/TpwJfGygRRlVx2pQ
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 37 ===
+ 
+Einordnung in das betriebliche Informationsmanagement 
+31
+4.2 Analyserahmen für den Einsatz von Business Intelligence 
+Das nachfolgend vorgestellte Comprehensive Decision Model ist ein Standard-
+modell für die Systematisierung der Informationsbedarfsanalyse. 
+Das Comprehensive Decision Model (CDM) hat zum Ziel, die Informationslogistik im Unterneh-
+men sicherzustellen. Dazu untersucht es aus drei verschiedenen Dimensionen, welche Anfor-
+derungen an die Informationsversorgung gestellt werden (vgl. Abb. 11). Darüber hinaus kann 
+durch die eingesetzten Instrumente zur Erhebung und Dokumentation die Struktur der Infor-
+mationen festgelegt werden. 
+ 
+Abbildung 9: Das Comprehensive Decision Model (CDM) 
+Die Dimension des Akteurs konzentriert sich auf die durch das Individuum entste-
+henden Anforderungen. Jeder informationsverarbeitende Mensch trifft Entschei-
+dungen auf der Basis seiner Erfahrungen, Ausbildung, Einstellung und beeinflusst 
+durch das Umfeld. Daraus ergibt sich ein individueller und damit subjektiver Informationsbedarf, 
+der die Interpretation der Informationen beeinflusst. Bezogen auf die BI bedeutet das also, dass 
+• 
+der Akteur und seine individuellen „Voraussetzungen“ zur Informationsverarbeitung bei der 
+Formulierung der relevanten Fragestellungen mit einbezogen werden müssen, damit sein In-
+formationsbedarf entsprechend abgedeckt wird, 
+• 
+der Kontext, in dem der Akteur entscheidet, berücksichtigt werden muss und 
+• 
+die Art und Weise der Informationsbereitstellung festzulegen ist. 
+In der zweiten Dimension des CDM wird die Organisation untersucht. Sie ist 
+durch ihre Struktur rahmengebend dafür, welche Daten zunächst einmal erho-
+ben werden können. Eine Organisation, die nur auf der Grundlage von Finanz-
+Comprehensive 
+Decision Model 
+Erste Dimension des 
+CDM: der Akteur 
+Erste Dimension des 
+Zweite Dimension des 
+CDM: die 
+Organisation 
+cccpVjKvJnKIOZqdQjVhOdjnXOXSDkK3WZAOtr6nk1BL20puyS/Bd/wKScXHcdb/
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 38 ===
+ 
+Einordnung in das betriebliche Informationsmanagement 
+ 
+32 
+kennzahlen geführt wird, hat normalerweise keine Strukturen, um die Basisdaten für Prozesskenn-
+zahlen zu ermitteln. Die Informationsproduktion bekommt also durch die Organisation zunächst 
+einmal ihren Rahmen. Ein weiterer Aspekt ist die Informationsverwendung. Durch die Ziele und 
+die gewählte Strategie zur Implementierung, ergibt sich der Informationsbedarf für die Entschei-
+dungen. Hier entsteht der sogenannte objektive Informationsbedarf, der sich auf die sachlich-
+fachlichen Informationen bezieht, die für eine Entscheidung erforderlich sind. Bezogen auf die BI 
+bedeutet das also, dass 
+• 
+die unternehmerischen Entscheidungsprobleme klar analysiert und die daraus resultierenden 
+Fragestellungen nachvollziehbar dokumentiert sein müssen, 
+• 
+die Restriktionen, aber auch die Freiheitsgrade bei der Informationsproduktion, die durch die 
+Organisation gesetzt werden, zu berücksichtigen sind und 
+• 
+die Anforderungen, die dadurch an die Datenerhebung und -analyse gestellt werden, zu un-
+tersuchen sind. 
+In der dritten Dimension schließlich, steht die IT im Mittelpunkt der Überlegun-
+gen. Sie ist die technische Grundlage für die Informationsproduktion. In dieser 
+Dimension werden die Applikationen betrachtet, die für die Speicherung, Auf-
+bereitung und Verbreitung der Informationen erforderlich sind. Sie müssen z.B. in Bezug auf die 
+Ergonomie oder auch die Art und Weise der Informationsbereitstellung die Anforderungen der 
+Akteure erfüllen und in Bezug auf die Datenanalyseverfahren die Anforderungen der Organisa-
+tion. Hier gilt es darüber hinaus, die geforderten Datenqualitätskriterien zu berücksichtigen, eine 
+flexible Applikationsarchitektur zur Verfügung zu stellen oder auch den Sicherheitsbedürfnissen 
+Rechnung zu tragen. Auch wenn sich die Abfolge der Beschreibung für die Dimensionen so liest, 
+als sei die Vorgehensweise, ausgehend vom Akteur, streng sequentiell, so muss in der Regel doch 
+ein alternierender Analyseprozess durchgeführt werden, da die Definition des Informationsbedarfs 
+und der Informationsversorgung nicht auf der „grünen Wiese“ geplant und umgesetzt wird, son-
+dern in eine bestehende Organisation oder technische Infrastruktur eingebettet ist. 
+Für jede der drei Dimensionen und die entsprechenden Übergänge steht eine Vielzahl an inhaltli-
+chen Analysekonzepten, aber auch Instrumenten zur Verfügung, um sie mit Inhalt zu füllen. Je 
+nach Kontext der Entscheidungen, müssen die Inhalte für die Dimensionen unterschiedlich umge-
+setzt werden. Für eine vertiefte Beschreibung einer möglichen Umsetzung sei auf den Lehrbrief 
+für das Modul Informationsmanagement verwiesen.  
+Übungsaufgabe 
+1. Wie unterscheiden sich operative und dispositive Daten? 
+2. Grenzen Sie die Begriffe Daten, Information und Wissen voneinander ab. 
+3. Welche Ziele werden mit dem CDM verfolgt und weshalb sind die drei Dimensionen für 
+die Entscheidungsunterstützung relevant? Welche Beziehungen bestehen zwischen den 
+Dimensionen innerhalb des CDM? 
+Dritte Dimension des 
+CDM: die 
+Applikationen 
+SJLo6Fbc+CgJgiZy+o/ysgT1gte0DZpGaK6hiPm6GD66CJihEBCD2xVhpVC0q8G6
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 39 ===
+ 
+Zusammenfassung und AusblickAnalyserahmen für den Einsatz von Business Intelligence 
+33
+5 Zusammenfassung und Ausblick 
+BI dient der ganzheitlichen Entscheidungsunterstützung im Unternehmen – das 
+ist die zentrale Aussage für das vorliegende Modul. Damit steuert sie den Pro-
+zess im Unternehmen, der für die Erzeugung und Auswertung von entschei-
+dungsrelevanten Informationen verantwortlich ist und dabei in einem ganzheitlich angelegten 
+Konzept die Entscheider, die Organisation und die erforderliche technische Infrastruktur umfasst. 
+Auch wenn die Entwicklung der BI aus einer primär technischen Sichtweise kommt, gibt es an der 
+zentralen Rolle der methodischen und fachlichen Grundlagen für eine erfolgreiche Entscheidungs-
+unterstützung keinen Zweifel. Dazu muss als allererster Schritt das Geschäftsmodell verstanden 
+sein, denn es gibt den Rahmen für Entscheidungen vor. Dann sind die Entscheidungsprozesse 
+systematisch zu analysieren und der Informationsbedarf der Entscheider klar zu formulieren. Auf-
+bauend auf diesen beiden Punkten kann der bestehende Datenbestand mit den entsprechend 
+fortgeschrittenen Algorithmen auf relevante Muster untersucht werden, da erst mit der fachlichen 
+Grundlage die Ergebnisse interpretierbar sind. Erst wenn diese Strukturen gelegt sind, kann die 
+technische Umsetzung sinnvoll geplant und eingeleitet werden. 
+In der Einheit 2 wird die Datenverarbeitung als Grundlage der BI thematisiert. 
+Der Prozess Knowledge Discovery in Databases (KDD) steht als methodische Ba-
+sis im Fokus der Ausführungen. Mit Blick auf die zugrundeliegende unternehmerische Zielsetzung 
+werden methodische und technische Inhalte der Datenverarbeitung in Verbindung gebracht. Eine 
+Fallstudie rundet die Inhalte ab.  
+Die Einheit 3 widmet sich dem Konzept des DWH, der Datenhaltung im DWH 
+und den Analysemöglichkeiten. Eingangs wird mit dem Konzept der „Business 
+Rules“ wiederum ein Bezug zu den unternehmerischen Fragestellungen und    
+damit der fachlichen Grundlage zu den methodischen und technischen Inhalten hergestellt. 
+Zum Abschluss betrachtet die Einheit 4 die neueren Entwicklungen in der BI und 
+untersucht beispielhaft Anwendungsfälle. 
+BI dient der 
+Entscheidungs-
+unterstützung 
+Einheit 2: Methoden  
+und Instrumente 
+Einheit 3: Intelligente 
+Datenhaltung und 
+Datenbereitstellung 
+Einheit 4: Neue 
+Entwicklungen  
+und Anwendungs-
+beispiele 
+CXlkK8o/ZTuQOYF1GuvakyPipSnO3Hi7aI7ej3SjfvWqSL1FkVgCd4OhS97Y2P70
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 40 ===
+ 
+Literaturverzeichnis 
+ 
+34 
+6 Literaturverzeichnis 
+Ackoff, R. L. (1967). Management misinformation systems. Management Science, 14, B-147–B-
+156. 
+Balzert, H. (2008). Lehrbuch der Software-Technik: Softwaremanagement (2. Aufl.). Heidelberg: 
+Spektrum. 
+Baumöl, U. (2008). ChangeManagement in Organisationen. Wiesbaden: Gabler. Boyd, J. (1995). 
+The essence of winning and losing [Präsentation]. Zugriff am 28. 11. 2012 auf 
+http://www.danford.net/boyd/essence4.htm 
+Chen, P. P.-S. (1976). The entity-relationship model – toward a unified view of data. ACM Trans. 
+Database Syst., 1 (1), 9–36. 
+Christl, W.  (2014). Kommerzielle digitale Überwachung im Alltag. Studie im Auftrag der österrei-
+chischen Bundesarbeitskammer, Zugriff am 29.02.2020 auf https://crackedlabs.org/dl/Stu-
+die_Digitale_Ueberwachung.pdf 
+Codd, E. F. (1970). A relational model of data for large shared data banks. Commun. ACM, 13 
+(6), 377–387. 
+Clickworker (2017). Sentiment-Analyse – Was ist das? Zugriff am 29.02.2020 auf 
+https://www.clickworker.de/2017/03/14/sentiment-analyse-was-ist-das/ 
+Decker, K.; Focardi, S. (1995). Technology overview: a report on data mining. Swiss Federal Insti-
+tute of Technology (ETH Zurich) Technical Report CSCS TR-95-02, Zürich. 
+Deming, W. E. (1982). Out of the crisis. Cambridge, MA: MIT Press. Dern, G. (2009). Management 
+von IT-Architekturen (3. Aufl.). Wiesbaden: Vieweg. 
+Domschke, W. & Drexl, A. (2007). Einführung in Operations Research (7. Aufl.). Berlin u.a.: Sprin-
+ger. 
+Ferstl, O. K. & Sinz, E. J. (2006). Grundlagen der Wirtschaftsinformatik (5. Aufl.). München / Wien: 
+Oldenbourg. 
+Gabor, A. (1990). The man who discovered quality: how W. Edwards Deming brought the quality 
+revolution to America. New York, NY: Times Books. 
+Gluchowski, P. & Kemper, H.-G. (2006). Quo vadis Business Intelligence? Aktuelle Konzepte und 
+Entwicklungstrends. Business Intelligence Spektrum, 1, 12–19. 
+Gutenberg, E. (1983). Grundlagen der Betriebswirtschaftslehre. Bd. 1: Die Produktion (24. Aufl.). 
+Heidelberg: Springer. 
+gWcMJLixQGemiS5yyoyHmUxmZvT1orjrNgUAvHRCYy7NVn3wsLMI1sQBXHVZiwl3
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 41 ===
+ 
+Literaturverzeichnis 
+35
+Güldenberg, S. (1998). Wissensmanagement und Wissenscontrolling in lernenden Organisatio-
+nen: Ein systemtheoretischer Ansatz, Wiesbaden: Deutscher Universitäts-Verlag. 
+Hahne, M. (2006). Mehrdimensionale Datenmodellierung für analyseorientierte Informationssys-
+teme. In P. Chamoni & P. Gluchowski (Hrsg.), Analytische Informationssysteme (S. 177–206). 
+Berlin / Heidelberg: Springer. 
+Hansen, H. R., Mendling, J. und Neumann, G. (2019). Wirtschaftsinformatik: Grundlagen und 
+Anwendungen. 12. völlig neu bearbeitete Auflage, Berlin, Boston: De Gruyter. 
+Hax, A. & Majluf, N. (1991). Strategisches Management: Ein integratives Konzept aus dem MIT. 
+Frankfurt: Campus. 
+Hedberg, S. R. (1995). The data gold rush – here’s how corporations, researchers, and scientists 
+are using data-mining techniques to discover everything from new customers to new galaxies. 
+Byte, 20 (10), 83–88. 
+Hofstätter, P. R. (1971). Differentielle Psychologie. Stuttgart: Kröner. 
+Howard, R. A. (1960). Dynamic programming and markov processes. Cambridge, MA: MIT Press. 
+Hummeltenberg, W. (2008). 50 Jahre Business Intelligence-Systeme (Arbeitspapier). Hamburg: 
+Universität Hamburg. 
+Hummeltenberg, W. (2019). Business Intelligence, Zugriff am 29.02.2020 auf https://www.enzyk-
+lopaedie-der-wirtschaftsinformatik.de/wi-enzyklopaedie/lexikon/datenwissen/Business-Intelli-
+gence/index.html/?searchterm=Business%20Intelligence 
+Information Works (o.J.). Data Mining mit SAP NetWeaver bei der Adolf Würth GmbH & Co. KG. 
+Zugriff am 29.02.2020 auf https://www.information-works.de/referenzen/88-kunden/121-
+referenzstories.html 
+Institut für Demoskopie (Studie). (2011). Allensbach: AWA-Online: Allensbacher Markt- und Wer-
+beträger-Analyse. Zugriff am 08. 11. 2012 auf http://de.statista.com/statistik/daten/stu-
+die/171248/ 
+Jeschke, W. (1992). Managementmodelle: ein kritischer Vergleich. Herrsching: Kirsch. 
+Kantar (2015). Kundenkarten: Die meisten Verbraucher vertrauen Payback. Zugriff am 29.02.2020 
+auf 
+https://www.marktforschung.de/aktuelles/marktforschung/kundenkarten-die-meisten-
+verbraucher-vertrauen-payback/ 
+Kemper, H.-G.,Mehanna,W. & Unger, C. (2006). Business Intelligence – Grundlagen und prakti-
+sche Anwendungen (2. Aufl.). Wiesbaden: Vieweg. 
+Kirsch, W. (2001). Die Führung von Unternehmen. Herrsching: Kirsch. 
+VAQ5LkXuhlvESsbl5fE1b/eQlprA11sMxjeRN1ozs3S4LwxJJWeiaZF+fqDIY71e
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 42 ===
+ 
+Literaturverzeichnis 
+ 
+36 
+Kudernatsch, D. (o.J.). Der PDCA-Zyklus am Beispiel erklärt. Zugriff am 02.03.2020 auf 
+https://www.business-wissen.de/artikel/qualitaetsmanagement-der-pdca-zyklus-am-beispiel-
+erklaert/ 
+Laudon, K. C., Laudon, J. P. und Schoder, D. (2016). Wirtschaftsinformatik: Eine Einführung. 3.,     
+vollständig überarbeitete Auflage, Hallbergmoos: Pearson. 
+linkFish Consulting (2020). Melitta. Zugriff am 29.02.2020 auf https://www.linkfish.eu/pro-
+ject/melitta/ 
+Luhn, H. P. (1958). A business intelligence system. IBM Journal of Research and Development, 2 
+(4), 314–319. 
+Mertens, P., Bodendorf, F., König, W., Picot, A., Schumann, M. und Hess, T. (2012). Grundzüge 
+der Wirtschaftsinformatik, Berlin, Heidelberg: Springer Berlin Heidelberg. 
+Nonaka, I. & Takeuchi, H. (1995). The knowledge-creating company: How japanese companies 
+create the dynamics of innovation. New York: Oxford University Press. 
+Osterwalder, A. (2004). The business model ontology – a proposition in a design science approach 
+(Dissertation). Lausanne: HEC. 
+Picot, A., Reichwald, R. & Wigand, R. T. (2003). Die grenzenlose Unternehmung: Information, 
+Organisation und Management (5. Aufl.). Wiesbaden: Gabler. 
+Porter, M. E. (1979). How competitive forces shape strategy. Harvard Business Review. 
+Riempp, G. (2004). Integrierte Wissensmanagement-Systeme: Architektur und praktische Anwen-
+dung ; mit 26 Tabellen, Berlin [u.a.]: Springer. 
+Rüegg-Stürm, J. (2002). Das neue St. Galler Management-Modell – Grundkategorien einer mo-
+dernen Managementlehre: der HSG-Ansatz. Bern: Haupt. 
+Rüegg-Stürm, J. (2003). Organisation und organisationaler Wandel: Eine theoretische Erkundung 
+aus konstruktivistischer Sicht (2. Aufl.). Wiesbaden: Verlag für Sozialwissenschaften. 
+Schein, E. (2010). Organizational culture and leadership (4. Aufl.). San Francisco, CA: Wiley. 
+Schütte, R. (1998). Grundsätze ordnungsmäßiger Referenzmodellierung. Wiesbaden: Gabler. 
+Simon, H. A. (1977). The new science of management decision (3. überarb. Aufl.). Englewood 
+Cliffs, NJ: Prentice-Hall. (Originalausgabe 1960) 
+Smolnik, S. (2006). Wissensmanagement mit Topic Maps in kollaborativen Umgebungen: Identi-
+fikation, Explikation und Visualisierung von semantischen Netzwerken in organisationalen 
+Gedächtnissen, Aachen: Shaker. 
+EFLq6sCRmgjq07v0rJpllnWJIDUC6uXrwovdSyeIIWRQ5njXHfaX+vm4Npz3RlCX
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 43 ===
+ 
+Literaturverzeichnis 
+37
+Spärck-Jones, K. (1999). Automatic summarising: Factors and directions. In I. Mani & M. T. May-
+bury (Hrsg.), Advances in automatic text summarization (S. 1–14). Cambridge, MA, USA:  MIT 
+Press. 
+Spärck-Jones, K. (2007). Automatic summarising: The state of the art. Information Processing & 
+Management, 43 (6), 1449–1481. 
+Splendid Research (2019). Bonusprogramm Monitor 2019. Zugriff am 29.02.2020 auf 
+https://www.splendid-research.com/de/bonusprogramme.html 
+Stalk, G. J. & Hout, T. M. (1990). Competing against time: How time-based competition is reshap-
+ing global markets. New York, NY: Free Press. 
+Statista (2020). Anzahl der monatlich aktiven Facebook Nutzer weltweit vom 1. Quartal 2009 bis 
+zum 4. Quartal 2019. Zugriff am 29.02.2020 auf https://de.statista.com/statistik/daten/stu-
+die/37545/umfrage/anzahl-der-aktiven-nutzer-von-facebook/ 
+Sutton, R. S. & Barto, A. G. (1998). Reinforcement learning: An introduction. Cambridge, MA: 
+MIT Press. 
+Tableau (2019). 5 reale Beispiele für Business Intelligence in Aktion. Zugriff am 29.02.2020 auf 
+https://www.tableau.com/de-de/learn/articles/business-intelligence-examples 
+Thearling, K. (2012). An introduction to data mining:discovering hidden value in your data ware-
+house 
+[White 
+Paper]. 
+Zugriff 
+am 
+08. 
+11. 
+2012 
+auf 
+http://www.thear-
+ling.com/text/dmwhite/dmwhite.htm 
+Totok, A. (2006). Entwicklung einer Business-Intelligence-Strategie. In P. Chamoni & P. Gluch-
+owski (Hrsg.), Analytische Informationssysteme (S. 51–70). Berlin / Heidelberg: Springer. 
+Voß, S. & Gutenschwager, K. (2001). Informationsmanagement. Berlin: Springer. Watson, H. J. & 
+Wixom, B. H. (2007). The current state of business intelligence. Computer, 40, 96–99. 
+Wechsler, D. (1956). The measurement of adult intelligence. Oxford: Hans Huber. 
+Weick, K. E. (1995). Der Prozess des Organisierens (5. Aufl.). Frankfurt a. M.: Suhrkamp. 
+Willke, H. (2005). Systemtheorie 2: Interventionstheorie (4. Aufl.). Stuttgart: UTB. 
+Wirtz, B. W. (2010). Electronic business (3. vollst. überarb. Aufl.). Wiesbaden: Gabler. (Original-
+ausgabe 2000) 
+Ziegler, C. (2006). Die Vermessung der Meinung - Sentiment Detection: maschinelles Textver-
+ständnis. iX – Magazin für professionelle Informationstechnik, S. 106-109. 
++FZarKEEo7HZEuOr6NpV72HkqaZM8lc8O/w9nauL9pv3iyCca225SEmInTS+TnSg
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 44 ===
+ 
+ 
+Diese Seite bleibt aus technischen Gründen frei! 
++I6oyBcl5FsDistl+kkglaSMPZp/DH9vdjxGZbb7uMbSBeEJAkk5DokesTiJLsc5
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 45 ===
+ 
+Lösungen zu den Übungsaufgaben 
+ 
+38 
+7 Lösungen zu den Übungsaufgaben 
+Kapitel 1 
+Zum Nachdenken und Diskutieren: 
+Aufgabe 1: Erklären Sie die Rolle, die das Konzept der BI im Rahmen der Informationsverarbeitung 
+spielen kann. Welche Potenziale können genutzt werden, und wo sehen Sie Grenzen? 
+Das Konzept der BI stellt einen Teil der Informationslogistik dar. Es dient der Entscheidungsunter-
+stützung und dabei der Erzeugung von Informationen, die das Unternehmen z.B. in Bezug auf 
+den Wettbewerb besserstellen. Es sollen möglichst Informationen so erzeugt werden, dass zuvor 
+unbekannte Zusammenhänge aufgedeckt werden. BI bedeutet also nicht, dass z.B. jedes Ergebnis 
+eines Produktionsplanungsprozesses oder jede Analyse von Abverkaufszahlen bereits zu „Business 
+Intelligence“ führt. Erst die Verbindung verschiedener Informationen, die Interpretation der ent-
+stehenden Muster und die Nutzung für die Erzielung des Wettbewerbsvorteils machen die entste-
+henden Informationen zu dieser mit höherem Wert belegten Form von Informationen bzw. Wis-
+sen. 
+Potenziale, die genutzt werden können, liegen einerseits in der kontinuierlichen Verbesserung des 
+Wissens über die Kunden und andererseits der Möglichkeit, das Effizienzdefizit durch das gewon-
+nene Wissen zu bearbeiten. So kann festgehalten werden, dass sowohl extern als auch intern 
+Potenziale vorhanden sind, die das Unternehmen besserstellen – sei es durch eine verbesserte 
+Kunden- oder auch Lieferantenkommunikation oder durch die kontinuierliche Verbesserung der 
+internen Strukturen. 
+Grenzen entstehen als Erstes durch ein fehlendes Verständnis für die fachlichen Zusammenhänge 
+und eine zielorientierte Definition der Entscheidungsprobleme, die es eigentlich zu lösen gilt. Die 
+in so einem Fall häufig erfolgende ziellose Sammlung und Auswertung von Daten erzeugt Kosten, 
+aber keinen Nutzen. Die große Menge an Daten, die verarbeitet werden muss, stellt selbst bei 
+einem gut ausgeprägten Fachverständnis eine Grenze dar. Schließlich müssen aus den gewonne-
+nen Erkenntnissen Maßnahmen abgeleitet werden, hier können Grenzen durch ein fehlendes 
+Konzept oder einfach fehlende Mittel, diese Maßnahmen konsequent umzusetzen, entstehen. 
+ 
+Übungsaufgaben: 
+Aufgabe 2: Welche Vorteile und Nachteile entstehen für Unternehmen durch die Verbreitung von 
+sozialen Netzwerken in Bezug auf die Entstehung von Informationen? 
+Aus der Sicht von Unternehmen entstehen einige Vorteile durch die Verbreitung von sozialen 
+Netzwerken: Bestehende und potenzielle Kunden konzentrieren sich bereits zu einem erheblichen 
+Teil z.B. in Facebook, sodass die Unternehmen nicht mehr nach ihnen „suchen“ müssen. Genauso 
+konzentrieren sich Diskussionen und Stimmungen in den Netzwerken. In Ergänzung zu neuen 
+Informationen über Kunden, die direkt mit den Produkten und Dienstleistungen zu tun haben, 
+können sie auf diese Weise auch vollkommen unerwartete Informationen und damit Erkenntnisse 
+77BOQzHiVruNq9hem45J04r8sJ52mRb4TH1t9nnw8dWEgujEPleg154Eglsy0y57
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 46 ===
+ 
+ 
+Diese Seite bleibt aus technischen Gründen frei! 
+AUlNgDnTXxW+pFaHFzxSpGavGeEQs2aFHNR+P8AlZbA+L/Zbsciz+B/jBWX5OCvx
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 47 ===
+ 
+Lösungen zu den Übungsaufgaben 
+39
+gewinnen. Durch die dort zu findenden Daten können also immer detailliertere und genauere 
+Informationen zu den bestehenden und potenziellen Kunden erzeugt werden, die eine zielgenaue 
+Ansprache und ein verbessertes Zuschneiden der Leistungen unterstützt.  
+Nachteile entstehen durch die Menge an Daten, die es zu verarbeiten gilt. Hier muss eine klare 
+Kosten- und Nutzenabwägung gemacht werden, mit welchen Werkzeugen, welcher Teil der Da-
+ten ausgewertet werden soll. Darüber hinaus können durch eine entsprechende Dynamik in der 
+Kommunikation negative Stimmungen gegenüber den Unternehmen entstehen, die einerseits 
+rechtzeitig beobachtet werden müssen und andererseits professionell abgefangen sein wollen. 
+Schließlich ist die Qualität der Daten nicht immer einwandfrei festzustellen, da prinzipiell jeder 
+Nutzer beliebige Angaben machen kann. 
+Eine Herausforderung für die Organisation ist es auf jeden Fall, die entstehenden Daten nutzbrin-
+gend zu verarbeiten, daraus zu lernen und die Erwartungshaltung, z.B. in Bezug auf Serviceleis-
+tungen, die durch die bessere Information entstehen kann, durch entsprechende organisatorische 
+Strukturen aufzufangen. 
+ 
+Aufgabe 3: Welche Vorteile und Nachteile sehen Sie für die Kunden? 
+Für die Kunden entstehen Vorteile durch den besseren Informationsstand, der durch den „neut-
+ralen“ Austausch mit anderen Kunden oder Nutzern entsteht. Durch die entstehenden Profile 
+können sie zielgerichteter angesprochen und die Informationsflut durch fehlgeleitete Werbung 
+kann vermindert werden. Insgesamt kann eine deutliche Zeitersparnis im Kaufprozess erzielt wer-
+den, wenn das Medium gut eingesetzt wird. 
+Nachteile entstehen dann, wenn durch die unerlaubte oder sogar betrügerische Weitergabe per-
+sönlicher Daten die Privatsphäre verletzt wird, und die Informationen dazu genutzt werden, Kun-
+den schlechter zu stellen. Darüber hinaus können auch Nachteile entstehen, wenn durch den 
+Austausch in sozialen Netzwerken ein Scheinwissen entsteht, das vor allem bei größeren Investi-
+tionen zu Fehlentscheidungen führen kann. 
+Kapitel 2 
+Übungsaufgaben: 
+Aufgabe 1: Vollziehen Sie die Entwicklung des Begriffs „Business Intelligence“ und „Busines- In-
+telligence-System“ nach. 
+„Business Intelligence“ ist die auf die unternehmerischen Transaktionen bezogene Information, 
+die es ermöglicht, das Unternehmen besser zu stellen als die Konkurrenz und damit einen Wett-
+bewerbsvorteil zu erzeugen. „Besser zu stellen“ heißt dabei, dass der Entscheider in die Lage 
+versetzt wird, Entscheidungen so zu treffen, dass das Unternehmen bestmöglich auf sich verän-
+dernde Umfeldbedingungen ausgerichtet ist. „Business Intelligence System“ heißt, dass die 
+Sammlung, Speicherung, Aufbereitung und Verteilung der Informationen durch ein IT-System mit 
+den entsprechend unterlegten fachlichen Strukturen unterstützt wird. 
+ 
+U+Wq6HzftHbIRqFzuw8Y3jkz9jCwKRZPIBlWF3c5lUUlOVK66quml983ivh6H5V+
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 48 ===
+ 
+Lösungen zu den Übungsaufgaben 
+ 
+40 
+Aufgabe 2: Entwickeln Sie ein begriffliches Konzept für „Intelligenz“. 
+Obwohl es bis heute keine einheitliche Begriffsdefinition für „Intelligenz“ gibt, lässt sich im Kon-
+text der BI eine individuelle und eine organisatorische Ausprägung von Intelligenz unterscheiden. 
+Die individuelle Intelligenz zeichnet sich dadurch aus, dass die „Fähigkeit zum Auffinden von Ord-
+nungen und Regelhaftigkeit im Zusammentreffen, Neben- und Nacheinander von Ereignissen“ 
+(Hofstätter, 1971) vorhanden ist. Es ist also die Fähigkeit, Informationen zu interpretieren, Zusam-
+menhänge zu verstehen und damit ein Ziel zu verfolgen. Die organisatorische Intelligenz bzw. die 
+Intelligenz der Organisation als sozio-technisches System liegt darin, dass die Organisation sich 
+z.B. die Veränderung des Umfelds erkennen und die Auswirkungen auf die eigene Funktionsfä-
+higkeit analysieren kann. Sie zeichnet sich darüber hinaus durch Lernfähigkeit und die Fähigkeit, 
+ein Ziel zu verfolgen, aus. 
+ 
+Aufgabe 3: Nach welchen beiden grundlegenden Ansätzen lassen sich Entscheidungsprozesse 
+modellieren? 
+Entscheidungsprozesse können typischerweise entweder auf der Basis eines formalen oder eines 
+semi-formalen, handlungsorientierten Ansatzes modelliert werden. 
+ 
+Aufgabe 4: Nach welchen Prinzipien erfolgt eine formale Modellierung? Welche Aussagen lassen 
+sich machen, und welche Aussagen sind nicht möglich? 
+Die Prinzipien bei der formalen Modellierung sind zum einen die Abbildung des Zielsystems auf 
+der Basis von echt quantifizierbaren Parametern. Zum anderen erfolgt eine rechnerische Optimie-
+rung des Zielsystems. Mit dieser Form der Modellierung können Aussagen über sinnvolle Parame-
+terkombinationen und deren Höhe gemacht werden. Eine Einschränkung entsteht durch die Fest-
+legung der Systembedingungen und z.B. von Verteilungen. Sind diese Annahmen falsch, sind 
+auch sämtliche Ergebnisse, die durch die Funktionen erzeugt werden, im Sinne der Entscheidungs-
+findung falsch. Es können keine Aussagen zur Qualität der Gestaltung der Prozesse gemacht wer-
+den und selbstverständlich sind qualitative Aussagen zu den Entscheidungsprozessen nicht mög-
+lich. Eine weitere Einschränkung entsteht bei den „klassischen“ Modellierungsansätzen, dass hier 
+keine Muster identifiziert werden, die zu „unerwarteten“ Erkenntnissen führen. Dazu müssten die 
+spezialisierten Algorithmen des DM eingesetzt werden. 
+Kapitel 3 
+Übungsaufgaben: 
+Aufgabe 1: Welche Komponenten umfasst die BI-Architektur und nach welchen Prinzipien ist eine 
+BI-Architektur aufgebaut? 
+Beschreibung der Abbildung: 
+ 
+h8wpOMggUdsErlmWPKmAAMnwC0ZY0IQC4JBJ/bbdJSZrd5Xg16wq3IuxRJwyFhyu
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 49 ===
+ 
+Lösungen zu den Übungsaufgaben 
+41
+ 
+ 
+Die erste Stufe umfasst interne und externe Datenquellen, zu denen u.a. operative Anwendungs-
+systeme zählen. Auf der zweiten Stufe, dem Staging, werden die internen und externen Daten 
+aus den ursprünglichen Datenquellen extrahiert, aufbereitet und für weiterführende Analysen in 
+ein Data Warehouse übernommen (Extraktion-Transformation-Laden-Prozess). 
+Hier werden die aufbereiteten Daten sowohl in einem Langzeitspeicher (dem Data Warehouse) 
+archiviert als auch zu einzelnen Themenbereichen (z.B. Marketing, Personal) in Data Marts ver-
+dichtet abgelegt (Stufe 3). 
+In der vierten Stufe werden die Auswertungs- und Präsentationswerkzeuge zur Entscheidungsun-
+terstützung (engl. Decision Support) zusammengefasst. Neben Berichtsgeneratoren, wie sie z.B. 
+in Berichts- und Kontrollsystemen eingesetzt werden, und Abfragesprachen gehören hierzu die 
+Analysewerkzeuge OLAP und Data Mining sowie Büroinformationssysteme (z.B. Microsoft Office) 
+und browserbasierte Werkzeuge. 
+ 
+ 
+ 
+Aufgabe 2: Was unterscheidet ein Data Warehouse von Data Marts? 
+Ein Data Warehouse (DWH) ist eine unternehmensweite Datenbank, die als zentraler Speicher eine 
+einheitliche und konsistente Datenbasis zur Entscheidungsunterstützung aller Bereiche und Ebe-
+nen im Unternehmen bietet und unabhängig von operativen Anwendungssystemen betrieben 
+wird. Im Data Warehouse werden alle für ein Unternehmen relevanten internen und externen 
+Daten zusammengeführt und für verschiedenartige Auswertungen und Analysen für längere Zeit-
+räume gespeichert. 
+mHRZLSr1RLX0x0V2HELcGprkN2vaDRpAjUBbMvOFnryPW2vPvt0RoAVIp15jMAJ7
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 50 ===
+ 
+Lösungen zu den Übungsaufgaben 
+ 
+42 
+Data Marts sind ein aggregierter Teilausschnitt des Data Warehouse, der die relevanten Daten für 
+einen bestimmten abgegrenzten Themen- und/oder Anwenderkreis enthält. Die Data Marts stel-
+len die Speichen in der Hub-and-Spoke-Architektur dar und beinhalten z.B. die Daten der einzel-
+nen Geschäftsprozesse. 
+Data Marts entsprechen folglich kleinen autonomen DWHs, die nur Ausschnitte aus dem DWH 
+abbilden.  
+Kapitel 4 
+Übungsaufgaben: 
+Aufgabe 1: Wie unterscheiden sich operative und dispositive Daten? 
+Die BI basiert auf der Verarbeitung von operativen Daten und erzeugt dispositive Daten zur Pla-
+nung und Steuerung des Unternehmens, also zur Entscheidungsunterstützung. Dispositive und 
+operative Daten unterscheiden sich grundlegend voneinander. Folgende Tabelle gibt einen Über-
+blick über die Eigenschaften und Unterschiede von dispositiven und operativen Daten. 
+Unterscheidungs-
+kriterium 
+Operative Daten 
+Dispositive Daten 
+Ziel 
+Abwicklung 
+der 
+Geschäftspro-
+zesse 
+Entscheidungsorientiert; Informa-
+tionsbasis für die Managementun-
+terstützung 
+Ausrichtung 
+Detaillierte, granulare Geschäfts-
+vorfalldaten 
+Verdichtete, transformierte Daten; 
+umfassendes Metadatenangebot 
+Zeitbezug 
+Aktuell; zeitpunktbezogen; auf die 
+die Transaktion ausgerichtet ist 
+Unterschiedliche, aufgabenabhän-
+gige Aktualität; Historienbetrach-
+tung 
+Modellierung 
+Altbestände oft nicht modelliert 
+(funktionsorientiert) 
+Sachgebiets- oder themenbezo-
+gen, standardisiert und endnutzer-
+tauglich 
+Zustand 
+Häufig redundant; inkonsistent 
+Konsistent 
+modelliert; 
+kontrol-
+lierte Redundanz 
+Update 
+Laufend und konkurrierend 
+Ergänzend; Fortschreibung abge-
+leiteter, aggregierter Daten 
+SDrZ3wwzhi5YkuPr376BY/JOWvxEm0IfMAii29Sn5w2ZOfQErsIyHDpJOdmGqX4X
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 51 ===
+ 
+Lösungen zu den Übungsaufgaben 
+43
+Queries 
+Strukturiert; zumeist statisch im 
+Programmcode 
+Ad-hoc für komplexe, ständig 
+wechselnde Fragestellungen und 
+vorgefertigte Standardauswertun-
+gen 
+ 
+Aufgabe 2: Grenzen Sie die Begriffe Daten, Information und Wissen voneinander ab. 
+Daten sind syntaktisch geordnete Wahrnehmungen über verschiedene Dinge und Sachverhalte, 
+die in gedruckter, gespeicherter, visueller, akustischer oder sonstiger Form vorliegen. 
+Informationen sind Daten in einem bestimmten Bedeutungskontext. Anwendungs- und Informa-
+tionssysteme speichern Daten und bieten die Möglichkeit, diese Daten so in einen Kontext zu 
+stellen, dass Menschen sie leichter aufnehmen können. 
+Wissen ist die Gesamtheit der Kenntnisse und Fähigkeiten, die Menschen zur Lösung von Proble-
+men einsetzen. Dies umfasst sowohl theoretische Erkenntnisse als auch praktische Alltagsregeln 
+und Handlungsanweisungen. Wissen stützt sich dabei auf Daten und Informationen, ist im Ge-
+gensatz zu diesen jedoch immer an Menschen gebunden. Wissen entsteht als individueller Prozess 
+in einem spezifischen Kontext und manifestiert sich in Handlungen. 
+Es ist wichtig zu verstehen, dass eine Information kein Wissen darstellt, sondern dass erst durch 
+die mentale Verknüpfung verschiedener Daten und Informationen durch den Menschen Wissen 
+entstehen kann. Das bedeutet, dass aus Anwenderperspektive eine Information in einem Anwen-
+dungssystem abgelegt und verarbeitet werden kann, dass es sich aus Systemsicht jedoch lediglich 
+um eine Ansammlung von mit Kontext angereicherten Daten handelt (ein Informationsobjekt). 
+Damit ist Wissen immer personengebunden und muss, um einen Unternehmen auch unabhängig 
+von einer Person zur Verfügung zu stehen, auf geeignete Weise expliziert und dokumentiert wer-
+den. 
+ 
+Aufgabe 3: Welche Ziele werden mit dem CDM verfolgt, und weshalb sind die drei Dimensionen 
+für die Entscheidungsunterstützung relevant? Welche Beziehungen bestehen zwischen den Di-
+mensionen? 
+Das CDM besteht aus den drei Dimensionen Individuum, Organisation und Applikationen und den 
+entsprechenden Verbindungen zwischen diesen Dimensionen. Das Hauptziel des CDM ist es, die 
+„Handlungskompetenz“ des Individuums zu gewährleisten. Handlungskompetenz bedeutet in 
+diesem Kontext, dass der Entscheider auf Basis der Informationslogistik in die Lage versetzt wird, 
+gut fundierte Entscheidungen unter den geforderten Rahmenbedingungen zu treffen. 
+Das zentrale Element im Entscheidungsprozess ist der Mensch. Für ihn als Entscheider bzw. für 
+die Gruppe als Entscheidungsgremium müssen die Entscheidungen individuell aufbereitet werden. 
+Aus diesem Grund ist das Individuum ein konstituierendes Element in dem Modell. Der Entscheider 
+ist eingebettet in die Organisationsstruktur; sie gibt ihm den Rahmen für die 
+bbhsohrGgLXI+I5PUghOkhXkLnnE3FDEidcRo+olXM8MAXLZqbRHzHLGgQ4k2G8B
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 52 ===
+ 
+Lösungen zu den Übungsaufgaben 
+ 
+44 
+Handlungen bzw. Maßnahmen im Rahmen eines Entscheidungsprozesses vor, kann aber gleich-
+zeitig auch durch den Entscheider beeinflusst werden. Die Organisation mit ihrer Struktur und den 
+Steuerungsmechanismen gibt die Rahmenbedingungen für die Erzeugung von Informationen vor. 
+Ist das Steuerungssystem auf hauptsächlich finanzielle Kennzahlen ausgelegt, ist die Erhebung 
+von Informationen zu Durchlaufzeiten von Prozessen zunächst einmal mit zusätzlichem Aufwand 
+verbunden. Die Organisation beim CDM ist bedeutungsgleich mit dem betrieblichen Informati-
+onssystem und stellt als zentrales Element der Informationserzeugung und -verwendung somit die 
+zweite Dimension für das CDM dar. 
+Die Informationsverarbeitung – sowohl individuell als auch organisatorisch – kann heute nicht 
+mehr ohne technologische Unterstützung erfolgen. Eine auf den Entscheidungsprozess des Indi-
+viduums und den Anforderungen der Organisation ausgerichtete technologische Infrastruktur un-
+terstützt zwei zentrale Punkte: Erstens ist sie ein grundlegender Erfolgsfaktor für die Implemen-
+tierung der geforderten Informationslogistik, und zweitens ist sie einer der wichtigsten Hebel für 
+eine effiziente Informationsverarbeitung. Der Ansatzpunkt für die Ausrichtung liegt in der Appli-
+kationsarchitektur, weil sie das Bindeglied zwischen individuellen und fachlichen Anforderungen 
+sowie technologischer Umsetzung repräsentiert. Aus diesem Grund wird die Applikationsarchitek-
+tur als dritte Dimension des CDM definiert.
+KPRRCt6JuuHkC/4JVsYeFS0rBgIc+kiJE/ypqNVVEO8Z93vLZF3XG6Ju10KATiWH
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 53 ===
+PeJGNayhsdaHoiC+CmkWQtJkH++bPG8q+ZzGbLBIPCryVrzyiSyqTnlzo9wi9Qkh
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 54 ===
+Alle Rechte vorbehalten
+© 2026 FernUniversität in Hagen 
+Fakultät für Wirtschaftswissenschaft
+*S002664941*
+S002664941
+(04/26)
+32711-01-S#1
+JUvwLwn/3XIrm+soIkWJ7pDre2FIZwRA010q7LZVP7sw2NKHc1uytp5CIqu60JyH
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549

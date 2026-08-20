@@ -1,0 +1,969 @@
+﻿Total pages: 54
+Metadata: {'format': 'PDF 1.7', 'title': '32711-01-S1 - Business Intelligence', 'author': 'Christian Ansch�tz', 'subject': '', 'keywords': '', 'creator': 'Microsoft� Word f�r Microsoft 365', 'producer': 'Microsoft� Word f�r Microsoft 365; modified using iText� 5.5.11 �2000-2017 iText Group NV (FernUniversit�t in Hagen - Zentrum f�r Medien und IT; licensed version)', 'creationDate': "D:20230126215746+01'00'", 'modDate': "D:20260425161933+02'00'", 'trapped': '', 'encryption': None}
+================================================================================
+
+================================================================================
+=== PAGE 1 ===
+================================================================================
+Fakult�t f�r 
+Wirtschafts�
+wissenschaft
+Univ.-Prof. Dr. Ulrike Baum�l
+32711
+Business Intelligence
+Einheit 1
+Grundlagen der Business Intelligence
+NT2BWSo+dStPcsbFFmUIAXb7njHsqvP/DaaF55mPK6I2wRmaTdke01b/pJsXu8U/
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 2 ===
+================================================================================
+�bersicht zum Modul 32711
+Business Intelligence
+Einheit 1:	 Grundlagen der Business Intelligence
+Einheit 2:	
+Methoden und Instrumente der Business Intelligence
+Einheit 3:	
+Intelligente Datenhaltung und -bereitstellung
+Einheit 4:	
+Neue Entwicklungen und Anwendungsbeispiele der Business Intelligence
+Das Werk ist urheberrechtlich gesch�tzt. Die dadurch begr�ndeten Rechte, insbesondere das Recht der Ver-
+vielf�ltigung und Verbreitung sowie der �bersetzung und des Nachdrucks, verbleiben bei der FernUniversit�t. 
+Das Werk darf gem�� � 53 UrhG im privaten Rahmen zum Beispiel durch Kopien oder digitale Speicherung 
+vervielf�ltigt werden.
+Hinweis:
+Der Lehrbrief in der vorliegenden Form wurde von Univ.-Prof. Dr. Stefan Smolnik, Dr. Katharina Ebner und 
+Christian Ansch�tz in Teilen �berarbeitet.
+MSka80EABQCOHNdVjLFkwEkdhvIdhfHeZoOLC5XlC8SBTfltwPv3tHnkvkJR9uiL
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 3 ===
+================================================================================
+ 
+Inhaltsverzeichnis 
+III 
+Inhaltsverzeichnis 
+Inhaltsverzeichnis .................................................................................................................... III 
+Abbildungsverzeichnis ............................................................................................................ IV 
+Tabellenverzeichnis .................................................................................................................. V 
+Abk�rzungsverzeichnis ........................................................................................................... VI 
+1 
+Einf�hrung ...................................................................................................................... 1 
+1.1 
+Business Intelligence als Grundlage unternehmerischer Entscheidungen ..................... 3 
+1.2 
+Vor- und Nachteile f�r Unternehmen ........................................................................ 4 
+1.3 
+Aufbau des Lehrbriefs �Business Intelligence� und Lernziele der ersten Einheit .......... 5 
+2 
+Konzeptionelle Grundlagen.............................................................................................. 8 
+2.1 
+Entwicklung des Konzepts �Business Intelligence� .................................................... 8 
+2.2 
+Business Intelligence als Entscheidungsunterst�tzung .............................................. 15 
+2.2.1 
+Formale Modellierung von Entscheidungsprozessen ........................................ 15 
+2.2.2 
+Handlungsorientierte Modellierung von Entscheidungsprozessen ..................... 17 
+3 
+Business-Intelligence-Architektur .................................................................................... 23 
+4 
+Einordnung in das betriebliche Informationsmanagement ............................................... 27 
+4.1 
+Daten, Informationen und Wissen im Kontext der Business Intelligence ................... 28 
+4.2 
+Analyserahmen f�r den Einsatz von Business Intelligence ......................................... 31 
+5 
+Zusammenfassung und Ausblick .................................................................................... 33 
+6 
+Literaturverzeichnis ........................................................................................................ 34 
+7 
+L�sungen zu den �bungsaufgaben ................................................................................ 38 
+Kapitel 1 ........................................................................................................................... 38 
+Kapitel 2 ........................................................................................................................... 39 
+Kapitel 3 ........................................................................................................................... 40 
+Kapitel 4 ........................................................................................................................... 42 
+h02uVmu5C9SG3V/X8NGnYp/FK7PSPCal0q8dRa7e6X511/hilww/e6IPa9gnmX41
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 4 ===
+================================================================================
+ 
+Abbildungsverzeichnis 
+IV 
+Abbildungsverzeichnis 
+Abbildung 1: Anzahl der monatlich aktiven Facebook-Nutzer weltweit ..................................... 3 
+Abbildung 2: Bonusprogramm Monitor 2019 ........................................................................... 4 
+Abbildung 3: Inhaltliche Aufteilung des Lehrbriefs �Business Intelligence� ................................ 6 
+Abbildung 4: Vom Informationsbedarf zum Informationsstand ............................................... 13 
+Abbildung 5: PDCA-Kreislauf ................................................................................................. 18 
+Abbildung 6: Typische Applikationsarchitektur von der Datensammlung bis zur Auswertung, Hub-
+and-Spoke-Architecture ......................................................................................................... 24 
+Abbildung 7: Einordnung der BI in das Betriebliche Informationsmanagement ........................ 27 
+Abbildung 8: Daten � Information � Wissen ........................................................................... 30 
+Abbildung 9: Das Comprehensive Decision Model (CDM) ....................................................... 31 
+ 
+ 
++WYj1aEGn5sWrT3dZmJy5PgX16mNp5ajva2GaCBMfgid/qXvH93rtqtMGObxRtUK
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 5 ===
+================================================================================
+ 
+Tabellenverzeichnis 
+ 
+V 
+Tabellenverzeichnis 
+Tabelle 1: Entwicklung des Data Mining ................................................................................. 11 
+Tabelle 2: �Intelligence� f�r den Entscheidungsprozess: Beispiele f�r Informationen in den 
+verschiedenen Phasen ........................................................................................................... 21 
+Tabelle 3: Gegen�berstellung der Charakteristika von operativen und dispositiven Daten ........ 28 
+ 
+ 
+a6UnyL9JnGvZQJ8nWD6ONfK5buzCf78dbQG/9D8eOTy9xHSzjF9QY/163cxV2ZM3
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 6 ===
+================================================================================
+ 
+Abk�rzungsverzeichnis 
+VI 
+Abk�rzungsverzeichnis 
+argmax   
+argumentum maximi 
+BI 
+Business Intelligence 
+BIM 
+Betriebliches Informationsmanagementsystem 
+CDM 
+Comprehensive Decision Model 
+CRM 
+Customer-Relationship-Management 
+DM 
+Data Mining 
+DWH 
+Data Warehouse 
+EIS 
+Executive Information System 
+ERP 
+Enterprise Resource Planning 
+IS 
+NRW 
+Informationssystem 
+Nordrhein-Westfalen 
+MDP 
+Markov Decision Process 
+MIS 
+ODBC 
+Management Information Systems 
+Open Database Connectivity 
+OLAP 
+Online Analytical Processing 
+PDCA 
+Plan-Do-Check-Act 
+SCM 
+SQL 
+Supply-Chain-Management 
+Structured Query Language 
+dk/Q0SPJcjEZw+023F4lFP/eIn4/VxHRty2hngJBr5MPf55NslsUsOAMsMnzXT9/
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 7 ===
+================================================================================
+ 
+Einf�hrung 
+1
+1 
+Einf�hrung 
+Das Treffen von Entscheidungen und das L�sen von Problemen ist keine neue 
+Herausforderung f�r Unternehmen. Mit der Entwicklung immer besserer M�g-
+lichkeiten, Daten zu speichern, zu analysieren und schlie�lich bereitzustellen, ist 
+der Prozess der Entscheidungsunterst�tzung auch immer komplexer geworden. 
+Die zentralen Fragen sind, welche Informationen �berhaupt f�r eine Entscheidung erforderlich 
+sind, wie sie m�glichst wirtschaftlich gewonnen und aufbereitet werden k�nnen sowie letztend-
+lich, welche technische Unterst�tzung die richtige ist. Nachfolgend seien zur Verdeutlichung m�g-
+licher Entscheidungssituationen zwei Beispiele gegeben, die unterschiedliche Anwendungsberei-
+che von Business Intelligence illustrieren. Mit Hilfe der Sentimentanalyse1 sollen z.B. im Rahmen 
+des Text Mining2 Stimmungen in den �u�erungen von Nutzern ermittelt und nutzbar gemacht 
+werden. 
+Sentimentanalyse im Bereich der Servicehotline3 
+Es wird schlecht �ber die Servicehotline eines Unternehmens gesprochen. Zun�chst muss die 
+Ursache hierf�r ermittelt werden. Liegt es an der fehlenden Freundlichkeit oder Kompetenz der 
+Servicemitarbeiter? Sind die Wartezeiten zu lang? Werden nur unzureichende Hilfsm�glichkei-
+ten angeboten? Die Sentimentanalyse zeigt, dass die Wartezeiten zu lang sind. Um dem abzu-
+helfen, lassen sich mehr Servicemitarbeiter abstellen. Auch k�nnen andere Wege zur schnellen 
+Kontaktaufnahme wie bspw. Kontaktformulare oder Chats angeboten bzw. prominenter be-
+worben werden. Danach gibt eine weitere Sentimentanalyse Aufschluss dar�ber, ob die Ma�-
+nahmen gewirkt haben. Ist das der Fall, sollte die Zufriedenheit mit der Hotline zunehmen. 
+Planung zuk�nftiger Vertriebswege4                                                               
+                                  
+Recreational Equipment Inc. (REI) ist ein amerikanisches Einzelhandels- und Outdoor-/Freizeit-
+unternehmen. Es ist als Verbrauchergenossenschaft organisiert. REI verkauft Sportartikel, Cam-
+pingausr�stung, Reiseausr�stung und Kleidung und bietet auch Dienstleistungen wie Outdoor-
+Urlaub und passende Kurse an. 
+In der Verbrauchergenossenschaft REI lassen sich Kennzahlen f�r Mitglieder aufgrund von 90 
+Terabyte Daten nur schwer analysieren und die Planung zuk�nftiger Vertriebswege ist nur sehr 
+grob m�glich. Nach der Einf�hrung einer Business-Intelligence-Plattform zur Analyse der Daten 
+seiner Genossenschaftsmitglieder hat sich die Situation zur pr�zisen Planung der Strategie und 
+_________________________________________________ 
+1 Eine Sentimentanalyse ist ein Untergebiet des Text Mining und bezeichnet die automatische Auswertung von Texten 
+mit dem Ziel, eine ge�u�erte Haltung als positiv oder negativ zu erkennen. 
+2 Text Mining ist ein B�ndel von Algorithmus-basierten Analyseverfahren zur Entdeckung von Bedeutungsstrukturen 
+aus un- oder schwachstrukturierten Textdaten. 
+3 https://www.clickworker.de/2017/03/14/sentiment-analyse-was-ist-das/ 
+4 https://www.tableau.com/de-de/learn/articles/business-intelligence-examples 
+Business Intelli-gence 
+dient als 
+Entscheidungs-
+unterst�tzung 
+4U7q4mo74kkXixmJuirxd52uC+583PBuX/9KNX06wvrQCsdvifY5LfjCiVYvURxb
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 8 ===
+================================================================================
+ 
+Einf�hrung 
+ 
+2 
+der operativen Vertriebsprozesse deutlich verbessert. Angesichts dessen, dass Mitglieder f�r 
+�ber 90 Prozent des Umsatzes von REI aufkommen, sind Kennzahlen zur Kundenakquise, Kun-
+denbindung und Kundenreaktivierung von h�chster Bedeutung. Erst durch die F�higkeit, diese 
+gewaltige Datenmenge zu verarbeiten und zu analysieren, kann die f�r das operative Gesch�ft 
+zust�ndige Abteilung entscheiden, ob sich eher Investitionen ins Filialgesch�ft oder ins digitale 
+Gesch�ft lohnen. Dies f�hrt schlie�lich zu einer h�heren Kundenzufriedenheit und verbessert 
+das Ansehen der Marke: 
+�2017 k�nnen wir durch Gewinnung neuer Mitglieder eine vollst�ndige Trendwende einlei-
+ten�, fasst Clinton Fowler, Director of Customer and Advanced Analytics bei REI, den Erfolg 
+zusammen. Das Team nutzt seine Business-Intelligence-Plattform auch, um Kundensegmente 
+zu analysieren. Die Erkenntnisse flie�en in Entscheidungen hinsichtlich strategischer und ope-
+rativer Prozesse wie z.B. Versand oder Produktkategorisierung ein. 
+Diese Beispiele zeigen auf, welche Relevanz zielgerichtete Analysen des unternehmerischen Da-
+tenbestands haben. In diesem Zusammenhang reflektiert Begriff der informationsorientierten Un-
+ternehmensf�hrung die Erkenntnis, dass ohne die richtigen Informationen zur richtigen Zeit zu 
+angemessenen Kosten keine Wertsch�pfung stattfinden kann. Das betrifft sowohl die t�gliche 
+operative Arbeit als auch die strategische Entwicklung eines Unternehmens. Zudem ist es wichtig, 
+�ber Informationen zu verf�gen, welche die Konkurrenz (noch) nicht hat. Mit diesen zentralen 
+Anliegen befasst sich die Business Intelligence: 
+Business Intelligence ist die an einem Entscheidungsproblem orientierte Analyse und adressa-
+tengerechte, technikgest�tzte Bereitstellung von wettbewerbsrelevanten Informationen mit 
+dem Ziel, den Entscheidungsprozess zu unterst�tzen. Business Intelligence umfasst die zur Ent-
+scheidungsunterst�tzung eingesetzten Konzepte, Methoden und Informationssysteme. 
+Business-Intelligence-Systeme sind nach Hummeltenberg (2019) informationsgetriebene Ent-
+scheidungsunterst�tzungssysteme zur Gewinnung und Verbreitung von Erkenntnissen f�r und 
+�ber betriebliche Abl�ufe. 
+In dieser Einheit werden die Grundlagen zu dem Konzept �Business Intelli-
+gence� gelegt. Das Hauptziel ist es dabei, zu vermitteln, dass dieses Konzept 
+weit mehr ist, als nur ein Begriff f�r wettbewerbsrelevantes Wissen bzw. zuge-
+h�rige Informationen, aber auch weit mehr als nur ein St�ck hochentwickelte 
+Software. Es ist vielmehr ein ganzheitliches Konzept, das die fachlichen Grundlagen f�r die Erzeu-
+gung von wettbewerbsrelevantem Wissen umfasst, sowohl die Entscheidungsprozesse als auch 
+die organisatorischen Strukturen sowie die Entscheidungstr�ger ber�cksichtigt und nicht zuletzt 
+die technische Architektur einbezieht, die f�r die Speicherung, Analyse und Verteilung der Infor-
+mationen geeignet ist. 
+Deshalb wird in dem nachfolgenden Abschnitt kurz reflektiert, weshalb die informationsorien-
+tierte Unternehmensf�hrung im Fokus steht und welche neueren Entwicklungen dazu beigetra-
+gen haben. Das zweite Kapitel f�hrt in die konzeptionellen Grundlagen der Business Intelligence 
+ein. Kapitel drei zeigt die wesentlichen Bestandteile einer Business-Intelligence-Architektur, bevor 
+Die Einheit 1 
+systematisiert das 
+Konzept der Business 
+Intelli-gence 
+2Av1A0a1BVX6S0PRAVwEo4YaG7R8JvfAM8bI5ME7azFc8s5Dte4rpXf9Y3oF9bwU
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 9 ===
+================================================================================
+ 
+Einf�hrung 
+3
+im vierten Kapitel die Einordnung in ein �bergreifendes Begriffskonzept stattfindet und ein Ana-
+lyserahmen f�r den Einsatz von BI vorgestellt wird. Kapitel f�nf schlie�t diese Einheit mit einer 
+kurzen Zusammenfassung mit Ausblick auf die anderen Einheit ab. 
+1.1 Business Intelligence als Grundlage unternehmerischer Entscheidungen 
+Business Intelligence (BI) wird gerne als Basis f�r eine informationsorientierte 
+Unternehmensf�hrung und in dem Zusammenhang auch als Schl�ssel f�r Wett-
+bewerbsvorteile positioniert. Wie so oft, geh�ren hier Licht und Schatten un-
+mittelbar zusammen. Auf der Seite des �Lichts� (aus Sicht der Unternehmen) gibt es eine st�ndig 
+steigende Anzahl privater Nutzer, die immer mehr pers�nliche Daten �ber ihre Kaufgewohnhei-
+ten, aber auch ihr grunds�tzliches t�gliches Verhalten preisgeben. Das Potenzial und die Bedeu-
+tung der Datengenerierung im privaten Bereich aus unternehmerischer Sicht zeigen die nachfol-
+genden Beispiele. 
+Social-Media-Platformen5 sind f�r Unternehmen eine ideale M�glichkeit, um 
+Produkte und Dienstleistungen zielgerichtet anbieten zu k�nnen. Die Anbieter 
+sammeln Nutzerdaten geb�ndelt zu allen denkbaren Lebens- und damit auch 
+Konsumbereichen und erstellen Pers�nlichkeitsprofile, die dann auf dem Werbemarkt angeboten 
+werden. Die Anwender k�nnen nach verschiedenen Kriterien analysiert werden, wie z.B. Ort und 
+Zeit des Zugriffs, Wohnort, Geschlecht, Familienstand, Beruf, Hobby, Haushaltgr��e, Alter etc. 
+Abbildung 1 zeigt die Entwicklung der monatlich aktiven Facebook-Nutzer vom 1. Quartal 2012 
+bis zum 4. Quartal 2019 (in Millionen). Allein die immensen Zahlen der Benutzer lassen erahnen, 
+wie viele Daten hier generiert werden. Ohne zielgerichtete Analysen k�nnen die Potenziale dieser 
+Daten jedoch kaum genutzt werden. 
+ 
+Abbildung 1: Anzahl der monatlich aktiven Facebook-Nutzer weltweit (Statista, 2020) 
+Aber nicht nur durch die Nutzung von Social-Media-Plattformen werden Daten erzeugt, sondern 
+auch durch den Gebrauch von Kundenkarten, wie z.B. Karten des Payback-Bonusprogramms oder 
+_________________________________________________ 
+5 Unter Social-Media-Plattformen werden alle Medien verstanden, die ihre Nutzer �ber digitale Kan�le in 
+der gegenseitigen Kommunikation und im interaktiven Austausch von Informationen unterst�tzen. 
+Informationsorien-
+tierte Unter-
+nehmensf�hrung 
+Ver�ndertes 
+Nutzerverhalten 
+erzeugt eine Vielfalt 
+von Daten  
+0WcS1ujwni6KMacwr8K/7+avzbr61Qc5iql3+J4AqF+lRnfyM1qhgFGUnq7eZyoN
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 10 ===
+================================================================================
+ 
+Einf�hrung 
+ 
+4 
+der Vielfliegerprogramme. Mehr als jeder zweite Haushalt besitzt eine Payback-Karte. Verbreitet 
+sind neben Payback die Karten des Ikea Club (27 Prozent), von Tchibo (18 Prozent), die Deutsch-
+landCard (17 Prozent), die Douglas Card (16 Prozent), die Kundenkarte von Peek & Cloppenburg 
+(12 Prozent), die Shell-ClubSmart-Karte (10 Prozent), die bahn.bonus-Karte (9 Prozent) sowie die 
+Miles & More-Karte und der Online-Anbieter Groupon mit je 8 Prozent (Kantar, 2015). In der 
+folgenden Abbildung 2 sind einige Fakten zu Bonusprogrammen dargestellt. 
+ 
+ 
+Abbildung 2: Bonusprogramm Monitor 2019 (Splendid Research, 2019) 
+1.2 Vor- und Nachteile f�r Unternehmen 
+Durch derartige Bonusprogramme und Social-Media-Plattformen entstehen ins-
+gesamt also immer genauere und aktuellere Daten �ber bestehende, aber auch 
+potenzielle Kunden. Diese Daten besitzen f�r Unternehmen einen erheblichen Wert, da sie so 
+immer gezielter die relevanten Kundengruppen ansprechen k�nnen. Je individueller und konkreter 
+die Kommunikation gestaltet ist, desto wahrscheinlicher ist es, dass der Kundenkontakt hergestellt 
+wird und Kunden sich f�r die Produkte interessieren bzw. diese kaufen. F�r die Kunden bestehen 
+die Vorteile in passenden Angeboten, die Zeit und Aufwand bei der Suche sparen. Ob das den 
+Nachteil des �gl�sernen Kunden� und der unerw�nschten Profilbildung aufwiegt, bleibt der Ein-
+sch�tzung des Kunden �berlassen. 
+Vorteile f�r die 
+Unternehmen 
+Nachteile f�r die 
+Unternehmen 
+XIykTgzQZrkDlLrpzHIryuy3Jh2Jn+o8lrE658gUTSgewrXNqzy3uR+KCdFI3VBx
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 11 ===
+================================================================================
+ 
+Einf�hrung 
+5
+Nachdem zuvor vor allem die aus Unternehmenssicht positiven Aspekte der steigenden Menge an 
+�passgenauen� Daten erl�utert wurde, muss nun konsequenterweise auch die Schattenseite be-
+leuchtet werden. Denn durch die Nutzerdaten, aber auch durch ein grunds�tzlich steigendes Da-
+tenaufkommen entsteht �nur� eine extrem gro�e Menge an Daten, aber keine Informationen. 
+Ein hoher zeitlicher Entscheidungsdruck ist in den meisten Unternehmen heute zudem die Realit�t, 
+wenn es um Informationsversorgung und Entscheidungsvorbereitung geht. Dass die Verarbei-
+tungskapazit�t von Menschen dabei zwangsl�ufig an ihre Grenzen st��t, ist wenig �berraschend. 
+Es stellt sich daher eine zentrale Frage: Mit welchen Konzepten, sowohl individueller, betriebswirt-
+schaftlicher als auch technischer Art, kann die Informationsverarbeitung auf die unternehmeri-
+schen Ziele fokussiert werden? 
+Um diese Frage beantworten zu k�nnen, ist es zun�chst einmal sinnvoll, die unternehmerischen 
+Entscheidungsprozesse zu systematisieren und einen Analyserahmen f�r das Konzept der BI zu 
+definieren, der die relevanten Bausteine, aber auch deren Zusammenh�nge aufzeigt. 
+1.3 Aufbau des Lehrbriefs �Business Intelligence� und Lernziele der ersten Ein-
+heit 
+Der Lehrbrief f�r das Mastermodul �Business Intelligence� verfolgt zwei Ziele: 
+Den Lesenden soll erstens vermittelt werden, dass nur ein ganzheitlicher, alle 
+oben bereits genannten Elemente integrierender Ansatz die BI im Unternehmen erfolgreich ein-
+setzbar macht. Zweitens sollen die dazu nutzbaren fachlichen, methodischen und technischen 
+Instrumente gezeigt und erl�utert werden. So ist der Mehrwert dieses Lehrbriefs, nach der Lekt�re 
+�ber ein anwendungsorientiertes, aber dennoch konzeptionell gut fundiertes Wissen zur BI zu 
+verf�gen. Es geht darum, die F�higkeit zu entwickeln, BI im Unternehmen erfolgreich einzusetzen 
+und zu wissen, welche fachlichen, methodischen und technischen M�glichkeiten daf�r grunds�tz-
+lich existieren. F�r tiefergehende methodische, d. h. algorithmische, und technische Kenntnisse 
+sei auf andere Module der Wirtschaftsinformatik oder der Informatik verwiesen. In Abbildung 3 
+sind die Inhalte der vier Einheiten und ihre Zusammenh�nge noch einmal aufgezeigt. 
+ 
+ 
+ 
+ 
+Ziele des Lehrbriefs  
+8lLeTqkmgcsfNg2ROT7mwZPTDRLm7ZQoFY15fHz/fm9+wQzc097OTIqtKR6PKVYm
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 12 ===
+================================================================================
+ 
+Einf�hrung 
+ 
+6 
+ 
+Abbildung 3: Inhaltliche Aufteilung des Lehrbriefs �Business Intelligence� 
+Die Einheit 1 besch�ftigt sich mit den begrifflichen und konzeptionellen Grundlagen der BI und 
+der individuellen sowie fachlichen Perspektive als Basis f�r die Entscheidungsunterst�tzung. Me-
+thodische Ans�tze und Auswertungsinstrumente sind das Thema in Einheit 2, um darauf aufbau-
+end in Einheit 3 Konzepte f�r die Datenhaltung und -bereitstellung zu erkl�ren. Die Einheit 4 
+widmet sich neueren Entwicklungen in der BI und zeigt einige Anwendungsbeispiele. 
+Die Einheit 1 des vorliegenden Mastermoduls dient dazu, zun�chst be-
+griffliche und konzeptionelle Grundlagen f�r das Thema �BI� zu legen. In 
+der Literatur gibt es eine Vielzahl von Begriffen und auch Konzepten und so ist es f�r das Ver-
+st�ndnis wichtig, eine gemeinsame �Sprache� festzulegen. W�hrend die gemeinsame Sprache 
+zun�chst sicherstellt, dass die �richtigen Vokabeln� genutzt werden, muss zudem das begriffliche 
+Konzept hinter jedem Terminus klar sein, weil ansonsten die dazugeh�rigen Inhalte, aber auch 
+Schlussfolgerungen nicht nachvollzogen werden k�nnen. Wie bereits gesagt, ist hier die zentrale 
+Botschaft, dass die BI nicht einfach ein technisches Konzept ist, sondern weitaus umfassender 
+interpretiert werden muss, indem die entscheidungspsychologischen, fachlichen, organisatori-
+schen und technischen Anforderungen integriert ber�cksichtig werden. Die Lernziele dieser Ein-
+heit lassen sich wie folgt zusammenfassen: 
+Kapitel 2: Konzeptionelle Grundlagen 
+� 
+Erl�uterung der Entwicklung des Begriffs BI und Einordnung in die Literatur: Sie verstehen, 
+wie sich das Verst�ndnis f�r BI entwickelt hat, und welche Auspr�gungen es gibt. 
+� 
+Systematisierung von Entscheidungsprozessen: Sie verstehen, wie sich Entscheidungsprozesse 
+als Grundlage f�r die konkrete Umsetzung des Konzepts der BI beschreiben lassen. 
+Kapitel 3: Business-Intelligence-Architektur 
+� 
+Architektur: Sie verstehen den Zusammenhang und das Zusammenwirken der einzelnen 
+Komponenten innerhalb der Business-Intelligence-Architektur. 
+Inhalte und Lernziele 
+der Einheit 1  
+9T+nL85IUVQR+9s0rvmCQjM8vdztuJ0P1FJLvZKS9C5Mj4iHCCOHgMsg2ge7V/N4
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 13 ===
+================================================================================
+ 
+Einf�hrung 
+7
+Kapitel 4: Einordnung in das betriebliche Informationsmanagement 
+� 
+Begriffskonzept: Sie k�nnen die verschiedenen Begriffe innerhalb des betrieblichen Informa-
+tionsmanagements korrekt einordnen. 
+� 
+Definition des Analyserahmens: Sie kennen einen Analyserahmen, in den sich das integrierte 
+Konzept mit Entscheidungstr�gern, organisatorischen Rahmenbedingungen und Anforde-
+rungen sowie der technischen Infrastruktur systematisch verorten l�sst. 
+Kapitel 5: Zusammenfassung und Ausblick 
+� 
+Zusammenfassung der Inhalte und Ergebnisse der Einheit: Sie erhalten noch einmal einen 
+kurzen �berblick �ber die behandelten Themen und deren Zusammenh�nge. 
+� 
+�bersicht �ber die Themengebiete der nachfolgenden Einheiten: Sie verstehen, wie die Ein-
+heiten inhaltlich zusammenh�ngen und gewinnen einen �berblick �ber die kommenden In-
+halte. 
+Zum Nachdenken und Diskutieren 
+1. Welche Rolle kann das Konzept der BI im Rahmen der Informationsverarbeitung spielen? 
+Welche Potenziale k�nnen genutzt werden, und wo sehen Sie Grenzen? 
+�bungsaufgaben 
+2. Welche Vorteile und Nachteile entstehen f�r Unternehmen durch die Verbreitung von so-
+zialen Netzwerken in Bezug auf die Entstehung von Informationen? 
+3. Welche Vorteile und Nachteile sehen Sie f�r die Kunden? 
+ 
+ 
++2YgOMI079KlNwgQw06W4oBG4UC0soKdigfqsQmX1l94QIQhMYtDlPBdrtgCbkFM
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 14 ===
+================================================================================
+ 
+Konzeptionelle Grundlagen 
+ 
+8 
+2 
+Konzeptionelle Grundlagen 
+Der Begriff der BI wird auch heute noch nicht einheitlich verwendet. Damit die 
+vorgestellten Inhalte eingeordnet werden k�nnen, ist es wichtig, das Modell zu 
+verstehen, das den �berlegungen zugrunde gelegt wird, und so widmet sich dieses Kapitel der 
+Entwicklung einer konzeptionellen Grundlage. Dazu ist es interessant, die Entwicklung der BI kurz 
+aufzuzeigen, denn so wird auch klar, warum sich das Verst�ndnis der BI zun�chst auf eine prim�r 
+technische Basis st�tzt und erst sp�ter zunehmend die betriebswirtschaftlichen Fachkonzepte er-
+g�nzt wurden.  
+2.1 Entwicklung des Konzepts �Business Intelligence� 
+� Der erste heute dokumentierte Beitrag, der im Titel �Business Intelligence� 
+trug, wurde von Luhn (1958) ver�ffentlicht. Er hat sich mit der selektiven Ver-
+breitung von Informationen besch�ftigt und in diesem Kontext den Begriff gepr�gt: 
+� 
+Business: �Business is a collection of activities carried on for whatever purpose, be it in sci-
+ence, technology, commerce, industry, law, government, defense, et cetera.� 
+� 
+Intelligence: �Intelligence is [...] the ability to apprehend interrelationships of presented facts 
+in such a way as to guide towards a desired goal.� 
+� 
+Business-Intelligence-System: �An automatic system is being developed to disseminate infor-
+mation to the various sections of any industrial, scientific, or government organization. This 
+intelligence system will utilize data processing-machines for auto-abstracting and auto-en-
+coding of documents and for creating interest profiles for each of the �action points� in an 
+organization. Both incoming and internally generated documents are automatically ab-
+stracted, characterized by a word pattern, and sent automatically to appropriate action 
+points.� 
+Luhn (1958) stellt also die wichtige Verbindung zwischen dem unternehmerischen Auftrag und 
+Ziel (Business) mit den dazugeh�rigen Informationen als Basis f�r die Entscheidungsprozesse (In-
+telligence) und der technischen Unterst�tzung (Business-Intelligence-System) konsequent her. Im 
+Laufe der Entwicklung der BI ist dieser Zusammenhang zun�chst aber wieder in den Hintergrund 
+getreten. 
+Die steigende Menge an Daten, bessere Analysealgorithmen, aber vor allem die 
+Entwicklung immer besserer Prozessoren, die eine automatisierte Auswertung 
+der Daten erlaubten, haben dazu gef�hrt, dass sich die Entwicklung der BI zun�chst auf die tech-
+nischen Machbarkeiten konzentriert hat. Gleichzeitig hat sich geradezu ein Hype entwickelt, der 
+zu vollkommen �berzogenen Ank�ndigungen, wie z.B. dem folgenden Zitat, gef�hrt hat: 
+�It�s in there. The discovery, the fact, the one piece of the puz-
+zle, that will blow away competition, propel your company to 
+Entwicklung des 
+Begriffs der BI 
+Der Ursprung des BI-
+Begriffs 
+Technische Sicht auf 
+die BI 
+8pt4Qgu5v0d6zKz5FDxCxbreAbx2VxyhD3iuLXvd0+2GVRaeF+RKLsN7JdiykkBj
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 15 ===
+================================================================================
+ 
+Konzeptionelle Grundlagen 
+9
+the top, and stick a �VP� [Anmerkung der Autorin: Vice President] 
+right after your name. It�s right there in your data-base. But you 
+can�t see it. Yet.� (Hedberg, 1995). 
+Der Fokus lag dabei auf �getting data in and getting data out� (Watson & Wixom, 2007). Damit 
+das (technische) Datenmanagement reibungslos funktioniert, muss vor allem die IT-Architektur 
+angemessen sein und folgende Fragen beantworten: 
+1. getting data in: 
+� 
+Welche Datenquellen m�ssen wie angeschlossen werden? 
+� 
+Wie soll das Data Warehouse als strukturierter Datenspeicher aufgebaut sein? 
+� 
+Wie m�ssen die Metadaten strukturiert sein? 
+F�r den weiteren Verlauf des Lehrtextes wird ein Data Warehouse wie folgt definiert: 
+Ein Data Warehouse (DWH) ist eine unternehmensweite Datenbank, die als zentraler Speicher 
+eine einheitliche und konsistente Datenbasis zur Entscheidungsunterst�tzung aller Bereiche 
+und Ebenen im Unternehmen bietet und unabh�ngig von operativen Anwendungssystemen 
+betrieben wird. Im Data Warehouse werden alle f�r ein Unternehmen relevanten internen und 
+externen Daten zusammengef�hrt und f�r verschiedenartige Auswertungen und Analysen f�r 
+l�ngere Zeitr�ume gespeichert (Hansen und Neumann 2019). 
+2. getting data out: 
+� 
+Wie kann der Datenzugriff m�glichst nutzerfreundlich gestaltet werden? 
+� 
+Welche Zugriffskonzepte (z.B. Data Marts) machen den Zugriff schneller? 
+� 
+Wie sollen die aufbereiteten Daten zur Verf�gung gestellt werden? 
+F�r den weiteren Verlauf des Lehrtextes werden Data Marts wie folgt definiert: 
+Data Marts sind ein aggregierter Teilausschnitt des Data Warehouse, der die relevanten Daten 
+f�r einen bestimmten abgegrenzten Themen- und/oder Anwenderkreis enth�lt. Die Data Marts 
+beinhalten z.B. die Daten der einzelnen Gesch�ftsprozesse (Kemper et al. 2010, S. 24; Kimball 
+und Ross 2011, S. 10). 
+Der letzte oben genannte Punkt wird auch durch die Entwicklungsschritte des 
+Data Mining (DM) deutlich, das als eine der Analysegrundlagen unzertrennlich 
+zur BI geh�rt. Data Mining beschreibt den Einsatz verschiedener Verfahren zur systematischen 
+und h�ufig automatisierten Analyse von (gro�en) Datenbest�nden zur Aufdeckung von verborge-
+nen, strukturellen Mustern und Beziehungen sowie zur Unterst�tzung von Prognosen. Im Gegen-
+satz zu Verfahren, bei denen in der Regel Antworten auf spezifische Fragen gesucht werden, ist 
+das Ziel von Data Mining die Identifikation von bisher unbekannten Zusammenh�ngen (Mertens 
+et al. 2012, S. 52). 
+Data Mining als Teil 
+der BI 
+MBwjER1aDAGhv/2oxWAw7lxJjaKPFxZaEjUDj109wIm5WCgQxTmLU2WlW5ZBd8nR
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 16 ===
+================================================================================
+ 
+Konzeptionelle Grundlagen 
+ 
+10 
+Data Mining bezeichnet die softwaregest�tzte Ermittlung bisher unbekannter Zusammen-
+h�nge, Muster, Regeln und Trends in umfangreichen Datenbest�nden, die bei der Unterst�t-
+zung der Entscheidungsfindung und bei der Prognose von zuk�nftigen Ereignissen helfen k�n-
+nen (Hansen und Neumann 2019). 
+Data Mining wird z.B. h�ufig eingesetzt, um Informationen �ber Kundenpr�ferenzen zur Unter-
+st�tzung eines zielgerichteten, personalisierten Marketings zu gewinnen. Dabei k�nnen nicht nur 
+abstrakte Muster oder Trends, sondern auch spezifische Informationen zu einzelnen Kunden er-
+mittelt werden. Das folgende Fallbeispiel veranschaulicht die Relevanz des Data Minings. 
+Data Mining bei der Adolf W�rth GmbH & Co. KG6                                   
+ 
+Die Adolf W�rth GmbH & Co. KG betreibt ein umfassendes, unternehmensweites Data-
+Warehouse-System. Der globale Handel mit Befestigungs- und Montagematerial bildet das 
+Kerngesch�ft der W�rth-Gruppe mit weltweit �ber drei Millionen Kunden. 
+Die Herausforderug bei der Adolf W�rth GmbH & Co. KG bestand darin, dass in typischen 
+Berichtsanwendungen Messdaten nach Kennzahlen (z.B. Umsatzrendite) und Dimensionen 
+(z.B. Euro) strukturiert und entlang dieser �berlegungen verdichtet (z.B. Produktgruppen) 
+wurden. Dadurch wurden aber nicht nur die typischen Analysepfade vorweggenommen, 
+sondern durch die Verdichtung (vgl. Einheit 2) auch die erzielbaren Informationen (z.B. 
+Abweichungsberechnungen) 
+eingeschr�nkt. 
+Erkenntnisse, 
+die 
+sich 
+aus 
+komplexen 
+Wechselwirkungen ergeben h�tten k�nnen, blieben verborgen, da die Einzeltransaktionen mit 
+ihren Zusammenh�ngen in den vorbereiteten Aggregationen untergingen. Das Aufsp�ren 
+dieser komplexen Wechselwirkungen in Datenr�umen, die f�r das Berichtswesen aufbereitet 
+wurden, war damit praktisch unm�glich. Die L�sung hierf�r bildeten Verfahren des Data 
+Mining.  
+Die Einsatzgebiete von Data Mining erstrecken sich im gesch�ftlichen Umfeld auf viele Bereiche 
+und Branchen. Data-Mining-Verfahren, die auch die Adolf W�rth GmbH & Co. KG einsetzt, 
+sind unter anderem die Assoziationsanalyse, Clusteranalyse, lineare Regression und 
+Entscheidungsb�ume.7 
+Eine der h�ufigsten Anwendungen findet Data Mining bei Cross-Selling-Aktivit�ten. Mit 
+zunehmender Artikelbreite und Anzahl der Transaktionen eines Handelsunternehmens wird 
+die Bewertung von Assoziationen zwischen den Produkten immer schwerer. Mit Hilfe der 
+Assoziationsanalyse, einer typischen Data Mining Anwendung, werden Assoziationsregeln der 
+Form �Wenn Produkt A gekauft wird, dann wird auch Produkt B gekauft� und/oder die 
+Reihenfolge, in der die Produkte gekauft werden, entdeckt. Die Assoziationsregeln spielen 
+dann auch bei der Adolf W�rth GmbH & Co. KG eine entscheidende Rolle bei 
+Marketingstrategien wie z.B. Produktb�ndelung oder bei der Preisfindung. 
+In der nachfolgenden Tabelle 1 (Entwicklung des Data Mining) l�sst sich die Entwicklung, aber 
+auch die Rolle der Technikunterst�tzung f�r immer aufw�ndigere Fragestellungen recht einfach 
+_________________________________________________ 
+6 https://www.information-works.de/referenzen/88-kunden/121-referenzstories.html 
+7 Die Data-Mining-Verfahren werden in der Einheit 2 des Lehrbriefs Business Intelligence n�her erl�utert. 
+cwA2cxZjGF1SISNt89ZJ++sWg+lcZkCEaAhzyw/aer4IUEZmQxYqUxCZhDUt/R9a
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 17 ===
+================================================================================
+ 
+Konzeptionelle Grundlagen 
+11
+nachvollziehen. W�hrend in den 1960er Jahren die Technik vor allem die Datensammlung und 
+einfache Abfragen auf dem Datenbestand unterst�tzt hat, konnten mit der Entwicklung von re-
+lationalen Datenbanken und entsprechenden Abfragesprachen schon mehr Dimensionen (in die-
+sem Beispiel: Produkte, Region, Zeit) einbezogen werden. Diese Entwicklung hat sich in den 
+1990er Jahren fortgesetzt und hat so zu immer genaueren Analysen des Datenbestandes gef�hrt. 
+Doch waren die Ergebnisse immer noch retrospektiv, d.h. auf die Vergangenheit bezogen. 
+�Echte� Entscheidungsunterst�tzung sollte aber auch in die (n�here) Zukunft schauen und hier 
+zuverl�ssige Prognosen erlauben. Dieser Anforderung wurde mit der Weiterentwicklung von leis-
+tungsf�higeren Algorithmen und Rechnerarchitekturen Rechnung getragen. Auf dieser Grundlage 
+erfolgt auch die aktuelle Entwicklung der BI im Kontext von �BI as a Service�, �Real-Time BI� und 
+weiteren Konzepten, die in den sp�teren Einheiten erl�utert, aber zum Verst�ndnis nachfolgend 
+kurz eingef�hrt werden. 
+Bei BI as a Service wird der Betrieb des BI-Systems als Dienstleistung an einen Drittanbieter, z.B. 
+�ber einen Cloud-Service, ausgelagert. Bei Real-Time BI werden die Daten innerhalb des BI-
+Systems in Echtzeit aktualisiert. 
+Methodische und fachliche Grundlagen wurden dabei h�ufig in den Hinter-
+grund gestellt. In vielen Praxisanwendungen herrschte und herrscht auch heute 
+noch die Meinung, dass die richtige Software auf der richtigen Maschine alle 
+Entscheidungsprobleme l�sen kann. Dieser Trend kommt Produktherstellern 
+entgegen und so wurde und wird er oftmals durch entsprechende Werbekonzepte noch verst�rkt. 
+Tabelle 1: Entwicklung des Data Mining (angelehnt an Thearling 2012) 
+Entwicklungs-
+schritt 
+Exemplarische Fragestel-
+lung 
+Unterst�tzende Tech-
+nologien 
+Charakteristika 
+Datensammlung 
+(1960er) 
+�Wie haben sich meine 
+Gesamtertr�ge in den 
+letzten 5 Jahren entwi-
+ckelt?� 
+Computer, Magnet-
+b�nder, Disketten 
+Retrospektiv; stati-
+sche Datenbereitstel-
+lung 
+Datenzugriff 
+(1980er) 
+�Welche Produkte wur-
+den in Nordrhein-Westfa-
+len (NRW) im letzten M�rz 
+verkauft?� 
+Relationale Datenbank 
+Management Systeme, 
+Structured Query Lan-
+guage (SQL)8, Open 
+Database Connectivity 
+(ODBC)9 
+Retrospektiv dynami-
+sche Datenbereitstel-
+lung auf Datensatze-
+bene 
+_________________________________________________ 
+8 SQL ist eine Datenbanksprache zur Definition von Datenstrukturen in relationalen Datenbanken. 
+9 ODBC ist eine standardisierte Datenbankschnittstelle, die SQL als Datenbanksprache verwendet. 
+Data Mining als Teil 
+der BI 
+Fachliche und 
+methodische Aspekte 
+RCTEHAyR2DwBhl1f5M80QKe39fHURlSpAFM+j8pKHZyLiAMFHc+qfT4Zsa2pjfQ0
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 18 ===
+================================================================================
+ 
+Konzeptionelle Grundlagen 
+ 
+12 
+Data Warehou-
+sing und Ent-
+scheidungsun-
+terst�tzung 
+(1990er) 
+�Welche Produkte wur-
+den in NRW im letzten 
+M�rz verkauft? Aufschl�s-
+selung f�r Hagen.� 
+Online Analytical Pro-
+cessing (OLAP), multi-
+dimensionale Daten-
+banken, Data-
+Warehouse-Systeme 
+Retrospektiv dynami-
+sche Datenbereitstel-
+lung auf verschiede-
+nen Ebenen 
+Data Mining 
+(2000 bis 2010) 
+�Welche Produkte werden 
+sich in Hagen in den 
+n�chsten Monaten ver-
+kaufen? Weshalb?� 
+�advanced algo-
+rithms�, hoch-parallele 
+Datenverarbeitung 
+Prospektiv, proaktive 
+Daten- und Informa-
+tionsbereitstellung 
+Cloud-Compu-
+ting10 (ab 2010) 
+�Wie k�nnen wir kurzfris-
+tige Entscheidungen tref-
+fen?� 
+Mobile BI-L�sungen 
+(z.B. mit Smartphone-
+Apps), Echtzeitverar-
+beitung (Real-Time BI) 
+Ortsunabh�ngige 
+und jederzeit verf�g-
+bare Daten und Aus-
+wertungen 
+ 
+Die im Kontext von Data Mining angewendeten Methoden beruhen auf statistischen Verfahren 
+sowie auf Verfahren des maschinellen Lernens. Mit Hilfe von Regressionsverfahren k�nnen bei-
+spielsweise Trend- und Zeitreihenanalysen durchgef�hrt sowie statistische Beziehungen oder Wir-
+kungszusammenh�nge zwischen einzelnen Variablen (z.B. Kennzahlen) ermittelt werden. Damit 
+k�nnen auf Basis historischer Daten Prognosen f�r zuk�nftige Entwicklungen erstellt werden. 
+Clustering-Verfahren versuchen dagegen, bestimmte Merkmale in Datens�tzen (z.B. im Kunden-
+stamm) zu ermitteln und darauf basierend einzelne Gruppen zu segmentieren. Des Weiteren k�n-
+nen Verfahren des maschinellen Lernens wie z.B. Softwareagenten, die eigenst�ndig Datenbe-
+st�nde analysieren, Unternehmen helfen, Erkenntnisse auch aus sehr gro�en Datenmengen zu 
+erzielen (vgl. Haag und Cummings 2010, S. 79; Hansen und Neumann 2019). 
+Dabei hat schon Ackoff (1967) die folgenden, auch heute noch h�ufig getroffenen, Annahmen 
+in Frage gestellt: 
+1. 
+�The critical deficiency under which most managers operate is the lack of relevant infor-
+mation. 
+ 
+2. 
+The manager needs the information he wants. 
+ 
+3. 
+If a manager has the information he needs his decision making will improve. 
+ 
+4. 
+Better communication between managers improves organizational performance. 
+ 
+_________________________________________________ 
+10 Cloud-Computing beschreibt den nach Bedarf, zeit- und ortsunabh�ngig sowie virtualisiert �ber das Internet bereit-
+gestellten, gemeinsam genutzten Vorrat konfigurierbarer IT-Ressourcen (z.B. Netzwerke, Server, Anwendungen). 
+ 
+pPFQsV+8g+QjIrR8sHRso7B1Iv+E4Qe/JqZh6Xmp5Cvt8XHi7qsdVBHBan+Zfhn9
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 19 ===
+================================================================================
+ 
+Konzeptionelle Grundlagen 
+13
+5. 
+A manager does not have to understand how his information systems works, only how to 
+use it.� 
+ 
+W�hrend die erste Annahme in Teilen zutrifft, muss dennoch festgehalten wer-
+den, dass Manager neben einem Defizit relevanter Information vor allem ein 
+�berangebot irrelevanter Daten und Informationen erleiden (vgl. S. 5). Es ist f�r ein IT-System stets 
+leichter, immer gr��ere Mengen an Daten f�r immer schnellere und komplexere Abfragem�glich-
+keiten bereitzuhalten, als eine Relevanzbewertung vorzunehmen. Das schon in Ack( 1967) avi-
+sierte Ziel einer automatisierten Textzusammenfassung ist heute trotz vieler Fortschritte immer 
+noch nicht als �industrial strength product� verf�gbar (vgl. Sp�rck-Jones, 1999, 2007).  
+Die zweite Annahme muss infrage gestellt werden, da sie nicht ber�cksichtigt, dass der subjektive 
+Informationsbedarf (�wants�) vom objektiven Informationsbedarf (�needs�) abweichen kann. 
+Ackoff (1967) weist in diesem Zusammenhang insbesondere darauf hin, dass die nachgefragte 
+Informationsmenge ohne ein Modell des zugrundeliegenden Entscheidungsprozesses in der Regel 
+viel zu gro� ausfallen wird. 
+ 
+Abbildung 4: Vom Informationsbedarf zum Informationsstand (Picot et al., 2003, S. 82)  
+Die dritte Annahme ignoriert die Tatsache, dass es von der Information bis zur Entscheidung eben-
+falls noch ein weiter Weg sein kann. Auch hier kann, wie schon beim vorherigen Punkt, laut Ackoff 
+(1967) nur ein geeignetes Modell des Entscheidungsprozesses helfen, die Information auch richtig 
+zu verwerten. Bez�glich der vierten Annahme muss ins Kalk�l gezogen werden, dass die Kommu-
+nikation an sich ebenfalls Aufwand verursacht. Bekannterma�en w�chst die Anzahl der Kommu-
+nikationspaare dabei �berproportional. W�hrend z.B. zwei Manager ein Kommunikationspaar bil-
+den, entstehen bei vier Managern dagegen schon sechs Kommunikationspaare (vgl. Balzert, 2008, 
+S. 66f.). Ackoff (1967) skizziert dar�ber hinaus einen Fall, in dem Manager unabh�ngig voneinan-
+der die Leistungskennzahlen optimieren, welche ihren jeweiligen Bereich betreffen. In dem Mo-
+ment, in dem ein Manager Zugriff auf die Leistungskennzahlen eines anderen Bereichs erh�lt, 
+kann dies zu unerw�nschten Nebeneffekten f�hren, welche erneut zeigen, dass ein �Zuviel� an 
+Information und Kommunikation ebenfalls sch�dlich sein kann. 
+Informationsbedarf 
+23g6gs9Je1cn3cgmJDT3/Mo+AOX2dqHp7RqEdqOJMOpM2DFn+nPbaVagp7i04lxN
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 20 ===
+================================================================================
+ 
+Konzeptionelle Grundlagen 
+ 
+14 
+Die letzte Annahme betrifft schlie�lich weniger die Entscheidungsunterst�tzung durch ein IT-Sys-
+tem, sondern mehr die Entscheidung �ber IT-Systeme an sich. BI im heutigen Sinne ist ohne IT-
+Unterst�tzung nicht vorstellbar. Ackoff (1967) spricht sich diesbez�glich daf�r aus, dass Manager 
+eine ausreichende Kompetenz bez�glich der inneren Abl�ufe von IT-Systemen zur Entscheidungs-
+unterst�tzung haben m�ssen, um diese zu evaluieren und die Plausibilit�t der Ergebnisse einsch�t-
+zen zu k�nnen. Auch dazu soll der vorliegende Kurs einen Beitrag leisten. 
+ 
+Diese Aussagen machen deutlich, dass die BI durch die Information und ihre 
+Nutzung bestimmt ist und wertvoll wird. Die technischen Konzepte jedoch sind 
+zweitrangig und m�ssen vor allem in ihrer Rolle als Produktivit�ts- aber auch 
+Kostentreiber untersucht und verstanden werden. Die BI als Gesamtkonzept dient also der Ent-
+scheidungsunterst�tzung im Unternehmen. Mit dieser Feststellung ist der grundlegende Begriff 
+der �Intelligenz� verbunden, f�r den deshalb im Folgenden eine Begriffsdefinition entwickelt wird. 
+ 
+Es gibt sehr viele Erkl�rungen und Definitionen f�r Intelligenz, je nachdem, aus welcher Perspek-
+tive der Begriff untersucht wird. Eine Analyse des Begriffs im Kontext unternehmerischer Entschei-
+dung muss zwischen dem Individuum und der Organisation unterscheiden (Hummeltenberg, 
+2008). Die Intelligenz von Individuen ist ein vieldiskutiertes und nicht abschlie�end erfasstes Ph�-
+nomen (Wechsler, 1956). Einige in diesem Kontext passende Definitionen bietet die Enzyklop�die 
+Merriam-Webster11: 
+�The skilled use of reason.� 
+�The ability to apply knowledge to manipulate one�s environment or to think abstractly as meas-
+ured by objective criteria (as tests).� 
+�The act of understanding.� 
+�Information concerning an enemy or possible enemy or an area.� 
+Diese vier Punkte fassen den Begriff der Intelligenz, wie er f�r die BI in Bezug auf das Individuum 
+relevant ist, gut zusammen: 
+Individuelle Intelligenz zeigt den willentlichen und planm��igen Einsatz der individuellen F�-
+higkeit zur Nutzung von Informationen und das Verm�gen, aus der Interpretation Schlussfol-
+gerungen zu ziehen.  
+Insbesondere der letzte Punkt ist zu beachten, denn er gibt eine der Bedeutungen von �Intelli-
+gence� im englischen Sprachraum wieder12: Hier bezieht sich der Begriff auf die gezielte Samm-
+lung und Weiterleitung von relevanten Informationen. Die Informationen erhalten ihre Relevanz 
+_________________________________________________ 
+11 http://www.merriam-webster.com/dictionary/intelligence 
+12 Sehr prominent findet sich der Terminus in der Bezeichnung f�r einen der amerikanischen Auslandsgeheimdienste 
+�CIA�: Central Intelligence Agency. 
+Intelligenz als 
+Grundlage f�r die BI  
+qhntIRiTWwMWl5d9IlfHq1QM1aihF3ZDkwmQbUWDqBSL8rPi5vyUJR17kfkxRsmD
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 21 ===
+================================================================================
+ 
+Konzeptionelle Grundlagen 
+15
+durch ihren vorbestimmten Zweck im Rahmen des Zielerreichungsprozesses und ihrer Auswertung 
+durch Individuen. 
+Eine gute Erg�nzung im Rahmen der Begriffsfindung ist auch die informationstheoretisch orien-
+tierte Definition von Hofst�tter (1971), der unter Intelligenz die �F�higkeit zum Auffinden von 
+Ordnungen und Regelhaftigkeit im Zusammentreffen, Neben- und Nacheinander von Ereignissen� 
+versteht. Mit dieser Auffassung schlie�t sich auch wieder der Kreis zu dem zuvor zitierten Begriffs-
+verst�ndnis von Luhn (1958). 
+Organisatorische Intelligenz: Die Organisation wird h�ufig auch als soziotechnisches System 
+bezeichnet. Es wird konstituiert durch die Beziehungen zwischen Akteuren, der Organisation 
+und der technischen Infrastruktur. Somit liegt ein deutlicher Unterschied zum Individuum vor, 
+das ein � wenn auch wichtiger � Teil des soziotechnischen Systems ist. 
+Eine Organisation kann demnach als �intelligent� bezeichnet werden, wenn 
+� 
+sie durch Informationsprozesse Anforderungen und geforderte Ver�nderungen erkennen, 
+analysieren und interpretieren kann, 
+� 
+sie durch entsprechende Feedbackmechanismen lernt, mit sich ver�ndernden Umfeldbedin-
+gungen umzugehen und sich an sie anzupassen (�lernende Organisation�), 
+� 
+sie durch die Informationsprozesse und Feedbackmechanismen ein geplantes Ziel verfolgen 
+und erreichen kann. 
+2.2 Business Intelligence als Entscheidungsunterst�tzung 
+Die Informationen, die durch individuelle und organisatorische Intelligenz 
+verarbeitet werden, dienen also, wie im vorherigen Abschnitt gezeigt, 
+der Unterst�tzung von Entscheidungsprozessen. In diesem Abschnitt soll 
+nun gekl�rt werden, wie sich Entscheidungsprozesse im Sinne der BI sys-
+tematisieren lassen. Dazu lassen sich zun�chst zwei grunds�tzliche Ans�tze der Systematisierung 
+unterscheiden. Der erste Ansatz konzentriert sich auf die Formalisierung des Entscheidungspro-
+zesses unter Ber�cksichtigung des Zielsystems und der Nebenbedingungen. Der zweite Ansatz 
+systematisiert Entscheidungsprozesse auf Basis der Handlungsphasen des Entscheiders. 
+2.2.1 Formale Modellierung von Entscheidungsprozessen 
+Die Optimierung des Zielsystems unter gegebenen Nebenbedingungen ist das 
+Ziel bei der L�sung des gesamten, vorliegenden Entscheidungsproblems. F�r 
+eine ausf�hrliche Diskussion sei hier auf die g�ngigen Verfahren des Operations Research verwie-
+sen (z.B. Domschke & Drexl, 2007). Als ein f�r die BI n�tzliches Beispiel lassen sich aber Markov-
+Entscheidungsprozesse (engl. Markov Decision Process (MDP)) in ihrer einfachsten Form kurz er-
+kl�ren (z.B. Howard, 1960, Domschke & Drexl, 2007). Dieses L�sungsverfahren ist dadurch ge-
+kennzeichnet, dass es mehrere, voneinander abh�ngige Entscheidungen unterst�tzt. Durch diese 
+Entscheidungspro-
+zesse sollen durch die 
+BI unterst�tzt werden 
+Ein Ansatzpunkt: 
+Formale Modellierung 
+4A6UhN+kAl7WVfsYlO1s1Tg2fF0bxCrcsOLH0JcNUiwFm2tEBWO6riKzmFHZc/MV
+Urheberrechtlich gesch�tzt. Pers�nliche Kopie f�r Matrikelnummer 1334549
+
+
+================================================================================
+=== PAGE 22 ===
+python : Traceback (most recent call last):
+In Zeile:1 Zeichen:1
++ python "C:\Users\firat\Desktop\Akhs\BI\read_pdf.py" 2>&1 | Out-File - ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+================================================================================
+  File "C:\Users\firat\Desktop\Akhs\BI\read_pdf.py", line 16, in <module>
+    print(text)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, 
+in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001d467' in position 215: character maps to <undefined>

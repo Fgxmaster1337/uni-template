@@ -1,0 +1,2732 @@
+
+=== SEITE 1 ===
+Fakultät für 
+Wirtschafts­
+wissenschaft
+Univ.-Prof. Dr. Ulrike Baumöl
+Dipl.-Ök. Sarah Hackstein
+32711
+Business Intelligence
+Einheit 3
+Intelligente Datenhaltung und -bereitstellung
+NT2BWSo+dStPcsbFFmUIAXJ4HBdxWj6jND+d9/reAomDxpniF1QoJ+ibVMU8BZHP
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 2 ===
+Übersicht zum Modul 32711
+Business Intelligence
+Einheit 1:	
+Grundlagen der Business Intelligence
+Einheit 2:	
+Methoden und Instrumente der Business Intelligence
+Einheit 3:	 Intelligente Datenhaltung und -bereitstellung
+Einheit 4:	
+Neue Entwicklungen und Anwendungsbeispiele der Business Intelligence
+Das Werk ist urheberrechtlich geschützt. Die dadurch begründeten Rechte, insbesondere das Recht der Ver-
+vielfältigung und Verbreitung sowie der Übersetzung und des Nachdrucks, verbleiben bei der FernUniversität. 
+Das Werk darf gemäß § 53 UrhG im privaten Rahmen zum Beispiel durch Kopien oder digitale Speicherung 
+vervielfältigt werden.
+MSka80EABQCOHNdVjLFkwCTsG6PNr5P5ham9/XWkoHyrxtVPMXoedOVfAHtKrz/g
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 3 ===
+ 
+Inhaltsverzeichnis 
+I 
+ 
+Inhaltsverzeichnis 
+Abbildungsverzeichnis ................................................................................................................ II 
+Tabellenverzeichnis .................................................................................................................... III 
+Abkürzungsverzeichnis ............................................................................................................. IV 
+1 
+Einführung ....................................................................................................................... 1 
+1.1 
+Inhalte der Einheit 3 „Intelligente Datenhaltung und Datenbereitstellung“  ................. 2 
+1.2 
+Lernziele der Einheit „Intelligente Datenhaltung und Datenbereitstellung“  ................. 3 
+2 
+Grundlegende Begriffe und Konzepte .............................................................................. 4 
+2.1 
+Business Rules ............................................................................................................. 4 
+2.2 
+Metadatenmanagement .............................................................................................. 9 
+2.3 
+Datenqualitätsmanagement ...................................................................................... 13 
+ 
+2.3.1   Qualitätskriterien ............................................................................................ 14 
+ 
+2.3.2   Qualitätssicherungsstrategien ......................................................................... 16 
+ 
+2.3.3   Vorbeugung vor neuen Datenqualitätsproblemen ........................................... 18 
+3 
+Data Warehouse-Systeme .............................................................................................. 20 
+3.1 
+Gesamtarchitektur eines Data Warehouse-Systems .................................................... 21 
+3.2 
+Definition und Ziele eines Data Warehouse ................................................................ 22 
+3.3 
+Komponenten eines DWH-Systems ............................................................................ 24 
+3.4 
+Data Marts ................................................................................................................ 29 
+4 
+Online Analytical Processing (OLAP) ................................................................................ 33 
+4.1 
+Anforderungen ......................................................................................................... 34 
+4.2 
+Ausprägungen .......................................................................................................... 37 
+4.3 
+Operationen in OLAP ................................................................................................. 39 
+4.4 
+Zusammenfassung der Operationen in OLAP ............................................................. 43 
+5 
+Zusammenfassung ......................................................................................................... 45 
+Literaturverzeichnis .................................................................................................................. 47 
+ 
+h02uVmu5C9SG3V/X8NGnYlBTkj6/X5biKQN2N51Ne8jxWSWDKQJhsRf7ZZeag3ID
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 4 ===
+ 
+Abbildungsverzeichnis 
+ 
+II 
+Abbildungsverzeichnis 
+Abb. 1: Ausschnitt aus dem Business Motivation Model ................................................ 5 
+Abb. 2: Prozesse des Metadatenmanagements ............................................................ 12 
+Abb. 3: Datenqualitätskriterien .................................................................................... 14 
+Abb. 4: Prozess des Datenqualitätsmanagement .......................................................... 16 
+Abb.5: Total Quality Management-Konzept nach English ............................................ 17 
+Abb. 6: Einbettung von Data Warehouses in den Gesamtkontext der BI ...................... 20 
+Abb. 7: Zusammenfassende Gesamtarchitektur ........................................................... 21 
+Abb. 8: Dimensionen von operativen und dispositiven Daten ....................................... 23 
+Abb. 9: Der ETL-Prozess ............................................................................................... 26 
+Abb. 10: Der OLAP-Würfel .......................................................................................... 33 
+Abb. 11: Rechenschiebermodell .................................................................................. 34 
+Abb. 12: Beispielhaftes Star-Schema ............................................................................ 38 
+Abb. 13: Die OLAP-Operation Pivotisierung/Rotation ................................................... 39 
+Abb. 14: Pivottabelle ................................................................................................... 40 
+Abb. 15: Die OLAP-Operationen Roll-Up und Drill-Down ............................................. 41 
+Abb. 16: Die OLAP-Operation Slice .............................................................................. 42 
+Abb. 17: Die OLAP-Operation Dice .............................................................................. 42 
+Abb. 18: OLAP-Würfel ................................................................................................. 43 
+Abb. 19: OLAP-Operation: Roll-Up .............................................................................. 43 
+Abb. 20: OLAP-Operation: Drill-Down ......................................................................... 44 
+Abb. 21: OLAP-Operation: Slicing ................................................................................ 44 
+Abb. 22: OLAP-Operation: Dicing ................................................................................ 45 
+Abb. 23: OLAP-Operation: Rotation (Pivotierung) ........................................................ 45 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
++WYj1aEGn5sWrT3dZmJy5KhCLfM3CDvqbf2Rst6MKEhjaJrNFcX2Z/WrLoLkQ+dW
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 5 ===
+ 
+Tabellenverzeichnis 
+III 
+ 
+Tabellenverzeichnis 
+Tab. 1: Eigenschaften von Data Marts und Data Warehouses .................................................. 31 
+ 
+a6UnyL9JnGvZQJ8nWD6ONU7bNmV70ayBMHcEbd9G9qAvv3QduFTdU8xstJkvCbeE
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 6 ===
+ 
+Abkürzungsverzeichnis 
+ 
+IV 
+Abkürzungsverzeichnis 
+BI ............... 
+Business Intelligence 
+BMM ......... 
+Business Motivation Model 
+BRML ......... 
+Business Rule Markup Language 
+CRM .......... 
+Customer Relationship Management 
+DBMS ........ 
+Datenbankmanagementsystem 
+DWH ......... 
+Data Warehouse 
+EPK ............ 
+Ereignisgesteuerte Prozessketten 
+ERP ............ 
+Enterprise Resource Planing 
+ETL ............ 
+Extraktion – Transformation – Laden  
+HOLAP ....... 
+Hybrid Online Analytical Processing 
+KDD ........... 
+Knowledge Discovery in Databases 
+MOLAP ...... 
+Multidimensional Online Analytical Processing 
+ODS ........... 
+Operational Data Store 
+OLAP ......... 
+Online Analytical Processing 
+OLTP .......... 
+Online Transactional Processing 
+ROLAP ....... 
+Relational Online Analytical Processing  
+RuleML ...... 
+Rule Markup Language 
+ 
+dk/Q0SPJcjEZw+023F4lFLgd4/J0Y+i9+nC2SXFcwuCp4f/ZglRyOOlv6odquV2d
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 7 ===
+ 
+Einführung 
+1 
+ 
+ 
+1 Einführung 
+Für eine gezielte Entscheidungsunterstützung ist es enorm wichtig, dass die Daten, die die benö-
+tigten Informationen für Entscheidungen liefern sollen, effizient zur Verfügung gestellt werden. 
+Hierzu wird von vielen Unternehmen ein Data Warehouse genutzt. 
+Ein Data Warehouse (DWH) ist eine für Analysezwecke optimierte zentrale Datenbank, die Daten 
+aus mehreren, in der Regel heterogenen Quellen zusammenführt.1 
+So setzt beispielsweise die öffentliche Verwaltung ein DWH ein, um Daten gezielt für die Balanced 
+Scorecard bereitstellen zu können. Denn die Balanced Scorecard hat nur dann einen hohen Infor-
+mationsgehalt, wenn die richtigen Daten richtig miteinander kombiniert werden, um so problem-
+bezogene Kennzahlen generieren zu können. Hierzu sind Daten aus verschiedenen Abteillungen 
+wie der Personalabteilung, des Marketings oder des Controllings erforderlich, wodurch sich einige 
+Probleme ergeben. So werden beispielsweise Daten redundant gehalten und gepflegt, was insge-
+samt zu einer ineffizienten Datenhaltung führt. Diese Probleme werden durch die Verwendung 
+eines DWH vermieden (Stein, 2001). 
+Ein weiteres Anwendungsfeld von DWHs bildet die Pharmaindustrie. Besonderes Charakteristikum 
+dieser Branche ist, dass hier viele verschiedene Datenquellen zur Generierung von Informationen 
+genutzt werden können. So sammelt jedes Pharmaunternehmen zum einen intern eigene Daten 
+z. B. durch Marktforschung oder Kundendaten. Jedoch werden auch vielfach externe Datenquel-
+len hinzugezogen. So werden beispielsweise in einer Datenbank alle Einkäufe von Human-Arznei-
+mitteln der Bundesrepublik Deutschland gespeichert. Eine weitere Datenbank beinhaltet alle Da-
+ten zu Rezeptverordnungen der gesetzlichen Krankenkassen. Wenn Pharmaunternehmen z. B. 
+gezielt Marketingaktion durchführen wollen, so müssen Daten aus verschiedenen Datenquellen 
+in verschiedenen Datenformaten zusammengefügt werden. Um dies zu vereinfachen, können die 
+Unternehmen ein DWH einsetzen (Holthuis, Data-Warehousing im Pharma-Marketing, 2001).  
+Auch im Bereich der Versicherungswirtschaft werden DWHs vielfach eingesetzt. Eine Umfrage der 
+META Group, an der mehr als 500 Versicherungsunternehmen teilnahmen, hat die Hauptgründe 
+für den Einsatz von DWHs bei deutschen Versicherungen herausgestellt. Demnach gaben 23% 
+der Befragten an, dass ein DWH bei dem Erkennen von Entscheidungserfordernissen und Trends 
+helfen kann. Für 20% der Befragten kann mit dem Einsatz eines DWH eine qualitativ bessere 
+Entscheidung getroffen werden. Immerhin 19% der Befragten gaben an, durch ein DWH die vor-
+handenen Daten und Systeme effizienter nutzen zu können (Becker & Proff, 2001). 
+Die Beispiele haben gezeigt, dass DWHs in unterschiedlichsten Branchen eingesetzt werden. Und 
+auch das Anwendungsspektrum umfasst nicht nur die Informationsbereitstellung, sondern bei-
+spielsweise auch flexible und komplexe Datenanalysen. Letztlich ist das Ziel die empfängerge-
+ 
+1 http://www.enzyklopaedie-der-wirtschaftsinformatik.de/lexikon/daten-wissen/Business-Intelligence/Data-Wa-
+rehouse/index.html/?searchterm=Data%20warehouse 
+4U7q4mo74kkXixmJuirxd8xtcLusGhFyUtpOUyO+vJJNaAzA4zpi36KkjUbjTBAL
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 8 ===
+ 
+Einführung 
+ 
+ 
+2 
+rechte Bereitstellung von Informationen, die der Unterstützung von Entscheidungen dienen (Na-
+vrade, 2008). Hierzu gibt es in einem DWH-System Analysekomponenten, die dies gezielt unter-
+stützen können. Eine wesentliche Komponente ist dabei das Online Analytical Processing (OLAP). 
+OLAP wird von Entscheidern genutzt, um Daten gezielt und strukturiert für eine Entscheidung 
+bereitzustellen.  
+1.1 Inhalte der Einheit 3 „Intelligente Datenhaltung und Datenbereitstellung“ 
+Die vorliegende Einheit setzt sich mit der Datenhaltung auseinander, die die wesentliche Basis für 
+Wissensgenerierung im Rahmen des Knowledge Discovery in Databases (KDD)-Prozesses (Einheit 
+2).  
+Business Rules sind Regeln, die beispielsweise Prozesse steuern. Diese Regeln sollen dabei helfen, 
+das Alltagsgeschäft eines Unternehmens effizient zu gestalten. Insbesondere im Bereich von 
+DWHs nehmen Business Rules einen hohen Stellenwert ein. So müssen Regeln existieren, die Vor-
+gaben über die Prozesse der Datenhaltung und -bereitstellung machen.  
+Zur intelligenten Datenhaltung und -bereitstellung gehört auch, dass die Metadaten eines Unter-
+nehmens effizient gesammelt, gespeichert und der Zugriff darauf ermöglicht wird. Um dies zu 
+erreichen, sollte ein Unternehmen ein funktionierendes Metadatenmanagement institutionalisie-
+ren. Die Metadaten sind für den Erfolg und den Aufbau eines DWH-Systems maßgeblich. 
+Der Aufbau eines DWH-Systems bildet den Schwerpunkt in Kapitel 3. Nach einer grundlegenden 
+Definition von DWH werden die einzelnen Komponenten eines DWH-Systems erläutert und als 
+Gesamtarchitektur dargestellt. Für DWH existieren jedoch unterschiedliche Ausgestaltungsfor-
+men. So werden zentrale DWHs, Data Marts und virtuelle DWHs unterschieden. Jedes Unterneh-
+men muss dabei für sich entscheiden, welche Ausgestaltungsform sich für ihr Unternehmen am 
+besten eignet. Dazu werden die Ausgestaltungsformen dargestellt sowie die Vor- und Nachteile 
+erläutert. Wenn sich ein Unternehmen schließlich für die Einführung eines DWH-Systems entschei-
+det, so ist eine strukturierte Vorgehensweise bei der Einführung sinnvoll, um das DWH-System 
+auch langfristig erfolgreich nutzen zu können. Diese Einführungsweise wird abschließend in Ka-
+pitel 3 vorgestellt. 
+Eine zentrale Analysekomponente im DWH-System bildet das OLAP, das dazu dient, Daten struk-
+turiert und fokussiert darzustellen und so das Management bei deren Entscheidungsfindung zu 
+unterstützen. Hierzu werden die Anforderungen, die OLAP erfüllen muss, um dies zu gewährleis-
+ten, abgeleitet. Grundlegende Prinzipien sind dabei die zwölf Regeln nach Codd sowie das Prinzip 
+FASMI. Jedoch findet in Unternehmen nicht nur das klassische OLAP Anwendung. Vielmehr exis-
+tieren eine Vielzahl von OLAP-Varianten, deren Funktionsweise und Eigenschaften vorgestellt wer-
+den. Letztlich stehen bei der Verwendung von OLAP dem Entscheider unterschiedliche Operatio-
+nen zur Verfügung, um Analysen einfach und eigenständig durchzuführen. Diese Operationen 
+werden in Kapitel 34.3 vorgestellt.  
+2Av1A0a1BVX6S0PRAVwEoxutpkf+CBgxnQys5Mp0Yk+OW0jA1fs3FeJ4NXL8pK7X
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 9 ===
+ 
+Einführung 
+3 
+ 
+1.2 Lernziele der Einheit „Intelligente Datenhaltung und Datenbereitstel-
+lung“ 
+Die Lernziele dieser Einheit lassen sich wie folgt zusammenfassen: 
+• 
+Sie können erklären, was unter dem Begriff DWH verstanden wird und kennen die we-
+sentlichen Aufgaben und Ziele eines DWH. 
+• 
+Sie kennen die verschiedenen Komponenten und Funktionen eines DWH-Systems und die 
+zugehörige Gesamtarchitektur. 
+• 
+Sie kennen die verschiedenen Anforderungen, die an OLAP gestellt werden und verstehen 
+die grundlegende Funktionsweise. 
+• 
+Sie kennen die verschiedenen Ausprägungen von OLAP und verstehen, worauf diese ba-
+sieren und worin sich die Ausprägungen unterscheiden. 
+• 
+Sie wissen, welche unterschiedlichen OLAP-Operationen es gibt und wie diese vom Ent-
+scheider angewendet werden können. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0WcS1ujwni6KMacwr8K/7+nuc8TkQFBj2HgRxbKJkl1+yeeCwZGdiUOJxOnMQ4zW
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 10 ===
+ 
+Grundlegende Begriffe und Konzepte 
+ 
+ 
+4 
+2 Grundlegende Begriffe und Konzepte 
+Business Rules oder auch Geschäftsregeln gewinnen in der Praxis zunehmend an Bedeutung. Eine 
+Business Rule kann dabei allgemein definiert werden als ein Regelwerk oder eine Anleitung, die 
+dabei helfen soll, das Alltagsgeschäft zu steuern und zu organisieren (Schacher & Grässle, 2006). 
+Business Rules geben dabei den Weg vor, wie ein Ziel erreicht werden soll. Nach Scheer und Werth 
+sind Business Rules „Richtlinien oder Geschäftspraktiken, die das Verhalten eines Unternehmens 
+beeinflussen oder leiten. Verhalten bedeutet in dem Zusammenhang, mit welchen Prozessen (wie) 
+und mit welchen Ressourcen (womit), welche Produkte erstellt werden“ (Scheer/Werth 2006, 
+S. 52). Im Zusammenhang mit DWHs sind solche Business Rules wichtig, die beispielsweise Vor-
+schriften zur Datenhaltung, Datenbereinigung usw. machen.  
+Ein weiterer wichtiger Begriff im Zusammenhang mit DWHs ist das Metadatenmanagement. Me-
+tadaten sind Daten auf einer übergeordneten Ebene. Das Metadatenmanagement befasst sich mit 
+der Pflege und Wartung dieser übergeordneten Daten. Nur wenn hier bereits eine entsprechende 
+Qualität erreicht werden kann, können auch die „untergeordneten“ Daten effizient gehalten und 
+genutzt werden. In diesem Kapitel werden daher die Begriffe der Business Rules sowie des Meta-
+datenmanagements eingeführt und erläutert. 
+2.1 Business Rules 
+Business Rules können in verschiedene Kategorien unterteilt werden. Schacher 
+und Grässle schlagen dabei die Unterteilung in Ableitungsregeln, Einschränkun-
+gen und Prozessregeln vor (Schacher & Grässle, 2006). Ableitungsregeln zeichnen sich dadurch 
+aus, dass die Regeln dadurch entstehen, indem auf bereits bestehende Regeln oder Informationen 
+zurückgegriffen wird und sich dadurch neue Business Rules ableiten lassen. Beispielsweise ist eine 
+Person ein zurückgewonnener Kunde, wenn die Person länger als ein Jahr keine Leistungen oder 
+Produkte bezogen hat und erst nach diesem Zeitraum wieder Produkte oder Leistungen bezieht. 
+Einschränkungen können in der Form von Geboten oder Verboten vorliegen, die zu jeder Zeit 
+gelten. Eine beispielhafte Regel wäre die Folgende: „Ein Neukunde erhält nur bei der ersten Er-
+öffnung eines Bankkontos eine einmalige Prämie“. Prozessregeln werden immer in der Form 
+„wenn xyz dann abc“ formuliert. Sie drücken somit aus, dass ein Sachverhalt oder eine Aktivität 
+eine andere Aktion auslöst. Eine beispielhafte Regel hierfür wäre „Wenn ein Kunde einen Kredit 
+beantragt, muss der Kunde auf seine Kreditwürdigkeit hin überprüft werden“. 
+Unabhängig von der Kategorie der Geschäftsregel müssen Geschäftsregeln ver-
+schiedene Eigenschaften aufweisen. Eine Voraussetzung ist, dass sie präzise for-
+muliert werden müssen, sodass für die einzelnen Mitarbeiter kein Interpretationsspielraum mög-
+lich ist. Des Weiteren müssen Geschäftsregeln verständlich sein, sodass Mitarbeiter, unabhängig 
+davon, welcher Abteilung sie angehören oder welchen Wissensstand sie haben, ebenfalls die Re-
+geln verstehen können ohne dass sie die Regeln weitergehend interpretieren müssen. Die letzte 
+Eigenschaft einer Geschäftsregel ist, dass sie deklarativ sein muss. Durch diese Eigenschaft ist si-
+chergestellt, dass die Regel lediglich beschreibt, was das zu erreichende Ziel ist, jedoch nicht vor-
+gibt, wie dieses Ziel erreicht werden soll (Schacher & Grässle, 2006). 
+Eigenschaften von 
+Business Rules 
+Typen von Business 
+Rules 
+XIykTgzQZrkDlLrpzHIrytMhgMJ5IANVWbnfR0LvetILQZZ8AyMAjx/LUFBgcCf7
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 11 ===
+ 
+Grundlegende Begriffe und Konzepte 
+5 
+ 
+Geschäftsregeln müssen immer im Kontext der Gesamtunternehmensausrich-
+tung gesehen werden. Die Business Rules Group hat hierzu das Business Moti-
+vation Model (BMM) entwickelt, das den Zusammenhang zwischen Geschäfts-
+regeln, der Geschäftspolitik sowie der Unternehmensstrategie abbildet (vgl. hier 
+und im Folgenden (Business Rules Group, The Business Motivation Model - Business Governance 
+in a Volatile World, 2010). Die folgende Abbildung zeigt einen Ausschnitt des BMM.  
+ 
+Abb. 1: Ausschnitt aus dem Business Motivation Model 
+Quelle: in Anlehnung an (Business Rules Group, The Business Motivation Model - Business Governance in a Volatile 
+World, 2010). 
+ 
+Weg zur Erreichung des Zwecks
+Unternehmenszweck
+Mission
+Vision
+Ziele
+Zielvorstellung
+strategisch
+taktisch
+Handlungsoptionen
+Gewünschtes 
+Ergebnis
+Business Rules
+Geschäftspolitik
+Anweisungen/Vorschriften
+operationalisiert
+verstärken
+implementiert
+steuern
+basieren auf
+legt Durch-
+führungslevel
+fest
+ermöglichen 
+Erreichung
+Einbettung der 
+Business Rules in das 
+Business Motivation 
+Model 
+8lLeTqkmgcsfNg2ROT7mwdvnLh061q5z6YsDzybTug+TDd3jPsjCm/1Hl+oS6Vdc
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 12 ===
+ 
+Grundlegende Begriffe und Konzepte 
+ 
+ 
+6 
+Generell lässt sich das Modell in die beiden Teilbereiche Unternehmenszweck und Wege, um die-
+sen Zweck zu erreichen unterteilen. Der Unternehmenszweck kann entweder die Vision oder das 
+angestrebte Ziel eines Unternehmens sein. Er beinhaltet keine Informationen darüber, wie dieses 
+Ziel oder die Vision erreicht werden kann. Die Vision spiegelt die Vorstellung eines Unternehmens 
+wider, wie es sich in der Zukunft sieht. Auch hier gilt wiederum, dass die Vision nicht den Weg 
+beinhaltet, wie dieses zukünftige Bild des Unternehmens erreicht werden soll. Eine Unterneh-
+mensvision ist daher immer langfristig orientiert und betrifft alle Teile des Unternehmens. Die 
+gewünschten Ziele eines Unternehmens betreffen in der Regel lediglich Teile des Unternehmens. 
+So werden für verschiedene Teile spezifische Ziele oder Zielvorstellungen angegeben, die in der 
+Zukunft erreicht werden sollen. Diese Ziele sind daher ebenfalls langfristig und laufend anzustre-
+ben. Zudem sind sie im Gegensatz zu den Zielvorstellungen qualitativ und eher allgemein formu-
+liert. Zielvorstellungen zeichnen sich dadurch aus, dass sie eher den kurzfristigen Horizont betref-
+fen und quantitativ sind. Zudem sind Zielvorstellungen immer spezifisch und mit einem genauen 
+Ende versehen. So kann eine Zielvorstellung beispielsweise eine Umsatzsteigerung um 10% im 
+kommenden Kalenderjahr sein. Zielvorstellungen müssen dabei bestimmte Eigenschaften aufwei-
+sen, die teilweise bereits genannt wurden. Unternehmen sollten Zielvorstellungen haben, die rea-
+listisch und auch zu erreichen sind. Des Weiteren müssen Zielvorstellungen messbar sein. Hierzu 
+müssen Messkriterien definiert werden, die auch objektiv zu erheben und zu überprüfen sind. Dies 
+ist im oben angegebenen Beispiel der Fall. Eine Umsatzsteigerung um 10% ist klar messbar und 
+somit auch überprüfbar. Das letzte Kriterium ist ein fester Zeithorizont, den eine Zielvorstellung 
+haben sollte. Dieser kann absolut, also z. B. ein konkretes Datum (…ist bis zum 01.01.2012 zu 
+erreichen) oder relativ (innerhalb des nächsten Jahres) sein. Somit quantifizieren Zielvorstellungen 
+ein Ziel. Die gesteckten Ziele werden mittels der vom Unternehmen festgelegten Strategie unter-
+stützt. Zielvorstellungen hingegen werden durch Taktiken erreicht. Beides, Strategie und Taktik, 
+sind mögliche Handlungsoptionen eines Unternehmens. Diese sind dem Bereich der Wege, den 
+Unternehmenszweck zu erreichen, der im linken Bereich der Abbildung 2 zu finden ist, zuzuord-
+nen. Hierunter finden sich die Mission eines Unternehmens, die bereits genannten Handlungsop-
+tionen sowie Anweisungen bzw. Vorschriften.  
+ 
+ 
+9T+nL85IUVQR+9s0rvmCQjjrVjGp16siz0DHGk8J+C9yg9dQ8+UPKJHDYPWYfEIJ
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 13 ===
+ 
+Grundlegende Begriffe und Konzepte 
+7 
+ 
+Wege, den Unternehmenszweck zu erreichen, können beispielsweise Ratschläge, Techniken, Rest-
+riktionen, Instrumente, Methoden oder Fertigkeiten sein. Dies macht deutlich, dass hierunter nicht 
+die einzelnen Schritte, beispielsweise durch Workflowabbildungen oder Geschäftsprozesse, fo-
+kussiert werden, sondern vielmehr die Möglichkeiten des Unternehmens, den Unternehmens-
+zweck zu erreichen. Die Mission eines Unternehmens operationalisiert die Vision. Die Mission ist 
+langfristig ausgelegt und fokussiert primär die Erreichung der Vision. Bestimmt wird die Mission 
+durch die Unternehmensstrategie. Diese gehört zu den Handlungsoptionen. Handlungsoptionen 
+können nur dann erfolgreich sein, wenn genügend Vorschriften vorhanden sind, die steuernd auf 
+die Handlungsoptionen wirken. Zu den Handlungsoptionen gehören jedoch nicht die Geschäfts-
+prozesse. Vielmehr können die Geschäftsprozesse durch die Handlungsoptionen umgesetzt wer-
+den. Bei den Handlungsoptionen lassen sich strategische und taktische Handlungen unterschei-
+den. Die Unternehmensstrategie ist langfristig ausgelegt und umfasst einen breiten Anwendungs-
+bereich. Durch die Strategie werden Taktiken implementiert. Demgegenüber sind Taktiken eher 
+kurzfristig ausgelegt. 
+Im letzten Teil der Wege, den Unternehmenszweck zu erreichen, stehen die Vorschriften oder 
+Anweisungen. Diese werden in deklarativer Form festgehalten und sind verantwortlich für die 
+Durchsetzung der Geschäftsstruktur sowie für die Kontrolle und die Beeinflussung des Verhaltens. 
+Für Unternehmen ist wichtig, dass sie einerseits nicht zu viele Vorschriften aufstellen, da diese 
+ansonsten zu einschränkend wirken, andererseits müssen genügend Vorschriften existieren, damit 
+potenzielle Einsparungen erkannt werden können. Daher ist es wichtig, eine gute Balance bei der 
+Anzahl der Vorschriften zu finden.  
+Vorschriften können unterschieden werden in Business Rules sowie die Geschäftspolitik. Die Ge-
+schäftspolitik ist wenig strukturiert und eher abstrakt formuliert. Im Gegensatz zu den Business 
+Rules wird vorab kein Standardvokabular festgelegt. Des Weiteren ist die Geschäftspolitik nicht 
+automatisierbar. Die Geschäftspolitik steuert die Geschäftsprozesse und stellt die Basis für die Bu-
+siness Rules dar. Business Rules weisen eher entgegengesetzte Eigenschaften im Vergleich zur 
+Geschäftspolitik auf. So sind sie zwar auch abstrakt, jedoch klar und eindeutig durch die Verwen-
+dung von Standardvokabular formuliert und dadurch auch klar strukturiert. Teilweise sind Business 
+Rules auch automatisierbar, beispielsweise innerhalb einer Software. Dies ist jedoch nicht zwin-
+gend erforderlich. Weitere Eigenschaften von Business Rules finden sich im Business Rules Mani-
+fest (Business Rules Group, Business Rules Manifest: Die Prinzipien der Business Rules Unabhän-
+gigkeit, 2003). Regeln müssen explizit sein, d. h. sie dürfen keine impliziten Annahmen über Kon-
+zepte oder Fakten als Regeln beinhalten. Des Weiteren müssen Regeln entwickelt, geschützt und 
+verwaltet werden. Dies kann durch ein Business Rules Management gewährleistet werden. Zudem 
+müssen die Regeln von den Fachabteilungen validiert werden können sodass untereinander die 
+Konsistenz der Regeln geprüft werden kann. Häufig bieten sich auch Applikationen an, die die 
+Verwaltung von Regeln unterstützen. Voraussetzung der Applikation ist, dass diese tatsächlich die 
+sich ständig verändernden Geschäftsregeln hinreichend gut unterstützen kann.  
+Business Rules sollen das Geschäftsverhalten steuern sowie die Geschäftspro-
+zesse führen. Folgende Durchführungslevel sind möglich: 
+• 
+Strikte Durchsetzung: Bei Nicht-Beachtung der Regel droht eine Strafe. 
+• 
+Aufgeschobene Durchsetzung: Eine Regel kann zurückgestellt werden, muss jedoch zu 
+einem späteren Zeitpunkt Berücksichtigung finden. 
+Durchführungslevel 
++2YgOMI079KlNwgQw06W4gVuTqTYE4jcQO2CVulCit45bf57LZF9CexcoJ1t5zNw
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 14 ===
+ 
+Grundlegende Begriffe und Konzepte 
+ 
+ 
+8 
+• 
+Vorherige Autorisierung: Diese Arten von Regeln werden normalerweise umgesetzt. Je-
+doch sind Ausnahmen möglich, ohne dass diese zu einer Strafe führen. 
+• 
+Ausnahme mit vorheriger Rechtfertigung: Wenn eine Regel nicht beachtet werden soll, 
+muss dies vorab geklärt werden. Es muss gerechtfertigt werden können, weshalb das Ein-
+halten der Regel nicht möglich oder aber nicht sinnvoll erscheint. 
+• 
+Ausnahme mit Erläuterung: Wenn eine solche Regel nicht beachtet wird, ist eine schriftli-
+che Erläuterung, die die Gründe für die Nichtbeachtung der Regel beinhaltet, erforderlich.  
+• 
+Richtwert: Die Einhaltung der Regeln ist zwar denkbar, jedoch keinesfalls zwingend erfor-
+derlich. 
+Die Zuordnung der Regeln zu dem jeweiligen Durchführungslevel wird primär durch die taktischen 
+Handlungsoptionen eines Unternehmens festgelegt.  
+Um Prozesse tatsächlich mit Hilfe der Business Rules steuern zu können, müssen die Regeln in eine 
+formalisierte Implementierungssprache transformiert werden, sodass diese von verschiedenen Ap-
+plikationen genutzt werden können. Hierzu existieren bereits verschiedene Sprachen wie die Rule 
+Markup Language (RuleML) oder die Business Rule Markup Language (BRML). Mit Hilfe dieser 
+Sprachen kann beispielsweise ein Regelmanagementsystem die Regeln weiter nutzen. Hierzu wer-
+den die Regeln zentral in einem Regelrepositorium abgelegt. Wenn die Regeln in verschiedene 
+Applikationen, wie z. B. in einem ERP-System, integriert werden, können diese zur Steuerung von 
+Prozessen genutzt werden (Grob, Bensberg, & Coners, 2008). 
+Fakten zu Business Rules 
+Im Jahr 2004 wurde ein Fragebogen zum Thema Business Rules von Experten auf diesem Gebiet 
+beantwortet. Folgende Ergebnisse konnten aus dem Fragebogen gezogen werden (Portal, o.J.).  
+• 
+Die Anzahl der Business Rules ist nicht quantitativ feststellbar. Jedoch waren sich 96% der 
+Befragten einig, dass die Anzahl stetig steigt. Bei der Formulierung der Regeln sollte so 
+vorgegangen werden, dass zunächst eine kleine Anzahl an Regeln festgesetzt wird, die in 
+folgenden Schritten weiter differenziert werden können (Business Rules Group, Business 
+Rules Manifest: Die Prinzipien der Business Rules Unabhängigkeit, 2003). 
+• 
+Änderungen in Business Rules werden durchschnittlich jährlich vorgenommen. Dabei kann 
+es verschiedene Ursachen geben. So können Gesetzesänderungen dazu führen, dass Pro-
+zesse angepasst werden müssen. Je nach Branche eines Unternehmens können Änderun-
+gen an den Business Rules auch häufiger vorgenommen werden. So müssen diese Unter-
+nehmen ihre Business Rules teilweise monatlich anpassen, um so auf veränderte Marktbe-
+dingungen reagieren zu können. Dies betrifft überwiegend Unternehmen, die stark vom 
+Marketing geprägt sind. 
+• 
+Einige Typen von Business Rules werden in Unternehmen jedoch nur sehr selten angepasst. 
+Diese sind im Bereich der Legislation (28%), des Marketings und der Verkaufsstrategien 
+(28%) sowie des Domain Expertenwissens (22%) zu finden.  
+• 
+Ein funktionierendes Business Rules Management steigert die Wahrscheinlichkeit, dass die 
+Kommunikation zwischen den Mitarbeitern funktioniert. So führen beispielsweise veral-
+tete Regeln dazu, dass Mitarbeiter kein einheitliches Begriffsverständnis haben, sodass 
+Mitarbeiter „nicht vom selben reden“. Wie bereits erläutert, sind für verschiedene Berei-
+che mehr und häufig aktualisierte Business Rules notwendig, was durch ein gutes Business 
+8pt4Qgu5v0d6zKz5FDxCxZ6nIKqa4mFHsU2prJ7QuBwu33akdVim+VieQH8HI61u
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 15 ===
+ 
+Grundlegende Begriffe und Konzepte 
+9 
+ 
+Rules Management gewährleistet werden muss. Eine weitere Aufgabe ist die gute und 
+klare Dokumentation der Regeln, damit ausscheidende Mitarbeiter implizites Wissen nicht 
+aus dem Unternehmen mitnehmen. Die Problematik entsteht, da Business Rules von den 
+Wissensträgern einer Fachabteilung formuliert werden sollten. 
+• 
+Der Erfolg von Business Rules sowie vom Business Rules Management kann anhand einiger 
+Faktoren benannt werden. So sollte die Geschwindigkeit, mit der Regeln geändert werden, 
+nicht zu hoch sein. Ein weiteres Problem entsteht, wenn Regeln nicht eindeutig definiert 
+wurden, sodass kein einheitliches Verständnis darüber existiert. Eine schnelle Anpassung 
+ist folglich ein wesentlicher Erfolgsfaktor von Business Rules. Dies kann nur dann gewähr-
+leistet werden, wenn die aktuell existierenden Business Rules bekannt sind und wenn klar 
+ist, woher diese Business Rules stammen. Des Weiteren sollte Wissen darüber herrschen, 
+wie die einzelnen Business Rules durchgesetzt werden. 
+Mögliche Business Rules im Zusammenhang mit der Nutzung von DWHs sind 
+beispielsweise Vorschriften, wann die Daten in das DWH geladen werden oder 
+welche Transformationsregeln es gibt. Zur Festlegung dieser Regeln werden 
+häufig Interviews durchgeführt. Jedoch sind die Business Rules in der Regel sehr unvollständig und 
+schlecht dokumentiert. Eine Lösung hierfür ist z.B. das Business Rules Mining, das ähnlich wie das 
+Data Mining und speziell wie die Rule Induction, funktioniert. Beim Business Rules Mining wird 
+das Verhalten der Systeme wie z. B. die Datenspeicherung oder -pflege „durchschürft“, um daraus 
+mögliche Business Rules ableiten zu können (Moore & Wall, 2000). 
+2.2 Metadatenmanagement 
+Um ein DWH mit einer hohen Qualität bereitstellen zu können, ist es besonders wichtig, dass die 
+Daten, die darin gelagert werden, ebenfalls eine gute Qualität haben. Denn nur wenn dies zutrifft, 
+kann auch die Qualität das DWH hoch sein. Zunächst sollte daher der Begriff der Metadaten ab-
+gegrenzt werden, bevor im Folgenden auf das Metadatenmanagement eingegangen wird. 
+Die Bedeutung von Metadaten beginnt in den 1960er Jahren und steigt bis 
+heute rapide an. Auch die Definition von Metadaten hat sich über den Zeitver-
+lauf stetig verändert und weiterentwickelt. So bezeichnete der Begriff „Meta-
+daten“ in den 1960er Jahren lediglich einfache Dateinamen sowie Feldnamen. Erst in den 1970er 
+Jahren begann die eigentliche Bedeutung der Metadaten, die nun genutzt wurden, um Daten zu 
+definieren. Hierzu gehören die Relationsbezeichnungen, Attributnamen, Schlüssel- und Domai-
+ninformationen. In den 1980er Jahren kam der Begriff „Asset“ auf, der den Begriff „Daten“ zu 
+der Zeit völlig ersetzte. Assets entstehen als eine Art Nebenprodukt bei der Anwendungsentwick-
+lung. Insbesondere in den 1990er Jahren wurden viele Forschungsarbeiten im Bereich der Meta-
+daten getätigt. Ein interessanter Ansatz sind die Metadaten in DWHs. Metadaten in DWHs be-
+schreiben dabei zunächst allgemein alle Eigenschaften und umfassen alle Daten, die nicht zu den 
+eigentlichen Daten gehören. Dabei werden Metadaten in Front Room und Back Room-Metadaten 
+unterschieden. Diese Unterscheidung resultiert vor allem aus den Aufgabenbereichen, in denen 
+die Metadaten genutzt werden (Sen, 2004) 
+Der Begriff „Meta“ hat seinen Ursprung in der griechischen Sprache und be-
+Business Rules in 
+DWHs 
+Entwicklung der 
+Bedeutung von 
+Metadaten 
+Definition 
+„Metadaten“ 
+MBwjER1aDAGhv/2oxWAw7stROxE3GV1EgQqXupf2KpRUpm3B+A0tGwFwDEs8SCsp
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 16 ===
+ 
+Grundlegende Begriffe und Konzepte 
+ 
+ 
+10 
+deutet übersetzt „auf einer höheren Stufe, Ebene befindlich“ oder „übergeordnet“ (Duden 
+2011). Nach Sen umfasst der Bereich Metadaten die „Analyse der Daten über Daten“ (Sen, 2004). 
+Doch diese Aussage ist wenig differenziert und sollte weiter detailliert werden. So können den 
+Metadaten zwei wesentliche Eigenschaften zugeordnet werden. Diese sind das Beziehungsmerk-
+mal und das Abstraktionsmerkmal. Das Beziehungsmerkmal impliziert, dass Metadaten keine Da-
+ten mit einem festgeschriebenen Merkmal sind, sondern vielmehr erst durch konkrete Bezugsda-
+ten interpretierbar ist. Wenn diese Daten nicht bekannt sind, können Metadaten nicht interpretiert 
+werden. Somit können Metadaten vielmehr als relatives Konstrukt gesehen werden. Das Abstrak-
+tionsmerkmal schließt die vorherige Definition des Begriffs Meta mit ein. Metadaten beziehen sich 
+auf eine höhere Abstraktionsebene, bei der Eigenschaften der gleichartigen Bezugsdaten be-
+schrieben werden und nicht mehr die einzelnen Bezugsdaten an sich (Melchert, 2004). Durch die 
+beiden Merkmale Beziehungsmerkmal und Abstraktionsmerkmal lässt sich der Begriff Metadaten 
+hinreichend gut charakterisieren.  
+Häufig werden Metadaten weiter klassifiziert. Es finden sich in der Literatur un-
+terschiedliche Ansätze zur Klassifizierung. Eine weit verbreitete Unterscheidung 
+sowohl in der Theorie als auch in der Praxis ist die Unterscheidung in fachliche und technische 
+Metadaten. Die Unterscheidung basiert dabei vor allem auf die Sichten der IT-Abteilung sowie der 
+Fachabteilungen auf die Metadaten. Technische Metadaten werden von Administratoren und An-
+wendungsentwicklern genutzt. Sie beschreiben die logischen und physischen Datenbankschemata 
+und Datenflüsse zwischen den verschiedenen Datenbanken (Bauer & Günzel, 2001). Technische 
+Metadaten entstehen zumeist bei der Entwicklung, dem Betrieb sowie der Wartung des Daten-
+banksystems (Auth, 2003). Im Gegensatz dazu dienen die fachlichen Metadaten primär dem End-
+anwender. Die fachlichen Metadaten beinhalten weniger technische Details, sondern vielmehr 
+betriebswirtschaftliches, unternehmensbezogenes Wissen, wodurch die Interpretation der Daten 
+überhaupt erst ermöglicht werden kann (Melchert, 2004). Dies führt dazu, dass die Aufnahme 
+der fachlichen Metadaten sehr pflegeintensiv ist. Mitarbeiter der Fachabteilungen sammeln täglich 
+durch Erfahrung implizites Wissen, das in explizites Wissen transformiert werden sollte, damit das 
+implizite Wissen nicht zusammen mit dem Mitarbeiter das Unternehmen verlässt. Das explizite 
+Wissen kann in Form von Metadaten gespeichert werden. Dies ist jedoch nicht automatisch mög-
+lich, sondern muss manuell erfasst werden. Daher werden fachliche Metadaten häufig auch als 
+unstrukturierte Metadaten bezeichnet (Auth, 2003).  
+Die Metadatenkategorien werden üblicherweise nach dem Zweck, für den die 
+Metadaten eingesetzt werden, unterschieden. Dies hat sich insbesondere auch 
+in der Praxis bewährt. Ein weiterer Grund für die Zweckorientierung der Metadaten ist auch, dass 
+nicht alle Daten als Metadaten verwaltet werden, sondern nur die Daten, die tatsächlich zweck-
+gerichtet sind und das Datenobjekt beschreiben (Auth, 2003). Nach Auth ergeben sich acht Me-
+tadatenkategorien, die im Folgenden kurz erläutert werden ( (Auth, 2003), (Melchert, 2004)). 
+• 
+Terminologie: Fachbegriffe sollten definiert und ihre Bedeutung klar festgelegt und nor-
+miert werden. Daneben ist die klare Definition der Beziehungen zwischen den Fachbegrif-
+fen zwingend notwendig. Zudem sollte die Datenstruktur der Fachbegriffe festgelegt wer-
+den.  
+• 
+Analyse: Diese Metadaten enthalten Angaben zu den Datenanalysemöglichkeiten eines 
+Unternehmens. Dies können z. B. Dimensionen, Kennzahlen, Mining-Algorithmen, Be-
+richtsdefinitionen, Verantwortlichkeiten oder Berichtsverwender sein. 
+Klassifizierung von 
+Metadaten 
+Metadaten-
+kategorien 
+cwA2cxZjGF1SISNt89ZJ++dQ8IC92vOJt8pEHlTbbDKN2StWlplEcCN98uM5dgtg
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 17 ===
+ 
+Grundlegende Begriffe und Konzepte 
+11 
+ 
+• 
+Organisationsbezug: In jedem Unternehmen sollten Metadaten vorliegen, die die Ver-
+knüpfung der Datenbank-Konstrukte mit der Organisationsstruktur beschreiben. Dies kön-
+nen beispielsweise Berechtigungen, Datenverwender oder Vertraulichkeitsstufen sein.  
+• 
+Qualität: Das Ziel ist es, Daten mit der bestmöglichen Qualität zur Verfügung zu stellen, 
+wobei der Aufwand hierfür dem Nutzen gegenübergestellt werden sollte. An dieser Stelle 
+dienen Metadaten insbesondere zur Messung der Datenqualität, bei der die Qualitäts-
+merkmale Interpretierbarkeit, Nützlichkeit, Glaubwürdigkeit, zeitlicher Bezug und Verfüg-
+barkeit berücksichtigt werden können.  
+• 
+Struktur/Bedeutung: Datenstrukturen entstehen, wenn mehrere Daten aggregiert wer-
+den. Die Aggregation erfolgt, indem Daten, die zueinander in Beziehung stehen, zu einer 
+höheren Metaebene zusammengefasst werden. Diese Metadaten dienen der Benennung 
+und technischen sowie fachlichen Beschreiung von Datenstrukturelementen durch die Ei-
+genschaften Name, Typ, Datentyp, Speicherelementgröße, Ersteller, Erstelldatum, Ver-
+wendungszweck etc. 
+• 
+Systembezug: Die Metadaten liefern Angaben zu dem für die Datenverarbeitung verwen-
+deten Informationssystem. Dies können beispielsweise Informationen zur Softwarekom-
+ponente, z. B. der Herstellername oder die interne Bezeichnung, zur Version, zum Herstel-
+ler (z. B. Name und Kontaktinformationen), zum Rechnername oder weitere technische 
+Details sein.  
+• 
+Transformation: Metadaten dieser Kategorie dienen der näheren Spezifizierung von Da-
+tentransformationsprozessen innerhalb eines Unternehmens. So können Metadaten über 
+die einzelnen Transformationsschritte, den Verwendungszweck oder dem Ausführungs-
+protokoll gesammelt werden.  
+• 
+Metadatenhistorie: Durch die Historie können Veränderungen der Metadaten festgehal-
+ten werden. Eine Historisierung der Objektdaten kann nur dann erreicht werden, wenn 
+gleichzeitig auch eine Historisierung der Metadaten erfolgt. So war es bei der Umstellung 
+des Postleitzahlensystems sinnvoll, diese Veränderung in den Metadaten zu berücksichti-
+gen. Die Historisierung der Metadaten sollte Angaben zur Version, eine Änderungsbe-
+schreibung, das Änderungsdatum, den Änderungsgrund sowie den Verantwortlichen be-
+inhalten.  
+Metadaten sind mittlerweile in den meisten Unternehmen verbreitet, jedoch 
+sind viele Unternehmen nicht in der Lage, die Metadaten auch effizient zu nut-
+zen. Häufig sind Metadaten für den Endanwender nur schwierig zu finden, unvollständig oder 
+nicht verständlich. Teilweise werden die Metadaten auch nicht als explizites Wissen abgespeichert, 
+sondern befinden sich lediglich als implizites Wissen in den Köpfen der Mitarbeiter (Holthuis, Der 
+Aufbau von Data Warehouse-Systemen: Konzeption - Datenmodellierung - Vorgehen, 2001). Nur 
+wenn Metadaten eine hohe Qualität aufweisen, können sie die Geschäftsprozesse eines Unter-
+nehmens unterstützen (Hüner, Brauer, Otto, & Österle, 2011). Um die Effizienz der Metadaten-
+nutzung in einem Unternehmen zu erhöhen, sollte ein strukturiertes Metadatenmanagement in 
+das Unternehmen integriert werden. Das Metadatenmanagement dient der Erzeugung, Verwal-
+tung und Bereitstellung von Metadaten (Auth, 2003). Neben den technischen Kriterien müssen 
+bei Metadaten auch insbesondere organisatorische Dimensionen berücksichtigt werden. Hierzu 
+zählen z. B. die Definition von Rollen sowie die Betrachtung von arbeitsteiligen Abläufen. Aber 
+auch die Pflege der Metadaten ist entscheidend für deren effiziente Nutzung. Die Pflegeaktivitäten 
+Metadaten-
+management 
+RCTEHAyR2DwBhl1f5M80QFgN3EYqP9UJu9VV9zeTVZw3QFTAeYqlI0oIYFbBhWxg
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 18 ===
+ 
+Grundlegende Begriffe und Konzepte 
+ 
+ 
+12 
+sind dabei nicht einmalig durchzuführen, sondern sollten organisatorisch institutionalisiert wer-
+den. Folgende Definition berücksichtigt diese Aspekte: „Metadatenmanagement bezeichnet die 
+Gesamtheit der Prozesse zur zielgerichteten Erzeugung, Bereitstellung, Verwaltung und Nutzung 
+von Metadaten.“ (Melchert, 2004) 
+Einen Überblick über die organisatorische Gestaltung des Metadatenmanage-
+ments gibt Auth. Er unterscheidet die beiden Prozesse der Metadatennutzung 
+und des Metadatenmanagements. 
+ 
+ 
+ 
+Abb. 2: Prozesse des Metadatenmanagements 
+Quelle: in Anlehnung an (Auth, 2003), S. 188. 
+Die Metadatennutzung impliziert die beiden Prozesse Anwendung und Entwicklung. Die Anwen-
+dung betrifft die Fachabteilungen und beinhaltet im Wesentlichen die Datenanalyse. Dem gegen-
+über steht die Entwicklung, die primär durch die Systementwicklung beschrieben wird. Dies be-
+trifft die technischen Metadaten. Im Mittelpunkt der Prozesse steht das eigentliche Metadaten-
+management, dem vier Hauptprozesse zugeordnet werden können. Diese sind das Datenquali-
+tätsmanagement, das Datenstrukturmanagement, das Terminologiemanagement sowie das Da-
+tenkontextmanagement. Das Datenqualitätsmanagement besteht wiederum aus vier Prozessen, 
+die die Qualitätsplanung, die Qualitätslenkung, die Qualitätsrückkopplung sowie die Qualitätsver-
+besserung sind. Die Qualitätsplanung und Qualitätslenkung sind durch Kennzahlen und Regeln 
+aneinandergeknüpft. Die Qualitätsplanung legt dabei die Kennzahlen und Regeln fest, die der 
+Qualitätslenkung dienen. Bei der Qualitätsrückkopplung werden für jede Kennzahl Messwerte 
+definiert, anhand derer eine Beurteilung der Qualität erfolgen kann. Das Datenstrukturmanage-
+ment besteht aus den Prozessen Bereinigung, Entwicklung sowie Migration. Diese Prozesse hän-
+gen stark mit dem Prozess der Systementwicklung zusammen. Im Bereich des Datenkontextma-
+nagements wird der Prozess Kontextplanung durchgeführt. Dabei wird ein Bereitstellungsplan für 
+den zweiten Prozess des Datenkontextmanagements, dem Prozess der Kontextbereitstellung, ent-
+wickelt. Im Bereich des Terminologiemanagements, der eng mit dem Bereich der Datenanalyse 
+und somit den Endanwendern der Fachabteilungen verbunden ist, existieren vier Prozesse. Diese 
+sind die Neuerfassung von Terminologien, die durch Begriffsvorschläge der Endanwender ausge-
+löst werden, die Wiederverwendung von Terminologien, die Änderung sowie die Bereinigung von 
+Terminologien. Nach Auth lässt sich mit Hilfe dieser aggregierten Prozesse die organisatorische 
+Einbettung des Metadatenmanagements hinreichend gut beschreiben.  
+Organisatorische 
+Gestaltung des 
+Metadaten-
+mangements 
+pPFQsV+8g+QjIrR8sHRso5BJP1sT4xAuv1hHch6MLA4xTAuDOielokXqSy+Jedev
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 19 ===
+ 
+Grundlegende Begriffe und Konzepte 
+13 
+ 
+2.3 Datenqualitätsmanagement 
+Datenqualität wird von vielen Managern nicht wahrgenommen und erst recht 
+werden die Konsequenzen, die aus einer schlechten Datenqualität resultieren, 
+nicht bedacht. Beispielsweise können häufige Fehler in Datenbanken zu einer 
+erhöhten Kundenunzufriedenheit oder gar Kundenabwanderungsquote führen, was sich wiede-
+rum auf die Umsatzzahlen und letztlich erheblich auf den Unternehmenserfolg auswirkt. Des Wei-
+teren kann eine schlechte Datenqualität zu einer sehr langen Datenaufbereitungszeit führen, was 
+wiederum eine Just-in-Time-Fertigung verhindert oder aber Strategieimplementierung erheblich 
+erschwert, da Entscheidungen auf Basis von schwachen Prognosen oder fehlerhaften und alten 
+Daten erfolgen muss (Redman, 1995). Daher ist eine gute Datenqualität zum Treffen von Ent-
+scheidungen und zur Analyse der Daten von elementarer Bedeutung. Das Thema Datenqualität 
+stellt jedoch im Rahmen von BI das größte Problem dar. Auf die Frage, wie wichtig Datenqualität 
+im Zusammenhang mit Business Intelligence ist, antworten 88 % der Befragten, dass dieses 
+Thema besondere Relevanz hat. Die Befragten waren 96 Entscheidungsträger aus deutschen, 21 
+österreichischen und 13 aus Schweizer Unternehmen (Capgemini, 2009).  
+Im Folgenden soll zunächst der Begriff der Datenqualität definiert werden. Gemäß Würthele wird 
+Datenqualität definiert als „mehrdimensionales Maß für die Eignung von Daten, den an ihre Er-
+fassung/Generierung gebundenen Zweck zu erfüllen. Diese Eignung kann sich über die Zeit än-
+dern, wenn sich die Bedürfnisse ändern“ (Würthele, 2003). Diese Definition zeigt, dass die Quali-
+tät der Daten immer subjektiv ist und von dem Verwendungszweck und den jeweiligen Benutzer-
+bedürfnissen abhängig ist. Gemäß English (1999, S. 24) lässt sich der Begriff Informationsqualität 
+nicht definieren, ohne dabei die „Kunden“ sowie „Wissensverarbeiter“ zu berücksichtigen. Eng-
+lish verwendet bei seiner Definition die Begriffe Informations- und Datenqualität synonym. Der 
+Begriff Wissensverarbeiter wird definiert als eine Person, die die Daten zur Ausübung ihrer Haupt-
+tätigkeit nutzen muss. Demnach ist diese Person gleichzeitig der Kunde, der die Daten sowie da-
+raus gewonnene Informationen „konsumiert“. Jedoch sind nicht alle Kunden auch Wissensverar-
+beiter. Anhand der Bedürfnisse der Kunden wird über die Qualität der Daten geurteilt. Alle Mitar-
+beiter eines Unternehmens, unabhängig von der Abteilung in der sie arbeiten, benötigen be-
+stimmte Informationen zur Ausübung ihrer Tätigkeiten. So müssen beispielsweise Mitarbeiter der 
+Marketingabteilung auf historische Verkaufszahlen zugreifen können. Mitarbeiter im Bereich der 
+Beschaffung nutzen Daten aus einem Enterprise Resource Planing (ERP)-System, um eine Übersicht 
+über den Lagerstand und neue Aufträge zu bekommen. Unter Berücksichtigung dieser beiden 
+Begriffe kann Datenqualität definiert werden als die Attribute der Daten und Informationen, die 
+dazu führen, dass die Mitarbeiter („Wissensverarbeiter“ und „Kunden“) ihre Tätigkeiten ausüben 
+können und somit alle Anforderungen konsistent erfüllt werden. Konsistenz ist ein Hauptproblem 
+im Bereich der Datenqualität. Daten sind genau dann konsistent, wenn die abgerufenen Informa-
+tionen, egal aus welcher Quelle sie stammen, gleich sind. So sollten beispielsweise die Verkaufs-
+zahlen eines bestimmten Bereichs, die im ERP gehalten werden, identisch sein mit den Daten aus 
+z. B. einem DWH. Zudem sollen die Erwartungen aller Mitarbeiter gleichermaßen erfüllt werden 
+und nicht die Erwartungen der Marketingabteilung zu 80 % und die der Vertriebsabteilung zu 90 
+%. Dabei ist jedoch zu beachten, dass die Anforderungen bzgl. der verschiedenen benötigten 
+Daten unterschiedlich hoch sind. Zur Beurteilung der Datenqualität und zur Messung, Steuerung 
+und Anpassung an die Qualitätsbedürfnisse ist es zwingend erforderlich, Qualitätskriterien zu de-
+finieren. 
+Definition des 
+Begriffs 
+Datenqualität 
+23g6gs9Je1cn3cgmJDT3/P4j7gYtucFTAGmBFb/2aMhcigBg45VUd4rW467WSwub
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 20 ===
+ 
+Grundlegende Begriffe und Konzepte 
+ 
+ 
+14 
+2.3.1 Qualitätskriterien 
+In einer Studie der Autoren Wang und Strong (1996) wird gezeigt, welche Datenqualitätskriterien 
+praktische Relevanz haben. Die Studie ist im Wesentlichen zweigeteilt. An einer ersten Umfrage 
+nahmen 25 Endanwender und 112 Studenten mit Endanwendungserfahrungen teil. Das durch-
+schnittliche Alter der Beteiligten lag bei 30 Jahren. Die Teilnehmer sollten in einem ersten Schritt 
+alle Datenqualitätseigenschaften notieren, die ihnen einfallen. In einem zweiten Fragebogen soll-
+ten 32 genannte Qualitätseigenschaften in die vier vorgegebenen Kategorien „Aktualität, Genau-
+igkeit, Gültigkeit und Interpretierbarkeit“ eingeordnet werden. Das Ergebnis dieser ersten Um-
+frage ist eine umfangreiche Liste möglicher Datenqualitätskriterien, die insgesamt 179 Eigenschaf-
+ten umfasste.  
+In einer zweiten Umfrage wurden 1.500 Absolventen, die bereits Positionen eingenommen haben, 
+in denen sie Daten zur Entscheidungsunterstützung nutzen müssen, befragt. Die ursprüngliche 
+Liste mit den 179 Eigenschaften wurde auf 118 Eigenschaften reduziert. Die Teilnehmer dieser 
+Umfrage hatten die Aufgabe, allen Eigenschaften eine Bedeutung auf einer Skala von eins bis 
+neun zuzuordnen, wobei eins für sehr bedeutend und neun für unbedeutend steht. Zu den ein-
+zelnen Eigenschaften wurden keine genauen Definitionen angegeben. Somit war hier Interpreta-
+tionsspielraum für die Teilnehmer möglich. Die Rücklaufquote dieser Umfrage lag bei 24 %. Nach 
+der Anwendung einer Faktoranalyse sieht das Ergebnis wie folgt aus (s. Abb. 3). 
+ 
+ 
+Abb. 3: Datenqualitätskriterien 
+In Anlehnung an: Wang und Strong 1996, S. 20. 
+Die Datenqualität kann demnach in vier Kategorien eingeteilt werden, wobei 
+jeder dieser vier Kategorien weitere Qualitätseigenschaften untergeordnet wer-
+den können. Die intrinsische Datenqualität geht von der Qualität von Daten an 
+sich aus. Darunter fallen die Qualitätskriterien Glaubwürdigkeit, Genauigkeit, Objektivität und Re-
+putation. Die Glaubwürdigkeit beinhaltet, inwiefern die Daten als wahr oder glaubhaft angesehen 
+Intrinsische  
+Datenqualität 
+qhntIRiTWwMWl5d9IlfHq+ODygiZAZ8eJ9fcXIb8Hf0Z0tYpD23czjzN43AZ2ms3
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 21 ===
+ 
+Grundlegende Begriffe und Konzepte 
+15 
+ 
+werden. Genauigkeit bezeichnet die Korrektheit der Daten und wie zuverlässig diese hinsichtlich 
+bestimmter Aufgaben sind. Objektivität bezeichnet, inwiefern die Daten als unvoreingenommen 
+angesehen werden. Und letztlich beinhaltet die Reputation, inwiefern die Anwender den Daten, 
+also der Datenquelle oder den Dateninhalten vertrauen (Treiblmaier, 2010). Somit spiegeln diese 
+Qualitätskriterien die Qualität der Daten an sich wider. Die kontextabhängige Da-
+tenqualität fokussierte die Qualität hinsichtlich der Anforderungen, die sich aus der 
+Fragestellung bzw. dem Kontext ergeben. Hierunter fallen die Qualitätskriterien 
+Mehrwert, Relevanz, Aktualität, Vollständigkeit und angemessene Menge. Der Mehrwert be-
+schreibt den zusätzlichen Nutzen, der durch die genutzten Daten generiert wird bzw. die Vorteile, 
+die durch das Verwenden der Daten generiert werden. Des Weiteren werden Daten daran gemes-
+sen, inwiefern sie bei der Bewältigung von Aufgaben helfen. Diese Eigenschaft wird unter Rele-
+vanz zusammengefasst. Ein wichtiger Aspekt ist die Aktualität der Daten. Diese gibt an, inwiefern 
+das Alter der Daten zur Bewältigung von Aufgaben angemessen ist. Das letzte Kriterium zur Be-
+urteilung der Datenqualität ist die Menge, die beinhaltet, inwiefern die Datenqualität für die Be-
+wältigung von Aufgaben angemessen ist (Treiblmaier, 2010). Eine weitere Eigenschaft, anhand 
+welcher die kontextabhängige Datenqualität bemessen wird, ist inwiefern die Daten die Realwelt 
+realistisch nachbilden können. Beispielsweise kann mit der kontextuellen Datenqualität überprüft 
+werden, ob für einen Kunden genügend Informationen gesammelt wurden, um den Kunden mit-
+tels dieser Daten entsprechend „nachbilden“ zu können. Dazu würde eine Erfassung des Namens, 
+der Adresse sowie des Geburtsdatums nicht genügen. (English, 1999).  
+Selbst wenn die zuvor erläuterten Datenqualitätsmerkmale alle hinreichend gut 
+erfüllt wurden, können trotzdem schwerwiegende Fehler entstehen, wenn die 
+Darstellung- und Zugangsqualität nicht die Anforderungen erfüllen. Die Dar-
+stellungs- und Zugangsqualität beurteilt die Qualität hinsichtlich der Bedeutung für das gesamte 
+System. Die Daten sollen allen, die die Befugnis haben, zugänglich sein und verständlich darge-
+stellt werden können. Dazu können die Daten anhand von insgesamt sechs Qualitätsmerkmalen 
+bewertet werden. Die Interpretierbarkeit gibt dabei an, inwiefern Daten so vorliegen, dass sie 
+sprachlich verständlich sind und die verwendeten Definitionen und Maßangeben ebenfalls ver-
+ständlich sind. Dabei bezeichnet Verständlichkeit, inwiefern die Eindeutigkeit der Daten gewähr-
+leistet ist. Die konsistente Darstellung ist ein weiteres wichtiges Datenqualitätskriterium. Dieses 
+gibt an, inwiefern die Daten mit zuvor gesammelten Daten kompatibel sind und ob sie immer in 
+demselben Format ausgegeben werden. Daten sollten möglichst übersichtlich und kompakt dar-
+gestellt werden. Dies wird anhand des Kriteriums „knappe Darstellung“ gemessen. Die letzten 
+beiden Kriterien fallen unter die Zugangsqualität. Hierzu gehören die Verfügbarkeit der Daten 
+sowie die Zugriffssicherheit. Die Verfügbarkeit gibt an, inwiefern Daten erhalten und schnell er-
+reichbar sind. Zugriffssicherheit bezeichnet, inwiefern Daten vor dem Zugang beschränkt und kon-
+trolliert werden können (Treiblmaier, 2010).  
+Eine schlechte Qualität lässt sich beispielsweise daran erkennen, dass Daten nicht rechtzeitig zur 
+Verfügung stehen, das Daten so dargestellt werden, dass sie zu Fehlinterpretationen bei den An-
+wendern führen oder die Interpretation sehr viel Erfahrung oder Fachwissen erfordert, das Daten 
+im allgemeinen nicht zugänglich sind oder das Daten falsch miteinander verknüpft werden und 
+so falsche Aussagen erzeugt werden (English, 1999). 
+Um eine gute Qualität der Daten zu erhalten, muss eine Datenqualitätsanalyse durchgeführt wer-
+Darstellungs- und 
+Zugangsqualität 
+Kontextabhängige 
+Datenqualität 
+4A6UhN+kAl7WVfsYlO1s1SZWds1jCcsJ6LifFZdTzQwgvmISs7VtvnCG3V8d8pXa
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 22 ===
+ 
+Grundlegende Begriffe und Konzepte 
+ 
+ 
+16 
+den, die im Wesentlichen zwei Ziele umfasst: zum einen soll festgestellt werden, wo genau Da-
+tenfehler entstanden sind, um diese zukünftig zu vermeiden und zum anderen um Maßnahmen 
+zu definieren, die im Folgenden angewandt werden können, damit die zuvor aufgetretenen Da-
+tenfehler vermieden werden (Zwirner, 2008). Um eine möglichst gute Datenqualität zu erhalten, 
+bietet sich ein Datenqualitätsmanagement an.  
+2.3.2 Qualitätssicherungsstrategien 
+Generell ist es sinnvoll, dass Unternehmen ein Datenqualitätsmanagement integrieren, um die für 
+das Unternehmen optimale Datenqualität zu erhalten. Dabei bedeutet optimal häufig nicht die 
+bestmögliche Datenqualität, denn es sollte immer auch der nötige Aufwand, der zur Verbesserung 
+der Qualität erbracht werden muss, berücksichtigt werden. Generell basiert das Datenqualitäts-
+management auf dem von Deming entwickelten Regelkreis Plan-Do-Check-Act, muss jedoch spe-
+ziell auf die Kriterien und Besonderheiten der Datenqualität angepasst werden. Der modifizierte 
+Kreislauf wird in 4 aufgezeigt.  
+ 
+Abb. 4: Prozess des Datenqualitätsmanagement 
+In Anlehnung an: (Apel, Behme, Eberlein, & Merighi, 2009), S.102. 
+Zu Beginn müssen alle Qualitätsziele geplant werden. Dabei müssen die rele-
+vanten Qualitätskriterien definiert werden. So kann es beispielsweise für ein 
+Unternehmen die Aktualität besonders wichtig sein, wohingegen für ein ande-
+res Unternehmen die Übersichtlichkeit von besonderer Bedeutung ist, weil viele verschiedene Mit-
+arbeiter Zugriff auf diese Daten haben. Wenn die Qualitätskriterien definiert wurden, müssen Soll-
+werte für diese Kriterien festgelegt werden. In der nächsten Phase des Zyklus, dem Ausführen 
+oder Do, werden die Ist-Werte der ausgewählten Datenqualitätskriterien ermittelt und in der fol-
+genden Phase „Überprüfen“ mit den Soll-Richtwerten abgeglichen. Sollten dabei signifikant hohe 
+Abweichungen festgestellt werden, so muss in der Verbesserungsphase eine Annäherung des Ist-
+Wertes an den Soll-Wert erzielt werden.  
+Dieses Konzept wurde durch English modifiziert und speziell für das Datenqua-
+litätsmanagement angepasst. Demnach sollte Qualitätsmanagement mehr als 
+nur ein Vorgehen oder Plan sein, es sollte ein System sein, welches in den Köp-
+fen der Mitarbeiter ist und „gelebt“ wird (English, 1999). Das von English entwickelte Konzept ist 
+Datenqualitätsmanag
+ement nach Apel et 
+al. 2009 
+Total Quality 
+Management nach 
+English 1999 
+1VAh4ks2Y+aCyKTty/7T1eQRPBDk6ojEdwKRuXt2+DB2nTBTC6xu6GHK1HdCKcD9
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 23 ===
+ 
+Grundlegende Begriffe und Konzepte 
+17 
+ 
+der Abb.zu entnehmen. Demnach unterteilt sich der Gesamtprozess des Datenqualitätsmanage-
+ments in fünf Phasen, welche im Folgenden kurz erläutert werden. Für weitere Details sei an dieser 
+Stelle an Englisch (1999) verwiesen. 
+ 
+Abb.5: Total Quality Management-Konzept nach English 
+Entnommen aus English 1999, S. 70. 
+Phase 1: Datendefinition und Informationsarchitektur 
+In der ersten Phase des Gesamtprozesses werden die Daten sowie die Qualität der Informations-
+architektur definiert. Diese Phase ist deshalb wichtig, weil zu Beginn, vor der eigentlichen Daten-
+qualitätssicherung, vorab Standards und Kriterien festgelegt werden müssen, wonach die Daten 
+vorgehalten und bereitgestellt werden. 
+Phase 2: Beurteilung der Informationsqualität 
+In der zweiten Phase des Total Quality Management-Prozesses nach English wird die Informati-
+onsqualität beurteilt. Die Phase beginnt mit der Identifikation bzw. Bestätigung der in der vorhe-
+rigen Phase festgelegten Informationsgruppen. Danach werden die Eigenschaften der Datenqua-
+lität abgeleitet. Hierzu gehören z. B. die Aktualität, Genauigkeit/Fehlerfreiheit oder Vollständig-
+keit.  
+Phase 3: Messung der Kosten 
+Gemäß English können die Kosten, die sich aufgrund unzureichender Qualität ergeben, messen 
+lassen. Hierzu müssen verschiedene Werte berücksichtigt werden. Hierzu gehören beispielsweise 
+die Verbesserung der Kundenzufriedenheit, Erhöhung der Gewinne oder die Kostenreduktion. 
+Schlechte Datenqualität wirkt sich negativ auf die Kundenbindung aus, denn schlechte Datenqua-
+lität führt zu schlechtem Service und schlechter Produktqualität, sodass Kunden abwandern, 
+wodurch sich verlorene Erträge ergeben. 
+Phase 4: Datenüberarbeitung und -bereinigung 
+In diesem Schritt werden Daten mit schlechter Qualität, fehlende oder fehlerhafte Daten usw. 
+erkannt und auf den zuvor definierten Standard gebracht, sodass am Ende alle Daten diesem 
+Standard genügen. Um dies zu erreichen, müssen möglicherweise auch Daten mit zu schlechter 
+naAHEKbI+MiKNSbonWzYJkuGZeDPzvK4Ep4wjrrICnDkWdBPKK+mL1+RmDxPObeI
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 24 ===
+ 
+Grundlegende Begriffe und Konzepte 
+ 
+ 
+18 
+Qualität gelöscht werden. Die vierte Phase unterteilt sich in zwei Teilphasen, die Datenüberarbei-
+tung und -bereinigung sowie die Datenaufbereitung. In einem ersten Schritt werden die Daten-
+quellen identifiziert, die aufbereitet oder bereinigt werden sollen. Danach werden die ausgewähl-
+ten Datenquellen genauer überprüft um möglicherweise Ursachen für die schlechte Datenqualität 
+zu entdecken. Bei einer sehr schlechten Datenqualität ist die allgemeine Idee, die Daten zu stan-
+dardisieren. Dieser Schritt erfolgt nach der Analyse der Daten. Hierzu müssen, je nach Ursache der 
+schlechten Datenqualität, die Daten entweder korrigiert oder möglicherweise vervollständigt wer-
+den. Anschließend werden die Daten der unterschiedlichen Datenquellen miteinander verglichen, 
+sodass möglicherweise redundant gehaltene Daten erkannt werden und dieses Problem folglich 
+behoben werden kann. Das Ergebnis dieser ersten Schritte der vierten Phase sind zum einen die 
+bereinigten Daten der entsprechenden Datenquellen sowie zum anderen die Erkenntnis über die 
+verschiedenen Fehlertypen 
+Basierend auf den Erkenntnissen über die verschiedenen Fehlertypen werden die analysierten und 
+fehlerhaften Daten transformiert, sodass diese Daten in das vorgegebene Datenformat passen. 
+Danach werden die Daten anhand ausgewählter Kriterien zusammengefasst und berechnet, wie 
+hoch die Abweichungen der zusammengefassten Daten sind, d. h. wie sehr sich die Daten vonei-
+nander unterscheiden. Danach erfolgt die Extraktion, Transformation und Ladung in ein DWH 
+oder Data Mart. Durch diese Phase wird sichergestellt, dass die Daten richtig, d. h. in der ge-
+wünschten Qualität, in das DWH oder Data Mart geladen werden. Zudem können durch das Vor-
+gehen der vierten Phase Wiederholungsfehler vermieden werden. 
+Phase 5: Verbesserung der Informationsprozessqualität 
+Die letzte Phase im gesamten Total Quality Management-Konzept umfasst die Verbesserung der 
+Informationsprozessqualität. Dieser Prozess sollte von Unternehmen am meisten verinnerlicht sein, 
+da er die Ursache der Probleme erkennen sollte und Prozessveränderungen implementiert, um 
+langfristig effiziente Prozesse im Bereich des Qualitätsmanagement sicherzustellen. Wenn durch 
+vorgenommene (z. B. dem „Plan – Do – Check – Act“-Prozess, vgl. Abb. ) Änderungen die Infor-
+mationsqualität zufriedenstellend verbessert werden konnte, werden die Implementierungen für 
+die entsprechenden Unternehmensbereiche übernommen und der Prozess ist erfolgreich abge-
+schlossen.  
+Das Gesamtergebnis aller Prozesse des Total Quality Management ist die langfristige Verbesserung 
+der Informationsqualität. 
+2.3.3 Vorbeugung vor neuen Datenqualitätsproblemen 
+Generell kann die Datenqualität in insgesamt fünf Schritten nachhaltig verbessert werden. Diese 
+Schritte basieren auf den zuvor erläuterten Kreislauf von Deming, wurden jedoch modifiziert. Im 
+ersten Schritt müssen die Datenqualitätsprobleme eindeutig identifiziert werden. Hierzu sollte eine 
+Kosten-Nutzen-Betrachtung durchgeführt werden, sodass die aufgetretenen Fehler und der be-
+nötigte Korrekturaufwand abgeschätzt werden können. Im nächsten Schritt müssen für die Da-
+tenqualitätskriterien Ziel- bzw. Richtwerte festgelegt werden. Der nächste Punkt ist sehr zeitauf-
+wändig und beinhaltet im Wesentlichen die Analyse der aufgetretenen Datenqualitätsprobleme. 
+In diesem Schritt müssen die Gründe dafür erkannt und in den Prozessen identifiziert werden. Als 
+logische Folge wird in der nächsten Maßnahme der Fehler verursachende Prozess verändert. Nur 
+nHAponsMNx3XB0eGLbRUKAihyj6TGJRPTNIcnHU8nyEWiLddalOU96S7ryrHRlYz
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 25 ===
+ 
+Grundlegende Begriffe und Konzepte 
+19 
+ 
+wenn dies geschieht, kann der aufgetretene Fehler auch langfristig und vorbeugend behoben 
+werden. Abschließend werden im letzten Schritt die Veränderungen bewertet. Es wird nochmals 
+überprüft, ob der nun erreichte Wert dem gewünschten Wert für das entsprechende Datenquali-
+tätskriterium entspricht oder ob evtl. nochmals Veränderungen im Prozess erforderlich sind (Apel, 
+Behme, Eberlein, & Merighi, 2009).  
+Eine ähnliche Unterscheidung findet sich in Redman (1995). Der Autor definiert 
+drei Strategien, wie die Datenqualität verbessert werden kann: (1) Fehlererken-
+nung und -korrektur, (2) Prozessmanagement, (3) Prozessdesign. Die Fehlerer-
+kennung und -korrektur wurde bereits erläutert. Die Strategien (2) und (3) sollen im Folgenden 
+beschrieben werden. 
+Das Prozessmanagement setzt direkt bei der Ursache der auftretenden Fehler 
+an. Zunächst müssen der Verantwortlichkeitsbereich klar definiert werden, bevor 
+die Kundenanforderungen und Prozesse definiert werden. Danach gilt es, die Messgrößen festzu-
+legen, damit eine Überwachung dieser statistischen Messgrößen erfolgen kann. Parallel hierzu 
+sollte ein Abgleich mit den Kundenanforderungen erfolgen, damit Abweichungen frühzeitig er-
+kannt werden und korrigiert werden können. Der nächste Schritt ist die Analyse des Prozesses 
+und damit einhergehend die Suche nach Verbesserungsmöglichkeiten, die dann in eine Reihen-
+folge gebracht werden sollten um letztlich die Prozessqualität zu verbessern. Im Fokus sollen dabei 
+immer Prozesse zur Erzeugung von Datenwerten stehen. Eine Möglichkeit zur Überwachung die-
+ser Prozesse basiert auf dem Verfahren der Datenaufbereitung, erweitert dieses jedoch, da viele 
+Fehler nicht erkannt werden. Durch übersichtliche Darstellungen wie Balkendiagramme oder Pa-
+reto-Graphiken, können Fehlerquellen erkannt und in einem weiteren Schritt vermieden werden. 
+So kann beispielsweise bei einem mehrstufigen Prozess festgestellt werden, in welcher Phase Feh-
+lerkorrekturversuche häufig scheitern.  
+Das Prozessdesign hat die Aufgabe, die im Fokus des Prozessmanagement ste-
+henden Prozesse weniger fehleranfällig zu machen. Eine Möglichkeit, die sich 
+häufig zur Beseitigung von Fehlern eignet, ist das Einbinden von IT in den Prozess. Dies sollte 
+immer dann überdacht werden, wenn den Anwendern in immer den gleichen Prozessschritten 
+Fehler unterlaufen. Bei einer Bank können beispielsweise Fehler bei der manuellen Eintragung von 
+Überweisungsträgern unterlaufen, indem eine falsche Kontonummer eingegeben wird. Dies führt 
+dazu, dass die Anforderungen der Kunden, eine schnelle, fehlerfreie Überweisung nicht erfüllt 
+werden können. Eine Möglichkeit, diesen Fehler zu vermeiden, wäre die Einführung eines zusätz-
+lichen Schrittes zur Überprüfung der Richtigkeit der eingetragenen Daten oder aber den ganzen 
+Prozess zu automatisieren, indem Lesegeräte eingesetzt werden. Häufig ist die Einbindung von IT 
+in den Prozess langfristig die bessere Alternative. 
+ 
+ 
+ 
+Strategien zur 
+Verbesserung der 
+Datenqualität 
+Prozessmanagement 
+Prozessdesign 
+ix2WpnFD520nufSncO078MCO7pNTfWVk3dOq213VY7FCqTGN6LSfufIMRcv2JJrk
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 26 ===
+ 
+Data Warehouse-Systeme 
+ 
+ 
+20 
+3 Data Warehouse-Systeme 
+Um aus Daten Informationen und letztlich Wissen generieren zu können, sind mehrere Schritte 
+notwendig. Das DWH bildet dabei einen elementaren Schritt zwischen der Sammlung der Daten 
+und der Analyse sowie Distribution. Die Sammlung der Daten erfolgt entweder intern in den ver-
+schiedenen Geschäftsapplikationen eines Unternehmens. Dies kann beispielsweise ein Enterprise 
+Ressource Planning (ERP)-System oder ein Customer-Relationship-Management (CRM)-System 
+sein. Daten können aber auch extern gesammelt werden, indem ein Unternehmen beispielsweise 
+Daten aus einer Marktanalyse generiert. 
+Nach der Datensammlung werden die Daten in das DWH geladen. Dieser Schritt umfasst mehrere 
+Teilschritte wie die Extraktion, Transformation und Laden der Daten. Danach werden die Daten 
+zur Analyse und Distribution von anderen Applikationen oder Systemen genutzt. Hierzu gehören 
+beispielsweise Data Mining-Anwendungen (vgl. Einheit 2 dieses Lehrbriefs). 
+ 
+Abb. 6: Einbettung von Data Warehouses in den Gesamtkontext der BI  
+(auch als Speichenarchitektur, engl. Hub and Spoke Architecture, bezeichnet) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+nmVv1X+SL7CHYD9OtE/CYcH2tyeNuzFL4RBY4TJRvRX3ao5r5B0h9VUpO4OoTFRJ
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 27 ===
+ 
+Data Warehouse-Systeme 
+21 
+ 
+3.1 Gesamtarchitektur eines Data Warehouse-Systems 
+Die Gesamtarchitektur eines DWH-Systems lässt sich in unterschiedliche Ebenen einteilen. Jeder 
+Ebene können eine oder mehrere Komponenten eines DWH-Systems zugeordnet werden. Neben 
+der Darstellung eines DWH-Systems im Kontext der Hub-and-Spoke Architektur (Abb. 6), kann die 
+Architektur eines DWH-Systems auch entlang der enthaltenen Ebenen dargestellt werden. Ein 
+zentrales Beispiel hierfür liefert die Einteilung der Ebenen nach Sinz et al. 2001 (Abb. 7), welche 
+die Analysekomponenten nicht in eine gemeinsame Stufe „Entscheidungsunterstützung“ zusam-
+menfasst, sondern diese nochmal in Datenbereitstellungsebene und Präsentationsebene unter-
+teilt. 
+ 
+Abb. 7: Zusammenfassende Gesamtarchitektur 
+Außerhalb des DWH-Systems existiert vorgelagert die Ebene der operativen Sys-
+teme. Diese Ebene gehört nicht zum eigentlichen DWH-System, sondern bein-
+haltet die verschiedenen Datenquellen, die Daten in das DWH-System einspeist. 
+Die erste eigentliche Ebene im DWH-System ist die Datenerfassungsebene. 
+Diese Ebene weist eine Schnittstelle zu den operativen Systemen auf (Sinz, 
+Böhnlein, Plaha, & Ulbirch-vom Ende, 2001). Die Daten der Quellsysteme wer-
+den physisch in den Bereich das DWH-Systems gebracht. An dieser Stelle wird erstmals die ETL-
+Komponente benötigt, da die Daten in den Arbeitsbereich extrahiert werden müssen. In diesem 
+Schritt erfolgt somit auch die Bereinigung, Harmonisierung und Zusammenführung der Daten 
+(d.h., Transformation der Daten).  
+In der Datenhaltungsebene ist das Hauptelement das DWH. Nach der Transfor-
+mation werden die Daten hier also in das DWH geladen (Sinz, Böhnlein, Plaha, 
+& Ulbirch-vom Ende, 2001). Wie in Kapitel 3.2 beschrieben, erweitert der Operational Data Store 
+(ODS) das DWH. 
+Die Datenhaltungsebene kann in zwei Schichten unterteilt werden. Die Basisschicht beinhaltet 
+Tabellen, die direkt aus den Quellsystemen übernommen werden. In der Aggregationsschicht wer-
+Präsentationsebene
+Datenbereitstellungsebene
+Datenhaltungsebene
+Datenerfassungsebene
+Ebene der operativen Systeme
+Operative 
+Datenquellen
+Externe 
+Datenquellen
+Arbeits-
+bereich
+Data 
+Warehouse
+Operational 
+Data Store
+Metadaten-
+banksystem
+Analyse-
+komponenten
+Ebene der operativen 
+Systeme 
+Datenerfassungs 
+ebene 
+Datenhaltungsebene 
+AMmzfUOw/Zq2LNa2JibqnBWV8MuSTmuO+QHK5L4H6CxtFw3yJVvL4zXtGLpKGZLc
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 28 ===
+ 
+Data Warehouse-Systeme 
+ 
+ 
+22 
+den Daten in Tabellen gehalten, die bereits für OLAP-Anfragen optimiert wurden. Hierdurch kön-
+nen Aggregationshierarchien entstehen, bei denen die Anfragen der Benutzer berücksichtigt wer-
+den. 
+Die Datenbereitstellungsebene hat eine Schnittstelle zur nächsten Ebene, 
+der Präsentationsebene (Sinz, Böhnlein, Plaha, & Ulbirch-vom Ende, 
+2001). Diese Ebene gehört, wie auch die Ebene der operativen Systeme, 
+nicht mehr zum eigentlichen DWH-System. In dieser Ebene findet die zweckmäßige Aufbereitung 
+der Informationen, die für den Entscheidungsträger relevant sind, statt. Die Analysekomponente 
+befindet sich einerseits auf der Ebene der Datenbereitstellung, da beispielsweise OLAP die Daten 
+so selektiert und aufbereitet, dass der Entscheider diese für seine Analysen nutzen kann. Anderer-
+seits gehört die Analysekomponente auch zur folgenden Präsentationsebene.  
+Die Aufgabe der Präsentationsebene ist die adäquate Aufbereitung und insbe-
+sondere Präsentation der Daten. Dies erfolgt mittels der Analysekomponente. 
+So können beispielsweise verschiedene Data Mining-Anwendungen die Daten entsprechend auf-
+bereiten. Auch können Tabellenkalkulationsprogramme bei der Präsentation der Informationen 
+helfen (Goeken, 2006). Zudem müssen die Erfolgsgrößen kritisch überwacht werden, sodass bei 
+einer Überschreitung kritischer Wertgrenzen eine Benachrichtigung an den Entscheidungsträger 
+gesendet wird. Hierbei kann beispielsweise Data Access helfen (Goeken, 2006). 
+3.2 Definition und Ziele eines Data Warehouse 
+Bill Inmon wird als Vater des DWH-Konzepts bezeichnet. Gemäß seiner Defini-
+tion ist ein DWH „a subject-oriented, integrated, nonvolatile, and time-variant 
+collection of data in support of management’s decisions“ (Inmon, 2000). Somit 
+zeichnet sich ein DWH durch die Eigenschaften Themenorientierung, Integration, Zeitraumbezug 
+sowie Nicht-Volatilität aus. Entsprechend der englischen Übersetzung werden diese Eigenschaften 
+als die SINT-Eigenschaften abgekürzt. In jedem Unternehmen können verschiedene Themenge-
+biete identifiziert werden. Dies können z. B. Kunden, Produkte, Mitarbeiter usw. sein. In einem 
+DWH werden die Daten nun themenorientiert gehalten. Im Gegensatz dazu wurden Daten früher 
+an den Applikationen eines Unternehmens orientiert gehalten. In einem DWH werden Daten aus 
+verschiedenen Datenquellen integriert. Eine Integration der Daten stellt sich in der Praxis häufig 
+als schwierig dar, weil die verschiedenen Applikationen eines Unternehmens die Daten jeweils 
+unterschiedlich ablegen. Beispielsweise kann in einer Applikation das Geschlecht als „männlich“, 
+„weiblich“, in einer anderen Applikation abgekürzt als „m“ und „w“ und in wiederum einer 
+weiteren Applikation als „1“ und „0“ bezeichnet werden. Dieses Beispiel macht deutlich, dass die 
+Integration sich als sehr aufwändig gestalten kann. Neben der Kodierung der Daten ist die Maß-
+angabe von Attributen eine weitere mögliche Herausforderung bei der Integration der Daten (In-
+mon, 2000). Beispielsweise können Produktattribute in der einen Applikation in Kilogramm und 
+Zentimeter, in einer anderen aber in Tonnen und Meter angegeben werden. Somit zeigt sich deut-
+lich, dass diese Problemfelder erkannt und systematisch behoben werden müssen, um wider-
+spruchsfreie Daten zu erhalten (Kemper, Baars, & Mehanna, 2010). Die dritte Eigenschaft eines 
+DWH ist der Zeitraumbezug. Im Gegensatz zu den Daten in Applikationen werden die Daten in 
+DWHs nicht zeitpunktbezogen sondern zeitraumbezogen abgelegt. Ein DWH ermöglicht es somit, 
+Datenbereit-
+stellungsebene 
+Präsentationsebene 
+Definition nach 
+Inmon: SINT-
+Eigenschaften 
+orNKVhL9TTDXI8AQh4lipaQ71WqVnv4ig+pQ36nlVZkC1Cx7WtjZX3hVT1FEttte
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 29 ===
+ 
+Data Warehouse-Systeme 
+23 
+ 
+dass Daten langfristig vorgehalten werden mit einem Zeithorizont von fünf bis zehn Jahren. Ope-
+rative Systeme, wie sie im Tagesgeschäft eines Unternehmens verwendet werden, müssen hinge-
+gen immer aktuelle Daten vorliegen haben. Beispielsweise müssen die Informationen zu den 
+Transaktionen eines Kunden aktuell vorliegen, wohingegen diese Daten im DWH eher über den 
+Zeitraum hinweg abgelegt werden. Die Daten in einem DWH sind somit nur unmittelbar nach 
+dem Laden der Daten in das DWH aktuell (Gray & Watson, 1998). Diese Eigenschaft eines DWH 
+ist jedoch nicht mehr aktuell und wurde durch die Eigenschaft Granularität ersetzt. Mittlerweile 
+ist es in der Praxis weit verbreitet, dass sogar die Daten im DWH transaktionsbezogen abgespei-
+chert werden (Kemper, Baars, & Mehanna, 2010). Die letzte Eigenschaft eines DWH ist die Nicht-
+Volatilität. Diese Eigenschaft besagt, dass Daten dauerhaft vorgehalten werden und nicht ver-
+gänglich sind. Einmal abgelegte Daten werden nicht aktualisiert, sondern vielmehr erneut hoch-
+geladen. Dies führt dazu, dass auch Daten aus der Vergangenheit abrufbar bleiben. In CRM-
+Systemen beispielsweise wird der veraltete Wohnort durch den aktuellen Wohnort eines Kunden 
+überschrieben. Somit geht der alte Wert verloren. Im DWH hingegen bleiben beide Werte erhal-
+ten. Dies hat den Vorteil, dass diese veralteten Informationen zwar genutzt werden können, je-
+doch ist ein wesentlicher Nachteil, dass in dem DWH ein enormes Datenvolumen vorgehalten wird 
+( (Inmon, 2000), (Kemper, Baars, & Mehanna, 2010)).  
+DWHs sind dispositive Datenhaltungssysteme und werden von den operativen 
+Datenhaltungssystemen separiert betrachtet (Kemper, Baars, & Mehanna, 
+2010). Um diese Aussage zu verstehen, ist eine Abgrenzung von operativen 
+und dispositiven Daten notwendig. Abbildung 8 gibt eine Übersicht über die Eigenschaften von 
+dispositiven und operativen Daten und stellt diese gegenüber (s. hierzu auch Einheit 1 dieses Lehr-
+briefs). 
+ 
+Abb.8: Dimensionen von operativen und dispositiven Daten 
+Quelle: in Anlehnung an (Kemper, Baars, & Mehanna, 2010). 
+Abgrenzung von 
+dispositiven und 
+operativen Daten 
+9AzQzu1TiwTuoWPGENcjfHcSD78+E8kQwHMoUAH2XU8nZj5jV492ssT2kWvW0SH0
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 30 ===
+ 
+Data Warehouse-Systeme 
+ 
+ 
+24 
+Die Abbildung 3 verdeutlicht, dass die Dimensionsausprägungen der dispositiven Daten der Defi-
+nition von DWH nach Inmon stark ähneln. So wird die Dimension „Ausrichtung“, die bei disposi-
+tiven Daten meist stark verdichtet oder bzw. und transformiert sind, durch die Eigenschaft Integra-
+tion abgedeckt. Die Integration umfasst unter anderem die Transformation der Daten, die ein 
+wesentliches Kriterium der Ausrichtung sind. Der Zeitbezug bei dispositiven Daten ist historienbe-
+trachtet, d. h. die Daten werden über einen längeren Zeitverlauf und nicht zeitpunktbezogen be-
+trachtet. Diese Ausprägung geht einher mit der Eigenschaft des Zeitbezugs, aber auch mit der 
+Nicht-Volatilität, die, wie oben beschrieben, besagt, dass Daten dauerhaft vorgehalten werden 
+und nicht vergänglich sind. Die Modellierung bei dispositiven Daten erfolgt sachgebiets- sowie 
+themenorientiert, was an sich bereits eine Eigenschaft eines DWH ist. Der Zustand von dispositiven 
+Daten kann als kontrolliert redundant und konsistent beschrieben werden. Demzufolge müssen 
+Daten bereits integriert sein, sodass Redundanzen sowie Inkonsistenzen behoben wurden. Letzt-
+lich sollen dispositive Daten der Entscheidungsunterstützung dienen. Folglich sind die Daten eher 
+auf der Ebene des Managements anzusiedeln und nicht, wie die operativen Daten, zur Unterstüt-
+zung des Tagesgeschäfts, also auf Abteilungsebene. Daher wären operative Daten, die im Tages-
+geschäft generiert und genutzt werden für managementunterstützende Systeme wenig hilfreich 
+und zielführend (Kemper, Baars, & Mehanna, 2010).  
+Die Ziele eines DWH können wie folgt zusammengefasst werden. Ein DWH hat 
+das Ziel, Daten, die häufig in sehr großen Mengen vorliegen, für die Durchfüh-
+rung von Auswertungen und Analysen effizient bereitzustellen (Behme & Muksch, 2001). Hierzu 
+zählt auch, dass Daten zu Analysezwecken einfach zusammengeführt werden können (Totok, 
+2000). Ein weiteres Ziel ist, dass durch die Verwendung eines DWH die Geschäftsprozesse eines 
+Unternehmens unterstützt werden müssen, um so zur Strategieerreichung eines Unternehmens 
+beitragen zu können. Ein DWH kann z. B. bei der Analyse der Geschäftsprozesse helfen und diese 
+optimieren (vgl. hierzu auch Abschnitt 13262638082.1) (Behme & Muksch, 2001). Ein letztes Ziel 
+ist die Abschaffung von Insellösungen. Insellösungen führen dazu, dass einzelne Aufgabenberei-
+che untereinander nur schwierig miteinander kommunizieren können (Totok, 2000). Alle genann-
+ten Ziele können erreicht werden, indem die oben genannten und erläuterten Eigenschaften eines 
+DWH eingehalten und sinnvoll in ein Unternehmen implementiert werden. 
+Ein DWH umfasst lediglich die Datenbasis. Diese muss jedoch in ein DWH-System eingebettet 
+werden, damit die Datenbasis sinnvoll zu Analysezwecken genutzt werden kann. Ein DWH-System 
+sorgt dafür, dass die genannten Eigenschaften eines DWH den Anwendern zur Verfügung gestellt 
+werden können. Neben der Analyse der Daten zählen hierzu die Datenbeschaffung sowie das 
+DWH (Bauer & Günzel, 2001). Ein DWH-System dient primär der Unterstützung der Leistungspro-
+zesse einer Organisation. Dabei sollte die Organisationsstruktur berücksichtigt werden. Je nach 
+Organisationsstruktur sollte die Ausgestaltungsform des DWH-Systems entsprechend ausgewählt 
+werden (Sinz, Böhnlein, Plaha, & Ulbirch-vom Ende, 2001). 
+3.3 Komponenten eines DWH-Systems 
+Ein DWH-System besteht aus verschiedenen Komponenten, die insgesamt die Eigenschaften so-
+wie Aufgaben und Ziele eines DWH-Systems erfüllen. Je nach Autor werden verschiedene Kom-
+ponenten unterschieden. Die folgenden genannten Komponenten bilden eine Schnittmenge ver-
+schiedener Autoren ( (Bauer & Günzel, 2001), (Behme & Muksch, 2001), (Holthuis, Der Aufbau 
+Ziele eines Data 
+Warehouse 
+bZNvzyp/+XlgxderA9MgFdZmfE3PuvQqDnk4xued1PtPT7oxyjajKx1e8Nh27oN/
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 31 ===
+ 
+Data Warehouse-Systeme 
+25 
+ 
+von Data Warehouse-Systemen: Konzeption - Datenmodellierung - Vorgehen, 2001)): 
+• 
+DWH 
+• 
+Operational Data Store (ODS) 
+• 
+Arbeitsbereich 
+• 
+Extraktion – Transformation – Laden (ETL)-Komponente 
+• 
+Metadatenbanksystem 
+• 
+Analysekomponente 
+ 
+DWH 
+Die Datenbasis oder auch das DWH ist der Kern eines jeden DWH-Systems und hat drei Funktio-
+nen. Das DWH sammelt die Daten aus den verschiedenen Datenquellen eines Unternehmens und 
+stellt diese zentral zur Verfügung. Somit kommt dem DWH eine Sammel- bzw. Integrationsfunk-
+tion zu. Im nächsten Schritt können die gesammelten Daten an das DWH-System im Unternehmen 
+verteilt werden. Daher hat das DWH auch eine Distributionsfunktion. Die letzte Funktion ist die 
+Auswertungsfunktion. Das DWH kann einzelne Analysen der aus den Datenquellen gesammelten 
+Daten durchführen (Bauer & Günzel, 2001). 
+Operational Data Store 
+Die Komponente ODS ist eng mit dem DWH verknüpft. Der ODS geht wie auch das DWH auf 
+Inmon (2000) zurück, der diese Komponente wie folgt definiert: „Ein ODS ist eine themenorien-
+tierte, integrierte, nicht dauerhafte bzw. nicht persistente detaillierte Sammlung von Daten, um 
+eine Organisationseinheit bei ihrem Bedarf nach aktuellen, betrieblichen, integrierten und gesamt-
+heitlichen Informationen zu unterstützen.“ Ein ODS ist also eine Datenbank, die der Integration 
+von Daten aus einer oder mehreren Datenquellen dient. Hierzu werden die aus den Datenquellen 
+relevanten Daten extrahiert und gegebenenfalls wegen Redundanzen und verletzter Integritäts-
+bedingungen bereinigt und transformiert. Im ODS werden die Daten für in der Regel zeitnahe 
+Auswertungen bereitgestellt, die in den Quellsystemen nicht oder nur schwer möglich sind. Ein 
+Anwendungsbeispiel ist die Angebotserstellung in Abhängigkeit zeitnaher Börsenkurse.  
+ODS erweitern die Funktionsweise eines DWH dahingehend, dass durch die Nutzung eines ODS 
+eine transaktionsorientierte und integrierte Datenhaltung ermöglicht wird (Kemper, Baars, & 
+Mehanna, 2010).  
+Arbeitsbereich (staging area) 
+Im Arbeitsbereich oder auch staging area werden Daten temporär zwischengespeichert. Dies soll 
+verhindern, dass das DWH sowie die Datenquellen im laufenden Betrieb beeinträchtigt werden 
+(Bauer & Günzel, 2001). Bevor die Daten im DWH gespeichert werden, müssen sie im Datenbe-
+schaffungsbereich des DWH-Systems aufbereitet werden. Der Arbeitsbereich stellt die zentrale 
+Komponente dieses Datenbeschaffungsbereichs dar. Er dient vornehmlich dazu, die Daten aus 
+den verschiedenen Datenquellen nach bestimmten zuvor festgelegten Regeln zu transformieren 
+und zu integrieren (Farkisch, 2011). Hierzu hängen der Arbeitsbereich und die im Folgenden be-
+schriebene ETL-Komponente stark zusammen. Wenn alle Daten entsprechend transformiert und 
+integriert wurden, werden sie in das DWH geladen und abschließend aus dem Arbeitsbereich 
+gelöscht (Bauer & Günzel, 2001).  
+pMYePvUPM3p0rEpzo1lUw4vXTa+JpCS46aJp3gNGku4IsMnHwACKECSl3T7lCMiJ
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 32 ===
+ 
+Data Warehouse-Systeme 
+ 
+ 
+26 
+Die ETL-Komponente 
+Eine wesentliche Aufgabe eines DWH ist es, die vielen Daten aus den unterschiedlichen Daten-
+quellen zu vereinheitlichen, zu konsolidieren und in gebündelter Form den Endanwendern zur 
+Verfügung zu stellen. Hierzu ist ein Prozess notwendig, der die Daten zunächst aus den Quellsys-
+temen extrahiert, diese dann in ein einheitliches Format transformiert und schließlich in das DWH 
+lädt. Dieses Vorgehen wird als ETL-Prozess, bezeichnet. Zur Unterstützung dieses Prozesses gibt 
+es im DWH-System eine eigene Komponente, die ETL-Komponente. Diese unterstützt den gesam-
+ten Prozess (Strohmeier, 2008), der im Folgenden erläutert wird.  
+ 
+ 
+Abb.9: Der ETL-Prozess 
+Die wesentlichen Aufgaben in einem DWH werden durch den ETL-Prozess abgedeckt. Insgesamt 
+ist dieser Prozess sehr komplex und umfangreich und dient der Sicherstellung einer guten Daten-
+qualität im DWH. Zur Unterstützung des ETL-Prozesses gibt es für jede Aufgabe des Prozesses eine 
+eigene Komponente. Häufig wird der ETL-Prozess in einem Unternehmen durch eine eigene ETL-
+Anwendung unterstützt. Im Folgenden werden die einzelnen Phasen des Prozesses erläutert, um 
+abschließend den Prozess im Ganzen zu betrachten und kurz auf mögliche ETL-Anwendungen 
+einzugehen. 
+Der ETL-Prozess beginnt mit der Extraktion der Daten. In dieser Phase werden 
+die Daten von der Datenquelle in den zwischengelagerten Arbeitsbereich über-
+tragen. Eine der Schwierigkeiten in dieser Phase liegt in der Auswahl der Daten, die es zu extra-
+hieren gilt (Bauer & Günzel, 2001). In diese Entscheidung fließen zwei Faktoren ein. Zum einen 
+muss die Beschaffenheit der Daten berücksichtigt werden. Beispielsweise sollten sehr fehlerhafte 
+oder fehlende Daten nicht übertragen werden. Zum anderen ist die Relevanz der Daten von Be-
+deutung. Hierzu ist es notwendig, dass der Anwender weiß, für welches Ziel die Daten verwendet 
+werden sollen. Somit kann der Anwender die Daten dahingehend auswählen, ob diese für die 
+Erreichung des Ziels verantwortlich sind (Bauer & Günzel, 2001) (weitere Ausführungen zur Selek-
+tion der Daten s. Einheit 2 dieses Lehrbriefs, Kap. 3.2). Die Extraktion der Daten sollte möglichst 
+automatisiert erfolgen. Wenn Fehler auftreten, so sollte nicht der gesamte Prozess von neuem 
+starten. Vielmehr sollte eine abschließende Fehlerauslesung möglich sein, sodass die gefundenen 
+Fehler im Nachhinein korrigiert werden können (Navrade, 2008). Neben der Entscheidung, welche 
+Daten extrahiert werden sollen, stellt sich für den Entscheider auch die Frage, wie häufig dies 
+erfolgen soll. Dabei lassen sich vier verschiedene Vorgehensweisen unterscheiden. Eine Extraktion 
+kann periodisch, also in regelmäßig festgesetzten Zeiträumen, durchgeführt werden. Dabei hängt 
+der Zeitraum maßgeblich vom Zweck sowie den Anforderungen ab. Beispielsweise könnten Ver-
+kaufsdaten jeden Abend extrahiert werden, wohingegen Börsenkurse minütlich übertragen wer-
+den sollten. Die zweite Möglichkeit ist die anfragegesteuerte Extraktion. Hierbei werden Daten 
+Extraktion 
+UqiadrM12cUl7FVvQVYwlSQUlDUZbw2wjWu302pgagYOtjZDrNDx7F/mf0H8Db4x
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 33 ===
+ 
+Data Warehouse-Systeme 
+27 
+ 
+durch einen Anstoß extrahiert. Dies kann z.B. der Fall sein, wenn eine wichtige Veränderung der 
+Daten vorliegt, beispielsweise wenn ein neues Produkt in das Sortiment aufgenommen wurde. 
+Die dritte Möglichkeit ist die ereignisgesteuerte Extraktion. Diese wird automatisch angestoßen, 
+wenn z. B. eine bestimmte, zuvor festgelegte Anzahl an Veränderungen in den Datensätzen vor-
+liegt oder aber auch, wenn ein bestimmter Grenzwert eines Datensatzes erreicht wurde. Beispiels-
+weise kann eine ereignisgesteuerte Extraktion ausgelöst werden, wenn eine bestimmte Umsatz-
+grenze erreicht wurde. Die letzte Möglichkeit der Extraktion ist die sofortige Durchführung nach 
+einer Veränderung. Somit sind die Daten im DWH immer aktuell. Diese Möglichkeit ist sehr auf-
+wändig und sollte nur bei zeitkritischen Veränderungen erfolgen. So kann eine sofortige Extrak-
+tion bei einer Veränderung der Börsenkurse sinnvoll sein (Bauer & Günzel, 2001). 
+Vor der Ladung der Daten in das DWH erfolgt die Transformation. In dieser 
+Phase werden die Daten so angepasst, dass sie in das DWH geladen werden können. Dabei kann 
+die Anpassung der Daten verschiedene Aufgaben umfassen. Beispielsweise müssen die Daten in 
+den meisten Fällen standardisiert werden, sodass die Daten einheitlich erfasst werden. Hierzu ge-
+hört z. B. die Vereinheitlichung von Zeichenketten oder die Konvertierung von Kodierungen. Des 
+Weiteren werden bei der Transformation fehlerhafte Daten durch z. B. fehlerhafte oder unter-
+schiedliche Eingaben durch den Benutzer bereinigt, sowie redundante oder veraltete Daten ge-
+löscht (Bauer & Günzel, 2001). Die unterschiedlichen Datenfehler sowie der Aspekt der Transfor-
+mation wurden bereits ausführlich in Einheit 2 dieses Lehrbriefs (Kap. 3.2.2 sowie 3.3.1) diskutiert 
+und werden daher an dieser Stelle nicht weiter ausgeführt.  
+Die letzte Phase des ETL-Prozesses umfasst im Anschluss an die Transformation 
+das Laden der Daten in das DWH (Bauer & Günzel, 2001). Bei den Ladephasen wird unterschieden 
+zwischen dem ersten Laden zur Initialisierung des DWH und den späteren, regelmäßigen Aktuali-
+sierungen (Bauer & Günzel, 2001). In der ersten Ladephase, auch initiales Laden genannt (Vasile 
+& Mirela, 2008), werden die Daten von den Quellsystemen in das DWH geladen. Diese Art der 
+Ladung wird nur einmalig durchgeführt. Danach bleiben die Daten für einen sehr langen Zeitraum 
+im DWH. Bei der zweiten Ladephase erfolgt die Ladung von Daten aus der Datenbank in das 
+DWH. Dies wird auch als Aktualisierung bezeichnet. Die Daten werden in regelmäßigen Abstän-
+den „aufgefrischt“, indem aktuelle Daten in das DWH geladen werden. Der Ladevorgang ist je-
+doch sehr zeitintensiv bzw. fordert enorme Rechenleistung, was die Effizienz anderer Systeme 
+negativ beeinträchtigen kann, sodass dieser Ladevorgang häufig außerhalb der Auslastungshöhen 
+liegt, z. B. am Wochenende oder über Nacht (Bauer & Günzel, 2001). Die Daten werden nach 
+dem Laden in das DWH jedoch nicht gelöscht, sondern im DWH gehalten, sodass eine Historisie-
+rung der Daten sichergestellt werden kann (Navrade, 2008). 
+Metadatenbanksystem 
+Ziel eines DWH ist es, dass Mitarbeiter auf die für sie relevanten Daten zugreifen und diese zu 
+Analysen nutzen können. Damit dieses Ziel ermöglicht werden kann, existiert eine Metadatenbank 
+als eine zentrale Komponente im DWH-System, die das Fundament des DWH bildet.  
+Eine Metadatenbank ist ein Bestandteil im Metadatenbanksystem, das auch als Business Data Di-
+rectory bezeichnet wird. Die Aufgabe des Metadatenbanksystems ist es, dem DWH Hintergrund-
+informationen über Datenquellen, Transformationen und Verdichtungen zu liefern. Die hierzu be-
+Transformation 
+Laden 
+arfvib3FA44pw03hRj4M8J2eTWxv7CpKEo0QCPsc7vt/T1HOMV8lHSzrBMcyhFDL
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 34 ===
+ 
+Data Warehouse-Systeme 
+ 
+ 
+28 
+nötigten Informationen werden im Metadatenbanksystem gespeichert. Dabei können die Infor-
+mationen unterteilt werden in datenverarbeitungstechnische und betriebswirtschaftliche Informa-
+tionen. Das Ziel des Metadatenbanksystems ist es, Transparenz zu schaffen sowie die Mitarbeiter 
+insbesondere im Bereich der Datenverarbeitung sowie die Mitarbeiter, die für den Betrieb zustän-
+dig sind, zu unterstützen. Hierzu bestehen im Metadatenbanksystem zwei Komponenten. Zum 
+einen gibt es einen Informationskatalog, der für alle Anwender eine Hilfestellung bieten soll. Der 
+Informationskatalog beinhaltet Informationsobjekte und beschreibt diese so, dass sie für den End-
+benutzer verständlich sind. Informationsobjekte können Grafiken, Tabellen, Texte, vorgefertigte 
+Abfragen, Programme oder Dateien sein. Zum anderen gibt es eine Navigationshilfe in Form eines 
+Browsers. Die Navigationshilfe unterstützt die Anwender bei der Navigation, sodass diese selbst-
+ständig in den Metadaten suchen, recherchieren und analysieren können. 
+Neben diesen beiden grundlegenden Funktionen sollten dem Endbenutzer weitere Informationen 
+zur Verfügung stehen. So muss es beispielsweise ein Lexikon geben, in dem alle Namen der exis-
+tierenden Datenobjekte sowie deren Abkürzungen in alphabetischer Reihenfolge aufgeführt wer-
+den. Des Weiteren sollte es einen Thesaurus geben, sodass die Endbenutzer Synonyme für Date-
+nobjekte sowie die dazugehörigen Charakteristika erkennen können. Ein Datenstrukturverzeichnis 
+beinhaltet alle Daten, die im DWH gehalten werden. Des Weiteren sollte es ein Glossar geben, 
+das alle verwendeten Begriffe, Definitionen und Abkürzungen in alphabetischer Reihenfolge be-
+inhaltet. Zudem sollte eine Übersicht vorliegen, welche Organisationeinheit auf welche Datenquel-
+len zugreift und welche bisher unveröffentlichten Dokumente in den Organisationseinheiten exis-
+tieren. Diese Informationen werden in einem Data Directory zusammengefasst, welches zusätzlich 
+Projekte, die mit dem DWH in Zusammenhang stehen sowie deren Ansprechpersonen, beinhaltet 
+(Muksch, 2006). 
+Analysekomponente 
+Die letzte fehlende Komponente im DWH-System ist die Analysekomponente. Wie der Name be-
+reits sagt, liegt die Hauptaufgabe der Analysekomponente darin, den Benutzer bei der Auswer-
+tung der Daten zu unterstützen. Dies kann durch verschiedene Werkzeuge und Tools erfolgen. 
+Hierzu gehören die in Einheit 2 dieses Lehrbriefs bereits eingeführten Methoden des Data Mining. 
+Des Weiteren sind Data Access, OLAP-Verfahren (s. Abschnitt 4) sowie Data Marts einzuordnen ( 
+(Bauer & Günzel, 2001), (Farkisch, 2011)). 
+ 
+Data Access sind Berichtswerkzeuge, die lediglich Daten lesen sowie einfache 
+Operationen durchführen können und die Daten zu Präsentationszwecken auf-
+bereiten können. Bei der Präsentation wird häufig auf die Ampelfunktion zurückgegriffen, bei der 
+verschiedene Farben für verschiedene Größen verwendet werden. So können beispielsweise bei 
+der Darstellung von Umsatzveränderungen negative Veränderungen in Rot, konstante Umsatz-
+zahlen in Gelb und positive Umsatzveränderungen in Grün ausgegeben werden. Dadurch erhält 
+der Anwender schnell einen guten groben Überblick über die Daten. Diese Funktionalität kann 
+mehr als die drei genannten Farben beinhalten und ist auf Tabellen, Grafiken oder Landkarten 
+anwendbar (Bauer & Günzel, 2001). 
+Mittels OLAP können Daten, insbesondere in quantitativen Berichten, darge-
+Data Access 
+OLAP 
+zF53YDjktTz9JsPzz3L4CuVfu+QkidrRLw1FQnajOOeheF2yL53bYfAzaPasMzOo
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 35 ===
+ 
+Data Warehouse-Systeme 
+29 
+ 
+stellt werden. OLAP zeichnet sich besonders durch die Möglichkeit der multidimensionalen Ana-
+lyse aus, die überwiegend Kennzahlen verwendet, bei der der Anwender selber die Analysekrite-
+rien bestimmen kann. Ein Vorteil ist auch, dass der Anwender durch relativ einfache Bedienung 
+ein breites Spektrum an Analysemöglichkeiten zur Verfügung hat (Bauer & Günzel, 2001).  
+Data Marts helfen dem Benutzer bei der Analyse, indem sie eine Exploration der 
+Daten vornehmen. Data Marts „sind spezielle analyseorientierte Systeme mit 
+einer Ausrichtung auf das jeweilige Anwendungsthema“ (Farkisch, 2011), d. h. es können bei-
+spielsweise einzelne Data Marts für verschiedene Abteilungen existieren, die abteilungsspezifische 
+Daten für die Auswertungen bereitstellen.  
+3.4 Data Marts 
+Je nach Organisationsform kann das DWH unterschiedlich ausgestaltet werden. So bietet es sich 
+für einige Unternehmen an, lediglich ein DWH einzuführen, wohingegen andere Unternehmen 
+Data Marts einsetzen sollten.  
+Viele Unternehmen bevorzugen Data Marts gegenüber einem zentralen DWH. Anstelle eines 
+zentralen DWH werden Data Marts verwendet, die kleinen autonomen DWHs entsprechen (Far-
+kisch, 2011). Data Marts haben eine eigene Datenhaltung in Form einer spezialisierten analyti-
+schen Datenbank und sind speziell auf die Bedürfnisse von Fachabteilungen oder bestimmten Be-
+nutzergruppen zugeschnitten (Hiestermann, 2008). Die Daten, die in den einzelnen Data Marts 
+gehalten werden, stammen meistens aus dem zentralen DWH, bilden jedoch immer nur die ent-
+sprechend erforderlichen Daten zur Entscheidungsunterstützung für die jeweilige Benutzergruppe 
+oder Fachabteilung ab (Schmidt-Volkmar, 2008). So werden in den Data Marts lediglich Aus-
+schnitte aus dem zentralen DWH abgebildet, beispielsweise Daten zu den Verkaufszahlen für ei-
+nen bestimmten Zeitraum (Farkisch, 2011). 
+Grundsätzlich unterscheiden sich Data Marts und DWHs in ihren Eigenschaften grundlegend. Wie 
+bereits erläutert, ist der Adressat eines Data Marts eine Fachabteilung oder einzelne Entscheider-
+gruppen, wohingegen bei einem DWH die Daten nicht speziell für eine Personengruppe zur Ver-
+fügung gestellt werden, sondern vielmehr zentral unternehmensweit. Somit gibt es unterneh-
+mensweit meistens mehrere Data Marts, je nach Anzahl der Fachabteilungen, wohingegen es in 
+der Regel nur ein einziges zentrales DWH im Unternehmen gibt. Diese Ausprägungen haben einen 
+Einfluss auf die Datenmenge und den Detaillierungsgrad. Durch die zentrale Datenhaltung im 
+DWH werden sämtliche zur Verfügung stehende Daten gespeichert. Dies führt zu einem sehr 
+hohen Datenvolumen. Dadurch, dass in einem Data Mart die Daten gezielt den Bedürfnissen der 
+entsprechenden Anwender angepasst werden, kann das Datenvolumen reduziert werden. Dies 
+wirkt sich ebenfalls auf den Detaillierungsgrad der Daten aus. So liegen die Daten im zentralen 
+DWH in der Regel in einer sehr kleinen Detaillierung vor, wohingegen die Daten des Data Marts 
+häufig auch in aggregierter Form, z.B. in Form von Kennzahlen oder nur für einen bestimmten 
+Zeithorizont oder eine bestimmte Produktgruppe, bereits zusammengefasst werden können. Da-
+raus ergibt sich zwangsläufig, dass in einem zentralen DWH viele historische Daten abgespeichert 
+werden, wohingegen diese bei Data Marts in der Regel nicht benötigt und folglich dementspre-
+chend auch nicht gespeichert werden. Hiermit hängt auch der Einfluss von externen Datenquellen 
+zusammen. Bei Data Marts ist dieser in der Regel nicht gegeben. In einem zentralen DWH ist der 
+Data Mart 
+53cWERoheYTM48MSkpONhhdjH2kQ5uzgcPNnQrExnVVqk7gfa85nzkN8hrFyhJnF
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 36 ===
+ 
+Data Warehouse-Systeme 
+ 
+ 
+30 
+Einfluss externer Datenquellen jedoch sehr hoch, da hier möglichst viele Daten für die Analyse 
+bereitgestellt werden sollen. Häufig können Daten aus externen Datenquellen zu einer Verbesse-
+rung der Qualität innerhalb der Analysen beitragen.  
+Dadurch, dass in einem Data Mart die Daten für eine bestimmte Gruppe zur Verfügung gestellt 
+werden, muss sichergestellt werden, dass diese auch einen direkten Zugriff auf die Daten haben. 
+Bei einem zentralen DWH ist es in der Regel so, dass die Endanwender keinen Zugriff auf die 
+Daten haben. Unternehmen haben häufig schlechte Erfahrung damit gemacht, dass Anwender 
+aufgrund individueller Fehler die Performance des gesamten zentralen DWH durch fehlerhafte 
+oder ineffiziente Abfragen negativ beeinflusst haben. Dies hat dazu geführt, dass häufig nur noch 
+die IT-Abteilung einen direkten Zugriff auf die Daten und entsprechende Analysemöglichkeiten 
+hat, um diese Ineffizienzen zu umgehen (Kemper, Baars, & Mehanna, 2010). Dennoch sind die 
+jeweiligen Fachabteilungen selber für die Pflege und den Betrieb der Data Marts zuständig (Far-
+kisch, 2011). Dies führt dazu, dass die Modellierungskonventionen eher heterogen sind, da jede 
+Abteilung ihre individuellen Konventionen hat. Teilweise werden jedoch einheitliche Konventio-
+nen des zentralen DWH übernommen. Im zentralen DWH liegen klare, einheitliche Modellierungs-
+konventionen vor. Die Freiheitsgrade der Analysen sind in Data Marts zumeist sehr beschränkt. 
+Die Anwender haben meist nur Zugriff auf ihr eigenes Data Mart bzw. die für ihre Entscheidung 
+benötigten Daten. Dies entspricht nur einem spezifischen Ausschnitt der Gesamtdaten, wie sie in 
+einem DWH gespeichert werden. Bei einem DWH können die Anwender flexibel auf die Daten 
+zur Analyse zugreifen. Dies kann lediglich durch vom Unternehmen festgelegte Rechte, die der 
+Sicherheit dienen, eingeschränkt werden.  
+Letztlich unterscheiden sich Data Marts und zentrale DWHs in ihrer betriebswirtschaftlichen Ziel-
+setzung. Data Marts dienen der effizienten Unterstützung der jeweiligen Anwender, wohingegen 
+DWH die obere Managementebene effizient unterstützen sollen.  
+Die erläuterten Merkmalsausprägungen von Data Marts und DWH lassen sich zusammenfassend 
+Tab. 1 entnehmen. 
+ 
+cwLbEZ2+SDr4Hoaq9ssNbbS6Xus9vGwiB8oRzvnYjlC5NMVYvphZD2HzRBozBkOJ
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 37 ===
+ 
+Data Warehouse-Systeme 
+31 
+ 
+Tab. 1: Eigenschaften von Data Marts und Data Warehouses 
+Eigenschaft 
+Data Mart 
+Data Warehouse 
+Adressat der Datenbereitstel-
+lung 
+Abteilung 
+Unternehmen 
+Anzahl 
+Mehrere – viele 
+Eins – sehr wenige 
+Detaillierungsgrad der Daten 
+Zumeist höher aggregierte 
+Daten 
+Kleinster Grad der Detaillie-
+rung 
+Datenmenge 
+Niedrig 
+Hoch 
+Menge historischer Daten 
+Niedrig 
+Hoch 
+Einfluss von externen Daten-
+quellen 
+Zumeist nicht gegeben, wenn 
+ja, dann nur spezifischer Aus-
+schnitt 
+Hoch; sämtliche verfügbare, 
+externe Datenquellen werden 
+integriert, um die Qualität der 
+Analysen verbessern zu kön-
+nen 
+Direkter Zugriff durch Endan-
+wender 
+In der Regel möglich 
+Häufig nicht erlaubt; zentra-
+ler Betrieb des zentralen 
+DWH durch IT-Abteilung; 
+dient als Quelldatensystem 
+für (abhängige) Data Marts 
+Modellierungskonventionen 
+Heterogen (proprietäre Data 
+Marts, jede Abteilung hat 
+ihre eigenen Konventionen); 
+Einheitlich (abgeleitete Data 
+Marts, Konventionen des 
+zentralen DWH werden über-
+nommen) 
+Einheitlich 
+Freiheitsgrad der Analysen 
+Eher gering (Anwender kann 
+über die Abteilungsgrenzen 
+nicht hinaussehen) 
+Flexibel; sämtliche zugängli-
+chen Informationen können 
+in Analysen einfließen 
+Betriebswirtschaftliches Ziel 
+Effiziente Unterstützung der 
+Entscheider einer Abteilung, 
+ausgerichtet alleinig auf de-
+ren Analyseanforderungen 
+Effiziente Managementunter-
+stützung durch strategische, 
+taktische und operative Infor-
+mationsobjekte für alle Ent-
+scheider in einem Unterneh-
+men 
+Quelle: in Anlehnung an (Schmidt-Volkmar, 2008) und (Kemper, Baars, & Mehanna, 2010). 
+Je nach Unternehmen und Anforderungen der einzelnen Abteilungen können Data Marts ver-
+schiedene Vor- und Nachteile aufweisen. Ein genereller Vorteil ist, dass die jeweiligen Abteilungen 
+autonom auf die benötigten Daten zugreifen können. Dies führt zu einer hohen Flexibilität der 
+cccpVjKvJnKIOZqdQjVhOdkE9vTfhz7t/DKrZtpaImr4ZbItR4pnkT9JfUahU8Rk
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 38 ===
+ 
+Data Warehouse-Systeme 
+ 
+ 
+32 
+Abteilungen. Dadurch, dass die Abteilungen lediglich Zugriff auf einen Ausschnitt aller Daten ha-
+ben, sind geringere Rechnerleistungen erforderlich, was zu geringeren Anschaffungs- und Be-
+triebskosten führt (Holthuis, Der Aufbau von Data Warehouse-Systemen: Konzeption - Datenmo-
+dellierung - Vorgehen, 2001). Durch den autonomen Betrieb und die Pflege der jeweiligen Abtei-
+lungen können die Datenmodelle und Datenbestände an die jeweiligen fachlichen, organisatori-
+schen und technischen Gegebenheiten der Abteilungen angepasst werden. Des Weiteren führt 
+der relativ kleine Fokus auf meistens nur eine Abteilung dazu, dass das benötigte Datenvolumen 
+relativ gering ist (Farkisch, 2011). Dies ergibt sich, weil eine starke Orientierung an den jeweiligen 
+Fragestellungen und Entscheidungsproblemen (der einen Abteilung) erfolgen kann. Dadurch 
+ergibt sich eine vereinfachte Wartung für die Abteilungen und schnellere Zugriffszeiten. Alle ge-
+nannten Vorteile führen dazu, dass Data Marts meist schnell und auch relativ kostengünstig an-
+gelegt werden können (Schmidt-Volkmar, 2008). Beim Anlegen bzw. Entwickeln eines Data Marts 
+können zudem die Anforderungen der Abteilungen berücksichtigt werden, sodass hinsichtlich der 
+Antwortzeit und Abfragefreundlichkeit das Data Mart optimiert werden kann (Hiestermann, 
+2008). 
+Jedoch existieren für Unternehmen auch zahlreiche Nachteile, wenn sie sich für Data Marts ent-
+scheiden. Insbesondere wirkt sich die Haltung vieler Data Marts negativ auf die Effizienz aus. So 
+müssen sämtliche Qualitätssicherungs-, Konsolidierungs- sowie Historisierungsmaßnahmen für je-
+des einzelne Data Mart durchgeführt werden (Hiestermann, 2008). Ein weiterer Nachteil ist, dass, 
+wenn viele Anwender in unterschiedlichen Data Marts mit den Daten arbeiten, die Daten redun-
+dant an verschiedenen Orten abgespeichert werden. Zudem führt dies auch zu einer höheren 
+Netzbelastung, da mehrere Anwender gleichzeitig die Daten aus den Data Marts abrufen 
+(Holthuis, Der Aufbau von Data Warehouse-Systemen: Konzeption - Datenmodellierung - Vorge-
+hen, 2001). Ein letzter zentraler Nachteil von Data Marts ist, dass es lediglich eine beschränkte 
+Sicht auf die Daten gibt. So kann in den einzelnen Data Marts keine unternehmensweite Sicht auf 
+die Daten erfolgen. Folglich ist es nur schwierig möglich, abteilungsübergreifende Analysen durch-
+zuführen (Farkisch, 2011).  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SJLo6Fbc+CgJgiZy+o/ysm60coS2aANpgu9B7NKx8ckJeQRvzlNjyw8Nu7pX1JS9
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 39 ===
+ 
+Online Analytical Processing (OLAP) 
+33 
+ 
+4 Online Analytical Processing (OLAP) 
+Analysekomponenten stellen einen weiteren Bereich im DWH-System dar. Dabei sind insbeson-
+dere OLAP-Systeme elementar. OLAP-Systeme dienen der Entscheidungsunterstützung des Ma-
+nagements, indem relevante Daten strukturiert und fokussiert dargestellt werden. Unternehmen 
+müssen bei ihren Entscheidungen häufig multidimensionale Daten berücksichtigen. Steht bei-
+spielsweise die Entscheidung über die Eröffnung eines neuen Standorts an, so möchte der Ent-
+scheider Informationen über die Verkaufszahlen einer bestimmten Region in einem bestimmten 
+Zeitraum vorliegen haben. Um diese Anforderung zu erfüllen, wird OLAP verwendet. Generell 
+kann OLAP als ein Analyseinstrument definiert werden, durch das multidimensionale Datenaus-
+wertungen und -analysen ermöglicht werden. Nach Gluchowski/Dittmar/Gabriel kann OLAP defi-
+niert werden als „eine Software-Technologie, die Managern wie auch qualifizierten Mitarbeitern 
+aus den Fachabteilungen schnelle, interaktive und vielfältige Zugriffe auf relevante und konsis-
+tente Informationen ermöglichen sollen. Im Vordergrund stehen dabei dynamische und multidi-
+mensionale Analysen auf historischen, konsolidierten Datenbeständen“ (Gluchowski, Dittmar, & 
+Gabriel, 2008). Ursprünglich wurde OLAP von Codd et al. 1993 entwickelt.  
+OLAP wird klassischerweise durch einen Würfel dargestellt. Anhand des Würfels lassen sich gut 
+die multidimensionalen Analysemöglichkeiten von OLAP erläutern. 
+ 
+Abb.10: Der OLAP-Würfel 
+Je nachdem, welche Ziele mit der Analyse verfolgt werden, lassen sich unterschiedliche Daten 
+verwenden. So ist es beispielsweise möglich, dass nur eine bestimmte Region in den Fokus der 
+Analyse gerät. Möglicherweise soll dabei nur eine bestimmte Kundengruppierung berücksichtigt 
+werden. Des Weiteren soll nur eine bestimmte Produktgruppe, beispielsweise Getränke, betrach-
+tet werden. So lässt sich z. B. der Umsatz von Getränken in den verschiedenen Regionen, in denen 
+ein Unternehmen agiert, vergleichen. Durch die Struktur des OLAP-Würfels ist eine multidimensi-
+onale Datenanalyse gewährleistet. 
+Kunde
+Region
+Produkte
+CXlkK8o/ZTuQOYF1Guvak3R9Qz0C5dAvkN+BM7hJA/BQSt5IcUyC2Cj9XlC+Rj3b
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 40 ===
+ 
+Online Analytical Processing (OLAP) 
+ 
+ 
+34 
+Der OLAP-Würfel findet in der Praxis jedoch wenig Anwendung, da dieser die Anzahl der betrach-
+teten Dimensionen auf drei beschränkt. Eine weitere Möglichkeit bieten Pivottabellen (s. Abschnitt 
+34.3, Abb. 14). Neben den Pivottabellen geben Rechenschiebermodelle einen guten Überblick 
+über die verschiedenen Dimensionen und Ausprägungen. Rechenschiebermodelle verdeutlichen, 
+welche Dimensionen existieren und inwiefern diese Dimensionen hierarchisch unterteilt werden. 
+Abb.11 zeigt exemplarisch ein solches Rechenschiebermodell. 
+ 
+Abb.11: Rechenschiebermodell 
+Quelle: in Anlehnung an Kendzia 2010, S. 65. 
+Die erste Spalte gibt die verschiedenen Dimensionen an. Die Dimensionen haben unterschiedliche 
+Ausprägungen, die hierarchisch den Dimensionen untergeordnet werden. Dabei kann es mehr als 
+eine weitere Hierarchieebene geben. Die Zusammenhänge der Hierarchien sind durch Pfeile ge-
+kennzeichnet. So gehört der Ort Hagen zu NRW, was wiederum in Deutschland liegt. Der rote 
+Rahmen gibt die aktuell betrachtete Kombination der Dimensionen an. So wird in der aktuellen 
+Analyse lediglich der Umsatz von Bekleidung im ersten Quartal des Jahres 2010 in NRW betrach-
+tet. Durch Verschiebung einzelner Dimensionen kann sich der Analysefokus verändern. Das Re-
+chenschiebermodell soll verdeutlichen, welche Kombinationsmöglichkeiten für eine Analyse exis-
+tieren und soll allgemein eine Übersicht über die verschiedenen Dimensionen und ihre Ausprä-
+gungen geben.  
+4.1 Anforderungen 
+Die Abkürzung OLAP steht für Online Analytical Processing. Die Abkürzung ver-
+deutlicht bereits die wesentlichen Eigenschaften von OLAP. Online bedeutet, 
+dass Anwender direkt auf den zentralen Datenbestand zugreifen können, um Daten zu betrachten 
+oder zu manipulieren. Die Eigenschaft Analytical steht dafür, dass unterschiedliche Sichten für die 
+Entscheidungsträger von Bedeutung sind und nicht, wie beim Online Transactional Processing 
+(OLTP) die verschiedenen Geschäftsvorfälle. Processing steht für die Eigenschaft, dass schnelle Be-
+rechnungen und Manipulationen durch den Anwender durchgeführt werden können (Goeken, 
+2006). 
+Neben den zentralen Eigenschaften von OLAP hat Codd zwölf Regeln aufgestellt, die durch OLAP 
+abgedeckt werden sollen. Diese Regeln beinhalten Anforderungen, aber auch Fachkonzepte und 
+die technische Realisierung (Goeken, 2006). Da Codd jedoch der Begründer von OLAP ist, sollten 
+die zwölf Regeln an dieser Stelle nicht fehlen.  
+Zeit
+2010
+1. Quartal
+Jan.
+Feb
+…
+Produkte
+Getränke
+Lebensm.
+Bekleidung
+Gemüse
+Fleisch
+…
+Region
+Deutschl.
+Frankreich
+Bayern
+NRW
+Hagen
+…
+Kennzahlen
+Umsatz
+Anzahl
+Gewinn
+…
+Eigenschaften von 
+OLAP 
+gWcMJLixQGemiS5yyoyHmXPeB37b1TCrjQ1exBPjV99CyvapewYlbCw6cai/ngjq
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 41 ===
+ 
+Online Analytical Processing (OLAP) 
+35 
+ 
+Die zwölf Regeln nach Codd (Codd, Codd, & Salley, 1993) werden im Folgen-
+den kurz erläutert. 
+1. Multidimensionale konzeptionelle Sichtweise auf die Daten: Das wesentliche Merkmal von 
+OLAP ist die multidimensionale Sichtweise auf die Daten. Dadurch wird es dem Entscheider 
+ermöglicht, die erforderlichen Daten zu analysieren, aggregieren oder miteinander korrelieren. 
+Durch verschiedene Operationen, die OLAP zur Verfügung stellt, ist es dem Entscheider mög-
+lich, diese relativ einfach und ohne großen Aufwand durchzuführen und so die gewünschten 
+Analyseergebnisse zu erzielen. Am Ende der Analyse stellt OLAP die Ergebnisse visualisiert zur 
+Verfügung, sodass die Interpretation dieser für den Entscheider einfach ist.  
+2. Transparenz: Die Transparenz ist eine wichtige Eigenschaft, die es Entscheidern ermöglicht, 
+auch ohne Kenntnisse der zugrundeliegenden Datenstrukturen die gewünschten Abfragen 
+durchzuführen. 
+3. Zugriffsmöglichkeit: Dem Entscheider muss es möglich sein, seine Analysen auf Basis unter-
+nehmensinterner und unternehmensexterner Datenquellen durchzuführen. Alle vom Entschei-
+der benötigten Daten müssen im DWH vorgehalten werden. 
+4. Gleichbleibende Antwortzeit bei der Berichterstellung: Unabhängig davon, welche Daten der 
+Entscheider zur Analyse benötigt, muss die Antwortzeit, die für die Erstellung des Berichts 
+benötigt wird, konstant sein. So darf diese Zeit beispielsweise nicht von der Anzahl der Di-
+mensionen oder der Anzahl der Datensätze abhängen. Die Leistungsfähigkeit von OLAP 
+sollte folglich immer konstant bleiben. 
+5. Client-Server-Architektur: Zur Realisierung von OLAP sollte eine Client-Server-Architektur ver-
+wendet werden.1 Nur so kann die Speicherung, Verarbeitung und Darstellung getrennt wer-
+den. Hierzu sollte der OLAP-Server eine offene Schnittstelle zur Verfügung stellen, damit Ent-
+scheider mit verschiedenen Anwendungen darauf zugreifen können (Bauer & Günzel, 2001). 
+6. Generische Dimensionalität: Alle Dimensionen sollten in ihrer Struktur sowie ihrer Funktiona-
+lität einheitlich gestaltet sein. Keine Dimension sollte im Vorfeld bereits vorbelegt sein, sodass 
+alle Dimensionen symmetrisch sind und somit individuell untereinander ausgetauscht werden 
+können.  
+7. Dynamische Behandlung unvollständig besetzter Matrizen: Unvollständig besetzte Matrizen 
+entstehen dann, wenn bei der Kombination von mehreren Dimensionen keine Werte existie-
+ren. Dennoch sollten die Funktionalitäten von OLAP nicht eingeschränkt werden.  
+8. Mehrbenutzerunterstützung: Es muss möglich sein, dass mehrere Benutzer parallel auf die 
+gleichen Daten zugreifen und diese für ihre Analysen verwenden können. Dabei ist insbeson-
+dere sicherzustellen, dass die Konsistenz der Daten beibehalten wird. Generell muss über eine 
+Rechteverwaltung innerhalb des Unternehmens festgelegt werden, welche Personen Lese- so-
+wie Schreibrechte haben. 
+9. Uneingeschränkte kreuzdimensionale Operationen: Es muss möglich sein, dass ein Anwender 
+alle Berechnungen, die er zur Entscheidungsunterstützung benötigt, durchführen kann. Dabei 
+soll dies unabhängig von den benötigten Dimensionen sowie über beliebige Dimensionen hin-
+weg erfolgen können. Das System muss offen sein für jegliche Abfragen des Anwenders. 
+10. Intuitive Darstellung und Bearbeitung der Daten: Dem Anwender muss es intuitiv möglich sein, 
+die von ihm gewünschten Analysen selbstständig und ohne größere Kenntnisse des Systems 
+ 
+1 Zur ausführlichen Erläuterung siehe Gehring/Pankratz 2006: Grundzüge der Wirtschaftsinformatik, Einheit 1 „Tech-
+nologische Grundlagen der Informationsverarbeitung“. 
+Zwölf Regeln nach 
+Codd 
+VAQ5LkXuhlvESsbl5fE1bxEKY4KeaNr9AmsIt5AASCpQ+SrMaC8xllZmmnODSsmb
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 42 ===
+ 
+Online Analytical Processing (OLAP) 
+ 
+ 
+36 
+durchzuführen. Dies betrifft insbesondere die Navigation durch die Daten. 
+11. Flexible Berichterstellung: Es müssen flexibel Berichte erstellt werden können, d. h. es muss 
+möglich sein, die Anordnungen flexibel zu generieren. Die Berichtselemente aus verschiede-
+nen Zeilen und Spalten müssen frei positionierbar sein.  
+12. Unbegrenzte Anzahl von Dimensionen und Klassifikationsebenen: Für die Analyse sollte eine 
+beliebige Anzahl an Dimensionen genutzt werden könne. Erfahrungen aus der Praxis zeigen 
+jedoch, dass für eine Analyse meistens zwischen fünf und acht Dimensionen verwendet wer-
+den. Daher reicht es aus, wenn 15-20 Dimensionen für eine Analyse gleichzeitig hinzugezogen 
+werden können. Dies sollte zur Unterstützung der meisten Entscheidungen ausreichend sein. 
+Diese zwölf Regeln von Codd werden vielfach in der Literatur kritisch diskutiert. Einige der Regeln 
+gelten als veraltet bzw. nicht mehr sinnvoll. Dies trifft z. B. auf die sechste Regel: generische Di-
+mensionalität zu. So kann es sinnvoll sein, wenn Dimensionen, die eine bestimmte Semantik er-
+fordern wie z. B. die Zeit, vorbelegt sind (Bauer & Günzel, 2001). Auch Codd selber hat seine 
+aufgestellten Regeln nur zwei Jahre später durch sechs zusätzliche Regeln erweitert. Diese werden 
+im Folgenden kurz erläutert. 
+1. 
+Datenintegration: Anwender sollen einerseits auf die von OLAP eigene 
+multidimensionale Datenstruktur zugreifen können, andererseits aber auch auf 
+weitere darunter liegende Daten.  
+2. Unterstützung verschiedener Analysemodelle: OLAP soll vier verschiedene Datenmodelle un-
+terstützen. Diese sind das kategorische, das exegetische, das kontemplative sowie das formel-
+basierte Datenmodell. Beim kategorischen Datenmodell werden historische Daten mit den ak-
+tuellen Daten verglichen, um so den aktuellen Zustand zu definieren. Beim exegetischen Da-
+tenmodell werden die Ursachen, die zu dem aktuellen Zustand geführt haben, ermittelt. Das 
+kontemplative Modell führt eine Simulation mit verschiedenen Werten oder Abweichungen 
+von Dimensionen oder zwischen Dimensionen durch. Beim formelbasierten Modell sind ein 
+vorgegebener sowie ein angestrebter Zielzustand definiert. Es wird berechnet, durch welche 
+Veränderungen von Kennzahlen und Parametern der Zielzustand erreicht werden kann (Bauer 
+& Günzel, 2001). 
+3. Trennung analyseorientierter von den operativen Daten: Wenn Daten im DWH verändert wer-
+den, so dürfen diese Veränderungen nicht ins Quellsystem übernommen werden.  
+4. Trennung der Speicherorte: Gemäß der achten Regel haben verschiedene Anwender ein 
+Schreibrecht. Die Veränderungen dürfen jedoch nicht auf dem produktiven Datenbestand ge-
+speichert werden, sondern müssen an einem anderen Ort gespeichert werden.  
+5. Unterscheidung zwischen Null- und Fehlwerten: Es müssen fehlende Werte und Werte mit 
+dem numerischen Wert 0 unterschieden werden können.  
+6. Behandlung von fehlenden Werten: Fehlende Werte sollen effizient verwaltet werden, sodass 
+eine optimale Nutzung der Speicherkapazität gewährleistet werden kann. 
+Einen anderen Versuch, OLAP zu charakterisieren, haben Pendse und Creeth 1995 unternommen. 
+Sie charakterisieren OLAP mit den Begriffen Geschwindigkeit, Analysemöglichkeit, Sicherheit, 
+Multidimensionalität sowie Kapazität (englisch „fast analysis of shared multidimensional informa-
+tion“, kurz FASMI). Die fünf Eigenschaften werden im Folgenden kurz erläutert (vgl. im Folgenden 
+(Bauer & Günzel, 2001)).  
+ 
+Erweiterung der 
+zwölf Regeln 
+EFLq6sCRmgjq07v0rJpllmOfjuinjWccNRHzR5Smrp8x9z8qptOGSJgb6ZkuurFp
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 43 ===
+ 
+Online Analytical Processing (OLAP) 
+37 
+ 
+• 
+Geschwindigkeit: Anfragen von Anwendern sollen in unter fünf Sekunden 
+beantwortet werden. Die Antwortzeit hängt von der Anfrage ab. Beson-
+ders häufige Anfragen werden schneller beantwortet, komplexere Anfragen dauern häufig 
+länger als fünf Sekunden.  
+• 
+Analysemöglichkeit: OLAP soll eine intuitive, benutzerfreundliche Analyse der Daten ermög-
+lichen. Hierzu zählt, dass der Anwender einfache Funktionen nutzen kann, sodass er entspre-
+chend seinen eigenen Anforderungen Berechnungen erstellen und Analysen durchführen 
+kann. Dabei ist es unerheblich, ob diese Funktionen über ein externes Werkzeug eingebunden 
+werden oder ob OLAP diese selber zur Verfügung stellt. 
+• 
+Sicherheit: Der Aspekt Sicherheit bezieht sich auf die Sicherstellung, dass mehrere Anwender 
+gleichzeitig auf ein und dieselben Daten zugreifen können.  
+• 
+Multidimensionalität: OLAP zeichnet sich vor allem durch seine Multidimensionalität aus. Der 
+Anwender kann multidimensionale Daten für seine Analysezwecke nutzen und vor allem 
+mehrere Dimensionen nach seinen Bedürfnissen miteinander verbinden und Berechnungen 
+und Analysen durchführen.  
+• 
+Kapazität: OLAP verwendet häufig eine sehr große Datenmenge zur Analyse. Es wird gleich-
+zeitig jedoch auch gefordert, dass, unabhängig von der Anzahl der Anfragen und der invol-
+vierten Datenmenge, die Antwortzeiten stabil bleiben.  
+4.2 Ausprägungen 
+Neben dem klassischen OLAP sind in der Literatur häufig weitere OLAP-Ausprägungen zu finden. 
+Die am weitesten verbreiteten Ausprägungen werden im Folgenden kurz erläutert. 
+Die beiden häufigsten Ausprägungen von OLAP sind das multidimensional 
+OLAP (MOLAP) sowie das relational OLAP (ROLAP). ROLAP basiert auf relatio-
+nalen Datenbankmanagementsystemen (DBMS). Diese werden normalerweise nach dem Star-
+Schema oder nach dem Snowflake-Schema implementiert (Humm & Wietek, 2005). Dabei werden 
+multidimensionale Datenmodelle in Tabellen abgespeichert, ohne dass Informationen verloren ge-
+hen. Es gibt dabei zwei verschiedene Tabellenarten: Dimensionstabellen und Faktentabellen. Die 
+Dimensionstabellen werden grafisch häufig sternförmig um die Faktentabellen verteilt, sodass sich 
+dadurch der Name Star-Schema erklären lässt. Abb.12 zeigt ein beispielhaftes Star-Schema. 
+FASMI 
+ROLAP 
++FZarKEEo7HZEuOr6NpV71TSWxUMD/iIhgjsfIlfxCbBojQsIjcApejPQQ2wQPsb
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 44 ===
+ 
+Online Analytical Processing (OLAP) 
+ 
+ 
+38 
+ 
+Abb.12: Beispielhaftes Star-Schema 
+Quelle: entnommen aus (Farkisch, 2011), S. 29. 
+In der Mitte der Abbildung 12 ist die Faktentabelle. Die Schlüssel einer Faktentabelle weisen auf 
+die entsprechenden Dimensionstabellen. Die Schlüssel in der Abbildung 12 sind Ort_ID, Pro-
+dukt_ID, Zeit_ID und Kunden_ID. Die Stammdaten werden in den Dimensionstabellen gehalten. 
+In den Faktentabellen sind die Bewegungsdaten, die durch die Stammdaten beschrieben werden. 
+So wird beispielsweise die Produkt_ID durch Eigenschaften wie die Artikelnummer, die Produkt-
+gruppe oder die Produktfamilie charakterisiert (Hahne, 2003).  
+ROLAP-Anwendungen erzeugen die multidimensionalen Sichten dynamisch 
+und nicht wie MOLAP physisch. Bei MOLAP-Anwendungen werden die Daten 
+tatsächlich physisch in mehrdimensionalen Datenbanken gespeichert (Goeken, 2006). Dies führt 
+dazu, dass das Antwortverhalten in der Regel schneller ist. Jedoch hat die Verwendung von 
+MOLAP den Nachteil, dass häufig ein höheres Datenvolumen vorgehalten wird. Je höher die An-
+zahl der Dimensionen ist, desto höher ist auch das Datenvolumen. Zudem sind MOLAP-
+Anwendungen häufig nicht so flexibel zu verwenden, da die Anzahl der Dimensionen, die ver-
+wendet werden kann, begrenzt ist (Goeken, 2006). Diese Nachteile führen dazu, dass MOLAP nur 
+für diejenigen Unternehmen empfehlenswert ist, die für ihre Analysen nur kleinere Datenmengen 
+verwenden wollen (Farkisch, 2011).  
+ROLAP hat gegenüber MOLAP den Vorteil, dass große Datenvolumina besser 
+verwaltet werden können. Zudem kann die Anzahl der Dimensionen bei der 
+Anwendung von ROLAP flexibel gewählt werden. Ein weiterer Vorteil von ROLAP gegenüber 
+MOLAP ist, dass in den meisten Unternehmen Know-How über die Verwendung von ROLAP-
+Anwendungen vorhanden ist. Dem gegenüber fehlt in vielen Unternehmen das Know-How über 
+die Verwendung von MOLAP-Anwendungen. ROLAP basiert auf einer robusten Technologie, die 
+in den meisten Unternehmen verfügbar ist. Der letzte wesentliche Vorteil von ROLAP ist, dass 
+MOLAP 
+ROLAP vs. MOLAP 
++I6oyBcl5FsDistl+kkgldoVf69kqtAlPttkWhv90UA4RNx2RjrVBQNsbje0i+Tb
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 45 ===
+ 
+Online Analytical Processing (OLAP) 
+39 
+ 
+keine Vorberechnungen notwendig sind, da die ROLAP-Anwendung auf bestehende relationale 
+Tabellen zugreift, wohingegen der Vorberechnungsaufwand von MOLAP-Anwendungen sehr 
+hoch ist (Goeken, 2006). Eine Mischung aus ROLAP und MOLAP stellt das hybrid OLAP (HOLAP) 
+dar. Beim HOLAP wird versucht, die Vorteile von MOLAP und ROLAP miteinander zu kombinieren 
+und somit die Nachteile zu eliminieren (Humm & Wietek, 2005).  
+Eine weitere Ausprägung von OLAP stellt das sogenannte OLTP dar. OLTP un-
+terstützt das operative Geschäft eines Unternehmens im Gegensatz zu OLAP, das die Analyse von 
+Entscheidungen unterstützt. Im Gegensatz zu OLAP werden beim OLTP sehr aktuelle und detail-
+lierte Daten verwendet, wohingegen die Daten, die zur OLAP-Analyse verwendet werden, meist 
+historisch und aggregiert sind. Zudem unterscheiden sich OLAP und OLTP auch in den möglichen 
+Operationen. Während beim OLAP multidimensionale Abfragen wie ad hoc-Abfragen durchge-
+führt werden, werden beim OLTP vorrangig Operationen wie das Anlegen, Lesen, Ändern und 
+Löschen von Daten verwendet (Humm & Wietek, 2005).  
+4.3 Operationen in OLAP 
+Die multidimensionale Analyse der Daten lässt sich in verschiedene Analyseklassen einteilen. Je 
+nach Zielsetzung müssen die Daten beispielsweise anders miteinander kombiniert werden, weiter 
+gefiltert werden oder auch stärker aggregiert werden. Im Folgenden werden die wesentlichen 
+Operationen in einem OLAP-Würfel vorgestellt (vgl. hier und im Folgenden (Kemper, Baars, & 
+Mehanna, 2010)). 
+Pivotierung/ Rotation 
+Bei der Pivotierung oder Rotation wird der OLAP-Würfel um seine Achse gedreht. Dies kann so-
+wohl die horizontale als auch die vertikale Achse sein. Das Ziel der Rotation ist es, die betrachteten 
+Dimensionen gegeneinander auszutauschen um so eine weitere Analyse durchzuführen. In 
+Abb.13 werden im linken OLAP-Würfel die beiden Dimensionen auf der Ordinate und Abszisse, 
+Kunde und Produkte, zur Analyse verwendet. Um nun eine andere Kombination der Dimensionen 
+betrachten zu können, muss der Würfel gedreht werden. In der Abbildung 13 erfolgt die Rotation 
+um die waagerechte Achse. Folglich werden die beiden Dimensionen Kunde und Region ausge-
+tauscht. Nach der Rotation kann der Anwender nun die beiden Dimensionen Produkte und Region 
+analysieren.  
+ 
+Abb.13: Die OLAP-Operation Pivotisierung/Rotation 
+Quelle: eigene Darstellung 
+Kunde
+Region
+Produkte
+Region
+Kunde
+Produkte
+OLTP 
+Pivotierung 
+77BOQzHiVruNq9hem45J0yX5d1melUIkzBSTbBuUQ1BbqAEEmNL5dFKWBFQ2XZzm
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 46 ===
+ 
+Online Analytical Processing (OLAP) 
+ 
+ 
+40 
+Der Begriff Pivotierung als Synonym für die Rotation hat sich vor allem daraus ergeben, dass in 
+der Realität häufig mehr als drei Dimensionen existieren. In einem Würfel lassen sich jedoch nur 
+drei Dimensionen abbilden. Daher erfolgt die Darstellung der Dimensionen in der Realität zumeist 
+nicht mit Hilfe der charakteristischen OLAP-Würfel, sondern über Tabellen. Um eine Rotation in 
+einer Tabelle darzustellen, wird häufig eine Pivottabelle genutzt. Die linke Tabelle in Abb. 14 be-
+inhaltet die zur Analyse zur Verfügung stehenden Daten. Die rechte Tabelle zeigt die eigentliche 
+Pivottabelle. Der Anwender kann die Daten, die er analysieren möchte, in den Zeilen oder Spalten 
+der Tabelle anzeigen lassen. So kann der Anwender mehrere Dimensionen in die Tabelle aufneh-
+men. In der aktuellen Tabelle werden die Quartalsergebnisse je Filiale sowie je Artikel ausgegeben. 
+Eine Rotation führt dazu, dass neue Dimensionen in die Tabelle aufgenommen werden. So könnte 
+beispielsweise zusätzlich neben dem Gewinn der Umsatz betrachtet werden. 
+ 
+Abb. 14: Pivottabelle 
+Quelle: eigene Darstellung 
+ 
+Roll-Up & Drill-Down 
+Beim Roll-Up und Drill-Down wird die Hierarchieebene einer Dimension verän-
+dert. Um eine gute Übersicht zu erhalten, werden die Daten bei OLAP häufig in 
+aggregierter Form ausgegeben. So können Regionen beispielsweise zusammengefasst werden in 
+die Region NRW, Bayern, Sachsen usw., aber die Regionen können auch stärker aggregiert wer-
+den, wenn die Daten bundeslandübergreifend zusammengefasst werden, beispielsweise in 
+Deutschland, Frankreich, Niederlande usw. Das stärkere Zusammenfassen von Daten wird als Roll-
+Up bezeichnet. Wenn Daten weiter eine Hierarchieebene tiefer aggregiert werden, so handelt es 
+sich um Drill-Down. Abb. 15 zeigt die beiden Operationen grafisch. In der Abbildung 15 sollen 
+die beiden Operationen auf die Dimension Produkte angewendet werden. Im linken OLAP-Würfel 
+sind die einzelnen Produkte sehr stark aggregiert. So finden sich dort die Produkte Getränke, 
+Lebensmittel, Bekleidung, Drogerieartikel sowie Elektroartikel. Im rechten OLAP-Würfel wurde 
+eine dieser Produkte, die Lebensmittel, weiter exemplarisch disaggregiert in Gemüse, Fleisch, Kon-
+serven, Brot und Süßwaren. Die Operation vom linken zum rechten OLAP-Würfel wird als Drill-
+Roll-Up & Drill-Down 
+AUlNgDnTXxW+pFaHFzxSpKvGE/KUrz0CYacWtrDOHnhTfZOyL6QRDAa0Zox2ocFe
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 47 ===
+ 
+Online Analytical Processing (OLAP) 
+41 
+ 
+Down bezeichnet, die Operation von rechts nach links als Roll-Up. Beispielsweise kann es für einen 
+Supermarkt wichtig sein, die aggregierten Daten (linker OLAP-Würfel) zu analysieren, um z. B. 
+darüber zu entscheiden, ob den Lebensmitteln im Supermarkt mehr Regalgänge zur Verfügung 
+gestellt werden. Andererseits kann aber auch die Betrachtung einzelner Produkte sinnvoll sein, 
+um z. B. eine Entscheidung darüber zu treffen, ob dieses Produkt aus dem Sortiment genommen 
+werden soll. Diese beiden Beispiele machen deutlich, dass die durchzuführende Operation erheb-
+lich von dem Ziel der Analyse abhängt. 
+ 
+Abb. 15: Die OLAP-Operationen Roll-Up und Drill-Down 
+Quelle: eigene Darstellung 
+Slice & Dice 
+Die Operationen Slice und Dice filtern die Gesamtdatenmenge. Slice bedeutet 
+aus dem Englischen übersetzt Scheibe oder Schnitt und kann so interpretiert 
+werden, dass lediglich eine Scheibe aus dem Gesamtwürfel betrachtet wird. (s. Abb. 16). Beim 
+Slice wird eine Dimension auf einen einzigen Wert reduziert (z. B. wird nur eine Region oder nur 
+ein Produkt betrachtet), bei allen anderen Dimensionen werden alle Werte berücksichtigt. In der 
+Abbildung 16 werden alle drei Dimensionen in die Analyse einbezogen. Es wird jedoch lediglich 
+eine Region betrachtet, wobei alle verfügbaren Produkte sowie alle Kunden berücksichtigt wer-
+den. Wenn die ausgewählten Scheiben nacheinander verändert werden, so können die Umsätze 
+aller verschiedenen Produkte miteinander verglichen werden. Wenn beispielsweise nur eine Re-
+gion berücksichtigt wird, so können die Umsätze verschiedener Regionen miteinander in Bezug 
+gesetzt werden.  
+Kunde
+Region
+Produkte
+Kunde
+Region
+Produkte
+1
+2
+3
+4
+5
+1 Getränke
+2 Lebensmittel
+3 Bekleidung
+4 Drogerieartikel
+5 Elektroartikel
+2.1 Gemüse
+2.2 Fleisch
+2.3 Konserven
+2.4 Brot
+2.5 Süßwaren
+2.1
+2.2 2.3
+2.4 2.5
+Drill-Down
+Roll-Up
+Slice & Dice 
+U+Wq6HzftHbIRqFzuw8Y3nI64UnzAme6H8T32AJ2E8wSmta+fKG0J3VgyvNor7rB
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 48 ===
+ 
+Online Analytical Processing (OLAP) 
+ 
+ 
+42 
+ 
+Abb. 16: Die OLAP-Operation Slice 
+Quelle: eigene Darstellung 
+Beim Dice werden die verfügbaren Daten zwar ebenso wie beim Slice gefiltert, jedoch erfolgt dies 
+nicht in Form der soeben beschriebenen Scheiben. Vielmehr kann der Anwender einzelne Blöcke 
+des Gesamtwürfels auswählen und für seine Analysezwecke verwenden. Der Anwender fokussiert 
+lediglich einen Teilausschnitt aus der Realität. In Abb. 17 werden beispielsweise die Daten von 
+zwei Produkten, zwei Regionen sowie zwei Kunden berücksichtigt. Somit ist das Ergebnis dieser 
+Operation ein eigener, neu entstandener Datenwürfel. 
+ 
+Abb. 17: Die OLAP-Operation Dice 
+Quelle: eigene Darstellung 
+Kunde
+Region
+Produkte
+Kunde
+Region
+Produkte
+h8wpOMggUdsErlmWPKmAAJINg8v7LPGRP2KBTGhTdDgFaacQ4jH6lKautHV9pAhc
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 49 ===
+ 
+Online Analytical Processing (OLAP) 
+43 
+ 
+4.4 Zusammenfassung der Operationen in OLAP 
+Zum besseren Verständnis der OLAP-Operationen werden diese zum Abschluss des Kapitels an-
+hand eines weiteren Beispiels kurz zusammengefasst. Die Ausgangslage ist in der Abbildung 18 
+dargestellt. 
+ 
+Abb. 18: OLAP-Würfel 
+Auf der x-Achse ist die Dimension „Produktlinie“ abgebildet, die y-Achse bildet die Dimension 
+„Region“ ab und die z-Achse wird durch die Dimension „Periode“ belegt. Wie bereits beschrie-
+ben, werden in der Realität aufgrund einer normalerweisen größeren Anzahl an Dimensionen 
+Tabellen genutzt, da sich die OLAP-Würfel abbildungstechnisch nur für drei Dimensionen eignen. 
+Der Roll-Up, wie in der Abbildung 19 dargestellt, aggregiert Daten, indem eine Hierarchiestufe 
+oder Dimension „nach oben steigt“. So wird im Beispiel „Stadt“ zu „Region“ und es können dann 
+Analysen auf einer höher liegenden Hierarchieebene (hinsichtlich der Dimension Region) durch-
+geführt werden. 
+ 
+Abb. 19: OLAP-Operation: Roll-Up 
+Beim in der Abbildung 20 dargestellten Drill-Down erfolgt eine Detaillierung. Im Beispiel werden 
+nun nicht mehr die Regionen, sondern wieder die Städte dargestellt. 
+mHRZLSr1RLX0x0V2HELcGjNLY+LtmRWv/IckFa3U1Xf9dcdtm/DzNOanSNYIg0dr
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 50 ===
+ 
+Online Analytical Processing (OLAP) 
+ 
+ 
+44 
+ 
+Abb. 20: OLAP-Operation: Drill-Down 
+Beim in der Abbildung 21 dargestellten Slicing werden gleichmäßige Scheiben aus dem Würfel 
+entlang einer (ggf. mehrerer) Dimensionen geschnitten. Aus der Dimension Periode wird im Bei-
+spiel der Monat Mai ausgewählt (ausgeschnitten), sodass für diesen Monat Analysen zu den Pro-
+duktlinien und Regionen durchgeführt werden können. 
+ 
+Abb. 21: OLAP-Operation: Slicing 
+Das Dicing, dargestellt in der Abbildung 22, schneidet durch Drehen („würfeln“) und „Slicing“ 
+einen Teilwürfel aus einem größeren Würfel heraus. 
+So werden im Beispiel nach der Operation Dicing statt der Produktlinien A, B, C und D auf der x-
+Achse nur noch die Produktlinien B und C auf der x-Achse dargestellt. Auch bei den Dimensionen 
+„Region“ und „Periode“ könnten zusätzliche Einschränkungen vorgenommen werden. So wür-
+den dann z. B. zusätzlich nicht mehr alle Regionen auf der y-Achse dargestellt, sondern nur die 
+von Interesse. Wie bei allen Operationen ist dies immer abhängig vom Analysezweck. 
+SDrZ3wwzhi5YkuPr376BYzK3TITrT7TNXyPzMU7TtKbiEAQvywuXOzqourHhz2+f
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 51 ===
+ 
+Zusammenfassung 
+45 
+ 
+ 
+Abb. 22: OLAP-Operation: Dicing 
+Die in der Abbildung 23 dargestellte Rotation (auch: Pivotisierung) bringt den Würfel in eine neue 
+Position. Statt der Dimension „Region“ in der Ausgangslage des Beispiels soll nun die Dimension 
+„Produktlinie“ im Hauptbetrachtungsbereich (x-Achse) positioniert werden. Die Datentiefe der 
+Dimensionen ändert sich bei einer reinen Rotation nicht. 
+ 
+Abb. 23: OLAP-Operation: Rotation (Pivotierung) 
+5 Zusammenfassung 
+DWH-Systeme sind ein Erfolgsfaktor, um Informationen zur Entscheidungsunterstützung generie-
+ren zu können. Nur wenn ein DWH-System entsprechend in ein Unternehmen integriert werden 
+kann, können die benötigten Informationen auch abgerufen werden. Eine Möglichkeit, Daten 
+strukturiert und einfach zu Analysezwecken zu nutzen, bietet dabei OLAP, das eine Komponente 
+im DWH-System darstellt. Es wurde gezeigt, dass Anwender mit Hilfe einfacher Operationen die 
+für sie relevanten Daten nutzen können. 
+Doch nur wenn die Qualität der zu nutzenden Daten entsprechend hoch ist, 
+können tatsächlich Informationen generiert werden. Dies zeigt, dass DWHs 
+nicht losgelöst vom KDD-Prozess betrachtet werden können (vgl. Einheit 2). 
+Aber auch sie bilden im Gegenzug eine wichtige Grundlage, um die in Einheit 2 vorgestellten 
+Methoden und Instrumente im KDD-Prozess nutzen zu können. 
+Die bisher vorgestellten Inhalte der Einheit 1-3 stellen jedoch nur die klassischen 
+BI-Komponenten dar, die bereits in den Anfängen von BI entwickelt und disku-
+tiert wurden. Das Themenfeld BI ist jedoch noch immer sehr aktuell ist und 
+unterliegt ständigen Weiterentwicklungen, die in Einheit 4 thematisiert werden. 
+ 
+Rückblick  
+auf Einheit 2 
+Ausblick auf  
+Einheit 4 
+bbhsohrGgLXI+I5PUghOkiZLD72usIRkL7jcpHccpAMLUQhu/GRfsLmC52lH6TIV
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 52 ===
+ 
+Übungsaufgaben 
+ 
+ 
+46 
+6 Übungsaufgaben 
+1. Erläutern Sie die verschiedenen Typen von Business Rules! 
+2. Erläutern Sie, weshalb fachliche Metadaten häufig auch als unstrukturierte Metadaten be-
+zeichnet werden! 
+3. Erläutern Sie die Bedeutung von Metadaten anhand des Beispiels der Datumsangabe 
+10/12/99! 
+4. Grenzen Sie dispositive und operative Daten voneinander ab! 
+5. Erläutern Sie die zentralen Eigenschaften eines DWH nach Inmon! 
+6. Nennen und erläutern Sie die drei Phasen im ETL-Prozess! 
+7. Welche verschiedenen Ebenen lassen sich in einem DWH-System unterscheiden? Erläutern 
+Sie diese kurz! 
+8. Grenzen Sie Data Marts und DWHs voneinander ab! 
+9. Erläutern Sie die Eigenschaften online analytical und processing im Rahmen von OLAP! 
+10. Was besagt das Prinzip FASMI im Rahmen von OLAP? 
+11. Erläutern Sie die Funktionalität „Pivotierung“ im Rahmen von OLAP! 
+ 
+KPRRCt6JuuHkC/4JVsYeFVotBHV2EmHzZ0DlpPr7i4w8Zcnzhxa6aEjQ9lRmCmKW
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 53 ===
+ 
+Literaturverzeichnis 
+47 
+ 
+Literaturverzeichnis 
+Apel, D., Behme, W., Eberlein, R., & Merighi, C. (2009). Datenqualität erfolgreich steuern - Pra-
+xislösungen für Business-Intelligence-Projekte. München u. a.: Hanser Verlag. 
+Auth, G. (2003). Prozessorientierte Organisation des Metadatenmanagements für Data-Wa-
+rehouse-Systeme. Bamberg: Universität St. Gallen. 
+Bartel, W., Schwarz, S., & Strasser, G. (2000). Der ETL-Prozess des Data Warehousing. In R. Jung, 
+& R. Winter, Data Warehouse Strategie (S. 43-60). Berlin u.a.: Springer. 
+Bauer, A., & Günzel, H. (2001). Data Warehouse Systeme. Heidelberg: dpunkt-Verlag. 
+Becker, D., & Proff, D. (2001). Data Warehousing: Ausgewählte Business Intelligence-Lösungen 
+für die Versicherungswirtschaft. In W. Behme, & H. Muksch, Data Warehouse-gestützte 
+Anwendungen (S. 249-280). Wiesbaden: Gabler. 
+Behme, W., & Muksch, H. (2001). Data Warehouse-gestützte Anwendungen - Theorie und Pra-
+xiserfahrungen in verschiedenen Branchen. Wiesbaden: Gabler Veralg. 
+Business Rules Group. (2003). Business Rules Manifest: Die Prinzipien der Business Rules Unab-
+hängigkeit. Abgerufen am 29. 04 2011 von http://www.businessrulesgroup.org/brmani-
+festo/BRManifestDeutsch.pdf 
+Business Rules Group. (2010). The Business Motivation Model - Business Governance in a Volatile 
+World. Abgerufen am 20. 10 2011 von http://www.businessrulesgroup.org/second_pa-
+per/BRG-BMM.pdf 
+Capgemini. (2009). IT-Trends. München. 
+Codd, E., Codd, S., & Salley, C. (1993). Providing OLAP to User-Analysts: An IT Mandate. Ann 
+Arbor/Michigan: Codd & Associates. 
+Cordts, S., Blakowski, G., & Brosius, G. (2011). Datenbanken für Wirtschaftsinformatiker. Wies-
+baden: Vieweg + Teubner Verlag. 
+English, L. (1999). Improving Data Warehouse and Business Information Quality - Methods for 
+Reducing Costs and Increasing Profits. New York: Wiley & Sons. 
+Farkisch, K. (2011). Data Warehouse-Systeme kompakt - Aufbau, Architektur, Grundfunktionen. 
+Heidelberg u.a.: Springer. 
+Gluchowski, P., Dittmar, C., & Gabriel, R. (2008). Management Support Systeme und Business 
+Intelligence. Berlin u.a.: Springer. 
+Goeken, M. (2006). Entwicklung von Data-Warehouse-Systemen - Anforderungsmanagement, 
+Modellierung, Implementierung. Wiesbaden: Deutscher Universitätsverlag. 
+Gray, P., & Watson, H. (1998). Present and Future Directions in Data Warehousing. The DATA 
+BASE for Advances in Information Systems(29), S. 83-90. 
+Grob, L., Bensberg, F., & Coners, A. (4 2008). Regelbasierte Steuerung von Geschäftsprozessen - 
+Konzeption eines Ansatzes auf Basis von Process Mining. Wirtschaftsinformatik, S. 268-
+PeJGNayhsdaHoiC+CmkWQhzdFIdng+f5ELBSf++Ajlh1J/MCS6IV13sKM4DpRpwa
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 54 ===
+ 
+Literaturverzeichnis 
+ 
+48 
+281. 
+Hüner, K., Brauer, B., Otto, B., & Österle, H. (277. 48 2011). Fachliches Metadatenmanagement 
+mit einem semantischen Wiki. HMD - Praxis der Wirtschaftsinformatik, S. 98-108. 
+Hahne, M. (2003). Logische Datenmodellierung zur Abbildung mehrdimensionaler Datenstruktu-
+ren im SAP Business Information Warehouse. In G. Weikum, & H. R. Schöning, BTW 2003, 
+Datenbanksysteme für Business, Technologie und Web., Tagungsband der 10. BTW-
+Konferenz, 26.-28. Februar 2003 (S. 630-647). Bon: Köllen Druck + Verlag. 
+Hiestermann, D. (2008). Analytisches Customer Relationship Management - Konzeption und Re-
+alisierung auf Basis der Business-Intelligence-Instrumente Data Warehouse und Data-Mi-
+ning. Dissertation. Technische Universität Dortmund. 
+Holten, R., Knackstedt, R., & Becker, J. (2001). Betriebswirtschaftliche Herausforderungen durch 
+Data-Warehouse-Technologien. In R. Schütte, T. Rotthowe, & R. Holten, Data-Warehose-
+Managementhandbuch (S. 41-64). Berlin u.a.: Springer. 
+Holthuis, J. (2001). Data-Warehousing im Pharma-Marketing. In W. Behme, & H. Muksch, Data 
+Warehouse-gestützte Anwendungen - Theorie und Praxiserfahrungen in verschiedenen 
+Branchen (S. 161-175). Wiesbaden: Gabler. 
+Holthuis, J. (2001). Der Aufbau von Data Warehouse-Systemen: Konzeption - Datenmodellierung 
+- Vorgehen. Wiesbaden: Gabler Vieweg Verlag. 
+Humm, B., & Wietek, F. (1. 33 2005). Architektur von Data Warehouses und Business Intelligence 
+Systeemen. Informatik-Spektrum, S. 3-14. 
+Inmon, W. (2000). ODS Types. (I. M. Magazine, Herausgeber) Abgerufen am 07. 12 2011 von 
+http://www.information-management.com/issues/20000101/1749-1.html 
+Kemper, H.-G., Baars, H., & Mehanna, W. (2010). Business Intelligence - Grundlagen und prakti-
+sche Anwendungen: Eine Einführung in die IT-basierte Managementunterstützung. Wies-
+baden: Vieweg+Teubner. 
+Keppel, B., Müllenbach, S., & Wölkhammer, M. (2001). Vorgehensmodelle im Bereich Data Wa-
+rehouse: Das Evolutionary Data Warehouse Engineering (EDE). In R. Schütte, T. Rotthowe, 
+& R. Holten, Data Warehouse Managementhandbuch - Konzepte, Software, Erfahrungen 
+(S. 81-106). Berlin u.a.: Springer. 
+Lusti, M. (2002). Data Warehousing und Data Mining - Eine Einführung in entscheidungsunter-
+stützende Systeme. Berlin u.a.: Springer. 
+Melchert, F. (2004). Metadatenmanagement im Data Warehousing - Ergebnisse einer empirischen 
+Studie. St. Gallen: Universität St. Gallen - Hochschule für Wirtschafts-, Recht- und Sozial-
+wissenschaften (HSG). 
+Moore, A., & Wall, J. (01. 11 2000). The Data Administration Newsletter. Abgerufen am 05. 01 
+2012 von http://www.tdan.com/view-articles/4883 
+Muksch, H. (2006). Das Data Warehouse als Datenbasis analytischer Informationssysteme - Archi-
+JUvwLwn/3XIrm+soIkWJ7gzBB9rwgcmw6dKWfahPG5oocNBpNf7VmvnJTLoAEgPc
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 55 ===
+ 
+Literaturverzeichnis 
+49 
+ 
+tektur und Komponenten. In P. Chamoni, & P. Gluchowski, Analytische Informationssys-
+teme - Business Intelligence-Technologien und -Anwendungen (S. 129-142). Berlin u.a.: 
+Springer. 
+Navrade, F. (2008). Strategische Planung mit Data-Warehouse-Systemen. Wiesbaden: Gabler Ver-
+lag. 
+Petersohn, H. (2005). Data Mining Verfahren, Prozesse, Anwendungsarchitektur. München: 
+Oldenbourg Verlag. 
+Pohl, K. (2007). Requirements Engineering - Grundlagen, Prinzipien, Techniken. Heidelberg: 
+dpunkt. 
+Ponniah, P. (2001). Data Warehousing Fundamentals - A Comprehensive Guide for IT Profession-
+als. New York u.a.: Wiley. 
+Portal, D. B. (o.J.). Fakten zu Business Rules. Abgerufen am 23. 11 2011 von http://www.brpor-
+tal.org/German/Einfuehrung/Fakten.htm 
+Redman, T. C. (1995). Improve Data Quality for Competitive Advantage. Sloan Management Re-
+view, Vol. 36, No. 2, S. 99-107. 
+Schacher, M., & Grässle, P. (2006). Agile Unternehmen durch Business Rules. Berlin u.a.: Springer. 
+Scheer, A., & Werth, D. (2006). Geschäftsprozessmanagement für das Unternehmen von mor-
+gewn. In D. Karagiannis, & B. Rieger, Herausforderungen in der Wirtschaftsinformatik - 
+Festschrift für Hermann Krallmann (S. 49-64). Berlin: Springer. 
+Schelp, J. (2000). Modellierung mehrdimensionaler Datenstrukturen analyseorientierter Informa-
+tionssysteme. Wiesbaden: Deutscher Universitätsverlag. 
+Schinzer, H. (2001). Marktüberblick Data Warehouse-Werkzeuge. In R. Schütte, T. Rotthowe, & 
+R. Holten, Data Warehouse Managementhandbuch - Konzepte, Software, Erfahrungen (S. 
+121-142). Berlin u.a.: Springer. 
+Schmidt-Volkmar, P. (2008). Betriebswirtschaftliche Analyse auf operationalen Daten. Wiesbaden: 
+Gabler. 
+Sen, A. (37 2004). Metadata management: past, present and future. Decision Support Systems, 
+S. 151-173. 
+Sinz, E., Böhnlein, M., Plaha, M., & Ulbirch-vom Ende, A. (2001). Architekturkonzept eines verteil-
+ten Data-Warehouse-Systems für das Hochschulwesen. In H. Buhl, A. Huther, & B. Reit-
+wiesner, Information Age Economy - 5. Internationale Tagung Wirtschafsinformatik 2001 
+(S. 57-72). Heidelberg: Springer. 
+Soeffky, M. (11 2001). Qualität von Unternehmensdaten. IS Report, S. 12-18. 
+Stahlknecht, P., & Hasenkamp, U. (2005). Einführung in die Wirtschaftsinformatik. Berlin: Sprin-
+ger. 
+Stein, B. (2001). Konzeption einer Data Warehouse-gestützten Balanced Scorecard in der der öf-
+pz2VtBkZaDdiFasX9xf1C5Bmqs8Ulg4/SZr2d2MYJyDQvX/mF6W/eJcyTbPuaPwz
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 56 ===
+ 
+Literaturverzeichnis 
+ 
+50 
+fentlichen Verwaltung. In W. Behme, & H. Muksch, Data Warehouse-gestützte Anwen-
+dungen - Theorie und Praxiserfahrungen in verschiedenen Branchen (S. 85-115). Wiesba-
+den: Gabler. 
+Strohmeier, S. (2008). Informationssysteme im Personalmanagement. Wiesbaden: Vieweg+Teub-
+ner. 
+Totok, A. (2000). Modellierung von OLAP- und Data-Warehouse-Systemen. Wiesbaden: Gabler 
+Verlag. 
+Treiblmaier, H. (1. 50 2010). Datenqualität und Validität bei Online-Befragungen. der markt, S. 3-
+18. 
+Vasile, G., & Mirela, O. (4. 17 2008). Data Quality in Business Intelligence Applications. Annals of 
+University of Oradea, Economic Science Series, S. 1364-1368. 
+Würthele, V. G. (2003). Datenqualitätsmertik für Informationsprozesse. Dissertation: ETH Zürich. 
+Zeh, T. (18 2003). Data Warehousing als Organisationskonzept des Datenmanagements - Eine 
+kritische Betrachtung der Data-Warehouse-Definition von Inmon. Informatik Forsch. 
+Entw., S. 32-38. 
+Zwirner, M. (2008). Datenbereinigung zielgerichtet eingesetzt zru permanenten Qualitätssteige-
+rung. In Daten und Informationsqualität - Auf dem Weg zur Information Excellence (S. 
+102-122). Wiesbaden: Vieweg + Teubner Verlag. 
+ 
+ 
+w796PookQ0111tG/T660e3wE9Rb2XnK6ppDLN1QuV40cL+j5QzfTadBTSzAKkxc7
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 57 ===
+ 
+Lösungen zu den Übungsaufgaben 
+51 
+ 
+Lösungen zu den Übungsaufgaben 
+1. 
+Erläutern Sie die verschiedenen Typen von Business Rules! 
+Es gibt drei verschiedene Typen von Business Rules. Diese sind Ableitungsregeln, Einschränkungen 
+und Prozessregeln. Ableitungsregeln zeichnen sich dadurch aus, dass die Regeln dadurch entste-
+hen, indem auf bereits bestehende Regeln oder Informationen zurückgegriffen wird und sich 
+dadurch neue Business Rules ableiten lassen. Einschränkungen können in der Form von Geboten 
+oder Verboten vorliegen, die zu jeder Zeit gelten. Prozessregeln werden immer in der Form „wenn 
+xyz dann abc“ formuliert. Sie drücken somit aus, dass ein Sachverhalt oder eine Aktivität eine 
+andere Aktion auslöst. 
+ 
+2. 
+Erläutern Sie, weshalb fachliche Metadaten häufig auch als unstrukturierte Metadaten 
+bezeichnet werden! 
+Fachliche Metadaten können im Gegensatz zu technischen Metadaten häufig nur unstrukturiert 
+erhoben werden. Mitarbeiter der Fachabteilungen sammeln durch die Anwendung und Erfahrung 
+implizites Wissen, das in explizites Wissen transformiert werden muss. Dies kann durch Interviews 
+oder Beobachtungen erfolgen. Technische Metadaten dagegen werden strukturiert erhoben bzw. 
+entstehen bei der Entwicklung, dem Betrieb sowie der Wartung des Datenbanksystems.  
+ 
+3. 
+Erläutern Sie die Bedeutung von Metadaten anhand des Beispiels der Datumsangabe 
+10/12/99! 
+Die Interpretation dieses Datums ist für den Endbenutzer nicht eindeutig. So könnte dieses Datum 
+nach der britischen Schreibweise interpretiert werden als 12. Oktober 1999 oder aber auch als 
+amerikanische Schreibweise als 10. Dezember 1999. Somit wird die Bedeutung der Metadaten 
+ersichtlich. Metadaten legen die Struktur des Datenobjekts fest. Es werden also Angaben darüber 
+in den Metadaten erfasst, ob die Interpretation und Erfassung des Datums nach der englischen 
+oder britischen Schreibweise erfolgen soll. 
+ 
+ 
+xcqLFuZadJq7gF4JCWRhHlY2232j3VKacHAeqtK73hcyQImeWp4G8BEOLx/Iziaz
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 58 ===
+ 
+Lösungen zu den Übungsaufgaben 
+ 
+52 
+4. 
+Grenzen Sie dispositive und operative Daten voneinander ab! 
+Dispositive und operative Daten unterscheiden sich grundlegend voneinander. Folgende Tabelle 
+gibt einen Überblick über die Eigenschaften von dispositiven und operativen Daten.  
+Eigenschaft 
+Dispositive Daten 
+Operative Daten 
+Ziel 
+Entscheidungsunterstützung 
+Unterstützung des Tagesge-
+schäfts 
+Zustand 
+Kontrollierte 
+Redundanzen 
+und konsistent 
+Häufig redundant und inkon-
+sistent 
+Modellierung 
+Sachgebiets- und themenori-
+entiert 
+Funktions-/transaktionsorien-
+tiert 
+Zeitbezug 
+Historienbetrachtung 
+über 
+den Zeitverlauf 
+Aktuell, zeitpunktbezogen 
+Ausrichtung 
+Meist 
+verdichtet, 
+transfor-
+miert 
+Detaillierte, 
+granulare 
+Ge-
+schäftsvorfalldaten 
+ 
+5. 
+Erläutern Sie die zentralen Eigenschaften eines DWH nach Inmon! 
+Nach Inmon weist ein DWH die Eigenschaften themenorientiert, integriert, zeitraumbezogen und 
+nicht-volatil auf. Themenorientiert bedeutet, im Gegensatz zu funktions-/transaktionsorientiert, 
+dass die Daten nach Themen wie z. B. Kunden, Produkten oder Mitarbeiter gehalten werden. Die 
+Themen können je nach Unternehmen variieren. Integriert bedeutet, dass die Daten, obwohl sie 
+aus verschiedenen Applikation stammen und somit in unterschiedlicher Form gespeichert werden, 
+In einem DWH so angepasst werden, dass letztlich integrierte Daten vorliegen. Zeitraumbezogen 
+impliziert, dass Daten über einen Zeitverlauf betrachtet werden, sodass die historische Entwick-
+lung berücksichtigt werden kann. Die Eigenschaft nicht-volatil besagt, dass Daten nicht vergäng-
+lich sind, sondern dauerhaft vorgehalten werden. Hierdurch ergibt sich auch die vorherige Eigen-
+schaft der zeitraumbezogenen Daten.  
+ 
+ 
+PNVj9R2gbKYpFnZP+72dnmH3whB9SPk8hf66MSwBzUh3fHB9otpEEHKD5t9FA0mS
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 59 ===
+ 
+Lösungen zu den Übungsaufgaben 
+53 
+ 
+6. 
+Nennen und erläutern Sie die drei Phasen im ETL-Prozess! 
+Der ETL-Prozess besteht aus den Phasen Extraktion, Transformation und Laden. Bei der Extraktion 
+werden die Daten von der Datenquelle in den Arbeitsbereich übertragen. Dabei sollte die Beschaf-
+fenheit sowie die Relevanz der Daten berücksichtigt werden. Die Extraktion sollte nach Möglich-
+keit automatisiert erfolgen. Neben der Entscheidung, welche Daten extrahiert werden sollen, muss 
+auch darüber entschieden werden, wie häufig die Extraktion durchgeführt werden soll. In der 
+zweiten Phase erfolgt die Transformation der Daten. Dabei werden die Daten so angepasst, dass 
+sie im nächsten Schritt in das DWH geladen werden können. Häufig werden Daten in dieser Phase 
+standardisiert oder fehlerhafte Daten werden korrigiert, bereinigt oder gelöscht. In der Ladephase 
+werden die Daten in das DWH übertragen. Dabei werden zwei Ladephasen unterschieden: beim 
+Initial load werden die Daten einmalig vom Arbeitsbereich in das DWH geladen, beim refresh 
+werden die Daten in regelmäßigen Abständen aus der Datenbank in das DWH geladen.  
+ 
+7. 
+Welche verschiedenen Ebenen lassen sich in einem DWH-System unterscheiden? Erläu-
+tern Sie diese kurz! 
+In einem DWH-System gibt es fünf verschiedene Ebenen. Diese sind die Ebene der operativen 
+Systeme, die Datenerfassungsebene, die Datenhaltungsebene, die Datenbereitstellungsebene so-
+wie die Präsentationsebene. In der Ebene der operativen Systeme befinden sich die unterschiedli-
+chen Datenquellen, aus denen die Daten stammen können. Diese Ebene ist eigentlich dem DWH-
+System vorgelagert. In der Datenerfassungsebene werden die Daten physisch in den Bereich des 
+DWH-Systems gebracht. Zudem erfolgt hier die Bereinigung, Harmonisierung und Zusammenfüh-
+rung der Daten. In der Datenhaltungsebene werden die Daten durch die ETL-Komponente des 
+DWH zugeführt. In der Datenbereitstellungsebene findet die zweckmäßige Aufbereitung der In-
+formationen, die für den Entscheidungsträger relevant sind, statt. Auf der Präsentationsebene 
+erfolgt die adäquate Aufbereitung und insbesondere auch Präsentation der Daten. Zudem müssen 
+Erfolgsgrößen kritisch überwacht werden, sodass bei Überschreitung kritischer Wertgrenzen eine 
+Benachrichtigung an den Entscheidungsträger gesendet wird.  
+ 
+ 
+DNFQXJ5CKj/bz42ZZPvVV3Gs5BG5aGx5M2+bcQwmApFatpcVGwTvXiFnuOCNjcMY
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 60 ===
+ 
+Lösungen zu den Übungsaufgaben 
+ 
+54 
+8. 
+Grenzen Sie Data Marts und DWHs voneinander ab! 
+Der Adressat eines Data Marts ist immer nur ein Teil eines Unternehmens, z. B. eine Abteilung, 
+wohingegen beim DWH das ganze Unternehmen als Adressat gesehen werden kann. Daraus 
+ergibt sich, dass sich Data Marts und DWHs auch hinsichtlich der Anzahl unterscheiden. So exis-
+tiert in einem Unternehmen lediglich ein DWH, wohingegen viele Data Marts (z. B. so viele, wie 
+es Abteilungen in einem Unternehmen gibt) existieren. Ein weiterer Unterschied ist der Detaillie-
+rungsgrad der Daten. In einem Data Mart sind die Daten zumeist höher aggregiert als in einem 
+DWH. Die Datenmenge ist in einem Data Mart aufgrund der hohen Anzahl verschiedener Data 
+Marts eher niedrig, beim DWH dagegen hoch. Externe Datenquellen beeinflussen Data Marts 
+nicht, bei DWHs werden externe Datenquellen integriert. Ein weiterer Unterschied ist, dass bei 
+Data Marts Endanwender direkt darauf zugreifen können, bei DWHs ist dies meistens nicht er-
+laubt. Aufgrund der hohen Anzahl an Data Marts sind die Modellierungskonventionen meistens 
+sehr heterogen. Bei einem DWH sind sie einheitlich. Der Freiheitsgrad der Analysen ist bei Data 
+Marts eher begrenzt, da Abteilungen in der Regel nicht über ihre Abteilungen hinausblicken, bei 
+einem DWH dagegen flexibel. Der letzte Unterschied liegt im betriebswirtschaftlichen Ziel. Data 
+Marts sollen Entscheider einer Abteilung und deren Anforderungen an die Analyse effizient un-
+terstützen. DWHs hingegen sollen auf Ebene des Managements Unterstützung leisten.  
+ 
+ 
+bhylqaa5QL75a2h5JhMLHLQbl5gDeEoB2hl3T06n62o52AMk1IeyAwvXJPYYrWbL
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 61 ===
+ 
+Lösungen zu den Übungsaufgaben 
+55 
+ 
+9. 
+Erläutern Sie die Eigenschaften online analytical und processing im Rahmen von OLAP! 
+Online bedeutet, dass Anwender direkt auf den zentralen Datenbestand zugreifen können, um 
+Daten zu betrachten oder zu manipulieren. Die Eigenschaft analytical steht dafür, dass unter-
+schiedliche Sichten für die Entscheidungsträger von Bedeutung sind und nicht, wie beim OLTP die 
+verschiedenen Geschäftsvorfälle. Processing steht für die Eigenschaft, dass schnelle Berechnungen 
+und Manipulationen durch den Anwender durchgeführt werden können 
+ 
+10. 
+Was besagt das Prinzip FASMI im Rahmen von OLAP? 
+FASMI steht für fast analysis of shared multidimensional information. Daraus ergeben sich fünf 
+Eigenschaften, die OLAP zugeordnet werden können. So sollen Anfragen von Anwendern schnell, 
+innerhalb von maximal fünf Sekunden, beantwortet werden. Zudem soll OLAP eine benutzer-
+freundliche Analysemöglichkeit sein. So sollen Anwender einfache Funktionen für ihre Analysen 
+nutzen können. Shared bedeutet, dass Anwender gleichzeitig auf ein und dieselben Daten zu-
+greifen können. Multidimensionalität der Daten besagt, dass ein Anwender bei der Nutzung von 
+OLAP mehrere Dimensionen entsprechend seinen Bedürfnissen miteinander kombinieren und zu 
+Analysen verwenden kann.  
+ 
+11. 
+Erläutern Sie die Funktionalität „Pivotierung“ im Rahmen von OLAP! 
+Bei der Pivotierung wird der OLAP-Würfel um seine eigene Achse gedreht. Dabei kann die Dre-
+hung entweder um die horizontale oder um die vertikale Achse erfolgen. Das Ziel der Pivotierung 
+ist es, die betrachteten Dimensionen gegeneinander auszutauschen, um so eine weitere Analyse 
+durchzuführen.  
+jEc+RnoPTd4DPq/XdIA2ouUcmpbX/pQI/1xVblgn2d6DjxFJWTxpeewsONkoeH+L
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 62 ===
+ 
+ 
+Diese Seite bleibt aus technischen Gründen frei! 
+eC91XSnz/jrJTkKB4TWpxsPQivLP7rsqoLBHEMPdojmEJTvTE90hAZ0C24YhSz6X
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 63 ===
+2L8Eo4g1ickoaxQ/sVvoqIFtLRjj8AqO/gLvzQJUzG5KcL9A3H1jfCrkNbXI1HrO
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 64 ===
+Alle Rechte vorbehalten
+© 2026 FernUniversität in Hagen 
+Fakultät für Wirtschaftswissenschaft
+*2001332*
+2001332
+(04/26)
+32711-03-S#1
+ohoit44IATQTqXybwddgSdP75sH9HR9TRfN3B5fi8asFQZ4Zot6hkjENNkYeEqs2
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549

@@ -1,0 +1,2883 @@
+
+=== SEITE 1 ===
+Fakultät für 
+Wirtschafts­
+wissenschaft
+Univ.-Prof. Dr. Ulrike Baumöl
+Birgit Großer, M. Sc.
+Alexander Kornrumpf, M. Sc.
+32711
+Business Intelligence
+Einheit 4
+Neuere Entwicklungen und Anwendungsbeispiele
+der Business Intelligence
+NT2BWSo+dStPcsbFFmUIAXaIQ0yP370jEjeftONFuVpguFeiJPk+10qL/p2RsNUO
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 2 ===
+Übersicht zum Modul 32711
+Business Intelligence
+Einheit 1:	
+Grundlagen der Business Intelligence
+Einheit 2:	
+Methoden und Instrumente der Business Intelligence
+Einheit 3:	
+Intelligente Datenhaltung und -bereitstellung
+Einheit 4:	 Neue Entwicklungen und Anwendungsbeispiele der Business Intelligence
+Das Werk ist urheberrechtlich geschützt. Die dadurch begründeten Rechte, insbesondere das Recht der Ver-
+vielfältigung und Verbreitung sowie der Übersetzung und des Nachdrucks, verbleiben bei der FernUniversität. 
+Das Werk darf gemäß § 53 UrhG im privaten Rahmen zum Beispiel durch Kopien oder digitale Speicherung 
+vervielfältigt werden.
+MSka80EABQCOHNdVjLFkwHqahc/5Ba81Fi4BLst0abCdQL+L+sOPwgbwTMOjviQY
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 3 ===
+ 
+Inhaltsverzeichnis 
+     
+I 
+Inhaltsverzeichnis 
+Abbildungsverzeichnis ................................................................................................................ II 
+Tabellenverzeichnis .................................................................................................................... III 
+Abkürzungs- und Symbolverzeichnis ......................................................................................... IV 
+1 
+Einführung ........................................................................................................................ 1 
+2 
+Wirkung der BI auf die Prozesse des Unternehmens ........................................................... 5 
+2.1 
+Echtzeit-BI ................................................................................................................... 7 
+2.2 
+Business Activity Monitoring ..................................................................................... 12 
+2.3 
+Mobile BI-Prozessunterstützung ................................................................................ 15 
+3 
+Advanced Analytics ......................................................................................................... 22 
+3.1 
+BI jenseits von Organisationsgrenzen ......................................................................... 23 
+3.2 
+BI mit semi- und unstrukturierten Daten .................................................................... 27 
+3.3 
+Predictive und In-Memory Analytics ........................................................................... 35 
+4 
+Ausgewählte Anwendungsbeispiele ................................................................................. 36 
+4.1 
+BI im Marketing ........................................................................................................ 36 
+4.2 
+Fallstudie „Newspaper Industry“ ............................................................................... 38 
+4.3 
+Fallstudie „Continental Airlines“ ............................................................................... 42 
+5 
+Zusammenfassung ........................................................................................................... 45 
+Literaturverzeichnis .................................................................................................................. 46 
+h02uVmu5C9SG3V/X8NGnYpskP3aCVXFaQ3g7mTE84yuDPvqV1hkpL5q7U95MJQh7
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 4 ===
+ 
+Abbildungsverzeichnis 
+    
+II 
+Abbildungsverzeichnis 
+Abb. 1: BI-Leitbild ..................................................................................................................... 3 
+Abb. 2: Konzeptuelles Modell für den Wertbeitrag der BI .......................................................... 7 
+Abb. 3: Halbwertszeit und Latenz von Information .................................................................... 9 
+Abb. 4: Abhängigkeit von Informationswert und Halbwertszeit ............................................... 10 
+Abb. 5: Ergänzung der traditionellen BI (weiß) zum geschlossenen RTBI-Kreislauf (grau) .......... 12 
+Abb. 6: Intensitätsstufen von SSBI-Systemen ........................................................................... 13 
+Abb. 7: Mobiles BI-System ....................................................................................................... 17 
+Abb. 8: Phasenorientiertes MBI-Vorgehensmodell ................................................................... 17 
+Abb. 9: BI-Architektur für Advanced Analytics ......................................................................... 22 
+Abb. 10: Integrierte Präsentation von strukturierten Daten und unstrukturierten Inhalten ........ 29 
+Abb. 11: Analyse von Inhaltssammlungen zur Extraktion von Metadaten ................................. 29 
+Abb. 12: Verbreitung von Analysemethoden und -ergebnissen als Inhalte ............................... 34 
+Abb. 13: Vorher-Nachher Vergleich eines Reklamationsprozesses ............................................ 44 
+ 
+ 
++WYj1aEGn5sWrT3dZmJy5AQy+hy0n8aUlkw+9VTj0BWT3x6ruahy3gC0LkW+daN5
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 5 ===
+ 
+Tabellenverzeichnis 
+ 
+     
+III 
+Tabellenverzeichnis 
+Tab. 1: biMM in der Übersicht ................................................................................................... 6 
+Tab. 2: Dimensionen und Erfolgsfaktoren cloudbasierter BI ...................................................... 24 
+Tab. 3: Merkmale von Social Media Daten für BI-Systeme ........................................................ 26 
+Tab. 4: Beispiele für unstrukturierte Inhalte .............................................................................. 28 
+ 
+a6UnyL9JnGvZQJ8nWD6ONYii936LOnyyC2SXS6K7CGfBFvt48MJmosYwaBR93973
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 6 ===
+ 
+Abkürzungs- und Symbolverzeichnis 
+    
+IV 
+Abkürzungs- und Symbolverzeichnis 
+𝐷       Menge von Dokumenten. 
+N!      Anzahl der Attribute. 
+N"      Anzahl der Instanzen. 
+𝑄       Menge der Attribute. 
+𝑈       Universum. 
+𝑉#       Wertebereich des i-ten Attributs. 
+𝑋       Konzept. 
+X$%&      Supportmenge. 
+𝜒       Featureraum. 
+𝑌       Labelraum. 
+𝜇'!      Zentroid der Klasse 𝑐(. 
+ 
+BAM     Business Activity Monitoring. 
+BI      Business Intelligence. 
+BIaaS     Business Intelligence as a Service. 
+biMM     Business Intelligence Maturity Model. 
+BIS      Betriebliches Informationssystem. 
+BRE      Business Rule Engine. 
+BYOD     bring your own device. 
+CBI      Collaborative Business Intelligence. 
+CPM     Corporate Performance Management. 
+CRISP-DM  Cross-Industry Standard Process for Data Mining. 
+CRM     Customer Relationship Management. 
+DM      Data Mining. 
+DSS      Decision Support System. 
+DWH     Data Warehouse. 
+ERP      Enterprise Resource Planning. 
+ETL      Extraktion – Tranformation – Laden. 
+IKT      Informations- und Kommunikationstechnik. 
+IS       Informationssystem. 
+KDD     Knowledge Discovery in Databases. 
+KM      Knowledge Management. 
+dk/Q0SPJcjEZw+023F4lFLeOSP1KAl3rd8/KxrmCd5J+MtaJdK965CPBnHKKH43Z
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 7 ===
+Abkürzungs- und Symbolverzeichnis                 
+      V 
+     
+KNN     künstliche neuronale Netze. 
+KPI      Key Performance Indicator. 
+MBI      Mobile Business Intelligence. 
+MIS     Management Information System. 
+OLAP     Online Analytical Processing. 
+RAM     Random Access Memory. 
+RTBI      Right-Time Business Intelligence. 
+SBI      Social Business Intelligence. 
+SOA     Service Oriented Architecture. 
+SSBI      Self-Service Business Intelligence. 
+TF-IDF    Term Frequency-Inverse Document Frequency. 
+WLAN    Wireless Local Area Network. 
+ 
+ 
+4U7q4mo74kkXixmJuirxd4B/AaCLmem2vKMP5pZ4NL0qB0lZ1tM1YD/ZtsF9mOEo
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 8 ===
+ 
+ 
+Diese Seite bleibt aus technischen Gründen frei! 
+2Av1A0a1BVX6S0PRAVwEo4kASc2USLuu4vTRzVrtgHSE+yNcwt3LAxqE47UoZ+cU
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 9 ===
+Einführung                 
+      1 
+ 
+     
+1 
+Einführung 
+„Der Hype geht weiter.“ Das ist vielleicht eine passende Aussage, wenn neuere 
+Entwicklungen in der BI untersucht werden sollen. Die BI verkauft sich nach wie 
+vor über die technischen Konzepte, die mit Hochglanzprospekten angeboten 
+werden. Die intelligenten fachlichen oder auch methodischen Grundlagen, die darin in Form von 
+Fachprozessen oder Algorithmen implementiert wurden, lassen sich anscheinend nicht gut ver-
+markten. Wie aber schon in Einheit 1 intensiv diskutiert wurde, ist die Technik nur so gut, wie die 
+Inhalte, die in ihr implementiert sind. Dabei wird implizit vorausgesetzt, dass die Grundregeln des 
+Software- Engineerings in Bezug auf die Qualität eingehalten worden sind. 
+Daten immer schneller, d. h. zeitnäher, zu verarbeiten und damit BI quasi in 
+„Echtzeit“ sowie mobil zu erzeugen, ist eines der zentralen Themen bei den 
+angebotenen Lösungen. In diesen Kontext gehört auch die Diskussion darüber, 
+wie immer mehr und vielfältigere Datenquellen in eine gesamt-BI zu integrieren sind. Die Analyse 
+von externen Daten, wie z. B. Texten nach bestimmten Mustern, erweitert den Kreis der zu integ-
+rierenden Quellen. Im Rahmen von Wirtschaftlichkeitsüberlegungen lässt sich eine Tendenz er-
+kennen, die bei dem Einsatz von Enterprise Resource Planning (ERP)-Systemen schon seit längerem 
+diskutiert wird: BI-Systeme müssen nicht mehr unbedingt im eigenen Unternehmen, also „in-
+house“, betrieben werden. Im Gegenteil, es ist insbesondere für kleine und mittelständische Un-
+ternehmen möglicherweise attraktiv, nur die wirklich für das eigene Unternehmen relevanten 
+Funktionen von externen Dienstleistern zu beziehen und somit z. B. die gesamte Administration 
+der BI-Systeme an darauf spezialisierte Unternehmen auszulagern. „BI in der Cloud“ oder auch 
+„BI as a Service“ sind hier Stichworte, die in den Angeboten immer wieder erscheinen. Anderer-
+seits wird auch die Auflösung der Abhängigkeit des eigenen Unternehmens von proprietären BI-
+Lösungen einzelner anderer Unternehmen diskutiert. Das Aufkommen eines Konzepts für „Open 
+Source BI“ ist da nicht verwunderlich, muss aber im Lichte der Betriebskosten, der Zuverlässigkeit 
+und der Datensicherheit bzw. des Datenschutzes betrachtet werden. 
+Insgesamt kann festgehalten werden, dass unbenommen der technikgetriebe-
+nen Kommunikation die fachlichen und methodischen Konstrukte, die in den 
+technischen Systemen implementiert sind, die eigentlichen Werttreiber darstel-
+len. Ein BI-System kann nur dann nutzbringend eingesetzt werden, wenn diese Konzepte verstan-
+den werden. Sind z. B. im Bereich der methodischen Instrumente die Implikationen und Rahmen-
+bedingungen für die Anwendung von spezifischen statistischen Methoden nicht bekannt, führt 
+die „BI auf Knopfdruck“ ohne Interpretationshilfe vielleicht zu verheerenden Fehlentscheidungen. 
+Somit ist es wichtig, sich auch konzeptuell mit den technischen Weiterentwicklungen auseinan-
+derzusetzen, da hier zusätzlicher Wert für den Einsatz von BI im Unternehmen, eben z. B. durch 
+die Nähe zur Echtzeit, geschaffen werden kann. Diese Gelegenheit besteht entsprechend in der 
+hier vorliegenden Einheit. 
+Baars et al. (2014) fassen die Bedingungen, denen aktuelle BI-Systeme genügen müssen, unter 
+dem Begriff „Makrotrends“ zusammen. Hieraus resultieren die Anforderungen an die Anpassung 
+Momentan treibt die 
+Technik die 
+Entwicklung in der BI 
+Treiber ist aber auch 
+die Wirt-
+schaftlichkeit 
+Fach- und Metho-
+denwissen bleibt 
+aber unersetzbar 
+0WcS1ujwni6KMacwr8K/7xfHL3UNslJYF2dwSz5u+zB4l+IruTiezJY5KYKIJ4We
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 10 ===
+ 
+Einführung 
+    
+2 
+oder Neugestaltung der BI-Lösungen. In diesem Kontext erkennen Baars et al. (2014) folgende 
+fünf Forschungsbereiche: 
+• 
+Integration von BI und Geschäftsprozessmanagement 
+• 
+Über Unternehmensgrenzen hinaus kooperativ entwickelte und betriebene BI-Lösungen 
+• 
+Ansätze zur Verarbeitung semi- und unstrukturierter Daten 
+• 
+Agile Bereitstellung und durch Nutzung gesteuerte BI-Systementwicklung 
+• 
+BI-Governance 
+In den folgenden Kapiteln 2 und 3 werden Ansätze aus diesen Forschungsbereichen vertieft. Die 
+Zusammenhänge der „Makrotrends“, der Forschungsbereiche sowie der diskutierten Schwer-
+punkte daraus sind in Abb. 1 auf der Folgeseite dargestellt (Baars et al., 2014). 
+Die Begriffe, die im Zusammenhang mit aktuellen Entwicklungen auf diesem 
+Gebiet verwendet werden, sind naturgemäß nicht völlig trennscharf. Oft exis-
+tieren noch verschiedene Begriffe für ein und denselben Sachverhalt. Jenseits neuer Begriffe und 
+Konzepte sind jedoch zwei Trends klar zu erkennen. Zum einen entsteht das Phänomen, dass die 
+neuen BI-Technologien sich sowohl untereinander begünstigen als auch stärker als zuvor unterei-
+nander, wie z. B. mit Knowledge Management (KM) oder im Web 2.0 verknüpft sein werden. 
+Zum anderen kann gesagt werden, dass BI durch kürzere Entwicklungszyklen und Betrachtungs-
+zeiträume insgesamt dynamischer wird. 
+Die Bezeichnung BI 2.0 ist inspiriert vom Web 2.0. Dennoch beinhaltet das Kon-
+zept mehr als nur den Bezug zwischen BI und Web 2.0. Der Begriff kann daher 
+allgemeiner verstanden werden, als die nächste Version der BI. Nach Nelson (2010) umfasst BI 2.0 
+unter anderem die folgenden Stichworte: 
+• 
+Proaktive Benachrichtigungen 
+• 
+Echtzeit Zugriff auf Information 
+• 
+Advanced Analytics 
+• 
+Unternehmensintegration 
+• 
+Verbesserte Visualisierungen 
+• 
+BI as a Service 
+• 
+In-Memory Analytics 
+• 
+OpenSource BI 
+Die genaue Bedeutung einiger dieser Begriffe wird im weiteren Verlauf dieser 
+Einheit noch diskutiert werden. Nelson (2010) selbst verzichtet auf eine solche 
+Erläuterung und diskutiert stattdessen das Web 2.0 als Inspirationsquelle für die 
+BI 2.0: BI ist heute, wie schon erwähnt, oft technikgetrieben. So werden BI-Systeme vor allem mit 
+ihren technischen Spezifikationen beworben. Der Erfolg des Web 2.0 hat jedoch gezeigt, dass 
+technische Details für die Nutzung eigentlich unerheblich sind. Vielmehr wird ein funktionales und 
+leicht zu bedienendes Produkt erwartet.  
+ 
+BI wird vernetzt 
+BI 2.0 als wesent-
+licher Trend 
+Prinzipien des Web 
+2.0 können für BI 2.0 
+übernommen werden 
+XIykTgzQZrkDlLrpzHIrykN1D4mwMhxUrM7FGpCmdTjuxqZqvY4v9nKyD/8RR6Kb
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 11 ===
+Einführung                 
+      3 
+ 
+     
+ 
+ 
+Abb. 1: BI-Leitbild  
+Entnommen aus: (Baars et al., 2014) 
+8lLeTqkmgcsfNg2ROT7mwUfn1DutRLolyM7I7+FeTlpZMf01D4EpbbVC5d3McA+I
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 12 ===
+ 
+Einführung 
+    
+4 
+Ähnlich den aktuellen Tendenzen im Web 2.0 könnten BI-Systeme in zunehmendem Maße wäh-
+rend der Nutzung mitgestaltet und dadurch in ihren Inhalten weniger statisch werden. Zu den 
+Prinzipien des Web 2.0, die adaptiert werden können, zählt Nelson (2010) z. B. 
+• 
+Das Entwickeln eigener „Apps“ für das BI-System. 
+• 
+Das zeitnahe und unkomplizierte Weiterempfehlen bzw. Abonnieren und Bewerten von In-
+halten; damit einhergehend die rasche Verbreitung wichtiger und interessanter Inhalte. 
+• 
+Gemeinsames Kommentieren, Bearbeiten und Kategorisieren von Inhalten durch mehrere 
+Personen. 
+• 
+Schnelles und einfaches Veröffentlichen eigener Interpretationen und Aufbereitungen von 
+Inhalten. 
+• 
+Meta-Analyse des Verhaltens bei Nutzung des BI-Systems. 
+Die oben genannten Stichworte werden in den Kapiteln 2 und 3 aufgenommen 
+und diskutiert. Das Ziel ist dabei, eine gewisse Sensibilität für die zurzeit in der 
+Literatur und bei den angebotenen Lösungen verwendeten Stichworte zu entwickeln und die ent-
+sprechenden Aussagen auch hinterfragen zu können. Wenn also in der vorliegenden Einheit von 
+BI gesprochen wird, so ist hier in der Regel die technische BI gemeint, ohne dass noch einmal 
+darauf hingewiesen wird, aber der Begriff wird selbstverständlich auch immer mit Blick auf die 
+zugrunde liegende fachliche und methodische Basis verstanden. 
+Die Lernziele dieser Einheit lassen sich wie folgt zusammenfassen: 
+Kapitel 2: Wirkung der BI auf die Prozesse des Unternehmens 
+• 
+Darstellung der Entwicklungen im Bereich der BI, vornehmlich der technischen BI. 
+Sie kennen die aktuell diskutierten Ansätze und können Sie in die konzeptionellen Inhalte der 
+Einheit 1 bis 3 einordnen. 
+Kapitel 3: Advanced Analytics 
+• 
+BI-Systeme, die über Organisationsgrenzen hinweg reichen, und der Einbezug unstrukturier-
+ter Daten werden diskutiert. 
+Sie können die Inhalte an Ihr Wissen aus Einheit  2 anschließen. 
+Kapitel 4: Ausgewählte Anwendungsbeispiele 
+• 
+Beispielhafte Erläuterung des Einsatzes von BI für das Marketing und Vorstellung zweier Fall-
+studien. 
+Sie kennen die Ansatzpunkte für den Einsatz von BI und verstehen, auf Basis welcher fachli-
+chen Konzepte und technischer Umsetzungsmöglichkeiten „business intelligence“ erzeugt 
+werden kann. Sie verstehen, wie der Knowledge Discovery in Databases (KDD)-Prozess in der 
+Praxis sinnvoll genutzt werden kann und lernen die Herangehensweise zur Lösung von Ent-
+scheidungsproblemen. 
+Sie lernen die Schwierigkeiten, die bei der Anwendung von Data Mining (DM) sowie des 
+gesamten KDD-Prozesses auftreten können und lernen, wie diese vermieden werden können. 
+Inhalte und  Lern-
+ziele der Einheit 4 
+9T+nL85IUVQR+9s0rvmCQrqhUOgg6gFvdL0kiecN3qcrGe6ukYsOEKjh4+xdEIkH
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 13 ===
+Wirkung der BI auf die Prozesse des Unternehmens                 
+      5 
+ 
+     
+2 Wirkung der BI auf die Prozesse des Unternehmens 
+Auch wenn der Begriff BI schon einige Jahrzehnte alt ist, vereinigt BI heute ver-
+schiedene historische Trends aus Entscheidungsunterstützung, technischer Da-
+tenhaltung und statistischer Datenanalyse (vgl. Einheit 1). Dieser Auffassung sind auch Chamoni 
+und Gluchowski (2004). Sie sehen in BI eine Weiterentwicklung sowohl der Management Infor-
+mation Systems (MISs) und Decision Support Systems (DSSs) der 1990er Jahre, als auch des „Um-
+gangs mit analyseorientierten Datenbeständen“ im Sinne eines Data Warehouse (DWH) und 
+schließlich eine „begriffliche Klammer um eine Vielzahl unterschiedlicher Ansätze zur Analyse und 
+zum Verständnis von Geschäftsprozessen“ (Chamoni & Gluchowski, 2004). 
+Der vorliegende Lehrbrief reflektiert die historische Entwicklung des BI-Begriffs, 
+indem BI in den Einheit 1 und 2 als Werkzeug zur Entscheidungsunterstützung 
+auf Grundlage eines Entscheidungsprozesses eingeführt wird. Einheit 3 behan-
+delt den Aspekt der analyseorientierten Datenbestände. Das vorliegende Kapitel 2 der Einheit 4 
+zeigt exemplarisch auf, dass die Geschäftsprozessperspektive auf BI nicht nur immer noch aktuell 
+ist, sondern auch stetig weiterentwickelt wird. Dabei soll allerdings der in Einheit 1 angedeutete 
+Aspekt der Informationsversorgung nicht in den Hintergrund geraten. Chamoni und Gluchowski 
+(2004) erinnern: 
+„Stets wurde bei den unterschiedlichen Ansätzen versucht, entschei-
+dungsrelevante Informationen zeitnah und problemadäquat in einer 
+dem Management gerechten Weise aufzubereiten . . . “ (Chamoni & 
+Gluchowski, 2004). 
+Dieses Zitat soll das Leitbild für das vorliegende Kapitel sein. In einem ersten Schritt werden dazu 
+die Inhalte des Kapitels in ein Reifegradmodell eingeordnet. Es folgt eine Betrachtung des grund-
+sätzlichen Zusammenhangs von BI und Prozessen und schließlich, in den Abschnitten 2.1–2.3, die 
+Vorstellung einiger ausgewählter Konzepte, wie BI auf die Prozesse des Unternehmens wirken 
+kann. 
+Chamoni und Gluchowski (2004) stellen mit dem Business Intelligence Maturity 
+Model (biMM) ein Modell zur Einordnung des Reifegrads von BI-Lösungen vor. 
+Dieses Modell umfasst die Dimensionen „Fachlichkeit (betriebswirtschaftlich in-
+haltliche Sicht), Technik (Komponenten und Architekturen) sowie Organisation (Einbettung in Auf-
+baustrukturen und Ablaufprozesse)“ (Chamoni & Gluchowski, 2004). Tab. 2.1 zeigt die verschie-
+denen Stufen des Reifegradmodells mit jeweils möglichen Ausprägungen in den Dimensionen 
+Fachlichkeit und Technik. Die erste Stufe des Reifegradmodells, „Vordefiniertes Berichtswesen“, 
+ist im Sinne dieses Lehrbriefs keine BI, kann aber in Altsystemen noch angetroffen werden. Die 
+zweite und dritte Stufe charakterisieren die klassische BI. Der Unterschied zwischen diesen Stufen 
+liegt vor allem in Umfang und Einheitlichkeit des Einsatzes von BI im Unternehmen. BI der zweiten 
+und dritten Stufe ist Gegenstand der Einheit 3. Die vierte Stufe bezeichnet mit dem Begriff „Er-
+weiterte Entscheidungsunterstützung“ eine moderne BI, wie sie übergreifend in allen Einheit die-
+ses Lehrbriefs vertreten wird. Die fünfte Stufe, „Aktives Wissensmanagement“, wurde von Cha-
+moni und Gluchowski (2004) zwar konzeptionell beschrieben, aber in Unternehmen zum 
+Historische 
+Entwicklung 
+Einordnung in die 
+Themen des 
+Lehrbriefs 
+Einordnung anhand 
+eines Reifegrad-
+modells 
++2YgOMI079KlNwgQw06W4siOwjBZ/Fe4WO2F0ASIRAzm3/WBgrl8Z+n8EG6bpgSl
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 14 ===
+ 
+Wirkung der BI auf die Prozesse des Unternehmens 
+    
+6 
+Zeitpunkt der Vorstellung des biMM kaum vorgefunden. Erst in jüngerer Zeit sind die technischen 
+Voraussetzungen gegeben, um auch diese Stufe für viele Unternehmen erreichbar zu machen. 
+Dies soll im Folgenden diskutiert werden. 
+Entwicklungs-
+stufe 
+Fachlichkeit 
+Technik 
+1. Vordefinier-
+tes Berichtswe-
+sen 
+• 
+Inhalte werden z.T. redundant berichtet 
+• 
+Keine weitergehende Analysemöglichkeit 
+• 
+Fachbezogene Auswertungen 
+• 
+Keine einheitliche Semantik 
+• 
+Statische, parametergesteuerte 
+Berichte (häufig papiergebunden) 
+• 
+Einfache Darstellung (z.B. Listen-
+druck) 
+• 
+Lokale Layoutstandards 
+• 
+Einbettung in operative Informati-
+onssysteme 
+2. BI pro Fach-
+bereich 
+• 
+Insellösungen 
+• 
+Ad-hoc-Analysemöglichkeiten 
+• 
+Abteilungsweit gültige Semantik 
+• 
+Online Aalytical Processing 
+(OLAP) Navigationsfunktionalität 
+• 
+Zeitreihenanalysen 
+• 
+Datenhistorisierung 
+• 
+Automatisierung von Prozessen 
+für Extraktion - Transformation - 
+Laden (ETL) 
+3. 
+Unterneh-
+mensweite BI 
+• 
+Integration verschiedener Fachbereiche 
+• 
+Vereinheitlichtes Berichtswesen 
+• 
+Unternehmensweit homogenisierte Sem-
+antik 
+• 
+Einfache Forecastberechnungen 
+• 
+Integration externer Daten 
+• 
+Hub & Spokes-Architektur 
+• 
+Metadatenmanagement 
+• 
+Übergreifende Normen und Stan-
+dards 
+• 
+Hohe Verfügbarkeit 
+• 
+Web-Oberflächen 
+• 
+Automatisierte Integration exter-
+ner Daten 
+4. 
+Erweiterte 
+Entscheidungs-
+unterstützung 
+• 
+Prozessunterstützung 
+• 
+Closed-Loop-Umsetzung 
+• 
+Erweiterte Analysemethoden (z.B. Data 
+Mining) 
+• 
+Trendberechnungen 
+• 
+Bildung komplexer Szenarien 
+• 
+Alternativenrechnungen 
+• 
+Einbeziehung semi-strukturierter 
+Daten 
+• 
+DM 
+• 
+Planungs- und Simulationstools 
+• 
+Workflow-Systeme zur Unterstüt-
+zung komplexer Prozesse 
+• 
+Portaltechnologien 
+5. Aktives Wis-
+sensmanage-
+ment 
+• 
+Zeitnahe Analysen bis hin zum Realtime-
+Betrieb 
+• 
+Adaptives Lernen 
+• 
+Enge Kopplung von quantitativen und 
+qualitativen Wissensdomänen 
+• 
+Benutzerrollenkonzepte 
+• 
+Aktive Entscheidungsunterstützung 
+• 
+Realtime-fähige Infrastruktur 
+• 
+Aktive Komponenten (Push-Tech-
+nologie) 
+• 
+Integration unstrukturierter Daten 
+• 
+Agentenbasierte Informations-
+sammlung 
+• 
+Verschmelzung operativer und 
+dispositiver Systeme 
+ 
+Tab. 1: biMM in der Übersicht  
+Quelle: gekürzt entnommen aus (Chamoni & Gluchowski, 2004) 
+Für Unternehmen ist der Impetus einer Investition in ein BI-System, wie bei jeder 
+anderen Investition auch, eine Steigerung des Unternehmenswerts. Der Einfluss 
+von BI auf den Unternehmenswert ist schwierig zu quantifizieren. Letztlich be-
+steht das Werteversprechen der BI darin, dabei zu helfen, strategische und ope-
+rative Prozesse so zu gestalten, dass Kosten reduziert oder Umsätze gesteigert werden können 
+(Willams &Williams, 2003). Anders formuliert, die BI als Mittel zur Entscheidungsunterstützung 
+und Informationsversorgung bezieht ihren Wert indirekt daraus, dass die betreffenden Entschei-
+dungen zu einer effektiven und effizienten Wertschöpfung beitragen, welche ihrerseits in den 
+Prozessen des Unternehmens abgebildet wird. 
+Der Wert der BI 
+entsteht durch ihre 
+Anwendung in 
+Prozessen 
+8pt4Qgu5v0d6zKz5FDxCxUNKlPNtFJfW4z9Dicjk3f7ZG9e4k1gEaO3qXKtSAGYm
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 15 ===
+Wirkung der BI auf die Prozesse des Unternehmens 
+7 
+Im Einzelnen kann das Verhältnis von BI-Systemen und Prozessen unterschied-
+lich ausgestaltet sein: 
+•
+Strategische Prozesse können den Output des BI-Systems verwenden. Die-
+ses Verhältnis entspricht dem o. g. Verständnis von BI-Systemen als Weiterentwicklung von
+DSS und MIS.
+•
+Die strategische Verwendung des BI-Output kann insbesondere darin bestehen, operative
+Prozesse zu gestalten. Der Einfluss der BI auf die operativen Prozesse ist hier ein langfristiger
+und indirekter. An den operativen Prozessen an sich ist BI nicht unmittelbar beteiligt.
+•
+Eine weitere Verwendungsmöglichkeit besteht darin, operative Prozesse ihrem Ergebnis nach
+zu überwachen (vgl. Abschnitt 2.2). Dadurch kann die BI auch kurzfristige Effekte auf das
+operative Geschäft haben, diese wirken aber immer noch indirekt über Managementpro-
+zesse.
+•
+Schließlich ist es auch denkbar, dass BI-Systeme die operativen Prozesse und damit verbun-
+dene operative Systeme direkt beeinflussen. Diese Vorstellung stellt einen Paradigmenwech-
+sel dar (Sandu, 2008).
+Popovič, Turk und Jaklič (2010) argumentieren, ausgehend von einem Reife-
+gradbegriff, wie ihn auch Chamoni und Gluchowski (2004) verwenden, dass 
+ein erhöhter Reifegrad des BI-Systems zu einer erhöhten Informationsqualität 
+führt. Dies wiederum bedingt, gemeinsam mit organisationalen Faktoren, dass 
+die durch BI zur Verfügung gestellte Information in höherem Maße tatsächlich in Prozessen ge-
+nutzt wird. So kann eine bessere Unternehmensleistung erreicht werden. Kriterien für die Infor-
+mationsqualität sind dabei, analog zur Diskussion der Datenqualität in Einheit 3, z. B. Genauigkeit, 
+Zeitnähe, Menge, Verständlichkeit, knappe und konsistente Darstellung. Organisationale Faktoren 
+sind z. B. Strategic Alignment und eine Kultur der kontinuierlichen Verbesserung (Popovič et al., 
+2010). Abb. 2 zeigt das zugehörige konzeptuelle Modell. 
+Abb. 2: Konzeptuelles Modell für den Wertbeitrag der BI 
+In Anlehung an: (Popovič et al., 2010) 
+2.1 Echtzeit-BI 
+Die traditionelle BI arbeitet auf strategischer Ebene mit Analysezeiträumen, die 
+typischerweise zwischen sechs Monaten und einem Jahr liegen und auf takti-
+scher Ebene, mit Betrachtungen im Bereich von Wochen und wenigen Monaten. Operative Ent-
+scheidungen müssen dagegen regelmäßig tagesaktuell, oft sogar innerhalb kürzester Zeit, getrof-
+fen werden. Es ist nicht möglich, längere Analysezeiträume abzuwarten, die Information muss 
+Verhältnis von BI-
+Systemen und 
+Prozessen 
+Der Reifegrad der BI 
+beeinflusst indirekt 
+die  Unternehmens-
+leistung
+BI in operativen 
+Prozessen 
+BI-Reifegrad 
+Informations-
+qualität
+Verwendung 
+in Prozessen 
+Unternehmens- 
+leistung 
+Organisationale 
+Faktoren 
+MBwjER1aDAGhv/2oxWAw7lz5leiOEajztmh1JpraNq3jeprFwYmKsNNXcB1tO0Mj
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 16 ===
+ 
+Wirkung der BI auf die Prozesse des Unternehmens 
+    
+8 
+vorliegen, sobald sie gebraucht wird, z. B. wenn ein Kunde am Telefon bereits auf die Entschei-
+dung wartet. Eine weitere Ausprägung der operativen BI ist ereignisgetrieben. BI ist dabei nicht 
+nur ein passives Analysewerkzeug, sondern reagiert aktiv auf Ereignisse im Unternehmen, macht 
+Entscheider auf wichtige Ereignisse aufmerksam und schlägt idealerweise auch geeignete Maß-
+nahmen vor. Damit einhergehend wird die Trennung von operativen und dispositiven Daten auf-
+geweicht. Operativen Daten müssen zur Analyse zur Verfügung stehen, und die Analyseergeb-
+nisse haben umgekehrt, über geeignete Handlungen, Rückwirkungen auf das operative Geschäft 
+und die dabei anfallenden Daten (Davis, 2006). 
+In Einheit 2, Abschnitt 3.2 & 3.3 wird diskutiert, wie Informationssysteme (ISe) 
+im Allgemeinen und BI-Systeme im Speziellen ein Modell – also ein Abbild der 
+Realität bzw. formaler eines betrachteten Universums (U) – erzeugen. Aus die-
+sem Verständnis ergeben sich Anforderungen an die Qualität und Nützlichkeit der Abbildung. 
+Einheit 3 beschreibt, wie diese Anforderungen auf der Ebene der Datenhaltung erfüllt werden 
+können. Durch den zu Beginn dieses Kapitels beschriebenen Paradigmenwechsel, hin zur opera-
+tiven BI, erhält die Anforderung der Zeitnähe jedoch eine neue Bedeutung. Echtzeit-BI im engeren 
+Sinne bezeichnet die Synchronizität von Modell und Realität (Hackathorn, 2004). Praktisch ist per-
+fekte Synchronizität nicht erreichbar. Der Echtzeitbegriff wird also lose ausgelegt. Es muss folglich 
+entschieden werden, wie die Anforderung der Zeitnähe zu quantifizieren ist. 
+Intuitiv verliert eine Information über die Zeit an Wert, sie veraltet oder wird 
+überholt. Die sprichwörtliche „Zeitung von gestern“ ist heute von geringem 
+Wert. Doch der Alterungsprozess verläuft nicht für jede Information im gleichen Tempo, so veral-
+ten Börsenkurse z. B. schneller als Analyseberichte. Ein einfaches Modell für das Tempo in dem 
+Information an Wert verliert, ist die Halbwertszeit. Es wird dabei angenommen, dass der Wertver-
+lust exponentiell ist und seine Geschwindigkeit daher durch die Zeit, in der sich der Wert der 
+Information halbiert, charakterisiert werden kann (Pant & Ravichandran, 2001). 
+Aus dem zeitlichen Verfall des Informationswertes folgt, dass es nicht gleich-
+gültig ist, wann der Wert der Information bestimmt wird. In einem vielzitierten 
+Aufsatz argumentiert Hackathorn (2004), dass der maßgebliche Zeitpunkt nicht die Verarbeitung 
+der Information im DWH, sondern die unternehmerische Reaktion auf die Information sei. Der 
+zeitliche Abstand zwischen dem Eintreten eines Realweltereignisses und der Reaktion auf die das 
+Ereignis betreffende Information ist die Abweichung des Systems von der Echtzeit im engeren 
+Sinne. Diese Abweichung wird als Latenz bezeichnet. Die Anforderung der Zeitnähe ist also formal 
+eine Forderung nach kurzen Latenzen (Hackathorn, 2004; Polites, 2006; Panian, 2009; Grieser & 
+Wilde, 2011). Der Gesamtzusammenhang ist in Abb. 3 dargestellt. Wie im Weiteren aufgezeigt 
+werden soll, kann die Gesamtlatenz zwischen dem Auftreten eines Ereignisses und der Reaktion 
+darauf weiter differenziert werden. 
+ 
+ 
+Echtzeit als Anfor-
+derung an das 
+Realitätsabbild 
+Information hat eine 
+Halbwertszeit 
+Latenz als Abwei-
+chung von Echtzeit 
+cwA2cxZjGF1SISNt89ZJ+78Pxfl9b790RNcjtjlIs5Uzc1Q0CVHucxBOGEZXKGQj
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 17 ===
+Wirkung der BI auf die Prozesse des Unternehmens                 
+      9 
+ 
+     
+ 
+Abb. 3: Halbwertszeit und Latenz von Information  
+In Anlehnung an: (Hackathorn, 2004) 
+Die Datenlatenz ist die Zeit, die nach Eintreten des Ereignisses benötigt wird, 
+um die das Ereignis betreffenden Daten für die weitere Analyse bereitzustellen. 
+In der Regel (vgl. Einheit 3) umfasst dies zunächst die Erfassung der Daten in einem operativen 
+System und dann den ETL-Prozess, um die Daten in das DWH einzupflegen (Hackathorn, 2004; 
+Golfarelli, Rizzi, Risorgimento, Cella & Matteotti, 2004; Grieser & Wilde, 2011). Sofern an der 
+klassischen Trennung in operative und dispositive Datenbestände festgehalten wird, ist die Daten-
+latenz durch den Aktualisierungszyklus des DWH nach unten begrenzt. War es früher üblich, das 
+DWH z. B. täglich („über Nacht“) zu aktualisieren, so können heute kürzere Aktualisierungszyklen 
+nötig sein, um insgesamt angemessene Latenzen zu gewährleisten (Davis, 2006). Werden darüber 
+hinaus Daten zur Analyse erfasst, die nicht im Unternehmen selbst entstanden sind, so muss ana-
+log die Zeit, die zum Auffinden und Auswerten dieser externen Datenquellen nötig ist, der Daten-
+latenz zugerechnet werden (Polites, 2006). 
+Die Analyselatenz ist die Zeit, die darüber hinaus benötigt wird, um die Daten 
+zu analysieren und die Analyseergebnisse den richtigen Personen bereitzustel-
+len. Dies schafft die Grundlage für eine Entscheidung (Hackathorn, 2004; Grieser & Wilde, 2011). 
+Die Entscheidungslatenz ist die Zeit, die darüber hinaus benötigt wird, um die 
+somit generierte Information zu verarbeiten und auf ihrer Basis eine Handlung 
+zu initiieren (Hackathorn, 2004). In der neueren Literatur wird die Entscheidungslatenz um die 
+Handlungs- und Wirkungslatenz ergänzt, um abzubilden, dass der Zeitpunkt der Entscheidung 
+nicht mit ihrer Wirkung identisch ist (Polites, 2006; Grieser & Wilde, 2011). Handlungs- und Wir-
+kungslatenz treten aber auf, nachdem die BI ihre Aufgabe der Entscheidungsunterstützung bereits 
+erfüllt hat. 
+Der Wertverlauf einer Information über die Zeit kann durch die Halbwertszeit 
+abgeschätzt werden. Dazu muss jedoch der Wert zu Beginn der Betrachtung 
+bekannt sein. Obwohl der absolute Wert einer Information schwierig zu quan-
+tifizieren (Lönnqvist & Pirttimäki, 2006) und die Skala in Abb. 3 somit nur symbolisch zu verstehen 
+Datenlatenz  
+Analyselatenz  
+Entscheidungslatenz  
+Wertvolle Infor-
+mation verliert 
+schnell an Wert  
+RCTEHAyR2DwBhl1f5M80QOfroK40A3kA+Rc5XTi/X/IZhwaL5tOY21/nfgF837qa
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 18 ===
+ 
+Wirkung der BI auf die Prozesse des Unternehmens 
+    
+10 
+ist, kann zumindest näherungsweise angenommen werden, dass eine Information anfänglich 
+umso wertvoller ist, je kürzer ihre Halbwertszeit ist. Dies ist in Abb. 4 dargestellt. Somit ist die 
+schnelle Verarbeitung von Information mit kurzen Halbwertszeiten kein rein akademisches Prob-
+lem, sondern hochgradig praxisrelevant. Dies führt dazu, dass Hersteller von BI-Systemen aus Mar-
+ketinggründen sehr großzügig mit dem Begriff „echtzeitfähig“ umgehen. Auf der anderen Seite 
+etablieren sich immer mehr Systeme, die mit „vorausschauender Analyse“ versuchen, Ereignisse 
+vorherzusehen und somit zumindest prinzipiell negative Latenzen versprechen (Henschen, 2009). 
+ 
+Abb. 4: Abhängigkeit von Informationswert und Halbwertszeit  
+In Anlehnung an: (Franklin, 2010) 
+Die Forderung nach Zeitnähe bzw. kurzen Latenzen ist also der Überlegung ge-
+schuldet, Information dann zu nutzen, wenn ihr Wert möglichst hoch ist, oder 
+im Extremfall, solange sie überhaupt noch einen Wert hat. Dieser Forderung stehen die Kosten 
+gegenüber, mit denen eine Senkung der Latenzen verbunden wäre. Dazu zählen z. B. Kosten für 
+Hard- und Software, Personal und Weiterbildung sowie erforderliche Prozessanpassungen. Somit 
+sollte ein Unternehmen, um wirtschaftlich zu sein, die akzeptable Latenz individuell für einzelne 
+Geschäftsprozesse und Informationstypen festlegen. Dabei sollten der Ausgangswert der Infor-
+mation, deren Halbwertszeit und die Kosten für das gewünschte Latenzniveau berücksichtigt wer-
+den. Dieses streben nach möglichst wirtschaftlichen, statt möglichst kurzen, Latenzen in der BI 
+wird als Right-Time Business Intelligence (RTBI) bezeichnet (Hackathorn, 2004; Davis, 2006; Poli-
+tes, 2006). Der Begriff „right-time“ ist dabei nicht zu verwechseln mit „real-time“ („Echtzeit“) 
+und könnte etwa mit „Rechtzeit“ übersetzt werden. 
+Im Sinne einer RTBI kann auch die Betrachtung historischer Informationen, z. B.  
+der Vorjahresumsätze, rechtzeitig sein. Gemäß Abb. 4 haben solche Informati-
+onen zwar einen geringen absoluten Wert für die operativen Entscheidungen, veralten aber dafür 
+nur mit großen Halbwertszeiten. Somit wäre eine Verringerung der Latenz in Bezug auf diesen 
+Informationstyp sicherlich fehlinvestiert. Die Bezeichnung Rechtzeit kann also nur als Ergänzung 
+Wirtschaftlichkeit 
+kurzer Latenzen 
+Right-Time ist nicht 
+Real-Time 
+pPFQsV+8g+QjIrR8sHRso1+YEy1UeoU5oiOmUBTgU+kjpsv2NtD5aBw/6s3Riuzl
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 19 ===
+Wirkung der BI auf die Prozesse des Unternehmens                 
+      11 
+ 
+     
+und nicht als Ersatz für Echtzeit angesehen werden. Abb. 4 folgend sollen hier unter traditioneller 
+BI solche BI-Systeme verstanden werden, die täglich oder seltener aktualisiert werden, während 
+RTBI im engeren Sinne BI-Systeme mit kürzeren Aktualisierungszyklen bezeichnen soll, die geeig-
+net sind, auch zeitkritische Entscheidungen auf der Basis von Informationen mit geringer Halb-
+wertszeit zu unterstützen. Da solche Informationen für ein Unternehmen typischerweise sehr 
+wertvoll sind, lohnt sich hier die Investition in verkürzte Latenzen. 
+Beim RTBI-Begriff ist stets mitgedacht, dass Unternehmen die richtige Latenz 
+der Informationsverarbeitung in ihren Prozessen unter Berücksichtigung von 
+Kosten und Nutzen zumindest schätzen können. Diese Schätzungen sind aber keine Konstanten. 
+Der richtige Zeitpunkt für eine Reaktion, gemessen am Auftreten des Ereignisses, kann sich ver-
+schieben, wenn sich das Geschäftsumfeld ändert und sich somit z. B. die Halbwertszeiten verkür-
+zen, oder wenn durch technischen Fortschritt die Kosten kürzerer Latenzen sinken. Der Übergang 
+von traditioneller BI zu RTBI ist durch ein Zusammentreffen solcher Faktoren gekennzeichnet. Die 
+Anzahl und Komplexität von Entscheidungen in Unternehmen steigt immer weiter und schneller 
+an. Gleichzeitig erwarten Kunden von Unternehmen unverzüglich Informationen über ihr jeweili-
+ges Anliegen zu bekommen. Während traditionelle BI durch die verfügbaren Verfahren und Mo-
+delle getrieben wurde, ist RTBI durch Ereignisse und Informationsbedarfe getrieben (Ranjan, 
+2008). Es ist daher davon auszugehen, dass RTBI in Zukunft immer mehr auch Echtzeit-BI im ei-
+gentlichen Sinne sein wird. 
+Traditionelle BI ist durch Medienbrüche zwischen strategischer, taktischer und 
+operativer Ebene gekennzeichnet. Die Trennung zwischen operativen Systemen 
+und DWH ist strikt, Daten werden nur in größerem zeitlichen Abstand und nur 
+in eine Richtung übertragen. Die Datenlatenz ist somit hoch. Eine bessere Anbindung steht vor 
+der Herausforderung, einheitlichen Datenzugriff und hohe Datenqualität zu gewährleisten. Inner-
+halb der BI-Systeme können vordefinierte Berichte und Key Performance Indicators (KPIs) erzeugt 
+werden, für darüber hinausgehende Informationsbedarfe sind manuelle Eingriffe erforderlich, um 
+die gewünschten Analysen zu erstellen. Dies führt bei neuen oder geänderten Fragestellungen zu 
+hoher Analyselatenz. BI-Systeme sind für den Laien unzugänglich. Expertenwissen ist insbesondere 
+beim Übergang von taktischen zu strategischen Entscheidungen erforderlich. Der Informations-
+fluss in die Gegenrichtung ist, sofern er überhaupt stattfindet, nicht systematisiert und erfolgt 
+manuell. Damit ist ein direkter Einfluss der BI auf die operativen Prozesse in der traditionellen BI 
+nicht praktikabel. Die Information, die traditionelle BI-Systeme zur Verfügung stellen, ist deskriptiv 
+und nicht handlungsorientiert. Dies führt zu hoher Entscheidungslatenz. RTBI kann in diesem Kon-
+text, durch verkürzte Latenzen in beiden Richtungen des Informationsflusses, als Enabler, der ope-
+ratives Handeln auf der Grundlage von BI überhaupt erst ermöglicht. Moderne Informations- und 
+Kommunikationstechnik (IKT) erlaubt es, die genannten technischen Hürden zu überwinden 
+(Azvine, Cui, Nauck & Majeed, 2006). 
+Die handlungsorientierte RTBI ergänzt somit die Transformation von Daten in 
+Informationen durch die traditionelle BI um die Rücktransformation von Infor-
+mationen in Handlungen. Über diese Handlungen wirkt die RTBI direkt zurück 
+auf die Geschäftsprozesse, die wiederum neue Daten generieren, sodass ein 
+geschlossener Kreislauf entstehen kann. RTBI muss daher nicht nur das operative Geschäft recht-
+zeitig analysieren, sondern zugleich auch Werkzeuge zu dessen Steuerung anbieten (Azvine et al., 
+Umfeld als Treiber 
+kürzerer Latenzen  
+Kurze Latenzen als 
+Enabler für Einfluss 
+auf Prozesse  
+Feedback als wich-
+tige Funktion für das 
+organisationale 
+Lernen durch die BI  
+23g6gs9Je1cn3cgmJDT3/DnT3ycFp/7t5IwJ/wgXmKGM8wHZp9z0jw1tvgdUn81M
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 20 ===
+ 
+Wirkung der BI auf die Prozesse des Unternehmens 
+    
+12 
+2006). Erst als geschlossener Kreislauf kann die BI ihre Rolle im handlungsorientierten Entschei-
+dungsprozess (vgl. Einheit 1) voll erfüllen. Dies ist in Abb. 5 dargestellt. Die traditionelle BI ist dabei 
+in drei Schichten untergliedert. Die operative Schicht besteht aus operativen Systemen, z. B. Custo-
+mer Relationship Management (CRM)- und ERP-Systemen. Die Datenintegrationsschicht realisiert 
+die Anbindung der operativen Systeme an das DWH. Für RTBI ist es zusätzlich erforderlich, dass 
+die Integration kontinuierlich erfolgt, da nur so gewährleistet ist, dass die Analyse auf aktuellen 
+Daten durchgeführt wird. Auch die Analyseschicht muss, im Gegensatz zur traditionellen BI, um 
+fortgeschrittene Verfahren ergänzt werden. Der Hauptunterschied zur traditionellen BI besteht 
+jedoch in Feedbacksystemen, die Gegenstand des folgenden Abschnitts 2.2 sind. 
+ 
+Abb. 5: Ergänzung der traditionellen BI (weiß) zum geschlossenen RTBI-Kreislauf (grau) 
+              In Anlehnung an: (Azvine et al., 2006) 
+2.2 Business Activity Monitoring 
+Die im vorherigen Abschnitt beschriebenen Anforderungen und Effekte lassen 
+sich den einzelnen Schichten des geschlossenen RTBI-Kreislaufs zuordnen. Um 
+die Abhängigkeit von manuellen Eingriffen auf der Analyseschicht und somit 
+die Analyselatenz zu verringern, sollten RTBI-Systeme auf dieser Schicht mög-
+lichst viel automatisieren, z. B. die Wahl eines geeigneten Analyseverfahrens und dessen Parame-
+ter für die jeweils formulierte Fragestellung. Ein weiterer Ansatz, der bereits unter dem Stichwort 
+BI 2.0 angerissen wurde (vgl. Kap.1), ist eine erhöhte Zugänglichkeit der Systeme durch Elemente, 
+die sich an das Web 2.0 anlehnen. Dies ermöglicht es Einzelpersonen, sich in der Anwendung der 
+BI-Systeme auf einen Bereich zu spezialisieren und ihre eigenen Analyseergebnisse reibungslos 
+weiterzugeben. Dieser Ansatz wird im vorliegenden Abschnitt unter dem Stichwort SSBI diskutiert. 
+Self-Service Bus-iness 
+Intelligence (SSBI) 
+auf der 
+Analyseschicht  
+qhntIRiTWwMWl5d9IlfHq5dpk6Fnmyk/8CXzEkJMo/+6Q+qEbWvNTudOpQzQWnqf
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 21 ===
+Wirkung der BI auf die Prozesse des Unternehmens                 
+      13 
+ 
+     
+Beim Business Intelligence as a Service (BIaaS) dagegen steht außerhalb des Unternehmens bei 
+einem Dienstleister ein Analyseteam zur Verfügung, das auf Anfragen ggf. schneller und flexibler 
+reagieren kann als einzelne interne Fachkräfte (vgl. Kap. 3.1). 
+Die SSBI hat sich unter denselben Zielen wie die wie die klassische BI entwickelt. 
+Die Nutzung erfolgt über bekannte Oberflächen, wie den Webbrowser, ohne 
+dass clientseitig Software installiert werden muss (Alpar & Schulz, 2016). Die Datenhaltung kann 
+hierbei, neben oder anstatt der bisher genutzten Datenspeicher, für mehr Mobilität in die Cloud 
+verschoben werden (vgl. Kap. 3). Die Nutzung von SSBI lässt sich in mehrere Stufen einteilen, je 
+nachdem, welche Rechte vergeben werden und damit, welche Intensität der Nutzung angestrebt 
+wird. In Abb. 6 werden diese Intensitätsstufen dargestellt. Der Grad der Selbstbestimmtheit wird 
+hierbei auf das Ausmaß der Nutzungsmöglichkeiten des Systems abgebildet. Die zwei unteren 
+Stufen beinhalten das Lesen und das Erstellen von Inhalten, was noch in Lösungen klassischer BI-
+Systeme enthalten ist. Auf dritter Stufe können von Nutzungsseite neue Quellen hinzugezogen 
+und mit vorhandenen kombiniert werden. Hierdurch entstehen auch neue Risiken, wie z. B. un-
+terschiedliche Datenqualität und die Kombination sich überschneidender Datensätze. Für die Nut-
+zung können außerdem sogenannte Mashups erstellt werden, d. h. bereits programmierte Ele-
+mente zu Funktionalitäten werden für den aktuellen Gebrauch kombiniert. Auch hier wird durch 
+eine entsprechende Oberfläche die Nutzung erleichtert. Durch die veränderte Nutzungslage der 
+BI-Systeme, müssen die Zugriffsrechte für das Lesen und Schreiben angepasst werden. Hier ist die 
+Herausforderung, das jeweils passende Maß an Sicherheitsvorkehrungen zu treffen, ohne die 
+SSBI-Systeme sicherheitskritisch oder unbenutzbar zu machen (Alpar & Schulz, 2016). Für jegliche 
+Intensitätsstufe sind BI-Systeme denkbar. Vieles hiervon ist auch in klassischen BI-Systemen um-
+setzbar. Die SSBI-Systeme sind jedoch auf größere Nutzungszahlen skalierbar und haben an die 
+jeweiligen Kenntnisse angepasste Nutzungsoberflächen. 
+ 
+Abb. 6: Intensitätsstufen von SSBI-Systemen  
+Entnommen aus: (Alpar & Schulz, 2016) 
+Selbstbestimmtheit 
+durch SSBI  
+4A6UhN+kAl7WVfsYlO1s1UB8hXE+cYAr1AwdIR2xogZ2X8yZ26pz6v5DAhM7jqNz
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 22 ===
+ 
+Wirkung der BI auf die Prozesse des Unternehmens 
+    
+14 
+Im Folgenden wird exemplarisch anhand des Controllings aufgezeigt, wie BI 
+eingesetzt werden kann und welcher Nutzen dadurch entsteht. Die Aufgabe 
+des Controllings im Unternehmen bietet sich aufgrund ihrer Querschnitts- und übergreifenden 
+Steuerungsfunktion besonders für eine nähere Betrachtung an. 
+ 
+Nach Reichmann (2011) ist es das Ziel des Controllings, die „Entscheidungsqua-
+lität auf allen Führungsstufen“ zu verbessern. Zu diesem Zweck soll das Con-
+trolling die als notwendig erachteten Informationen verarbeiten und in den gewünschten Verdich-
+tungsstufen an die Unternehmensleitung oder andere Stellen abgeben. Idealerweise leistet das 
+Controlling erste Analyseschritte, indem es Daten verbindet und hieraus Informationen, z. B. auch 
+in Form von Vorschlägen zu Maßnahmen, generiert. Bereits an diesen beiden Aussagen lässt sich 
+erkennen, dass BI ein für das Controlling zentrales Hilfsmittel ist. In diesem Kontext hat sich in den 
+letzten Jahren in der Praxis der Begriff des CPM entwickelt. 
+Unabhängig davon, ob strategische oder operative Einflüsse auf die Wertschöp-
+fung abgebildet werden sollen, spielt die inhaltliche, d. h. fachliche Basis eine 
+erhebliche Rolle für die Qualität des CPM. Als fachliches Konzept und damit Grundlage für die 
+Umsetzung in die technischen Systeme kann hier das klassische Controllingkonzept dienen, das 
+vor allem der Identifikation der relevanten Controllingobjekte und der Feststellung ihrer Zusam-
+menhänge und Messbarkeit dient. In diesen Controllingobjekten können, wie vom CPM als ganz-
+heitlicher Ansatz gefordert, alle Bereiche des Unternehmens abgebildet werden, die zur Wert-
+schöpfung beitragen, z. B. die Prozesse und die Ressourcen. Folgende Elemente des 
+Controllingkonzepts müssen festgelegt werden, damit es als fachliche Grundlage des CPM und 
+dessen Umsetzung in die entsprechenden Systeme dienen kann: 
+1. 
+Controllingobjekte: Was wird gesteuert, was kann gesteuert werden? 
+2. 
+Wirkungsbeziehungen: Wie hängen die Controllingobjekte zusammen, wie wirken sie aufei-
+nander? 
+3. 
+Metriken: Wodurch lassen sich die Objekte operationalisieren, d. h. messbar machen? 
+4. 
+Rollen mit Aufgaben: Wer nimmt die Aufgabe der Informationsversorgung wahr, mit welchen 
+Kompetenzen und Verantwortlichkeiten? 
+5. 
+Berichtswesen: Wie werden die Vorgaben, Standards, Ergebnisse und Maßnahmen doku-
+mentiert? 
+Nach Oehler (2006) beschreibt CPM eine integrierte Unternehmenssteuerungs-
+architektur. Dies bedeutet, dass verschiedene Managementunterstützungssys-
+teme, wie eben BI-Systeme, ERP-Systeme, aber auch CRM- und KM-Systeme sowie Systeme zum 
+Business Process Management im Sinne obiger Definition aufeinander abgestimmt und zu einem 
+gemeinsamen System integriert werden. Traditionelle BI-Systeme übernehmen hierbei die Auf-
+gabe, die Geschäftsprozesse zu überwachen und ggf. die Planung zu unterstützen. CPM bezieht 
+jedoch, über den traditionellen BI-Begriff hinaus, auch die Steuerung von Prozessen ein. CPM 
+integriert somit die vorhandenen technischen ISe eines Unternehmens auch auf operativer Ebene. 
+Durch die Einbeziehung der operativen Ebene entsteht eine Rückkopplung, da die Ergebnisse des 
+Der Einsatz von BI im 
+Controlling  
+Ziel des Controllings 
+und Bezug zu CPM  
+Controllingkonzept 
+als fachliche Basis  
+CPM nach Oehler 
+(2006) 
+1VAh4ks2Y+aCyKTty/7T1dCPUQSp71Z3KecTzS8tYdBLyzw4Hyc/p1Fz6VTvV1Q5
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 23 ===
+Wirkung der BI auf die Prozesse des Unternehmens                 
+      15 
+ 
+     
+CPM sowohl über automatische Regelungsmechanismen als auch über die wohlinformierten 
+Handlungen der Mitarbeitenden als Teil des betrieblichen IS im operativen Geschäft unmittelbar 
+wieder auf das Unternehmen zurückwirken (Oehler, 2006). In diesem Sinne ist CPM das konse-
+quente Weiterdenken des geschlossenen RTBI-Kreislaufs zu einem ganzheitlichen System. 
+ 
+CPM umfasst damit alle Ebenen des Unternehmens. Auf der operativen Ebene 
+sollte die Analyse, wie zuvor argumentiert, nahezu in Echtzeit erfolgen, um ef-
+fektiv zu sein. Dies erfolgt durch das BAM. Nach Golfarelli et al. (2004) bestehen BAM-Systeme 
+aus den folgenden Komponenten: 
+1. 
+einem Integrator, der die Daten aus dem DWH nahezu in Echtzeit mit den Daten aus anderen 
+Systemen – wie oben aufgezählt – integriert, 
+2. 
+einem dynamischen Datenspeicher, der die integrierten Daten für den Zeitraum der Analyse 
+vorhält, 
+3. 
+einem Manager für KPIs, der die gewünschten KPIs aus den Daten berechnet und zur Verfü-
+gung stellt, 
+4. 
+DM-Werkzeugen, die geeignet sind, nicht nur auf historischen Daten im DWH zu operieren, 
+sondern auch auf dynamischen Daten und 
+5. 
+einer Business Rule Engine (BRE), welche die Ereignisse beobachtet und auf Basis von Business 
+Rules (vgl. Einheit 3, Kap. 2) geeignete Maßnahmen, z. B. die gezielte Information bestimmter 
+Personen über das Ereignis, einleitet. 
+BAM umfasst somit nicht lediglich die Überwachung einzelner Geschäftspro-
+zesse, sondern ermöglicht eine integrierte Analyse von im Unternehmen, auch 
+auf unterschiedlichen Systeme, verteilter Aktivitäten. Die verstärkte und konti-
+nuierliche Integration von Daten aus operativen Systemen in der Datenintegrationsschicht verrin-
+gert die Datenlatenz. Während die Datenintegrationsschicht eine Verbindung zwischen operativer 
+und analytischer Schicht in die eine Richtung darstellt, schafft der Rückbezug in die andere Rich-
+tung dann den geschlossenen Kreislauf und deckt den Steuerungsaspekt des CPM zumindest an-
+fänglich ab. Eine stärkere Integration an dieser Stelle, z. B. durch die Transformation von Informa-
+tion in Handlungsempfehlungen oder die aktive Benachrichtigung über wichtige Ereignisse, kann 
+einen wichtigen Beitrag zu geringerer Entscheidungslatenz leisten. 
+2.3 Mobile BI-Prozessunterstützung 
+Ergänzend zum Bedarf an klassischen BI-Systemen geht die Tendenz in der Or-
+ganisation von Arbeit hin zum Bedarf, unabhängig von Zeit und Ort, auch au-
+ßerhalb des Büros, auf relevante Daten zugreifen können (Cowie & Burstein, 2007, S. 1675). Diese 
+mobile Nutzung von BI wird als Mobile Business Intelligence (MBI) bezeichnet. Mit dem stetigen 
+Ausbau der Datennetze sowie der raschen Verbreitung leistungsfähiger mobiler Endgeräte ist die 
+BAM nach Golfarelli 
+et al. (2004)  
+BAM als 
+Rückrichtung der 
+Datenintegration  
+Mobile Nutzung von 
+BI 
+naAHEKbI+MiKNSbonWzYJguHRKVQtbri3JHaYkVG08CQyjOGvsMwXsf2bIivQkh1
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 24 ===
+ 
+Wirkung der BI auf die Prozesse des Unternehmens 
+    
+16 
+technische Grundlage gegeben, um diesem Trend Rechnung zu tragen. Laut Mobile Compu-
+ting/Mobile Business Intelligence Market Study (2012, S. 61) umfasst der durch MBI wahrgenom-
+mene Nutzen für Unternehmen vor allem 
+• 
+die Möglichkeit des ständigen Zugriffs auf Informationen, 
+• 
+eine bessere und schnellere Entscheidungsfindung, 
+• 
+eine bessere Unterstützung für mobiles und zielorientiertes Arbeiten. 
+Abb. 7 zeigt einen exemplarischen Aufbau eines MBI-Systems: Damit über mo-
+bile Endgeräte auf die Daten des DWH zugegriffen werden kann, müssen die 
+stationären Data Marts, als sogenannte Mobile Data Marts auf den Endgeräten repliziert werden. 
+Die zwischengeschalteten Synchronisationsverfahren sorgen dabei für einen permanenten Ab-
+gleich und eine permanente Anpassung der Daten. Zusätzlich sind an dieser Stelle Sicherheitsme-
+chanismen anzubringen, die einen unberechtigten Zugriff auf die Daten verhindern. Sicherheits-
+fragen sind gerade im mobilen Bereich ein wichtiges und kritisches Thema. Vor allem bei Verlust 
+der Endgeräte oder durch die Verwendung ungesicherter Verbindungen besteht die Gefahr, dass 
+sensible, unternehmensinterne Informationen nach außen dringen. Durch Mobile Data Marts wird 
+sichergestellt, dass bei Verbindungsausfall zum stationären System, ein Zugriff zu den benötigten 
+Daten möglich bleibt. Mithilfe eines mobilen BI-Client werden die Daten bedarfsgerecht aufberei-
+tet und visualisiert (Bensberg, 2008, S. 75f.). 
+Es lassen sich grundsätzlich zwei Arten von Client-Anwendungen unterschei-
+den. Eigenständige (native) Clients, welche direkt auf dem Endgerät installiert 
+sind und webbasierte Clients, bei denen der Zugriff über einen Browser erfolgt. Native Anwen-
+dungen bieten den Vorteil, dass sie über mehr Funktionalitäten verfügen und somit kompliziertere 
+Abfragen und Visualisierungen ermöglichen. Dieser erhöhte Funktionsumfang setzt jedoch eine 
+höhere Leistungsfähigkeit der Endgeräte voraus. Ein weiterer Nachteil ist, dass native Applikatio-
+nen nicht immer mit allen Betriebssystemen kompatibel sind. Webbasierte Anwendungen weisen 
+im Gegensatz dazu keine Einschränkungen bezüglich der Kompatibilität auf, wohl aber, was den 
+Funktionsumfang betrifft (Schön, 2012, S. 293f.). 
+Aufbau eines MBI-
+Systems  
+Native und 
+webbasierte Clients  
+nHAponsMNx3XB0eGLbRUKMvbKSPUOrW2MD+pB5Q3+F1ofWwmw4Z9TtMP1XwRHllf
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 25 ===
+Wirkung der BI auf die Prozesse des Unternehmens                 
+      17 
+ 
+     
+ 
+Abb. 7: Mobiles BI-System  
+In Anlehnung an: (Bensberg, 2008, S. 76) 
+Faktoren, wie drahtlose Netzwerke und entsprechende mobile Endgeräte zu den Grundvorausset-
+zungen für MBI. Beide Technologien haben in den letzten Jahren eine erhebliche Weiterentwick-
+lung erfahren. Bei drahtlosen Netzwerken ist grundsätzlich zwischen der Nutzung von Mobilfunk 
+und dem Zugang über ein lokales Funknetz – Wireless Local Area Network (WLAN) – zu unter-
+scheiden. Mit WLAN können, im Vergleich zu Mobilfunk, größere Übertragungsraten realisiert 
+werden, allerdings ist hierbei die Reichweite begrenzt (Schill & Springer, 2012, S. 295f.). Als mobile 
+Endgeräte sind im Kontext von MBI aktuell vorwiegend Smartphones und Tablet-PCs zu nennen. 
+Notebooks weisen im Vergleich dazu zwar einen höheren Funktionsumfang auf, sind mit der da-
+mit verbundenen Größe und der meist kürzeren Akku-Laufzeit für eine mobile Nutzung im enge-
+ren Sinn nur bedingt geeignet (Schön, 2012, S. 287). 
+Mithilfe des nachfolgenden Vorgehensmodells (Abb. 8) sollen die wichtigsten 
+Punkte bei der Umsetzung von MBI-Lösungen aufgezeigt werden. Es orientiert 
+sich am phasenorientierten DataWarehouse-Vorgehensmodell von Hansen 
+(1998, S. 318ff.). Dieses unterteilt die Durchführung von Softwareentwicklungsprojekten in die 
+Phasen Analyse, Design und Produktivsetzung. Um den strategischen, ganzheitlichen Anspruch 
+im Sinne eines Business/IT-Alignment gerecht zu werden, wird das Modell um eine vierte Phase – 
+die Betriebs- und Weiterentwicklungsphase – ergänzt. 
+Vorgehensmodell  für 
+die Umsetzung  einer 
+MBI-Lösung   
+ix2WpnFD520nufSncO078LaRw3/2FwFQtYb51TDdkloRDKaPp4I46jbLMopuXyrs
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 26 ===
+ 
+Wirkung der BI auf die Prozesse des Unternehmens 
+    
+18 
+ 
+Abb. 8: Phasenorientiertes MBI-Vorgehensmodell   
+In Erweiterung von: (Hansen, 1998)  
+ 
+Die Analysephase ist der Ausgangspunkt der Kosten-Nutzen-Berechnung. Es 
+sollte an dieser Stelle grundsätzlich geklärt werden, ob der zu erwartende Nut-
+zen die zu erwarteten Kosten und den Aufwand der Investition rechtfertigt. In den nachfolgenden 
+Phasen sollte die Bewertung konsequent weitergeführt sowie kontrolliert werden, ob sie noch in 
+einem vertretbaren Verhältnis im Vergleich zu den Kosten der gesamten Informationslogistik ist. 
+Kosten entstehen dabei nach Panian (2012) z. B. durch: 
+• 
+Kauf von entsprechenden mobilen Endgeräten 
+• 
+Anpassung der Hardware 
+• 
+Erweiterung des bestehenden BI-Systems um mobile Anwendungen 
+• 
+Wartung des Systems und der Geräte 
+• 
+Personalaufwand für die Planung und Umsetzung des Projektes 
+• 
+Schulung für die Anwendung 
+In der Designphase wird versucht, den zuvor ermittelten Bedarf mittels entspre-
+chender Auswahl und Gestaltung von Hard- und Software bestmöglich zu er-
+füllen. Aspekte wie begrenzte Anzeigemöglichkeiten und Verarbeitungskapazität der mobilen 
+Endgeräte, Kompatibilitätsprobleme mit dem stationären BI-System oder veränderte Bedingungen 
+betreffend der IT-Sicherheit können, wenn falsch eingeschätzt, das MBI-Projekt scheitern lassen 
+Analysephase  
+Designphase  
+nmVv1X+SL7CHYD9OtE/CYeusDkzMx9QG4SDT7UCm1wS3gZkcLhJuY6YxhEUFOJiZ
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 27 ===
+Wirkung der BI auf die Prozesse des Unternehmens                 
+      19 
+ 
+     
+(Panian, 2012). Zusätzlich ergeben sich einige wichtige Fragen, die vor der endgültigen Entschei-
+dung für eine Lösung neben der Kompatibilität zum lokalen BI-System betrachtet bzw. beantwor-
+tet werden sollten: 
+• 
+Können die Anforderungen für die Nutzung, die in der Analysephase ermittelt wurden, aus-
+reichend erfüllt werden? 
+• 
+Welches Potenzial hat die Lösung – können auch zukünftige Anforderungen des Unterneh-
+mens, die sich unter anderem aus einer Neuorientierung ergeben können, unterstützt wer-
+den? 
+• 
+Können mit dem gewählten System die IT-Sicherheitsrichtlinien der übergeordneten Informa-
+tionslogistik bzw. des Unternehmens erfüllt werden? 
+• 
+Liegt die gewählte Lösung noch im Rahmen der Vorgaben aus der Kosten-Nutzen-Berech-
+nung? 
+• 
+Wie kann die voraussichtliche Lebensdauer der Lösung eingeschätzt werden? 
+In der Realisierungsphase erfolgt die Inbetriebnahme des MBI-Systems auf der 
+Grundlage der Vorgaben aus den ersten beiden Phasen und deren Umsetzung 
+in Hard- und Software. In der Realisierungsphase wird außerdem ein Sicherheitskonzept erstellt. 
+Die Rahmenbedingungen und der Umfang werden aus den Richtlinien der übergeordneten Infor-
+mationslogistik abgeleitet. Es müssen Verantwortlichkeiten festgelegt und Mitarbeitende geschult 
+werden (Hansen, 1998; Gluchowski, Gabriel & Dittmar, 2008). 
+Unternehmen werden in dieser Phase u. a. mit der Frage konfrontiert, ob der 
+Zugriff auf Firmendaten mit privaten Endgeräten erlaubt werden sollte. Die Nut-
+zung von privaten Geräten für Geschäftszwecke wird seit einiger Zeit unter dem Begriff ’bring 
+your own device (BYOD)’ diskutiert. Aus Anwendungssicht bringt dies vor allem die Vorteile, nicht 
+permanent zwei Geräte mit sich führen zu müssen, bzw. für den Fall, dass das Unternehmen mit 
+einem Modell eines anderen Anbieters arbeitet, nicht umlernen zu müssen. Dies kann helfen, 
+Akzeptanzproblemen entgegenzuwirken und somit auch die Produktivität der Mitarbeitenden zu 
+steigern. Auch Kosteneinsparungen können ein Kriterium sein, denn verwenden Mitarbeitende 
+eigene Geräte, muss das Unternehmen dementsprechend weniger investieren. Diesen Vorteilen 
+stehen allerdings auch Nachteile gegenüber, sowohl aus Anwendungs- als auch aus Unterneh-
+menssicht. In erster Linie handelt es sich hierbei um Bedenken betreffend den Datenschutz und 
+der Datensicherheit. Wird mit einem externen Gerät auf Unternehmensdaten zugegriffen, besteht 
+die Gefahr, dass Viren oder andere schadhafte Programme übertragen werden. Auf der anderen 
+Seite kann es sich auch als problematisch erweisen, wenn vertrauliche, unternehmensinterne Da-
+ten oder Informationen auf Endgeräten gespeichert sind, die gleichzeitig im privaten Umfeld ver-
+wendet werden (Voas, Miller & Hurlburt, 2012). 
+Unabhängig davon, ob BYOD zugelassen wird oder nicht, muss in der Realisie-
+rungsphase ein Sicherheitskonzept erstellt werden. Die Rahmenbedingungen 
+und der Umfang sollten aus den Richtlinien der übergeordneten Informationslogistik abgeleitet 
+werden. Die Details des Sicherheitskonzepts ergeben sich aus den zusätzlichen, potenziellen Ge-
+fahren durch die mobile Nutzung. Friedman und Hoffman (2008) identifizieren dabei: 
+ 
+Realisierungsphase  
+Umgang mit privaten 
+Endgeräten 
+Sicherheitskonzept 
+AMmzfUOw/Zq2LNa2JibqnDE3tjohV8ooTSY2SGWsGh0RyFMTziLC+mxU22/Y25Dw
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 28 ===
+ 
+Wirkung der BI auf die Prozesse des Unternehmens 
+    
+20 
+• 
+Erhöhte Gefahr von Verlust oder Diebstahl der Endgeräte bedingt durch ihre Mobilität 
+• 
+Die Kommunikation erfolgt über mehrere Kanäle (u. a. SMS, MMS, WLAN, Bluetooth) und 
+dabei auch über öffentliche Netzwerke. Diese sind oft ungeschützt bzw. nicht ausreichend 
+geschützt und daher anfälliger für Angriffe, wie z. B. Abhören oder Manipulation von IP-
+Adressen. 
+• 
+Durch die Verwendung der Geräte außerhalb der Unternehmens-Firewall und begrenztem 
+integriertem Virenschutz besteht erhöhte Gefahr des Eindringens von Viren oder sonstigen 
+schadhaften Programmen. 
+• 
+Finanzielle und personelle Ressourcen werden von der IT-Abteilung aus Gründen der Einfach-
+heit vor allem für das IT-System innerhalb des Unternehmens verwendet. 
+Neben der Entwicklung eines Sicherheitskonzepts ist in der Realisierungsphase, 
+wie eingangs erwähnt, auch eine Schulung der Mitarbeitenden durchzuführen. 
+Diese Schulung sollte sowohl den Umgang mit dem MBI-System als auch die Bedienung des je-
+weiligen Endgerätes beinhalten. Wie zahlreiche Untersuchungen belegen, ist die umfangreiche 
+Schulung Voraussetzung dafür, dass das Potenzial des neuen Systems ausgeschöpft werden kann. 
+Je schneller Mitarbeitende ein neues System beherrschen, desto eher empfinden sie es als nützlich 
+und entwickeln eine positive Einstellung dazu. Dies ist wichtig, um möglichen Akzeptanzproble-
+men entgegenzuwirken. Eine effektive Vorbereitung ist außerdem umso entscheidender, je kom-
+plexer das System ist und je essentieller es für den Arbeitsalltag des betreffenden Mitarbeitenden 
+ist (Venkatesh & Bala, 2008). 
+Zusätzlich sollten an dieser Stelle Nutzungsrichtlinien und Verantwortlichkeiten 
+festgelegt und an alle Beteiligten kommuniziert werden. Für diesen Zweck eig-
+net sich die Ausarbeitung einer MBI-Governance, die in Abstimmung mit den Richtlinien der un-
+ternehmensweiten Informationslogistik erfolgen sollte. Mitarbeitende erhalten so einen Orientie-
+rungsrahmen für MBI, der unter anderem ihre Rechte und Pflichten enthält. Zusätzlich wird durch 
+eine MBI-Governance die strategische Ausrichtung auf die übergeordneten Unternehmensziele 
+unterstützt und somit ein wertvoller Beitrag zum Business/IT-Alignment geleistet (Totok, 2016). 
+Das MBI-Projekt sollte nicht mit der Inbetriebnahme des Systems abgeschlossen 
+werden. Ein Grund dafür ist die technische Entwicklung in diesem Bereich, die 
+Systeme rasch veralten lässt aber gleichzeitig auch neue, innovative Möglichkei-
+ten eröffnet. Auf der anderen Seite können sich auch die Anforderungen an das System ändern. 
+Dieser geänderte Bedarf kann z. B. durch eine Um- oder Neuorientierung des Unternehmens oder 
+durch Erfahrungen des täglichen Betriebs entstehen (Dinter & Winter, 2008). 
+Die Abb. 8 lässt erkennen, dass zusätzlich zu den Aufgaben, die in den einzel-
+nen Phasen anfallen, drei wesentliche Punkte über den gesamten Phasenverlauf 
+von Bedeutung sind, um ein strategisch orientiertes Vorgehen zu gewährleisten. 
+• 
+Langfristigkeit 
+• 
+Business/IT-Alignment 
+• 
+Kostenkontrolle 
+Schulung der 
+Mitarbeitenden  
+Erarbeitung von 
+Nutzungsrichtlinien  
+Betriebs- und 
+Weiterentwicklungsp
+hase  
+Übergreifende 
+Aufgaben 
+orNKVhL9TTDXI8AQh4lipZY4/2KCh/ejA5IdGCPKYNQXGwLLJiZH3CU48y8L73+K
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 29 ===
+Wirkung der BI auf die Prozesse des Unternehmens                 
+      21 
+ 
+     
+Alle Entscheidungen, die im Laufe des Projekts getroffen werden, sollten hinsichtlich dieser drei 
+Aspekte überprüft werden. 
+Die organisatorische Seite sollte bei diesem Vorgehensmodell eine übergeord-
+nete Rolle einnehmen. Sie ist dafür zuständig, dass alle Entscheidungen, die in 
+den einzelnen Phasen getroffen werden, in Übereinstimmung mit der Gesam-
+tunternehmensstrategie sind. Sie zeichnet sich verantwortlich für den Anstoß des Projekts und 
+teilt die Zuständigkeiten und Rollen, die einzelne Mitarbeitende dabei einnehmen, zu. Im weiteren 
+Verlauf übernimmt sie eine Kontrollfunktion, um bei Abweichungen von den Vorgaben eingreifen 
+bzw. im Extremfall das Projekt stoppen zu können. 
+Der fachlichen Seite kommt vor allem in der Analyse- sowie in der Betriebs- und 
+Weiterentwicklungsphase eine große Bedeutung zu. Mit der Definition ihres 
+Bedarfs, aus dem im Anschluss die Anforderungen an das System abgeleitet werden, geben sie 
+die Richtung und den Umfang des MBI-Projekts vor. Je genauer diese Definition erfolgt, desto 
+besser kann die MBI-Lösung auf die Beteiligten abgestimmt werden. Auf der anderen Seite kann 
+eine fehlerhafte oder unzureichende Bedarfserhebung und Anforderungsbestimmung die Akzep-
+tanz der realisierten Lösung verringern und im schlimmsten Fall zum Scheitern des Projekts führen. 
+Allen Beteiligten sollte daher die Verantwortung, die mit dieser Rolle verbunden ist, von Beginn 
+an eindeutig kommuniziert werden. In den übrigen beiden Phasen nimmt die fachliche Seite eine 
+eher passive Rolle ein. 
+Die technische Seite wird größtenteils von der IT-Abteilung vertreten bzw. even-
+tuell zusätzlich als Dienstleistung, wenn festgestellt wird, dass intern die not-
+wendige Expertise oder die nötigen Personalressourcen für die Durchführung 
+des MBI-Projekts fehlen. Ihre hauptsächlichen Aktivitäten finden in den Phasen 
+zwei bis vier statt. Die technische Seite ist vorwiegend dafür verantwortlich, dass die MBI-Lösung 
+den zu Beginn ermittelten Anforderungen entspricht, das System entsprechend umgesetzt wird 
+sowie kontinuierlich hinsichtlich seiner Leistungsfähigkeit und Qualität überwacht wird. In der 
+Analysephase hat die technische Seite eine eher passive Rolle. 
+Wie eingangs vorgestellt wird durch Ansätze der mobilen BI-Prozessunterstützung der Entwick-
+lungen im Arbeitsalltag Rechnung getragen. Die technische Unterstützung ist dafür vorhanden 
+und wird stetig weiter ausgebaut und durch Innovationen weiterentwickelt. Die Entwicklung der 
+BI-Systeme findet auch über Organisationsgrenzen hinaus statt und diverse Datenquellen können 
+einbezogen werden. Diese Entwicklung wird im folgen Kapitel diskutiert. 
+ 
+ 
+Übergeordnete Rolle 
+aus organi-
+satorischer Sicht 
+Aufgaben der 
+fachlichen Seite 
+IT-Abteilung und 
+externe Dienst-
+leistung als tech-
+nische Seite 
+9AzQzu1TiwTuoWPGENcjfEQa5k7MTIuMP4D+H1E+Mlw/ixMGnYEpGEXLqknRVx8M
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 30 ===
+ 
+Advanced Analytics 
+    
+22 
+3 Advanced Analytics 
+Bose (2009) beschreibt Advanced Analytics als „a suite or cluster of analytical 
+applications that helps measure, predict, and optimize organizational perfor-
+mance and customer relationships“. Der Begriff „advanced“, also „fortschritt-
+lich“, ist dabei im Gegensatz zu einem inzwischen überholten Verständnis von BI zu sehen, das 
+sich auf OLAP und Berichtswesen beschränkt. In dieser Lesart gelten auch Komponenten, die im 
+Verständnis des vorliegenden Lehrbriefs der traditionellen BI zugerechnet werden, wie z. B. das 
+DM, als Advanced Analytics (Bose, 2009). Neben dem klassischen DM beinhaltet der Begriff Ad-
+vanced Analytics demnach vor allem Verfahren zur Integration von Daten und Inhalten, wie z. B. 
+das sogenannte Text Mining (vgl. Kap. 3.2), und vorausschauende1 Verfahren, die unter dem 
+Stichwort Predictive Analytics zusammengefasst werden können (vgl. Kap. 3.3). Dies ist schema-
+tisch in Abb. 9 dargestellt. 
+ 
+Abb. 9: BI-Architektur für Advanced Analytics  
+In Anlehnung an: (Bose, 2009) 
+Welche Anwendungen im Einzelnen als „fortschrittlich“ klassifiziert werden 
+können, unterliegt offensichtlich einem ständigen Wandel. Ein neueres Stich-
+wort in diesem Zusammenhang ist Big Data bzw. Big Data Analytics, also die Analyse von großen 
+und komplexen Datenbeständen. Obwohl z. B. Predictive und In- Memory Analytics (vgl. Kap. 3.3) 
+wichtige Enabler für Big Data sind, rechnen Chen, Chiang und Storey (2012) die dazugehörigen 
+Verfahren, da sie schon lange aktiv erforscht werden, zur „BI 1.0“. Ebenfalls zur „BI 1.0“ zählt 
+nach dieser Lesart das BI-gestützte CPM (vgl. Kap. 2.2). Die zusätzliche Berücksichtigung von web-
+basierten und unstrukturierten Inhalten (vgl. Kap. 3.2) markiert demnach den Übergang zur „BI 
+_________________________________________________ 
+1 Teilweise wird auch der Begriff „advanced“ selbst in diesem Sinne verstanden. 
+Einordnung des 
+Themenfelds 
+Advanced Analytics 
+Die BI-Evolution geht 
+weiter 
+bZNvzyp/+XlgxderA9MgFRHS1PUYvS1rM5UnphuPMXlMR999JI85hKLkdCuu/ozS
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 31 ===
+Advanced Analytics                 
+      23 
+ 
+     
+2.0“. Werden darüber hinaus auch mobile und sensorbasierte Daten (vgl. Kap. 2.3) verarbeitet, 
+sprechen die Autoren sogar von „BI 3.0“ (Chen et al., 2012). 
+3.1 BI jenseits von Organisationsgrenzen 
+Der Betrieb eines BI-Systems findet nicht unbedingt im Unternehmen und durch 
+das Unternehmen selbst statt. Auch die technischen BI-Lösungen können in ih-
+rer Verfügbarkeit Unterschiede aufweisen. Der Betrieb von Open Source BI liegt 
+in der Verantwortung des Unternehmens, bei BIaaS übernimmt sie ein Drittanbieter. Beiden Aus-
+prägungen ist gemein, dass ein Unternehmen nicht für ein BI-System an sich bezahlt, sondern nur 
+für dessen Betrieb. Open Source BI-Systeme können inhouse betrieben werden, es wird aber auf-
+grund des Open Source-Modells kein direkter Support geboten. Unternehmen müssen deswegen 
+die für Anpassung und Betrieb des Systems notwendigen Kompetenzen entweder intern schaffen 
+oder als Dienstleistung zukaufen. BIaaS geht hier noch einen Schritt weiter und lagert auch den 
+Betrieb des BI-Systems als Dienstleistung aus. Das BI-System wird also als externe Dienstleistung 
+(Service) konfiguriert und betrieben, welche dem Unternehmen über das Internet zugänglich ge-
+macht wird. BI-Systeme, die als Service Oriented Architecture (SOA) aufgebaut sind, stellen hierbei 
+eine Mischung verschiedener Modelle dar. Sie entbinden Unternehmen ebenfalls von dem Prob-
+lem, ein monolithisches BI-System erwerben zu müssen, und erlauben es den Providern stattdes-
+sen, einzelne Komponenten (Services) von BI-Systemen nach dem Baukastenprinzip zur Verfügung 
+zu stellen. Die einzelnen Services können dann entweder vom Unternehmen selbst oder wiederum 
+als Dienstleistung betrieben werden. 
+Neben extern angebotenen Dienstleistungen können Unternehmen auch Infra-
+struktur außerhalb des Unternehmens nutzen. Ebenso wie ein Unternehmen 
+kaum eigene Straßen und Flughäfen für die tägliche Logistik bauen wird, werden vorhandene 
+Leitungen für den Datentransfer genutzt. Da für den Betrieb von BI-Systemen mitunter hohe Hard-
+wareleistung benötigt wird, bietet sich auch hier eine Auslagerung in bereits bestehende Infra-
+struktur an. Es gibt es zahlreiche cloudbasierte BI-Tools, die genau wie andere Softwarelösungen 
+in der Cloud genutzt werden können. Es kann unterschieden werden zwischen der Auslagerung 
+eines selbstadministrierten BI-Systems in die Cloud und der zusätzlichen Auslagerung der Sys-
+temadministration an das Unternehmen, welches auch die Infrastruktur zur Verfügung stellt. Letz-
+teres Modell kann der BIaaS zugeordnet werden (Schirm, Frank, Henkel & Bensberg, 2015). 
+Schirm et al. (2015) erfassen über eine Literaturstudie zum Thema cloudbasierte 
+BI acht Dimensionen und 23 zugeordnete Erfolgsfaktoren, über die die Ent-
+scheidung von Unternehmen hin zu cloudbasierter BI erklärt werden kann. Diese sind in Tab. 3.1 
+dargestellt und sollen im Folgenden beschrieben werden. 
+ 
+ 
+BI as a Service und 
+Open Source BI als 
+Ausprägungen der BI 
+Cloudbasierte BI 
+Dimensionen 
+cloudbasierter BI 
+pMYePvUPM3p0rEpzo1lUw78AP/U+t2jKZLp3liO+Hi9dKd6Z9BySGCsPCrLH/1Jn
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 32 ===
+ 
+Advanced Analytics 
+    
+24 
+Dimension 
+Erfolgsfaktoren 
+Agilität 
+Flexibilität 
+Skalierbarkeit 
+Kosten 
+Kosteneinsparung 
+Pay-per-Use 
+Positive Auswirkungen auf Kerngeschäft 
+Konzentration auf Kernkompetenzen 
+Wettbewerbsvorteile 
+Performance 
+Performance 
+In-Memory 
+Echtzeit 
+Customizing 
+Entwicklungsmöglichkeiten 
+Administartion des Servers 
+Funktionale Erweiterbarkeit 
+SSBI 
+Usability 
+Vernetztes Cloud-Computing 
+Interoperabilität 
+Nutzung der Services von Drittanbietern 
+Mobilität 
+Mobilität 
+Zuverlässigkeit und Vertrauen 
+Verfügbarkeit 
+Zuverlässigkeit 
+Support 
+Security 
+Cloudbetrieb 
+On-the-fly Updates 
+Umsetzung von Standards 
+ 
+Tab. 2: Dimensionen und Erfolgsfaktoren cloudbasierter BI 
+             In Anlehnung an: (Schirm et al., 2015) 
+Die Dimension Agilität kann kann sich auf drei Punkte beziehen, die jeweils un-
+terschiedliche Perspektiven betreffen: funktionale Änderung, inhaltliche Ände-
+rung und Leistungsänderung. Funktionale Änderungen liegen z. B. beim Einbezug weiterer Da-
+tenquellen in die Analyse vor. Diese funktionale Änderung wird von der internen Administration 
+oder dem externen Dienstleister umgesetzt. Inhaltliche Änderungen hingegen sollten lediglich von 
+interner Seite möglich sein. Ein Beispiel hierfür ist die Aktualisierung von Kennzahlen. Die Leis-
+tungsänderung wird extern durchgeführt. Hier liegt der Erfolgsfaktor in der Skalierbarkeit, die bei 
+interner BI weniger gegeben ist. Die Flexibilität und Skalierbarkeit stellen somit wichtige Faktoren 
+in der Entscheidung für oder gegen cloudbasierte BI dar. 
+Die Dimension Kosten beinhaltet zwei mögliche Erfolgsfaktoren: Kosteneinspa-
+rung und pay per use. Die IT-Kosten des Unternehmens können sowohl bezüg-
+lich der Investitions- und Anschaffungskosten als auch der laufenden Kosten reduziert werden. 
+Da die cloudbasierte Lösung als Service eingestuft wird, ergeben vertragliche Regelungen eine 
+nutzungsorientierte Finanzierung. Das bedeutet, dass die Kostengestaltung gemäß der Nutzungs-
+zeiträume oder Datenübertragungsmengen erfolgt. 
+Wie auch bei anderen Entscheidungen zum Outsourcing, wird auch hier hinter-
+fragt, welche Aktivitäten zum eigentlichen Kerngeschäft gehören und welche 
+Auswirkung die Auslagerung einzelner Aktivitäten auf das Kerngeschäft hat. Sollte der Betrieb des 
+BI-Systems keinen Teil des Kerngeschäfts darstellen, so kann eine Auslagerung an externe Unter-
+nehmen mit höheren Kompetenzen als intern verfügbar und eine eventuelle Kosteneinsparung 
+Agilität 
+Kosten 
+Auswirkungen auf 
+das Kerngeschäft 
+UqiadrM12cUl7FVvQVYwldLMv+HKDpJTGR9wuZT/vGhiBh9bJdgADjEmSHCY4fts
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 33 ===
+Advanced Analytics                 
+      25 
+ 
+     
+für diese Auslagerung sprechen. Hierdurch kann der Fokus verstärkt auf das Kerngeschäft gelegt 
+werden. 
+Erfolgsfaktoren der Dimension Performance sind die Verarbeitungsgeschwin-
+digkeit und Effizienz. Einer cloudbasierten Lösung kann unterstellt werden, dass 
+diese eher die Voraussetzungen für eine höhere Verarbeitungsgeschwindigkeit erfüllt, als lokale 
+BI-Systeme. Außerdem besteht die Möglichkeiten, aus sehr diversen Quellen Daten einzubeziehen. 
+Dies liegt jedoch weniger an den Nutzungsmöglichkeiten der Cloud, als daran, dass klassische 
+interne Systeme meist festgelegte Nutzungszeiten und Nutzungsrechte vorsehen oder entspre-
+chend historisch gewachsen sind. Die Ideen hinter RTBI und In-Memory wurden in Kapitel 2 bereits 
+erläutert. 
+Die Dimension Customizing schließt inhaltlich an die Dimension Agilität an. Agi-
+lität bezieht sich auf Anpassungsmöglichkeiten ’on the run’, Customizing bein-
+haltet die Möglichkeiten, das cloudbasierte BI-System entlang der Anforderungen zu entwerfen 
+und zu implementieren. Zu den Erfolgsfaktoren zählen hier somit die Entwicklungsmöglichkeiten, 
+wie z. B. eine interne Umsetzung der Administration oder der Entwurf als SSBI (vgl. Kap. 2.2). 
+Interoperabilität ist ein Erfolgsfaktor des vernetzten Cloud Computings. Bei ge-
+gebener Interoperabilität können sowohl interne als auch externe Datenquellen 
+und Services angebunden und genutzt werden (Hoberg, Wollersheim, Böhm & 
+Krcmar, 2012). Hier schließt sich der zweite Erfolgsfaktor an: die Nutzbarkeit der Services von 
+Dritten. Dies bedeutet, dass durch die Offenheit, Schnittstellen und Standardisierung eine Abhän-
+gigkeit von einzelnen Providern sowie speziellen Betriebssystemen oder Endgeräten reduziert 
+wird. Dieser Erfolgsfaktor führt zur gewünschten Mobilität, was bedeutet, dass auf das BI-Tool 
+räumlich, zeitlich, soft- und hardwareunabhängig zugegriffen werden kann (vgl. Kap. 2.3). 
+Bei nicht auf lokalen Servern abgeschirmten Anwendungen und Daten wird zu-
+weilen an Sicherheit und Zuverlässigkeit gezweifelt. Die Sicherheit kann seitens 
+der Provider durch entsprechende Infrastruktur, Expertise und Erfahrungswerte gewährleistet und 
+als Erfolgsfaktor umgesetzt werden. Die Zuverlässigkeit beinhaltet die Verfügbarkeit der Daten 
+und Anwendungen sowie den Support. 
+Ähnlich dem oben genannten Erfolgsfaktor Agilität, können auch benötigte 
+Updates während des Betriebs eingespielt werden ohne, dass die Nutzung un-
+terbrochen werden muss. Hier findet auch die Zuverlässigkeit erneut Umsetzung. Der Erfolgsfaktor 
+Umsetzung von Standards beinhaltet die Modularität und Vorkonfigurierung der Anwendungen. 
+Trotz der Anpassbarkeit (siehe Customizing und Agilität), wird hierdurch der schnelle Einsatz und 
+ein breites Angebot möglicher Anwendungsfunktionen ermöglicht. 
+Zwei weitere Begriffe, die im Kontext der BI jenseits von Organisationsgrenzen 
+fallen, sind die SBI und die Collaborative Business Intelligence (CBI). SBI grenzt 
+an oder wird synonym verwendet mit social media intelligence, social media analytics, etwas kür-
+zer als social intelligence oder, passend zuWeb 2.0, BI 2.0. Keine der Bezeichnungen in diesem 
+noch neuen Feld hat sich bisher durchgesetzt. In Abgrenzung zu social media analytics, was den 
+Fokus auf den Analysemöglichkeiten der gewonnenen Daten hat, wird in der vorliegenden Einheit 
+die Bezeichnung SBI verwendet. SBI bezeichnet die Einbettung von Social Media Daten in ein BI-
+Performance 
+Customizing 
+Vernetztes Cloud 
+Computing und 
+Mobilität 
+Zuverlässigkeit und 
+Vertrauen 
+Cloudbetrieb 
+Social Business 
+Intelligence (SBI) 
+arfvib3FA44pw03hRj4M8KR03LEa6K9sQbJJDFO1NyqsZj3OmudfQOgO0BV2OPyu
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 34 ===
+ 
+Advanced Analytics 
+    
+26 
+System (Dinter & Lorenz, 2012). Social Media Daten haben Charakteristika, die sie von anderen 
+Daten für die Nutzung in BI-Systemen unterscheiden. Diese sind in Tab. 3.2 zusammengefasst. 
+Web 1.0 
+Web 2.0 
+Impact 
+Characteristics 
+Relatively stable data 
+High dynamics in data 
+updates and volumes 
+- High update rates  
+- Rapidly growing data 
+volume 
+- Highly dynamic data 
+- High data volume 
+Standard structure in 
+central databases 
+- Individual structure in 
+decentralized uniquely 
+collected databases  
+- User generated con-
+tent 
+- No standard data 
+structure 
+- Individual APIs 
+Semi- or unstructured 
+data 
+Manually entered meta 
+data 
+Meta data automatically 
+added or supported by 
+easy entering syntax 
+Increasing support of 
+meta data by rich edit-
+ing syntax 
+Extensive meta data 
+- Clear data intent 
+- Standardized QA pro-
+cedures 
+- Non-redundant data 
+sets 
+- Highly interpretative 
+on context 
+- 
+Unstructured 
+peer 
+feedback 
+-Redundancy by distri-
+bution and sharing 
+- No predefined mean-
+ing of data 
+- Hardly assessable data 
+quality and relevance 
+Unknown data quality 
+- Local clients 
+- Big enterprises as pro-
+prietary data providers 
+- Institutional content 
+- Web as a platform 
+- Medium sized data 
+providers 
+- 
+User 
+built 
+data 
+mashups 
+- User generated con-
+tent 
+- Multiple patforms as 
+data sources 
+- Contribution and dis-
+tribution 
+of 
+user 
+knowledge 
+- Collaborative filtering 
+Wisdom of the crowds 
+- Small crowds 
+- Little information on 
+connection 
+- User Network deter-
+mined by hierarchies 
+- Massively connected 
+- Architecture of partici-
+pation 
+- No strict boundaries 
+- Bottom up network 
+governance 
+- Fluent reputation 
+- Dynamic user net-
+works with highly tran-
+sient membership 
+- Information on per-
+sonal networks is acces-
+sible 
+- No hierarchically fixed 
+user position and repu-
+tation 
+Easy access to user net-
+work information 
+- Official and authorized 
+data provision and us-
+age 
+- Use of corporate li-
+censed data 
+- Personally identifiable 
+information 
+published 
+on several levels of pri-
+vacy 
+- Hardly traceable data 
+origin 
+- Contested copyright 
+for platforms on shared 
+data 
+- No general permission 
+to use social media data 
+for further analysis 
+- Complex question of 
+authorship and owner-
+ship 
+Unclear legal situation 
+Tab. 3: Merkmale von Social Media Daten für BI-Systeme  
+             Entnommen aus: (Dinter & Lorenz, 2012) 
+Oft synonym verwendet zu SBI wird der Begriff CBI. CBI ist zunächst vergleich-
+bar charakterisiert durch die Einbeziehung zusätzlicher interner und externer 
+Datenquellen sowie weiterer Analysetools. Wenn bei SBI Daten aus sozialen Medien lediglich in 
+das BI System integriert werden, wird die Abgrenzung zu CBI deutlich. Wenn das BI System im 
+Falle von CBI durch aktive Zusammenarbeit mit z. B. anderen Unternehmen oder Organisationen 
+mit Daten und Analysen ergänzt wird, ist wiederum die Abgrenzung zu SBI-Systemen deutlich. Im 
+CBI 
+zF53YDjktTz9JsPzz3L4CkHCVy4AcZi72fOCRAnkrVOAcigFBTkM2H+lDSLOszxZ
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 35 ===
+Advanced Analytics                 
+      27 
+ 
+     
+Gegensatz zu SBI findet bei CBI eine Nutzung externer Daten und Analysewerkzeuge und umge-
+kehrt ein Teilen bisher unternehmensinternen Daten und Werkzeuge mit anderen Unternehmen, 
+also eine umfassende Kooperation, statt. Daraus folgt für die vorliegende Einheit folgende Defi-
+nition von CBI: 
+CBI beschreibt die bewusste Erweiterung des Analysekreises des genutzten BI-Systems um unter-
+nehmensinterne und -externe Analysewerkzeuge sowie die dafür notwendige Öffnung der Da-
+tenbestände der Beteiligten. (in Anlehnung an Kaufmann (2015)). 
+Kaufmann (2015) führt in seiner Konzeptualisierung von CBI die Abstufungen 
+interne Kommunikation, gemeinschaftliche Datenhaltung und partnerschaftli-
+che Analyse ein. Es wird angenommen, dass der Grad der Kooperation von Stufe zu Stufe steigt. 
+Außerdem stellt Kaufmann (2015, S. 71) fest, dass die Ausgestaltung von CBI zu einem höheren 
+Grad der Kooperation tendiert. Interne Kommunikation bedeutet, dass mehr Team-Mitglieder an 
+der Nutzung des BI-Systems beteiligt sind, entweder persönlich, oder über Kommunikationsme-
+dien, wie auch im SBI. Im Kooperationsgrad der internen Kommunikation findet somit eine unter-
+nehmensinterne Erweiterung statt – personell und technisch. Auch die Einbeziehung ausgewähl-
+ter externer Einheiten kann noch hierzu gezählt werden. Einen höheren Grad der Kooperation 
+stellt die gemeinschaftliche Datenhaltung dar. Hier werden interne Daten zur externen Nutzung 
+zur Verfügung gestellt, aber auch externe Daten mit in die interne Analyse einbezogen (siehe SBI) 
+ohne, dass die Analysevorgehen hierdurch verändert werden müssen. Eine derartige gemeinsame 
+Datenhaltung ist z. B. aus staatlichen Einrichtungen bezogen auf Personendaten der Bevölkerung 
+bekannt. Wenn auch die Analyse an sich partnerschaftlich vorgenommen wird, kann dies z. B. 
+über externe zentralisierte BI-Systeme erreicht werden. 
+3.2 BI mit semi- und unstrukturierten Daten 
+Bei erneuter Betrachtung der Einleitung der vorliegenden Einheit fällt auf, dass 
+häufig die Rede von Inhalten und nicht, wie sonst im BI-Kontext, von Daten ist. 
+In Anlehnung an Albescu, Pugna und Paraschiv (2008) sollen im Folgenden unter Inhalten un-
+strukturierte Daten verstanden werden, während der Begriff „Daten“ für sich alleine bereits eine 
+Struktur implizieren soll. Diese stärkere begriffliche Unterscheidung ist auch insofern sinnvoll, als 
+dass Unternehmen neben der Infrastruktur zur Verwaltung von operativen und dispositiven Daten 
+häufig eine unabhängige Infrastruktur zur Verwaltung von Inhalten in Form von KM-Systemen 
+vorhalten (Albescu et al., 2008). Die Einbeziehung unstrukturierter Daten in die BI ist einer der 
+wesentlichen Aspekte der BI 2.0. 
+BI wird verbreitet eingesetzt. „Today, it is difficult to find a successful enterprise 
+that has not leveraged BI technology for its business“ (Chaudhuri, Dayal & Na-
+rasayya, 2011). Nach Einschätzung des BI-Anbieters Endeca ist BI auf der Grund-
+lage strukturierter Daten inzwischen so flächendeckend verbreitet, dass sie kei-
+nen nennenswerten Wettbewerbsvorteil mehr bietet. Der Anbieter schätzt, dass etwa 80 % des 
+für Unternehmen relevanten Datenvolumens tatsächlich aus unstrukturierten Inhalten bestehen. 
+Diese Inhalte stammen aus verschiedenen Quellen innerhalb und außerhalb des Unternehmens 
+Abstufungen von CBI 
+Inhalte als unstruk-
+turierte Daten  
+Unstrukturierte 
+Inhalte haben einen 
+hohen Anteil an 
+moderner BI  
+53cWERoheYTM48MSkpONhuX5WdqDmizrcKlDt25JgwjI0aUrMN/+5SJcpr87xXhi
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 36 ===
+ 
+Advanced Analytics 
+    
+28 
+und betreffen alle Unternehmensbereiche. Betroffen sind verschiedene Medientypen, insbeson-
+dere Textdokumente, Audio und Video. Beispiele für relevante Inhalte sind, sortiert nach ihrer 
+Quelle, in Tabelle 3.3 dargestellt. Einen Paradigmenwechsel stellen dabei die Inhalte aus Social 
+Media-Plattformen dar, die nicht per sé einen Unternehmensbezug haben und in der Regel au-
+ßerhalb des Einflusses des Unternehmens liegen. Wenn solche Inhalte ein Unternehmen oder Pro-
+dukt betreffen, können sie einerseits wertvollen Aufschluss über Kundenmeinungen, wahrgenom-
+mene Qualität des Produkts sowie eventuelle Verbesserungsmöglichkeiten geben, andererseits 
+aber auch dem Ansehen des Unternehmens schaden (Endeca, 2011). 
+Kundenkontakt 
+Social Media 
+Dokumentation 
+Presse und PR 
+Call-Center-Mitschnitte 
+Rezensionen und Be-
+wertungen 
+Zertifizierungsunterla-
+gen z.B. aus QS-Audits 
+Nachrichten 
+Kundenbefragungen 
+Beiträge in Foren 
+Gesprächsprotokolle 
+RSS-Feeds 
+Kundenkorrespondenz 
+Microblogging 
+und 
+Tweets 
+Verträge 
+Webseiten von Konkur-
+renten 
+Kundendienstberichte 
+Blogartikel 
+Quartalsberichte 
+Kommerzielle Informati-
+onsdienste 
+Vertriebsprotokolle 
+Likes und Meldungen 
+bei Facebook 
+Sonstige Dokumente 
+ 
+ 
+Tab. 4: Beispiele für unstrukturierte Inhalte  
+             Entnommen aus: (Endeca, 2011) 
+Baars und Kemper (2008) verstehen unter strukturierten Daten solche Daten-
+bestände, bei denen jedes Datum eindeutig einem Feld in einer Datenbank zu-
+zuordnen ist2. Damit ist eine wichtige Voraussetzung dafür gegeben, dass die 
+Daten mit Methoden der traditionellen BI, z. B. DM und OLAP, analysiert wer-
+den können. Es ist leicht einsichtig, dass viele digitale Inhalte, wie in o. g. Beispielen, diese Vo-
+raussetzung nicht erfüllen. Zur Integration von strukturierten Daten und semi- oder unstrukturier-
+ten Inhalten bieten sich daher drei grundsätzliche Vorgehensweisen an (Baars & Kemper, 2008): 
+• 
+Integrierte Präsentation 
+• 
+Analyse von Inhaltssammlungen 
+• 
+Verbreitung von Analyseergebnissen 
+Im einfachsten Fall werden strukturierte Daten und unstrukturierte Inhalte wei-
+terhin in getrennten Datenquellen gehalten und nur für die Präsentation inte-
+griert (vgl. Abb. 10). Die Integration erfolgt nicht auf der Ebene der Datenbe-
+stände, sondern ausschließlich auf der Präsentationsebene durch gekoppelte Navigations- und 
+Suchfunktionen. So kann z. B. aus der aktuellen Sicht im OLAP automatisch eine Suchanfrage 
+generiert werden, die auf der Inhaltsdatenbank ausgeführt wird. Die Suchergebnisse können dann 
+zusätzlich zu den strukturierten Daten angezeigt werden. Der Vorteil dieser Vorgehensweise ist 
+vor allem der vergleichsweise geringe Aufwand, mit dem etablierte Methoden der Daten- und 
+_________________________________________________ 
+2 Dieses Begriffsverständnis ist insbesondere dann sinnvoll, wenn angenommen wird, dass die Datenbank  
+in Normalform (Codd, 1970) steht. Für alternative Datenbankmodelle vgl. Einheit 3. 
+Unstrukturierte 
+Inhalte erfordern 
+alternative BI-
+Methoden 
+Integrierte 
+Präsentation als lose 
+Kopplung 
+cwLbEZ2+SDr4Hoaq9ssNbXjb6RAj5fE4bASilDCRiC/Zf/QqN+XVnimWPNKgOkjT
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 37 ===
+Advanced Analytics                 
+      29 
+ 
+     
+Inhaltsanalyse weiterverwendet werden können, während die Kopplung vor allem eine Komfort-
+funktion für die Anwendung darstellt (Baars & Kemper, 2008). 
+ 
+Abb. 10: Integrierte Präsentation von strukturierten Daten und unstrukturierten Inhalten  
+In Anlehnung an: (Baars & Kemper, 2008) 
+Die integrierte Präsentation stellt keine dauerhafte Verknüpfung zwischen Da-
+ten und Inhalten her. Eine solche Verknüpfung wird möglich, wenn zu den 
+Inhalten Metadaten verfügbar sind, die ihrerseits strukturiert und damit den 
+Verfahren der strukturierten Datenanalyse zugänglich sind. Metadaten von unstrukturierten In-
+halten können z. B. Autor, Zeitpunkt der Erstellung oder Schlagwörter sein. Metadaten sind ins-
+besondere dann nützlich, wenn sie der Klassifizierung eines Inhalts dienen. Bei verbalen Problem-
+beschreibungen könnten z. B. das Produkt, auf das sich der Inhalt bezieht und ein Code für die 
+Art des Fehlers als Metadaten angegeben werden. Die Anreicherung von Inhalten mit Metadaten 
+kann entweder manuell erfolgen oder algorithmisch, z. B. mittels Text Mining-Verfahren. Einmal 
+vorhanden, können die Metadaten in die strukturierte Datenbank integriert werden (vgl. Abb. 11). 
+Dort werden die Metadaten mit den bereits vorhandenen Daten verknüpft und stehen fortan für 
+eine gemeinsame Analyse zur Verfügung (Baars & Kemper, 2008). 
+ 
+Abb. 11: Analyse von Inhaltssammlungen zur Extraktion von Metadaten  
+In Anlehnung an: (Baars & Kemper, 2008) 
+ 
+Extraktion von 
+Metadaten durch 
+Inhaltsanalyse 
+cccpVjKvJnKIOZqdQjVhOdDzL/nK+l4aacRcLg9jFGxsQGbnFfft+/9+0bwYZ0+W
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 38 ===
+ 
+Advanced Analytics 
+    
+30 
+Die Extraktion von Metadaten aus Inhalten kann, wie bereits erwähnt, zum Teil 
+automatisiert durch Text Mining-Verfahren erfolgen, wenn es sich bei dem be-
+treffenden Inhalt um ein unstrukturiertes Textdokument in natürlicher Sprache handelt. Neben 
+relativ offensichtlichen Metadaten, wie Autoreninformationen, können moderne Text Mining-Sys-
+teme anhand der Satzstruktur eines Dokuments auch Namen von Personen, Unternehmen, Pro-
+dukten, Orten etc. identifizieren, die in einem Text vorkommen. Auf dieser Grundlage können 
+wiederum Rückschlüsse über die Beziehung der zuvor identifizierten Identitäten untereinander 
+gezogen werden. Für den Text besonders typische Begriffe und Sätze geben Aufschluss über das 
+Thema des Textes. Der Vergleich der identifizierten Schlüsselbegriffe mit einer Datenbank von 
+Begriffskonnotationen (z. B. positiv, neutral oder negativ) kann im Rahmen einer Sentiment Ana-
+lyse3 Aufschluss über die Meinung des Autors geben (Chaudhuri et al., 2011). Eine weitere denk-
+bare Anwendung ist die automatische Textzusammenfassung. Um diese jedoch in hoher Qualität 
+zu erreichen, wäre ein echtes algorithmisches Textverständnis nötig, welches derzeit noch nicht 
+gegeben ist (Fan, Wallace, Rich & Zhang, 2006). 
+Die vorgenannten Ansätze liefern strukturierte Daten in dem Sinne, dass aus 
+einem unstrukturierten Dokument einzelne Daten, wie die Namen der im Text 
+vorkommenden Entitäten oder mögliche inhaltliche Stichwörter extrahiert wer-
+den, welche dann strukturiert gespeichert werden können. Diese Daten sind, bezogen auf den 
+ursprünglichen Text, strukturierte Metadaten, aber sie sind weiterhin textuell und nicht quantita-
+tiv. Wünschenswert wäre zusätzlich eine quantitative Repräsentation des Textes. Existiert eine 
+quantitative Repräsentation für eine Menge von Texten, so wird diese für die in Einheit 2 beschrie-
+benen DM-Verfahren zugänglich. Die Zuordnung von Texten zu einem Thema ist eine Klassifika-
+tionsaufgabe. Die Gruppierung gleichartiger Texte kann durch Clustering erreicht werden. Eine 
+simple und dennoch oft effektive Methode ist es, Texte als unstrukturierte Ansammlung von Wör-
+tern zu betrachten. Bildhaft heißt dieser Ansatz „Bag-of-Words“, der Text wird also als „Beutel“ 
+verstanden, in dem die enthaltenen Wörter unsortiert vorliegen. Anstelle eines echten Textver-
+ständnisses wird lediglich gezählt, wie oft einzelne Begriffe im Text vorkommen (Fan et al., 2006). 
+Ein Beispiel für den Bag-of-Words-Ansatz soll im Folgenden näher erläutert wer-
+den. In Einheit 2 wurde der relevante Datenbestand als Eonzept (𝑋) bezeichnet. 
+Im Falle des Text Minings ist dies die Sammlung von Dokumenten, auf die sich 
+die Analyse bezieht. Sie wird Korpus genannt. Das einzelne Dokument entspricht somit einer In-
+stanz. Weiterhin wurde unterstellt, dass einzelne Instanzen in einer Datenbank durch Vektoren 
+von Attributen, sogenannte Featurevektoren, repräsentiert werden. In diesem Sinne geht es da-
+rum, die unstrukturierte Repräsentation eines Dokuments als Text in eine strukturierte Repräsen-
+tation als Vektor zu überführen. Dies entspricht der Festlegung der Menge der Attribute (𝑄). Der 
+Bag-of-Words-Ansatz sieht in erster Näherung vor, die Menge der Wörter, die im Korpus vorkom-
+men, als Q zu verwenden und die Anzahl der Vorkommen eines Wortes 𝑞) ∈𝑄 als Wertebereich 
+_________________________________________________ 
+3 Mit dem Begriff „Sentiment Analyse“ wird das Auffinden von Textstellen bezeichnet, die ihrerseits ein 
+Sentiment, also eine Stimmung, bezüglich eines gegebenen Themas ausdrücken. Es gilt dabei, die Pola-
+rität des Sentiments zu erkennen, d. h. festzustellen, ob das Thema positiv oder negativ beschrieben 
+wird. Themen in diesem Sinne können z. B. Unternehmen und ihre Produkte sein (Nasukawa & Yi, 2003) 
+Metadaten können 
+vielfältig sein 
+Text Mining schließt 
+Lücke zwischen 
+Daten und Inhalten 
+Analyse von Texten 
+mittels formaler 
+Methoden 
+SJLo6Fbc+CgJgiZy+o/yskRlYvbc55J+cT+wkl15mhVNxTMHNAUNZ5cblbA+aFia
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 39 ===
+Advanced Analytics                 
+      31 
+ 
+     
+des 𝑖−ten Attributs (𝑉#). Die Menge von Wörtern, die im Korpus vorkommen, heißt dessen Lexi-
+kon. Die einzelnen Wörter werden auch Term genannt. 
+Die naive Verwendung des Lexikons als 𝑄 hat zwei offensichtliche Schwächen. 
+Erstens, es gibt in großen Korpora sehr viele verschiedene Terme und diese alle 
+abzubilden würde zu langen Featurevektoren führen, welche wiederum zu er-
+höhten Laufzeiten der verwendeten Algorithmen führt. Moderne Hardware löst 
+dieses Problem teilweise, aber nicht grundsätzlich. Unabhängig davon besteht, 
+zweitens, das Problem, dass Terme, die sehr häufig vorkommen, z. B. Artikel und Konjunktionen 
+(„der“, „die“, „das“, „und“, „oder“ etc.), nur sehr wenig über den Inhalt aussagen (Jing, Huang 
+& Shi, 2002). Bei einer naiven Zählung der Worthäufigkeiten würden diese Terme aussagekräfti-
+gere, aber seltenere Terme dominieren. Ganz im Sinne der in Einheit 2 diskutierten Projektion und 
+Reduktion der Attribute ist also zu klären, welche Terme überhaupt in Q aufgenommen werden 
+sollten und festzulegen, wie diese Terme für die einzelnen Instanzen gewichtet werden sollen 
+(Aizawa, 2003). 
+Eine häufig verwendete Heuristik für die Gewichtung von Termen ist die soge-
+nannte Term Frequency-Inverse Document Frequency (TF-IDF). Diese Heuristik, 
+die in verschiedenen Varianten existiert, ist informationstheoretisch gut be-
+gründbar und in der Praxis erfolgreich (Robertson, 2004). Jing et al. (2002) schlagen außerdem 
+vor, zur Auswahl einer gewünschten Anzahl der Attribute (𝑁*) gerade diejenigen 𝑁* Terme mit 
+den höchsten Werten der TF-IDF heranzuziehen. An dieser Stelle soll auf die formale Herleitung 
+aus der Informationstheorie verzichtet und im Folgenden lediglich eine Intuition über TF-IDF ver-
+mittelt werden. 
+Ausgangspunkt ist die oben diskutierte Idee, die Häufigkeit der einzelnen Terme 
+(engl. term frequency) im Featurevektor zu kodieren. Sei der Korpus gegeben 
+als eine Menge von Dokumenten (𝐷) und jedes Dokument 𝑑# ∈𝐷 sei der Instanz 𝑥# ∈ 𝑋 mit glei-
+chem Index zuzuordnen. Es bezeichne 
+                                      𝑡𝑓𝑟𝑒𝑞∶𝐷 𝑥 𝑄 →Ν                                                         (3.1) 
+die Häufigkeit, mit der ein Term 𝑞) ∈𝑄 in einem Dokument 𝑑# ∈𝐷 vorkommt. Würde nun naiv 
+als 𝑥#,) = tfreq(𝑑#, 𝑞)) festgelegt, würde dies die Bedeutung häufiger Terme überschätzen. Viele 
+häufige Terme, wie z. B. die genannten Artikel und Konjunktionen, tragen wenig Information. Im 
+Gegenteil könnte davon ausgegangen werden, dass Terme umso spezifischer für ein bestimmtes 
+Dokument sind, je seltener sie in anderen Dokumenten vorkommen. Diese Idee wird von TF-IDF 
+weiter verfolgt. 
+Die Menge der Instanzen, für die ein Term 𝑞) ∈𝑄 im zugehörigen Dokument 
+𝑑# ∈𝐷 vorkommt, ist gegeben durch 
+                                                  𝑋-" = {𝑥#|𝑡𝑓𝑟𝑒𝑞>𝑑#, 𝑞)@ > 0}                                               (3.2) 
+Dies ist vergleichbar mit der in Einheit 2 eingeführten Supportmenge (𝑋$%&). Es gilt demnach für 
+eine gegebene Anzahl der Instanzen (𝑁.), entsprechend der Anzahl der Dokumente im Korpus, 
+dass 
+Verbesserung des 
+Ergebnisses durch 
+Projektion und 
+Reduktion von 
+Attributen 
+Eine Heuristik für die 
+Gewichtung von 
+Termen 
+Berechnung der TF 
+Berechnung der IDF 
+CXlkK8o/ZTuQOYF1Guvak+PhAMkUqfPW7NyljA7GRxZIdX8ZOZVynT4AoXUGh9jc
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 40 ===
+ 
+Advanced Analytics 
+    
+32 
+                                                               𝑑𝑓𝑟𝑒𝑞∶𝑄 → ℝ                                                     (3.3) 
+                                                             𝑞)  ↦ 
+|.#"|
+|.| = 
+|.#"|
+0$                                                     (3.4) 
+ein Schätzer dafür ist, wie wahrscheinlich es ist, dass in einem beliebigen Dokument 𝑑# der Term 
+𝑞) vorkommt. Wenn 𝑞)  in 𝑑# vorkommt, ist dies nach der Eingangsidee eine umso spezifischere 
+Aussage über 𝑑#, je seltener 𝑞)  im Allgemeinen vorkommt, also je kleiner dfreq(𝑞)) ist. Dies lässt 
+sich durch den Informationsgehalt des Auftretens von 𝑞)  formalisieren, der gegeben ist als 
+                                                             𝑖𝑛𝑓𝑜∶𝑄 → ℝ                                                          (3.5) 
+                                             𝑞) ↦ −log1 K
+2.#"2
+|.| L = log1 K
+|.|
+2.#"2L = log1 M
+3
+4567-(-")N                (3.6) 
+Der Informationsgehalt des Auftretens von 𝑞) in einem Dokument 𝑑# ist also der Logarithmus der 
+inversen Dokumentfrequenz von 𝑞). 
+TF-IDF gewichtet heuristisch die Häufigkeit des Auftretens eines Terms im Do-
+kument mit dem Informationsgehalt dieses Auftretens. Sei 𝑥# ∈𝑋 der Feature- 
+vektor zu Dokument 𝑑# ∈𝐷. Dann gilt für die 𝑗-te Komponente von 𝑥#. 
+                                            𝑥#,) = 𝑡𝑓𝑟𝑒𝑞>𝑑#, 𝑞)@ ∙ log1 M
+3
+4567-(-")N                                        (3.7) 
+Terme mit einem hohen TF-IDF Wert sind grob ausgedrückt solche, die insgesamt selten, aber in 
+einem bestimmten Dokument häufig zu finden sind. Diese repräsentieren ihr jeweiliges Dokument 
+sehr gut. Auch wenn dies intuitiv richtig erscheint, ist dennoch zu betonen, dass es sich um eine 
+Heuristik handelt, die auf Annahmen basiert, die in der Realität möglicherweise nicht zutreffen 
+(Aizawa, 2003). In diesem Sinne sei auch darauf hingewiesen, dass TF-IDF nur eine von vielen 
+Möglichkeiten ist, strukturierte Featurevektoren zu unstrukturierten Dokumenten zu erzeugen. 
+Die Verwendung von mittels TF-IDF erzeugten Featurevektoren zur Klassifizie-
+rung soll hier am Beispiel eines auf Zentroiden basierenden Verfahrens erläutert 
+werden, welches Parallelen zu den in Einheit 2 diskutierten Algorithmen k-means und k-Nearest 
+Neighbour aufweist. Zunächst eine Vorüberlegung: Nach oben beschriebenem Vorgehen lässt sich 
+leicht erkennen, dass der Betrag ||𝑥#|| mit der Textlänge von 𝑑# ∈𝐷 wächst. Da die Klasse eines 
+Dokuments im Normalfall unabhängig von dessen Länge sein sollte, ist dieser Zusammenhang 
+unerwünscht. Während in Einheit 2 gezeigt wurde, wie einzelne Attribute standardisiert oder nor-
+malisiert werden können, soll hier der Featurevektor im ganzen normiert werden, sodass gilt ∀𝑖 <
+ 𝑁. ∶ ||𝑥′#|| =  1. Es ist zu beachten, dass dieses Vorgehen nicht für alle DM-Algorithmen und 
+Attributsemantiken sinnvoll ist, aber in diesem Fall empirisch gut funktioniert. Die Normierung 
+erfolgt durch: 
+                                                                   𝑥#,)
+,
+= 
+:%,"
+||:%||                                                          (3.8)  
+Nach der Normierung ist jedem 𝑑# ∈𝐷 ein Punkt auf der Einheitshyperkugel zugeordnet. In Einheit 
+2 wurden Distanzfunktionen besprochen. Nach obiger Vorüberlegung kann die Distanz zwischen 
+zwei Dokumenten 𝑑#, 𝑑) ∈𝐷 angegeben werden durch den Winkel zwischen den zugehörigen 
+Vektoren, d. h. 
+Berechnung des 
+Featurevektors aus TF 
+und IDF 
+Distanz zweier 
+Dokumente 
+gWcMJLixQGemiS5yyoyHmQacdxCOnyewJQaM3cmABbqc70E+k5BohufHLD8bYErf
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 41 ===
+Advanced Analytics                 
+      33 
+ 
+     
+                           𝑑𝑖𝑠𝑡;>𝑑#, 𝑑)@ = 𝑑𝑖𝑠𝑡>𝑥#, 𝑥)@ =  ∡>𝑥#, 𝑥)@ = 𝑎𝑟𝑐𝑐𝑜𝑠K
+〈:%,:"〉
+>|:%|>∙2>:">2L                      (3.9) 
+Als Folge der Normierung ist der Nenner 1 für alle 𝑖, 𝑗, sodass lediglich das Skalarprodukt stehen 
+bleibt (Han & Karypis, 2000). 
+Analog zur Notation in Einheit 2 sei  XTr ⊂X  × Y  mit Featureraum (X) und 
+Labelraum (Y). Es sei 𝑌= {𝑐3, … , 𝑐2@#'2}  und Ck die Menge der Featurevektoren 
+𝑥# 𝜖 𝑋A6 für die gilt, dass sie zur Klasse ck gehören. Folglich also: 
+                                                      𝐶( = {𝑥# ∈𝑋A6|𝑥#,-' = 𝑐(}                                             (3.10) 
+Genau wie bei den partionierenden Clusteringverfahren wird ein Zentroid der Klasse 𝑐( (𝜇'!) be-
+stimmt und zwar als 
+                                                      𝜇'! = (𝑥'!,3
+]]]]]], ... , 𝑥'!,0(
+]]]]]]] 𝑚𝑖𝑡:                                           (3.11) 
+                                                          𝑥'!,B
+]]]]]] = 
+3
+|C!| ∑
+𝑥#,)
+:%D C!
+                                                (3.12) 
+Die Klassifizierungsfunktion weist beim hier beschriebenen Verfahren unbekannten Instanzen ge-
+rade diejenige Klasse zu, deren Zentroid der Instanz am ähnlichsten bezüglich der o. g. Distanz-
+funktion ist, d. h. 
+                              ℎ(𝑥#) = arg min
+ '!DE h𝑑𝑖𝑠𝑡>𝑥#, 𝜇'!@i = arg max
+ '!DE(〈𝑥#, 𝜇'!〉)                             (3.13) 
+Es handelt sich also um ein typisches Klassifizierungsverfahren, das es erlaubt, mit der Information 
+aus Dokumenten, deren Klasse bekannt ist, Dokumente deren Klasse noch nicht bekannt ist, ein-
+zuordnen (Han & Karypis, 2000). 
+Während die Inhaltsanalyse zur Extraktion von Metadaten unstrukturierte In-
+halte durch Verknüpfung mit strukturierten Metadaten einer weiterführenden 
+maschinellen Analyse zugänglich macht, bedingt die Aufbereitung von Analy-
+seergebnissen in menschenlesbarer Form zur weiteren Verwendung durch Ent-
+scheider umgekehrt die Generierung neuer unstrukturierter Inhalte aus ursprünglich strukturierten 
+Daten. Dieses Aufbereiten der Analyseergebnisse, z. B. durch klassisches Berichtswesen, kann um 
+die Aufbereitung des Vorgehens ergänzt werden, mit dem die Analyse erstellt wurde (vgl. Abb. 
+12). Diese Aufbereitung kann für andere Mitarbeitende im Unternehmen, als Muster für das Er-
+stellen weiterer Analysen, auch dann interessant sein, wenn das eigentliche Analyseergebnis diese 
+Mitarbeitende gar nicht betrifft. Auf diese Weise wird nicht nur durch BI generiertes Wissen im 
+Unternehmen verbreitet, sondern auch Wissen über BI an sich. Idealerweise ist das BI-System zu 
+diesem Zweck an ein bestehendes KM-System angebunden (Baars & Kemper, 2008). 
+Zuordnung von 
+Instanzen zu 
+Klassen 
+Verbreitung von 
+Methoden und 
+Ergebnissen als 
+Inhalte 
+VAQ5LkXuhlvESsbl5fE1bwwvNBrSLU4F3yN4aZHkx4OSqHroK3LnCBJQRvi2+uTv
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 42 ===
+ 
+Advanced Analytics 
+    
+34 
+ 
+Abb. 12: Verbreitung von Analysemethoden und -ergebnissen als Inhalte  
+In Anlehnung an: (Baars & Kemper, 2008). 
+Abschließend kann festgehalten werden, dass die Berücksichtigung unstruktu-
+rierter Inhalte die Grenzen zwischen BI und KM aufweicht4. BI und KM sind 
+einander ähnliche, prinzipiell gleichwertige Konzepte der Managementunter-
+stützung, die einander ergänzen und teilweise überlappen. Insbesondere die beschriebene An-
+wendung des Text Minings hat ihre Wurzeln mindestens teilweise im KM und Information Ret-
+rieval, wurde aber hier als DM-Technologie behandelt (Herschel & Jones, 2005). 
+ 
+ 
+_________________________________________________ 
+4 Der Kontext hierfür ist einerseits ein Betriebliches Informationssystem (BIS) und andererseits das Modell 
+der Transformation von Daten in Informationen und schließlich Wissen (vgl. Einheit 1). 
+KM-Systeme als 
+wichtige Ergänzung 
+von BI-Systemen 
+EFLq6sCRmgjq07v0rJplloIWXn+ldYWb3+njuOE9sL7U9RJQUxCNeLwObOOZeCOH
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 43 ===
+Advanced Analytics                 
+      35 
+ 
+     
+3.3 Predictive und In-Memory Analytics 
+Parallel und teilweise synonym zum Begriff Advanced Analytics hat sich der Be-
+griff In-Memory Analytics entwickelt. Acker, Gröne, Blockus und Bange (2011) 
+verstehen darunter „a technology that will allow operational data to be held in 
+a single database that can handle all the day-to-day customer transactions and updates, as well 
+as analytical requests – in virtually real time“. Gleichzeitig bezeichnet der Begriff technisch, prak-
+tisch selbsterklärend, eine Verlagerung der zu analysierenden Daten von langsamen Massenspei-
+chern, i. d. R. Festplatten, in den wesentlich schnelleren Hauptspeicher, engl. Random Access 
+Memory (RAM). Erste Forschung dazu gibt es bereits seit den 1980er Jahren. Treiber für die aktu-
+elle Entwicklung sind die immer größer werdenden zu verarbeitenden Datenmengen, die häufige 
+und zeitintensive Ladevorgänge verursachen, wenn die Daten auf einer Festplatte gehalten wer-
+den. Enabler der Entwicklung sind stark fallende Hardwarepreise, die es ermöglichen, Server mit 
+genügend RAM auszustatten, um wesentliche Teile des Datenbestandes oder sogar diesen in 
+Gänze jederzeit im RAM zu halten (Zhang, Chen, Ooi, Tan & Zhang, 2015). In-Memory Analytics 
+kann also in Bezug auf Abb. 9 so interpretiert werden, dass erstens Daten aus operativen Systemen 
+nicht erst in dispositive Systeme übertragen werden müssen, bevor sie der Analyseschicht zur Ver-
+fügung stehen und zweitens, im Sinne der Ausführungen in Kapitel 2.1, eine erhebliche Senkung 
+der Datenlatenz erreicht wird. In-Memory Analytics stellt somit einen wesentlichen Schritt hin zur 
+Echtzeit-BI oder RTBI dar und ist folglich ein Enabler für viele der in dieser Einheit beschriebenen 
+Anwendungen. 
+ 
+ 
+In-Memory Analytics 
+als Fortführung der 
+RTBI 
++FZarKEEo7HZEuOr6NpV7xr/0f07PiGpW1kfF4EgN7D4feFADpn+/44bjDumq6zE
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 44 ===
+ 
+Ausgewählte Anwendungsbeispiele 
+    
+36 
+4 Ausgewählte Anwendungsbeispiele 
+4.1 BI im Marketing 
+Durch die steigende Menge an persönlichen Profildaten und die höhere Nut-
+zungsaktivität im Internet, entstehen mehr und mehr marketingrelevante Da-
+ten, die für die BI genutzt werden können. Insbesondere unter den folgenden Bedingungen bietet 
+dieser Ansatz eine moderne und auch effiziente Unterstützung der Entscheidungsträger im Mar-
+keting: 
+• 
+Es sind große Datenbestände vorhanden, die als Entscheidungsbasis herangezogen werden 
+sollen. In diesen Beständen sind möglicherweise Beziehungen unter den Daten vorhanden, 
+die zu für das Marketing interessanten Mustern führen. 
+• 
+Die Daten liegen in mehreren verschiedenen Quellen (auch in unternehmensexternen Quel-
+len) vor, die ein detaillierteres Bild über Stimmungen, Trends und Bedürfnisse zulassen (Rossa 
+& Holland, 2014). 
+Wenn ein Unternehmen z. B. einen Online-Shop betreibt und zudem mit Hilfe 
+verschiedener Services (z. B. Google AdWords) Werbung dafür betreibt, stellt 
+sich regelmäßig die Frage, wie der Werbeaufwand optimiert werden kann. Zu diesem Zweck müs-
+sen die Daten über das Such- und Kaufverhalten der Kunden aus dem Online-Shop mit den Daten 
+über Werbeaufwand und -effekte (Google bietet zu diesem Zweck z. B. umfangreiche Analyse-
+werkzeuge an) integriert und ausgewertet werden. Aus den Ergebnissen solcher Analysen lassen 
+sich dann Anpassungen sowohl hinsichtlich des Produktangebot und dessen strukturierter Präsen-
+tation als auch hinsichtlich der Werbemaßnahmen ableiten. 
+Das Ziel des analytischen CRM ist es, alle vorhandenen Daten über bestehenden 
+und potenziellen Kunden aus den verschiedenen Quellen zusammenzuführen 
+und daraus relevantes Wissen über Trends und entstehende bzw. bestehende Bedürfnisse zu er-
+zeugen. Zwei mögliche Anwendungsfelder sind erstens das Retention Management, bei dem das 
+Abwandern von Kunden frühzeitig verhindert werden soll, und zweitens die frühzeitige Erken-
+nung von Betrugsversuchen. Das analytische CRM ist also in die Zukunft gerichtet und dient der 
+Früherkennung von potenziell negativen Entwicklungen, aber auch der Planung von Sortimenten 
+und Angeboten sowie der Entwicklung von Kampagnen, die durch das operative CRM durchge-
+führt werden. 
+Aufbauend auf den Ergebnissen des analytischen CRMs werden konkrete Kun-
+densegmente definiert, Marktanalysen durchgeführt, der Kundenwert ermit-
+telt, Vertriebsinformationen erzeugt und entsprechende Kampagnen geplant und durchgeführt. 
+Das operative CRM ist also an der Schnittstelle zum Kundenprozess positioniert und ist verant-
+wortlich für den richtigen Einsatz der CRM-Instrumente. Auch wenn hier eine sequentielle Be-
+schreibung der verschiedenen CRM-Typen erfolgt, sind sie doch stark vernetzt, und das analyti-
+sche CRM bezieht wiederum Informationen aus dem operativen CRM. 
+Damit die intendierten Botschaften die Kunden erreichen, müssen die Kommu-
+nikationskanäle entsprechend geplant und aufgesetzt werden. Dafür ist das 
+Marketing profitiert 
+von BI  
+Beispiel: Online-
+Werbung  
+Analytisches CRM  
+Operatives CRM  
+Kommunikatives 
+CRM 
++I6oyBcl5FsDistl+kkgldt2KM6rx8+ZdPUa97H+8FmUOV++OcfbqXzuZ9FUoZCF
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 45 ===
+Ausgewählte Anwendungsbeispiele                 
+      37 
+ 
+     
+kommunikative CRM verantwortlich. Es hat insbesondere durch die Entwicklungen im Web 2.0 
+an Bedeutung gewonnen, da nicht mehr nur Informationen über den richtigen Kanal an den Kun-
+den geschickt werden, sondern durch verschiedene und nur bedingt planbare Kanäle (wie z. B. 
+Soziale Netzwerke) auch Informationen durch die Kunden und andere Stakeholder in die Unter-
+nehmen gelangen. Hier muss die entsprechende Infrastruktur und die richtig ausgebildeten Res-
+sourcen (z. B. Mitarbeitende, die die Kommunikation in Sozialen Netzwerken überwachen) vor-
+handen sein. Nur so ist sichergestellt, dass die potenziell wertvollen Informationen verarbeitet und 
+zudem die Erwartungen von Kunden an die Kommunikation mit dem Unternehmen erfüllt werden 
+können (Hippner & Wilde, 2001, 2013). 
+Gelegentlich wird, gerade in der neueren Literatur, auch der Begriff des „colla-
+borative“ CRM ergänzend oder anstelle von kommunikativem CRM verwendet 
+(Helmke, Uebel & Dangelmaier, 2013). Vergleichbar mit CBI, hat dieser Begriff auch das Über-
+schreiten von Abteilungs- und Unternehmensgrenzen zum Inhalt und beschreibt eine gemeinsame 
+Bearbeitung von Kundenbeziehungen im Wertschöpfungsnetzwerk. Zu den neueren Entwicklun-
+gen zählt auch das „Social CRM“, das, vergleichbar mit SBI, auf die Interaktionen und Transakti-
+onen in Sozialen Netzwerken abzielt, um daraus relevante Informationen für die Kommunikation 
+mit bereits vorhandener und potentieller Kundschaft zu erzeugen (Alt & Reinhold, 2012). 
+Insbesondere das analytische CRM lässt sich gut mit BI verbinden. Die Anwen-
+dungen betreffen dabei den gesamten Lebenszyklus der Kundenbeziehung von 
+der Umwandlung potentieller in tatsächliche Kunden über die Weiterentwick-
+lung der Beziehung zu aktiven Kunden und die Stabilisierung der Beziehung zu 
+gefährdeten Kunden, bis hin zur möglichen Reaktivierung verlorener Kunden (Hippner, Grieser 
+&Wilde, 2011). Im Folgenden sollen Beispiele für einige Fragen gegeben werden, die dabei unter-
+sucht werden können. 
+BI-Unterstützung für das CRM betrifft z. B. auf dem Gebiet der Neukundenge-
+winnung die Beantwortung der folgenden Fragen: 
+• 
+Welche Trends sind aus den verfügbaren internen und externen Daten erkennbar, die das 
+Unternehmen durch seine Kompetenzen zukünftig mit abdecken kann? 
+• 
+Welche Verbesserungsvorschläge und Kommentare werden heute außerhalb des Kunden-
+stamms eingebracht, die zu einer Bindung dieser Personen an das Unternehmen führen kön-
+nen? 
+• 
+Welche Aktivitäten im Kundenprozess, die wir heute noch nicht abdecken, können wir ad-
+ressieren und so neue Kunden gewinnen5? 
+Auch Fragen über den Kundenbestand lassen sich mit BI beantworten, z. B.: 
+• 
+Welche zusätzlichen Angebote und Dienstleistungen sind für den Kunden 
+im Kundenprozess interessant? 
+_________________________________________________ 
+5 Vgl. dazu auch die Ausführungen zu den Elementen von Geschäftsmodellen in der Einheit 1. 
+Collaborative und 
+Social CRM 
+Anwendungs-bereich 
+ist die gesamte 
+Dauer der 
+Kundenbeziehung  
+Gewinnung von  
+neuen Kunden  
+Pflege des 
+Kundenbestands  
+77BOQzHiVruNq9hem45J034rjRQZ0vPSXAlJFnVqaM2gJNaZV27inrah9gl2U82a
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 46 ===
+ 
+Ausgewählte Anwendungsbeispiele 
+    
+38 
+• 
+Lassen sich unsere Kunden durch Kundenbindungsprogramme binden, oder wären solche 
+Angebote kontraproduktiv? 
+• 
+Wie können wir Kunden über aktive Diskussions- und Feedbackangebote oder durch die Prä-
+senz in Sozialen Netzwerken besser an uns binden? Welche Multiplikatoren sind erkennbar? 
+Und schließlich, um die gesamte Kundenbeziehung abzudecken, im Bereich des 
+o. g. Retention Management: 
+• Welchen Anforderungen besteht an die Kundenkommunikation auf Online-
+Plattformen? Wie können wir die „persönliche“ Beziehung herstellen und den Bedürfnissen 
+gerecht werden? 
+• 
+Welche Stimmungen sind in der Kommunikation über die verschiedenen Kanäle mit dem 
+Unternehmen erkennbar? 
+• 
+Welche Maßnahmen sind bisher erfolgreich gewesen, welche Maßnahmen setzen Konkur-
+renten ein, und wie werden diese Maßnahmen diskutiert? 
+Zusammenfassend lässt sich festhalten, dass gerade die Marktschnittstelle mit den Kunden, den 
+potenziellen Kunden, aber auch den Konkurrenten ein wichtiges Anwendungsfeld der BI ist. Denn 
+nur das Unternehmen, das sich abzeichnende Trends und Entwicklungen rechtzeitig erkennt, ist 
+auf Dauer überlebensfähig. Die Voraussetzung dafür ist, dass die Konzepte, wie z. B. das fachliche 
+Konzept des CRM im Rahmen der Marketingfunktion, genauso wie die BI, ganzheitlich aufgestellt 
+sind und Rückschlüsse auf die Zusammenhänge im gesamten Unternehmen zulassen. 
+4.2 Fallstudie „Newspaper Industry“ 
+Die nachfolgenden Ausführungen folgen der Fallstudie „Lessons learned: A 
+case study using data mining in the newspaper industry“ (Gunnarsson, Walker, 
+Walatka & Swann, 2007). Thematisch handelt es sich um ein Beispiel des Einsatzes von BI im CRM, 
+wie er in Abschnitt 4.1 skizziert wird. Das Vorgehen ist dabei an das Cross-Industry Standard 
+Process for Data Mining (CRISP-DM) Modell (Chapman et al., 2000) angelehnt. CRISP-DM ist ein 
+von der Industrie entwickelter Standard. Das darin beschriebene Referenzvorgehen weist viele 
+Parallelen zu den in Einheit 2 dieses Lehrbriefs beschriebenen KDD-Prozessen auf. Im Vergleich zu 
+KDD betont CRISP-DM jedoch besonders, dass DM eigentlich mit dem Verstehen der Situation 
+und der Ziele des betrachteten Unternehmens („business understanding“) beginnt. Den Rahmen 
+dafür können z. B. die in Einheit 1 vorgestellten Modelle bilden. Bezüglich der Daten vertritt CRISP-
+DM eine ähnliche Philosophie und sieht eine explizite Phase des „data understanding“ vor. In 
+Einheit 2 dagegen wurde das Verstehen der Daten als Querschnittsaufgabe über alle Schritte der 
+Datenvorbereitung verstanden. 
+Die Zukunft der Zeitungsbranche ist, zum Zeitpunkt des Verfassens dieser Zei-
+len, ungewiss. Die traditionellen Geschäftsmodelle der Zeitungsverlage werden 
+durch die disruptive Innovation herausgefordert, welche mit den sogenannten neuen Medien ein-
+hergeht (Karimi & Walter, 2016). Eine Diskussion der auf Schumpeter zurückgehenden Idee der 
+disruptiven Innovation mit Bezug auf einen modernen Geschäftsmodellbegriff findet sich in 
+(Cavalcante, Kesting & Ulhøi, 2011). Die Branche ist damit ein – unfreiwilliges – Beispiel für die 
+Bedeutung der in der Einheiten 1 vorgestellten Konzepte. Ohne ein Verständnis, nicht nur des 
+Bindung von 
+abwanderungsgefähr
+deten Kunden  
+Einordnung der 
+Fallstudie 
+Relevanz der 
+Fallstudie 
+AUlNgDnTXxW+pFaHFzxSpOBMm6tp0IpCIMJeqaiBA/vdPrCkAJt79yIv73VZ8q/Y
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 47 ===
+Ausgewählte Anwendungsbeispiele                 
+      39 
+ 
+     
+eigenen Ge- schäftsmodells, sondern auch der Veränderungstreiber, denen es ausgesetzt ist, kann 
+BI nichts ausrichten. Gleichzeitig liefert die Fallstudie ein zeitloses Beispiel für Vorgehensweisen 
+und Fragestellungen im DM. Viele der darin angesprochenen Probleme sind weiterhin aktuell, und 
+werden es, wenn auch in wechselnden Branchen und Ausgestaltungen, wohl noch lange bleiben. 
+Unternehmen der Zeitungsbranche waren mit vielen Problemen konfrontiert. 
+So war die Auflagenhöhe über die Jahre gesunken. Viele Anzeigenkunden nutz-
+ten zunehmend alternative Kanäle, um ihre Werbung zu positionieren. Durch diesen Umsatzrück-
+gang scheuten viele Unternehmen der Zeitungsbranche eine Investition in ein DWH oder ein DM-
+System6. Für viele Unternehmen der Branche war der durch DM generierte Nutzen zu ungewiss. 
+Die Fallstudie begleitet die Einführung eines DM-Prozesses bei einer US-Tageszeitung mit einer 
+Auflage von etwa 200.000. 
+Im betrachteten Fall wurden die Ziele des Projekts systematisch mit Hilfe eines 
+Fragebogens ermittelt. An der Umfrage wurden alle Bereiche des Unterneh-
+mens beteiligt. Für jeden Bereich wurden erfahrene Mitarbeitende mit Entscheidungskompetenz 
+ausgewählt, die für den jeweiligen Bereich relevante Fragestellungen, die bisher nicht gelöst wer-
+den konnten, formulieren mussten. Durch dieses Vorgehen wurden zunächst sehr viele Fragen 
+formuliert, die in einem zweiten Schritt verringert wurden, indem ein Abgleich zwischen allen 
+formulierten Fragen gemacht wurde und nur die häufig vorkommenden Fragen berücksichtigt 
+wurden. Es ergaben sich drei Gruppen von Zielen. 
+Der erste Zielblock war die Fokussierung auf die Abwanderungsquote der Leser 
+und Abonnenten. In diesem Zusammenhang ergaben sich Fragen wie „Zu wel-
+chem Zeitpunkt nach der Kündigung des Abonnements sollten ehemalige Kunden kontaktiert 
+werden?“, „Ab welchem Zeitpunkt sollte ein Kunde so behandelt werden, als wenn er Neukunde 
+wäre und niemals zuvor ein Abonnement bezogen hätte?“ und „Wie häufig sollten ehemalige 
+Kunden zum Abschließen eines neuen Abonnements aufgefordert werden?“. 
+Im zweiten Zielblock wurden Möglichkeiten für Upgrades und Cross Selling fo-
+kussiert. In diesem Zusammenhang traten z. B. folgende mögliche Fragestellun-
+gen auf: „Welche Kunden können durch ein langfristiges Abonnement gebunden werden?“, 
+„Welche Kunden haben das größte Interesse an Upgrade-Programmen?“, „Gibt es saisonale 
+Trends, die ein Upgrade fördern würden?“, „Für den Fall eines Upgrades: Gibt es Preismodelle 
+oder Preisgrenzen, die zu einer maximalen Antwortrate führen?“. 
+Der dritte Fokus lag auf der Entwicklung von neuen Erwartungen. Dieser dritte 
+Teilbereich zielte auf potenzielle Kunden ab, die bisher jedoch noch kein Abon-
+nement bezogen hatten. Mögliche Zielsetzungen waren hier die Entwicklung eines Modells zur 
+Definition und Vorhersage der besten Kontaktaufnahmefrequenzen, die Beschreibung und Iden-
+tifikation von Kunden bzw. Personen, die zuvor noch nie ein Abonnement bezogen hatten, sowie 
+_________________________________________________ 
+6 Dies ist ein Punkt, der sich zwischenzeitlich geändert hat. Online-Publishing ist heute sehr stark datenge-
+trieben. Das grundsätzliche Muster, in Zeiten des Umsatzrückganges Investitionen zu scheuen, bleibt 
+aber aktuell. 
+Ausgangssituation 
+Zieldefinition 
+Abwanderungs-
+prävention 
+Cross-Selling 
+Neue Geschäftsfelder 
+U+Wq6HzftHbIRqFzuw8Y3ny7fhCWqFtaEa4L02AWBwx1gMjNmunGACqasIlo7+2J
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 48 ===
+ 
+Ausgewählte Anwendungsbeispiele 
+    
+40 
+die Identifikation von Unterschieden und Gemeinsamkeiten von ehemaligen Kunden im Vergleich 
+zu Personen, die bisher niemals Kunde waren. 
+Nachdem das Unternehmen in der Fallstudie diese Ziele identifiziert hat, wurde 
+festgestellt, dass die bisherige Datenbasis nicht ausreicht, um diese Ziele mit 
+Hilfe des Einsatzes von DM zu erreichen. Somit konnte bereits aus dem ersten Schritt des DM-
+Prozesses die Schlussfolgerung gezogen werden, dass ohne eine geeignete Datenbasis kein zu-
+sätzliches Wissen generiert werden kann. Auch wenn diese Erkenntnis nach der Lektüre dieses 
+Lehrbriefs trivial erscheinen sollte, verweist sie doch auf das tiefergehende Problem, dass das Un-
+ternehmen offensichtlich die falschen Daten erhoben hatte, und gar nicht wusste, welche Daten 
+benötigt werden. 
+Das Unternehmen hatte eine große Menge Daten in verschiedenen Datenban-
+ken gesammelt. „Haushaltsdaten“ enthielten zu jedem Kunden die persönli-
+chen Daten wie Name, Adresse, Zahlungsangaben usw. Diese Daten durften jedoch aus Gründen 
+des Datenschutzes nicht komplett für die Analyse verwendet werden. Somit mussten diese Daten 
+zunächst transformiert werden. Bei der Transformation wurden sensible Daten, wie Bankverbin-
+dungen, aber auch der Name der Kunden, gelöscht. Durch diese Transformation gingen aber 
+natürlich auch Informationen verloren, die für eine Analyse nicht verwendet werden konnten. Eine 
+zweite Datenbank enthielt Daten über Kontakte zwischen Kunden und Zeitung. Dies beinhaltete 
+etwa Informationen über die Unterbrechung von Abonnements während der Urlaubszeit, aber 
+auch offene Kommentare wie „Die Zeitung bitte nicht auf den Rasen werfen“. Das Freitextfeld 
+führte zu Problemen, da diese Informationen nicht automatisiert verarbeitet werden konnten. 
+Auch Textanalyseverfahren lieferten keine Lösung für dieses Problem, da bei der Eingabe unter-
+schiedliche Begriffe und Formulierungen verwendet wurden. Somit wurden inhaltlich sehr ähnli-
+che Sachverhalte möglicherweise sehr unterschiedlich formuliert. Zudem wurden Daten zu an die 
+Kunden verteilter Werbung aufgenommen. Diese Daten waren jedoch sehr unspezifisch. So 
+konnte nicht festgehalten werden, ob eine Werbung den gewünschten Erfolg erzielt hatte. Somit 
+konnten diese Daten nicht für eine Analyse verwendet werden. Zusammenfassend erwiesen sich 
+die Daten, die nach den Gesichtspunkten operativer Prozesse erhoben worden waren, für die 
+Analyse oft als ungeeignet. Als Konsequenz sollten die Bedürfnisse der Datenanalyse schon bei 
+der Erhebung der Daten im operativen Geschäft mitgedacht werden. 
+Die Datenaufbereitung wurde durch ein Softwaretool durchgeführt. Die Aufbe-
+reitung umfasste die Schritte Datenbereinigung und -formatierung. So mussten 
+zunächst doppelt gehaltene Datensätze herausgefiltert werden. Ein Merkmal der schlechten Da-
+tenqualität war die Unvollständigkeit vieler Datensätze. Ein weiteres Problem, welches durch die 
+Mitarbeitenden verursacht wurde, war eine syntaktisch falsche Benutzung der verfügbaren Da-
+tenfelder. Auch die Integration der verschiedenen Datenbanken erwies sich durch Inkonsistenzen 
+als problematisch. Bei der automatischen Datenaufbereitung wurde die Anzahl der für eine Ana-
+lyse zur Verfügung stehenden Datensätze erheblich reduziert. Danach wurden mehrere Datens-
+ätze zu einem Datensatz aggregiert. Bisher wurden die Informationen zu einzelnen Werbungen 
+oder Transaktionen gesondert gehalten. In jedem dieser Datensätze befanden sich Informationen 
+zu dem Haushalt, der daran beteiligt war. Die Datensätze der Transaktionen und Werbungen 
+wurden nun den Datensätzen der entsprechenden Haushalte zugeteilt. Danach mussten die Da-
+Frage der Datenbasis 
+Erhebung der Daten  
+Datenaufbereitung 
+und Selektion 
+h8wpOMggUdsErlmWPKmAACHT6npy1yGSSAqJK227gZFugi6bVbElQxLaB0SrG3Jg
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 49 ===
+Ausgewählte Anwendungsbeispiele                 
+      41 
+ 
+     
+ten, die für eine Analyse herangezogen werden sollten, ausgewählt werden. Hierbei wurden ver-
+schiedene Entscheidungsträger berücksichtigt, sodass vorab klar war, dass sich dieser Prozess 
+möglicherweise wiederholen muss, da nicht alle Entscheidungsträger des Unternehmens in einem 
+einzigen Analysedurchlauf berücksichtigt werden konnten. Ein weiterer Grund für die Wiederho-
+lung des Durchlaufs war zudem, dass neue Informationen dieser Analyse zu neuen Fragestellun-
+gen, Erkenntnissen oder einfach Wissen geführt haben, die eine erneute Analyse mit anderen 
+Daten erforderlich machten. 
+Nachdem das Unternehmen mögliche Zielsetzungen formuliert hatte, erfolgte 
+die Anwendung der DM-Methoden. Diesem Schritt mussten jedoch noch einige 
+Aufgaben vorausgehen. Zunächst wurden von dem Unternehmen, basierend auf den Datensät-
+zen, neue Variablen aufgenommen. So wurde expliziter als vorher unterschieden, ob ein Kunde 
+aktueller Abonnent war oder aber sich der Abonnentenstatus auf einen früheren Zeitpunkt bezog, 
+und der Kunde die Zeitung zwischenzeitlich gekündigt hatte. Diese Variable musste im Hinblick 
+auf den ersten Zielblock neu eingeführt werden. Ein Kunde galt fortan als „abgewandert“, wenn 
+er keine Transaktionen innerhalb der letzten 30 Monate durchgeführt hat. Durch die Einführung 
+dieser Variable wollte das Unternehmen Rückschlüsse auf potenzielle „Kündiger“ ziehen und 
+diese Kunden, z. B. durch spezielle Angebote oder Konditionen, langfristig an sich binden. Gene-
+rell wollte das Unternehmen zudem signifikante Indikatoren ableiten, die auf eine zukünftige Kün-
+digung hinweisen könnten. 
+Tatsächlich hat das Unternehmen das Entscheidungsbaumverfahren verwendet. 
+Eine einfache Regressionsanalyse erwies sich als nicht praktikabel, da zu viele 
+Annahmen vorab formuliert werden mussten, die das Unternehmen in der Form 
+aber nicht formulieren konnte, sodass die Anwendung einer Regression zu wenig brauchbaren 
+Ergebnissen geführt hätte. Das Entscheidungsbaumverfahren setzte sich gegenüber Alternativen 
+– in der Diskussion waren neben der o. g. Regressionsanalyse z. B. künstliche neuronale Netze 
+(KNN) – durch, weil die Ergebnisse leicht visualisiert werden können und somit für viele Mitarbei-
+tenden viel einfacher zu interpretieren sind. Ein weiteres Argument war die Eignung von Entschei-
+dungsbäumen zur Unterstützung der unternehmensinternen Diskussion. 
+Bevor die Daten für das Entscheidungsbaumverfahren verwendet wurden, wur-
+den alle zur Verfügung stehenden Datensätze aufgeteilt, sodass 40 % der Da-
+tensätze Trainingsdaten waren, 30 % zur Validierung verwendet werden sollten und 30 % Test-
+daten waren. Die erste und größte Gruppe der Datensätze wurde dazu verwendet, das eigentliche 
+Modell zunächst anzuwenden und anzupassen. Bei der Validierung wurde das „Feintuning“ des 
+Modells vorgenommen und die Testdaten wurden abschließend dazu verwendet, um den Schätz-
+fehler des Modells zu ermitteln. Generell ist es wichtig, dass die Entwicklung und Validierung des 
+Modells diese drei Schritte umfasst. Denn wenn derselbe Datenbestand zur Entwicklung und Va-
+lidierung des Modells verwendet werden würde, würde das Modell für diesen Datensatz zwar 
+„maßgeschneiderte“ Ergebnisse liefern, diese wären jedoch nicht allgemeingültig („overfitting“, 
+vgl. Einheit 2). 
+Insgesamt wurden 100 Variablen berücksichtigt, wovon 22 im Entscheidungs-
+baumverfahren verwendet wurden. Von diesen 22 Variablen waren jedoch le-
+Definition der 
+Zielvariable 
+Verwendung des 
+Entscheidungs-
+baumverfahrens  
+Aufteilung Trainings- 
+und Testdaten  
+Ergebnisse  
+mHRZLSr1RLX0x0V2HELcGqDZn+IuO5zy8UJqeYNa2vjc1t0TFhAx5X3HY0caCSqN
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 50 ===
+ 
+Ausgewählte Anwendungsbeispiele 
+    
+42 
+diglich sieben bei der Unterscheidung von aktuellen Abonnenten im Vergleich zu früheren Abon-
+nenten signifikant. Zu diesen Variablen zählen z. B. Häufigkeit des Bezugs, automatische Zahlung, 
+Kinder im Haushalt, Geschlecht und Einkommen. Der eigentliche Entscheidungsbaum soll an die-
+ser Stelle nicht diskutiert werden. Die Interpretation der Ergebnisse sollte jedoch eine kritische 
+Würdigung unter Rückbezug auf die zu Beginn formulierten Zielsetzungen beinhalten. Zur Erin-
+nerung: Das Unternehmen hatte insgesamt drei Zielblöcke formuliert, welche thematisch die The-
+men „Abwanderungsquote“, „cross selling“ sowie „neue Perspektiven“ abdecken sollten. Für die 
+jeweiligen Zielblöcke wurden unterschiedliche Fragestellungen formuliert, die mittels DM gelöst 
+werden sollten. Jedoch wird in der Fallstudie nicht klar, wie die Erkenntnisse aus dem Entschei-
+dungsbaum genutzt wurden, um die drei übergeordneten Ziele zu erreichen. Vielmehr räumen 
+die Autoren ein, dass aufgrund der schlechten Datenbasis nur das Thema „Abwanderungsprä-
+vention“ überhaupt adressiert werden konnte. Zusammenfassend handelt es sich also um ein 
+Lehrstück über die Bedeutung einer geeigneten Datenbasis. 
+4.3 Fallstudie „Continental Airlines“ 
+Die US-Fluggesellschaft Continental Airlines, seit 2010 eine Tochtergesellschaft 
+von United Airlines, stand Anfang der der 1990er Jahre vor massiven finanziel-
+len Problemen. Flüge waren unpünktlich oder überbucht, Gepäck wurde fehlgeleitet, Kunden be-
+schwerten sich. Unter den zehn größten US-Fluggesellschaften nahm das Unternehmen damit den 
+letzten Rang ein. 1994 wurde Gordon Bethune in dieser Situation CEO von Continental. Mit einem 
+rigorosen „Go Forward Plan“ schaffte er es, das Unternehmen innerhalb weniger Jahre wieder 
+auf Erfolgskurs zu führen. Ein Teil dieses Erfolges kann auf die Implementierung von RTBI zurück-
+geführt werden (Anderson-Lehman, Watson, Wixom & Hoffer, 2008). 
+Die ursprüngliche IT-Infrastruktur von Continental Airlines wurde von einem 
+Drittanbieter betrieben und konnte nur bestimmte vorher festgelegte Anfragen 
+verarbeiten. Es war für die Mitarbeitenden nicht möglich, Informationen aus 
+anderen Unternehmensbereichen abzufragen oder spontan und ungeplant wichtige Information 
+zu erhalten. Es war z. B. nicht möglich, Informationen über die gesamte Reise eines Fluggastes 
+auf indirekten Flügen zu erfassen, da sich Daten immer nur auf direkte Flugabschnitte bezogen. 
+1998 führte Continental ein DWH ein, das Daten aus verschiedenen Quellen, z. B. Flugpläne und 
+Fluggastdaten, integrieren konnte und somit erstmals eine ertragsorientierte flexible Preispolitik 
+erlaubte. Einzelne Maßnahmen zur Flugplanung, Kundenbindung und Verbesserung der Zusam-
+menarbeit mit Reisebüros, die erst durch diese Daten möglich wurden, führten zu zusätzlichen 
+Erträgen oder Einsparungen in Millionenhöhe (Anderson-Lehman et al., 2008). 
+Im Jahr 2001 schließlich wurde das DWH teilweise echtzeitfähig. Nicht alle Da-
+ten müssen in Echtzeit aus operativen Systemen geladen werden, vier Daten-
+ströme waren jedoch in dieser Hinsicht besonders wichtig. Kundendaten wurden ereignisgesteu-
+ert aus verschiedenen Systemen, wie z. B. dem Reservierungssystem, dem Vielfliegerprogramm 
+und Anmeldungen auf der Firmenwebsite integriert. Flugdaten wurden direkt von den Maschinen 
+aus der Luft übertragen. Reservierungsdaten wurden stündlich aus dem Reservierungssystem in 
+das DWH übertragen. Check-In Information wurde zunächst nach Schließen der Flugzeugtür ge-
+sammelt übertragen, in einem zweiten Schritt aber so ausgebaut, dass die einzelnen Schritte des 
+Einsatz von BI bei 
+Continental Airlines  
+Verfügungsmacht 
+über Daten lag bei 
+Drittanbieter  
+DWH wird 
+echtzeitfähig  
+SDrZ3wwzhi5YkuPr376BY4lNgZz0zbXYL2L4PFVztBUAMY5NkPDwcpG86EC/u/6k
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 51 ===
+Ausgewählte Anwendungsbeispiele                 
+      43 
+ 
+     
+Check-In Prozesses jeweils für jeden Passagier im Moment ihres Auftretens auch im DWH erfasst 
+wurden (Davis, 2006). 
+Die Echtzeitdaten ermöglichten es, z. B. Preise in Echtzeit anzupassen, die Aus-
+wirkungen der Anpassung auf die Ticketverkäufe direkt zu beobachten und auf 
+Basis dieser Beobachtungen Kontingente für ein bestimmtes Preisniveau festzu-
+legen. Die Bedeutung der Echtzeiteigenschaft zeigt sich insbesondere, wenn Komplikationen auf-
+treten. So kam es durch ein technisches Problem dazu, dass notwendige Reservierungen für Con-
+tinental Passagiere bei anderen Fluggesellschaften nicht vorgenommen wurden. RTBI ermöglichte 
+es, die betroffenen Passagiere schnell herauszufinden und die Reservierung nachzuholen bevor 
+die Kunden etwas von dem Problem bemerken konnten. Während es sich hierbei um eine Maß-
+nahme handelte, um die Kundenzufriedenheit in der Breite zu steigern, sind wenige, wertvolle 
+Kunden für einen überproportionalen Anteil des Umsatzes verantwortlich. RTBI erlaubt es, solche 
+Kunden an jedem Kundenkontaktpunkt sofort auf Basis aktueller Daten zu identifizieren und ent-
+sprechend bevorzugt zu behandeln, um so die Kundenbeziehung zu stärken. Auch auf mögliche 
+Unannehmlichkeiten, wie Verspätungen für die wertvollsten Kunden kann somit reagiert werden 
+(Anderson-Lehman et al., 2008). 
+Der Erfolg der RTBI-Strategie von Continental Airlines wäre ohne eine entspre-
+chende Unternehmenskultur nicht möglich gewesen. Einerseits unterstützt die 
+RTBI, wie im obigen Beispiel aufgezeigt, eine Unternehmenskultur der Kunden-
+freundlichkeit, andererseits muss die Unternehmenskultur die Verwendung der RTBI fördern. Bei 
+Continental Airlines erhielten alle auf Anwendungsseite Zugang zu jeglichen Informationen im 
+DWH, es sei denn, wichtige Gründe sprachen dagegen. Auf diese Weise konnten die Beteiligten 
+auch unvorhergesehene Anfragen durchführen, wenn dies erforderlich war. Es handelte sich bei 
+den Beteiligten nicht um einen kleinen exklusiven Kreis. Im Jahr 2007 hatten bereits über 1.400 
+Mitarbeitende in verschiedenen Niederlassungen Zugang zum DWH. Die Anzahl der RTBI-Anwen-
+dungen und der Kreis der Nutzenden wurden stetig ausgedehnt. Eine solche Ausdehnung fand 
+zum einen innerhalb des Unternehmens auf weitere Unternehmensabteilungen, wie die Personal-
+abteilung und die technische Zuverlässigkeitsüberwachung, statt, zum anderen aber auch durch 
+die globale Ausdehnung innerhalb einzelner Abteilungen. Während in den USA z. B. Buchungen 
+stetig erfasst wurden, und somit die Belegung von Flügen immer ersichtlich war, übermittelten in 
+Japan die Reisebüros die Fluggasdaten erst 30 Tage vor Abflug en-bloc. Da sich dies außerhalb 
+des Einfluss von Continental abspielte, musste das RTBI um Analyseroutinen erweitert werden, die 
+auf den japanischen Markt zugeschnitten waren (Wixom, Watson, Reynolds & Hoffer, 2008). 
+Zur vollen Ausschöpfung des Potentials von RTBI gehört es nicht nur, die beste-
+henden Prozesse durch RTBI zu unterstützen, sondern sie auch zu verändern, 
+wo RTBI eine wesentliche Verbesserungsmöglichkeit bietet. Dies kann am Bei-
+spiel des in Abb. 13 dargestellten Reklamationsprozesses gesehen werden. Links im Bild ist der 
+vorhandene Prozess dargestellt. Kunden wendeten sich mit Reklamationen oft an die Reservie-
+rungsabteilung und nicht an die eigentlich zuständige Kundenbetreuung. Die Unternehmenskul-
+tur der Kundenfreundlichkeit sah vor, den Kunden dort dennoch mit seinem Anliegen aufzuneh-
+men und zu betreuen, dies führte jedoch dazu, dass der Reservierungsagent den Fall an die 
+Kundenbetreuung weiterleiten musste. Durch Inkompatibilität der beteiligten Systeme wurden die 
+Echtzeitdaten 
+ermöglichen neue 
+Anwendungen  
+Bedeutung der Un-
+ternehmenskultur für 
+den Erfolg von BI  
+Steuerung und 
+Verbesserung der  
+Prozesse sind wichtig  
+bbhsohrGgLXI+I5PUghOkpKkXiZ6nd2FTaY00xyr/2qXtO0RvCdYeyvFtTGpasiI
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 52 ===
+ 
+Ausgewählte Anwendungsbeispiele 
+    
+44 
+Fälle in der Kundenbetreuungsabteilung aus dem internen Kommunikationssystem ausgedruckt 
+und von Hand in das Kundenbetreuungssystem eingegeben. Für dieses offensichtliche IT-Problem 
+existiert eine ebenso offensichtliche IT-Lösung, nämlich Systemkompatibilität herzustellen oder 
+dem Reservierungsagenten Zugriff auf das Kundenbetreuungssystem zu geben. Die rechts im Bild 
+dargestellte, tatsächliche Lösung geht dagegen wesentlich weiter. Der Agent erfasst den Fall di-
+rekt im System. Dadurch werden nicht nur mehrere Schritte des alten Prozesses unnötig, sondern 
+das eigentliche Potential von RTBI wird dadurch realisiert, dass das System aufgrund von Fallde-
+tails, historische Daten über den Kunden und dessen Wert sowie Informationen aus dem Ticke-
+tingsystem mittels einer BRE eine Kompensation ermittelt. Dieser Vorschlag kann vom Reservie-
+rungsagenten direkt bestätigt werden. Somit wird nicht nur die Kundenbetreuung wesentlich 
+entlastet, sondern der Kunde kann direkt am Telefon in quasi Echtzeit die Mitteilung bekommen, 
+ob und wie sein Problem gelöst wurde (Wixom et al., 2008). 
+ 
+Abb. 13: Vorher-Nachher Vergleich eines Reklamationsprozesses 
+In Anlehnung an: (Wixom et al., 2008) 
+ 
+ 
+KPRRCt6JuuHkC/4JVsYeFZIZ0lbO2qKEj8fwqWxhG7Em2fjg2t/QnDfQKsdMfYbS
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 53 ===
+Zusammenfassung                 
+      45 
+ 
+     
+5 Zusammenfassung 
+Dürfen wir der Gartner Group (Bitterer, 2011) glauben, dann sind die heute produktiven Entwick-
+lungen der BI eigentlich konventionelle Lösungen, die auf BI umgemünzt werden. Data Mining 
+Workbenches, Online-Plattformen und Prognoseverfahren haben bereits eine längere Entwick-
+lungsgeschichte hinter sich und können offenbar erst heute für die fortgeschrittene Analyse nutz-
+bar gemacht werden. Offenbar ist ein „wertschöpfender“ Einsatz der fachlichen und methodi-
+schen Konzepte von BI technisch doch schwieriger umzusetzen als frühere Prognosen geglaubt 
+haben. 
+Interessant ist aber trotzdem, sich die Technologien „am Horizont“ anzuschauen, denn hier ste-
+hen einige Entwicklungen, die die Entscheidungsunterstützung mit Hilfe von BI, gesehen als ganz-
+heitliches Konzept, einen wesentlichen Schritt nach vorne bringen werden. Während natür-
+lichsprachliche, interaktive Abfragen und Analysen noch am Anfang der Entwicklung stehen, sind 
+aber bereits die adressatengerechte Visualisierung, genauso wie mobile Anwendungen oder der 
+Bezug von ausgewählten Funktionalitäten im Rahmen von BIaaS wichtige technische Fortschritte, 
+die den Einsatz von BI-Systemen für die fachliche Nutzung attraktiver machen. Die Seite der Ana-
+lysen, seien es Text- bzw. Inhaltsanalysen oder die Unterstützung von Entscheidungen in Echt- 
+bzw. Rechtzeit, stellt eine Verknüpfung zu den fachlichen und methodischen Fortschritten her, 
+die im Sinne des Gesamtkonzepts von hoher Bedeutung sind. 
+Die Fallstudien haben aber auch gezeigt, dass die Anwendung von DM für viele Fragestellungen 
+in Unternehmen sinnvoll ist. Jedoch zeigen sich Schwächen in der Umsetzung. Im Fallbeispiel 
+„Newspaper Industry“ konnte das Unternehmen den DM-Prozess nicht bis zum Ende durchfüh-
+ren, weshalb einschlägige Ergebnisse und ein Nutzenzuwachs durch den Einsatz von DM ausblie-
+ben. Die Verknüpfung der drei Elemente Entscheidungsprozesse, fachliche und methodische Rah-
+menbedingungen und Anforderungen sowie technische Umsetzung erfolgt immer enger und 
+spiegelt sich auch in der neueren Entwicklung der BI wieder. 
+Den eingangs als „Hype“ bezeichneten Entwicklungen in der BI liegen, wie in dieser Einheit ge-
+zeigt, neue technische Spielarten zugrunde, die auch im Zusammenwirken der Technologien und 
+in den Prozessabläufen Innovationen bedeuten. Diese Entwicklung ist keineswegs abgeschlossen, 
+sondern bringt stetig neue Ideen hervor. 
+ 
+ 
+PeJGNayhsdaHoiC+CmkWQsU6C2R5XKpu4Co3QMAUiMcBzP05EwwmZKk/1xdkIObU
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 54 ===
+ 
+Literaturverzeichnis 
+    
+46 
+Literaturverzeichnis 
+Acker, O., Gröne, F., Blockus, A. & Bange, C. (2011). In-memory analytics – strategies for real-
+time CRM. Journal of Database Marketing & Customer Strategy Management, 18 (2), 129–
+136. 
+Aizawa, A. (2003, Januar). An information-theoretic perspective of tf–idf measures. Inf. Process. 
+Manage., 39 (1), 45–65. 
+Albescu, F., Pugna, I. & Paraschiv, D. (2008). Business intelligence & knowledge management–
+technological support for strategic management in the knowledge based economy. Revista 
+Informatica Economic˘a, 4 (48), 5–12. 
+Alpar, P. & Schulz, M. (2016). Self-service business intelligence. Business & Information Systems 
+Engineering, 58 (2), 151–155. 
+Alt, R. & Reinhold, O. (2012). Social-Customer-Relationship-Management (Social-CRM). Wirt-
+schaftsinformatik, 54 (5), 281–286. 
+Anderson-Lehman, R.,Watson, H. J.,Wixom, B. H. & Hoffer, J. A. (2008). Flying high with real-time 
+business intelligence. In Handbook on decision support systems 2: Variations (S. 443–462). 
+Berlin, Heidelberg: Springer. 
+Azvine, B., Cui, Z., Nauck, D. D. & Majeed, B. (2006, Juni). Real time business intelligence for the 
+adaptive enterprise. In Proceedings of the 8th IEEE international conference on e-commerce 
+technology and the 3rd IEEE international conference on enterprise computing, e-commerce, 
+and e-services (CEC/EEE’06) (S. 29–40). Washington, DC: IEEE Computer Society. 
+Baars, H., Felden, C., Gluchowski, P., Hilbert, A., Kemper, H.-G. & Olbrich, S. (2014). Shaping the 
+next incarnation of business intelligence. Wirtschaftsinformatik, 56 (1), 13–19. 
+Baars, H. & Kemper, H.-G. (2008, März). Management support with structured and unstructured 
+data-an integrated business intelligence framework. Inf. Sys. Manag., 25 (2), 132–148. 
+Bensberg, F. (2008). Mobile Business Intelligence – Besonderheiten, Potenziale und prozessorien-
+tierte Gestaltung. In H. H. Bauer, M. D. Bryant & T. Dirks (Hrsg.), Erfolgsfaktoren des Mobile 
+Marketing (S. 71–87). Berlin, Heidelberg: Springer. 
+Bitterer, A. (2011). Hype cycle for business intelligence. Gartner, Inc., Stamford, CT. 
+Bose, R. (2009). Advanced analytics: opportunities and challenges. Industrial Management & Data 
+Systems, 109 (2), 155–172. 
+Bruckner, R. M., List, B. & Schiefer, J. (2002). Striving towards near real-time data integration for 
+data warehouses. Berlin, Heidelberg: Springer. 
+Cavalcante, S., Kesting, P. & Ulhøi, J. (2011). Business model dynamics and innovation: (re)estab-
+lishing the missing linkages. Management Decision, 49 (8), 1327–1342. 
+Chamoni, P. & Gluchowski, P. (2004). Integration trends in business intelligence systems. Wirt-
+schaftsinformatik, 46 (2), 119–128. 
+JUvwLwn/3XIrm+soIkWJ7gnrxkF7WlSmyGd3MULgQG5YTp3Zlp3eAyp9d/EhWAm2
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 55 ===
+Literaturverzeichnis                 
+      47 
+ 
+     
+Chapman, P., Clinton, J., Kerber, R., Khabaza, T., Reinartz, T., Shearer, C. & Wirth, R. (2000). 
+CRISP-DM 1.0 – step-by-step data mining guide (White Paper). SPSS. Zugriff am 19. 10. 2016 
+auf https://www.the-modeling-agency.com/crisp-dm.pdf 
+Chaudhuri, S., Dayal, U. & Narasayya, V. (2011, August). An overview of business intelligence 
+technology. Commun. ACM, 54 (8), 88–98. 
+Chen, H., Chiang, R. H. L. & Storey, V. C. (2012, Dezember). Business intelligence and analytics: 
+From big data to big impact. MIS Quarterly, 36 (4), 1165–1188. 
+Codd, E. F. (1970). A relational model of data for large shared data banks. Commun. ACM, 13 
+(6), 377–387. 
+Cowie, J. & Burstein, F. (2007). Quality of data model for supporting mobile decision making. 
+Decision Support Systems, 43 (4), 1675 – 1683. 
+Davis, J. R. (2006, Januar). Right-time business intelligence: Optimizing the business decision cycle 
+(Bericht). Newton: Teradata. 
+Dinter, B. & Lorenz, A. (2012). Social business intelligence: a literature review and research 
+agenda. In 33. International Conference on Information Systems (ICIS 2012). (S. Paper 104). 
+Dinter, B. & Winter, R. (2008). Strategie der Informationslogistik. In B. Dinter & R. Winter (Hrsg.), 
+Integrierte Informationslogistik (S. 63–82). Berlin, Heidelberg: Springer. 
+Endeca. (2011). Improving business agility with unstructured data: The power of leveraging the 
+web, news feeds, and customer commentary in daily decisions (Whitepaper). Cambridge, 
+MA: Endeca. 
+Fan, W., Wallace, L., Rich, S. & Zhang, Z. (2006, September). Tapping the power of text mining. 
+Commun. ACM, 49 (9), 76–82. 
+Franklin, M. J. (2010). Continuous analytics: Data stream query processing in practice. In Proceed-
+ings of the fourth ACM international conference on distributed event-based systems (S. 1–
+1). New York: ACM. 
+Friedman, J. & Hoffman, D. V. (2008, April). Protecting data on mobile devices: A taxonomy of 
+security threats to mobile computing and review of applicable defenses. Inf. Knowl. Syst. 
+Manag., 7 (1,2), 159–180. 
+Gluchowski, P., Gabriel, R. & Dittmar, C. (2008). Management Support Systeme und Business 
+Intelligence: Computergestützte Informationssysteme für Fachund Führungskräfte. Berlin, 
+Heidelberg: Springer. 
+Golfarelli, M., Rizzi, S., Risorgimento, V., Cella, I. & Matteotti, V. (2004). Beyond data warehous-
+ing: what’s next in business intelligence. In In proceedings of the 7th ACM international 
+workshop on data warehousing and OLAP, DOLAP ’04 (S. 1–6). 
+Grieser, L. & Wilde, K. D. (2011). Adaptivität und Echtzeit in CRM-Prozessen. In H. Hippner, B. 
+Hubrich & K. D.Wilde (Hrsg.), Grundlagen des CRM: Strategie, Geschäftsprozesse und IT-
+Unterstützung (S. 811–849). Wiesbaden: Gabler. 
+pz2VtBkZaDdiFasX9xf1C6AKYAjjklpZS7JZ10ogzlnCyrab2tvK9MjErAC0FSFq
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 56 ===
+ 
+Literaturverzeichnis 
+    
+48 
+Gunnarsson, C. L., Walker, M. M., Walatka, V. & Swann, K. (2007). Lessons learned: A case study 
+using data mining in the newspaper industry. Journal of Database Marketing & Customer 
+Strategy Management, 14 (4), 271–280. 
+Hackathorn, R. (2004, Januar). The BI watch: Real-time to real-value (Bericht). DM Review. 
+Han, E.-H. & Karypis, G. (2000). Centroid-based document classification: Analysis and experi-
+mental results. In D. A. Zighed, J. Komorowski & J. ˙ Zytkow (Hrsg.), Principles of data mining 
+and knowledge discovery: 4th european conference, PKDD 2000 (S. 424–431). Berlin, Hei-
+delberg: Springer. 
+Hansen, W.-R. (1998). Vorgehensmodell zur Entwicklung einer Data Warehouse-Lösung. In H. 
+Mucksch &W. Behme (Hrsg.), Das Data Warehouse - Konzept: Architektur — Datenmodelle 
+— Anwendungen (S. 319–336). Wiesbaden: Gabler. 
+Helmke, S., Uebel, M. & Dangelmaier, W. (2013). Inhalte des CRM-Ansatzes. In S. Helmke, M. 
+Uebel & W. Dangelmaier (Hrsg.), Effektives Customer Relationship Management: Instrumente 
+– Einführungskonzepte – Organisation (5. Aufl., S. 3–21). Wiesbaden: Springer´. 
+Henschen, D. (2009, August). 4 technologies that are reshaping business intelligence (Bericht). 
+Information Week. Herschel, R. T. & Jones, N. E. (2005). Knowledge management and busi-
+ness intelligence: the importance of integration. Journal of Knowledge Management, 9 (4), 
+45–55. 
+Hippner, H., Grieser, L. & Wilde, K. D. (2011). Data Mining – Grundlagen und Einsatzpotenziale 
+in analytischen CRM-Prozessen. In H. Hippner, B. Hubrich & K. D. Wilde (Hrsg.), Grundlagen 
+des CRM: Strategie, Geschäftsprozesse und IT-Unterstützung (S. 783–810). Wiesbaden: Gab-
+ler. 
+Hippner, H. & Wilde, K. D. (2001). CRM — ein Überblick. In S. Helmke & W. Dangelmaier (Hrsg.), 
+Effektives Customer Relationship Management: Instrumente — Einführungskonzepte — Or-
+ganisation (1. Aufl., S. 3–37). Wiesbaden: Gabler. 
+Hippner, H. & Wilde, K. D. (2013). Data Mining im CRM. In S. Helmke, M. Uebel &W. Dangelmaier 
+(Hrsg.), Effektives Customer Relationship Management: Instrumente – Einführungskonzepte 
+– Organisation (5. Aufl., S. 179–196). Wiesbaden: Springer. 
+Hoberg, P., Wollersheim, J., Böhm, M. & Krcmar, H. (2012). Cloud computing Überblick und Her-
+ausforderungen für das Controlling. Controlling, 24 (6), 294–300. 
+Jing, L.-P., Huang, H.-K. & Shi, H.-B. (2002). Improved feature selection approach TFIDF in text 
+mining. In Proceedings of the first international conference on machine learning and cyber-
+netics (S. 944–946). Beijing: IEEE. 
+Karimi, J. & Walter, Z. (2016). Corporate entrepreneurship, disruptive business model innovation 
+adoption, and its performance: The case of the newspaper industry. Long Range Planning, 
+49 (3), 342–360. 
+Kaufmann, J. (2015). Gestaltung unternehmensübergreifender Business-Intelligence-Netzwerke 
+(Dissertation). Universität Duisburg-Essen, Duisburg, Essen. 
+w796PookQ0111tG/T660e5MmQtPHCvcs9CnyB0aD7DU3DrtH62uw0ixhylCJNqaU
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 57 ===
+Literaturverzeichnis                 
+      49 
+ 
+     
+Lönnqvist, A.&Pirttimäki, V. (2006). The measurement of business intelligence. Information Sys-
+tems Management, 23 (1), 32–40. 
+Mobile computing/mobile business intelligence market study (White Paper). (2012). Dresner Ad-
+visory Services. Zugriff am 19. 10. 2016 auf https://www.microstrategy.com/Strategy/me-
+dia/downloads/white-papers/Mobile-BI-Market-Study-2012-Dresner-Advisory-Services.pdf 
+Nasukawa, T. & Yi, J. (2003). Sentiment analysis: Capturing favorability using natural language 
+processing. In Proceedings of the 2nd international conference on knowledge capture (S. 70–
+77). New York: ACM. 
+Nelson, G. S. (2010). Business intelligence 2.0: Are we there yet? In SAS global forum (S. 50–62). 
+Oehler, K. (2006). Corporate Performance Management mit Business Intelligence Werkzeugen. 
+München: Hanser. 
+Panian, Z. (2009). Just-in-time business intelligence and real-time decisioning. In Proceedings of 
+the 9th WSEAS international conference on applied informatics and communications (S. 106–
+111). Stevens Point: World Scientific and Engineering Academy and Society (WSEAS). 
+Panian, Z. (2012). Making businesses work smarter with mobile business intelligence. International 
+Journal of Social, Behavioral, Educational, Economic, Business and Industrial Engineering, 6 
+(8), 2011–2016. 
+Pant, S. & Ravichandran, T. (2001). A framework for information systems planning for e-business. 
+Logistics Information Management, 14 (1/2), 85–99. 
+Polites, G. L. (2006). From real-time BI to the real-time enterprise: Organizational enablers of la-
+tency reduction. In ICIS 2006 Proceedings (S. 1383–1400). AIS Electronic Library. 
+Popoviˇc, A., Turk, T. & Jakliˇc, J. (2010). Conceptual model of business value of business intelli-
+gence systems. Management: Journal of Contemporary Management Issues, 15 (1), 5–30. 
+Ranjan, J. (2008). Traditional business intelligence vis-a-vis real-time business intelligence. Int. J. 
+Inf. Commun. Techol., 1 (3/4), 298–317. 
+Reichmann, T. (2011). Controlling mit Kennzahlen: Die systemgestützte Controlling-Konzeption 
+mit Analyse- und Reportinginstrumenten (8., überarbeitete und erweiterte Aufl.). München: 
+Franz Vahlen. 
+Robertson, S. (2004). Understanding inverse document frequency: on theoretical arguments for 
+IDF. Journal of Documentation, 60 (5), 503–520. 
+Rossa, P. & Holland, H. (2014). Big-Data-Marketing – Chancen und Herausforderungen für Unter-
+nehmen. In H. Holland (Hrsg.), Digitales Dialogmarketing: Grundlagen, Strategien, Instru-
+mente (S. 249–301). Wiesbaden: Springer. 
+Sandu, D. I. (2008). Operational and real-time business intelligence. Informatica Economica, 47 
+(3), 33–36. 
+Schill, A. & Springer, T. (2012). Verteilte Systeme – Grundlagen und Basistechnologien. Berlin, 
+Heidelberg: Springer. 
+xcqLFuZadJq7gF4JCWRhHpvwgiMJg7C9VNDOyK5LgCytHFJhEta3+BgxTfNWTBzD
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 58 ===
+ 
+Literaturverzeichnis 
+    
+50 
+Schirm, N., Frank, T., Henkel, M. & Bensberg, F. (2015). Erfolgsfaktoren cloudbasierter Business 
+Intelligence Lösungen. In Proceeding der 12. Internationalen Tagung Wirtschaftsinformatik 
+(S. 1741–1755). 
+Schön, D. (2012). Planung und Reporting im Mittelstand – Grundlagen, Business Intelligence und 
+Mobile Computing. Wiesbaden: Gabler. 
+Totok, A. (2016). Von der Business-Intelligence-Strategie zum Business Intelligence Competency 
+Center. In P. Gluchowski & P. Chamoni (Hrsg.), Analytische Informationssysteme: Business 
+Intelligence-Technologien und –Anwendungen (S. 33–53). Berlin, Heidelberg: Springer. 
+Venkatesh, V. & Bala, H. (2008). Technology acceptance model 3 and a research agenda on in-
+terventions. Decision Sciences, 39 (2), 273–315. 
+Voas, J., Miller, K. W. & Hurlburt, G. F. (2012). BYOD: Security and privacy considerations. IT 
+Professional, 14, 53–55. 
+Willams, S. & Williams, N. (2003). The business value of business intelligence. Business Intelligence 
+Journal, 8 (3). 
+Wixom, B. H., Watson, H. J., Reynolds, A. M. & Hoffer, J. A. (2008, März). Continental airlines 
+continues to soar with business intelligence. Inf. Sys. Manag., 25 (2), 102–112. 
+Zhang, H., Chen, G., Ooi, B. C., Tan, K. L. & Zhang, M. (2015). In-memory big data management 
+and processing: A survey. IEEE Transactions on Knowledge and Data Engineering, 27 (7), 
+1920–1948. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PNVj9R2gbKYpFnZP+72dnnm0ntMLNa4e1mRSGofBA53y3cziIepvc22CPKYNvzAv
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 59 ===
+DNFQXJ5CKj/bz42ZZPvVV1gXAFq2V7JKMscV5UVwRq/i4f+cyyaYUV2uJjE3zviu
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
+
+=== SEITE 60 ===
+Alle Rechte vorbehalten
+© 2026 FernUniversität in Hagen 
+Fakultät für Wirtschaftswissenschaft
+*S002664984*
+S002664984
+(04/26)
+32711-04-S#1
+bhylqaa5QL75a2h5JhMLHM5HkTbYVXtN9Qv75QCaMAvgqHE4niy2e+yegud4+1Kx
+Urheberrechtlich geschützt. Persönliche Kopie für Matrikelnummer 1334549
